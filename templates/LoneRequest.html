@@ -1,0 +1,627 @@
+<div id="loneRequest" data-gs-x="0" data-gs-y="22" data-gs-position="103" data-current_content="103" class="article grid-stack-item loan-application" data-showmore-bottom="0" data-showmore-right="0" data-gs-height="2" data-gs-width="2" data-gs-min-height="2" data-gs-min-width="2" data-name="loneRequest" data-gs-no-resize="true" template="LoneRequest">
+
+	<div id="commpayment" class="grid-stack-item-content relative quickpayment">
+		<div class="widget-tools payment-tools">
+			<div class="widget-close"><span><a href="JavaScript:" onclick="removeWidget(this)" class="fa fa-remove"></a></span></div>
+		</div>
+		<div class="widget widget-payment widget-own-account-payment widget-chequebook-payment">
+			<div class="widget-body bb-bookblock">
+				<div class="bb-item" id="loneRequest_container_1">
+					<div class="flex-wrapper">
+						<div class="left-part">		
+						<div class="part-title">Select loan type:</div>					
+							<div class="payment-choose-type">
+								 <div class="card-main-container loan-container">
+									<div class="payment-type chequebook-type active" id="pages-25">									
+										<div><img src="images/sav_account.png" /></div>
+										<span>Personal loan</span>
+									</div>		
+									<div class="payment-type chequebook-type" id="pages-50">									
+										<div><img src="images/sav_account.png" /></div>
+										<span>Short term loan</span>
+									</div>									 
+									<div class="payment-type chequebook-type" id="pages-75">									
+										<div><img src="images/sav_account.png" /></div>
+										<span>Overdraft</span>
+									</div>
+									<div class="payment-type chequebook-type" id="pages-100">									
+										<div><img src="images/sav_account.png" /></div>
+										<span>Car loan</span>
+									</div>	
+								</div>	
+							</div>
+						</div>
+							<div class="right-part">						 
+								<div class="chequebook-body">
+								<div class="content-to-show content-to-show-pages-25 active">
+										<div class="top">
+											<div class="chosen-payment-type currenetItem">
+												<img src="images/sav_account.png" />
+												<br><span class="font-yellow" >Personal loan</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>Term between 12-48 months.</li>
+													<li>Minimum amount: USD 5,000.</li>
+													<li>ARP: 7.5%</li>
+													<li>Approved within 24 hours</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Requested amount</div>
+												<div class="col-xs-9"><input type="text" value="$5,000" class="amount1 name" placeholder="$5,000" onchange="checkcurrency(this.value);checkMinAmount('#loneRequest_container_1 .content-to-show.active',2) " ; oninput = "countAmount('#loneRequest_container_1 .content-to-show.active')"/></div>
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3 chequebook-select-label">Term</div>
+												<div class="col-xs-9">
+													<select class="select-loan-term" onchange = "countAmount('#loneRequest_container_1 .content-to-show.active')">
+														<option value="3 months">3 months</option>	
+														<option value="6 months">6 months</option>	
+														<option value="9 months">9 months</option>
+														<option value="12 months" selected>12 months</option>
+														<option value="24 months">24 months</option>
+														<option value="36 months">36 months</option>
+														<option value="48 months">48 months</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Monthly repayment</div>
+												<div class="col-xs-9 result">$417</div>
+												<!-- <input type="text" value="$424.5" class="amount" placeholder="$424.5" onchange="checkcurrency(this.value)"/> -->
+											</div>
+										</div>			
+								</div>		
+
+								<div class="content-to-show content-to-show-pages-50 ">
+										<div class="top">
+											<div class="chosen-payment-type currenetItem">
+												<img src="images/sav_account.png" />
+												<br><span class="font-yellow" >Short term loan</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>Term between 3-12 months.</li>
+													<li>Minimum amount: USD 2,000.</li>
+													<li>ARP: 8.5%</li>
+													<li>Approved within 24 hours</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Requested amount</div>
+												<div class="col-xs-9">
+												<input type="text" value="$2,000" class="amount1 name" placeholder="$2,000" onchange="checkcurrency(this.value);checkMinAmount('#loneRequest_container_1 .content-to-show.active',2)" oninput="countAmount('#loneRequest_container_1 .content-to-show.active')" />
+												</div>
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3 chequebook-select-label">Term</div>
+												<div class="col-xs-9">
+													<select class="select-loan-term" onchange = "countAmount('#loneRequest_container_1 .content-to-show.active')">
+														<option value="3 months">3 months</option>	
+														<option value="6 months"  selected>6 months</option>	
+														<option value="9 months">9 months</option>
+														<option value="12 months">12 months</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Monthly repayment</div>
+												<div class="col-xs-9 result">$334</div>
+												<!-- <input type="text" value="$424.5" class="amount" placeholder="$424.5" onchange="checkcurrency(this.value)"/></div> -->
+										</div>			
+								</div>		
+
+							</div>
+								<div class="content-to-show content-to-show-pages-75 ">
+										<div class="top">
+											<div class="chosen-payment-type currenetItem">
+												<img src="images/sav_account.png" />
+												<br><span class="font-yellow">Overdraft</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>Maximum amount: USD 2,500.</li>
+													<li>ARP: 8.5%</li>
+													<li>Approved within 24 hours</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Requested amount</div>
+												<div class="col-xs-9"><input type="text" value="$2,500" class="amount1 name" placeholder="$2,500" onchange="checkcurrency(this.value);checkMinAmount('#loneRequest_container_1 .content-to-show.active',1)"  /></div>
+											</div>
+										</div>
+									
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Monthly repayment</div>
+												<div class="col-xs-9 result">Minimum 30%</div>
+												<!-- <input type="text" value="$424.5" class="amount" placeholder="$424.5" onchange="checkcurrency(this.value)"/> -->
+											</div>
+										</div>				
+								</div>		
+
+
+								<div class="content-to-show content-to-show-pages-100 ">
+										<div class="top">
+											<div class="chosen-payment-type currenetItem">
+												<img src="images/sav_account.png" />
+												<br><span class="font-yellow">Car loan</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>Term between 3-12 months.</li>
+													<li>Minimum amount: USD 7,500.</li>
+													<li>ARP: 8.5%</li>
+													<li>Approved within 24 hours</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Requested amount</div>
+												<div class="col-xs-9"><input type="text" value="$7,500" class="amount1 name" placeholder="$7,500" onchange="checkcurrency(this.value);checkMinAmount('#loneRequest_container_1 .content-to-show.active',2)" oninput="countAmount('#loneRequest_container_1 .content-to-show.active')"/></div>
+											</div>
+										</div>
+
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3 chequebook-select-label">Term</div>
+												<div class="col-xs-9">
+													<select class="select-loan-term" onchange = "countAmount('#loneRequest_container_1 .content-to-show.active')">
+														<option value="3 months">3 months</option>	
+														<option value="6 months" selected>6 months</option>	
+														<option value="9 months">9 months</option>
+														<option value="12 months">12 months</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Monthly repayment</div>
+												<div class="col-xs-9 result">$1250</div>
+												<!-- <input type="text" value="$424.5" class="amount" placeholder="$424.5" onchange="checkcurrency(this.value)"/> -->
+											</div>
+										</div>				
+								</div>		
+					 												
+										
+										<div class="payment-right-navigation">
+											<div class="widget-details-button">
+												<input data-nav-dir="next" class="nav btn btn-default" type="button" value="Next"
+										  		 onclick="swipePaymentPartnerScreen(this);
+										  		 fillLoanRequest(this , '#loneRequest_container_1 .content-to-show.active', '#loneRequest_container_2 .content-to-show.active')"/>
+											</div>
+										</div>
+									</div>
+							</div>
+					</div>
+				</div>
+				<div class="bb-item" id="loneRequest_container_2">
+					<div class="flex-wrapper">
+						<div class="left-part">							
+							<div class="content-to-show content-to-show-pages-25 active">
+										<div class="top">
+											<div class="chosen-payment-type currenetItem">
+												<img src="images/sav_account.png" />
+												<br><span class="font-yellow" >Personal loan</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>Term between 12-48 months.</li>
+													<li>Minimum amount: USD 5,000.</li>
+													<li>ARP: 7.5%</li>
+													<li>Approved within 24 hours</li>
+												</ul>
+											</div>
+										</div>
+										<div class="account-open-basic flex-center-column ">
+										   <div class="account-open-inr">
+											   	<div class="account-open-label">Loan:</div>
+												<div class="account-open-detail loan-amount"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Term:</div>
+												<div class="account-open-detail loan-term"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Monthly repayment:</div>
+												<div class="account-open-detail loan-repayment"></div>
+											</div>
+										</div>	
+								</div>		
+
+							<div class="content-to-show content-to-show-pages-50 ">
+										<div class="top">
+											<div class="chosen-payment-type currenetItem">
+												<img src="images/sav_account.png" />
+												<br><span class="font-yellow" >Short term loan</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>Term between 3-12 months.</li>
+													<li>Minimum amount: USD 2,000.</li>
+													<li>ARP: 8.5%</li>
+													<li>Approved within 24 hours</li>
+												</ul>
+											</div>
+										</div>
+										<div class="account-open-basic flex-center-column ">
+										   <div class="account-open-inr">
+											   	<div class="account-open-label">Loan:</div>
+												<div class="account-open-detail loan-amount"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Term:</div>
+												<div class="account-open-detail loan-term"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Monthly repayment:</div>
+												<div class="account-open-detail loan-repayment"></div>
+											</div>
+										</div>	
+								</div>		
+
+
+								<div class="content-to-show content-to-show-pages-75 ">
+										<div class="top">
+											<div class="chosen-payment-type currenetItem">
+												<img src="images/sav_account.png" />
+												<br><span class="font-yellow">Overdraft</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>Maximum amount: USD 2,500.</li>
+													<li>ARP: 8.5%</li>
+													<li>Approved within 24 hours</li>
+												</ul>
+											</div>
+										</div>
+									<div class="account-open-basic flex-center-column ">
+										   <div class="account-open-inr">
+											   	<div class="account-open-label">Loan:</div>
+												<div class="account-open-detail loan-amount"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Monthly repayment:</div>
+												<div class="account-open-detail loan-repayment"></div>
+											</div>
+										</div>	
+								</div>		
+
+
+								<div class="content-to-show content-to-show-pages-100 ">
+										<div class="top">
+											<div class="chosen-payment-type currenetItem">
+												<img src="images/sav_account.png" />
+												<br><span class="font-yellow">Car loan</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>Term between 3-12 months.</li>
+													<li>Minimum amount: USD 7,500.</li>
+													<li>ARP: 8.5%</li>
+													<li>Approved within 24 hours</li>
+												</ul>
+											</div>
+										</div>
+										<div class="account-open-basic flex-center-column ">
+										   <div class="account-open-inr">
+											   	<div class="account-open-label">Loan:</div>
+												<div class="account-open-detail loan-amount"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Term:</div>
+												<div class="account-open-detail loan-term"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Monthly repayment:</div>
+												<div class="account-open-detail loan-repayment"></div>
+											</div>
+										</div>	
+								</div>	
+						</div>
+							<div class="right-part">	
+						<div class="part-title">Provide the following data:</div>									
+									<div class="chequebook-body">
+					 					<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3 chequebook-select-label">Employment status</div>
+												<div class="col-xs-9">
+													<select class="select-employmentstatus">
+														<option value="Mall Branch">Employee</option>		
+														<option value="Mall Branch">Self-Employed</option>		
+														<option value="Mall Branch">Student</option>		
+														<option value="Mall Branch">Retired</option>		
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Annual gross salary</div>
+												<div class="col-xs-9"><input type="text" class="a_name"  onchange="checkcurrency(this.value)"  /></div>
+											</div>
+										</div>	
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3 chequebook-select-label">Marital status</div>
+												<div class="col-xs-9">
+													<select class="select-status">
+														<option value="Mall Branch">Single</option>
+														<option value="Mall Branch">Married</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row termCondCont">
+												<div class="col-xs-12"><input type="checkbox" name="openAcc" />I have read and agree to the <a href="javaScript:void(0);" class="termCond">terms and conditions</a></div>
+											</div>
+										</div>
+										
+																			
+										<div class="payment-right-navigation">
+								<div class="widget-details-button">
+									<input data-nav-dir="next" class="nav btn btn-default" type="button" value="Next"
+										   onclick="swipePaymentPartnerScreen(this);
+										   fillLoanRequest(this , '#loneRequest_container_1 .content-to-show.active', '#loneRequest_container_3 .content-to-show.active');
+										   fillLoanRequest(this , '#loneRequest_container_2 .right-part .chequebook-body' , '#loneRequest_container_3 .content-to-show.active');"/>
+								</div>
+							</div>
+									</div>
+							</div>
+					</div>
+				</div>
+				<div class="bb-item" id="loneRequest_container_3">
+					<div class="flex-wrapper">
+						
+						<div class="left-part">							
+							<div class="content-to-show content-to-show-pages-25 active">
+										<div class="top">
+											<div class="chosen-payment-type currentIt">
+												<img src="images/sav_account.png" />
+												<br><span class="font-yellow" >Personal loan</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>Term between 12-48 months.</li>
+													<li>Minimum amount: USD 5,000.</li>
+													<li>ARP: 7.5%</li>
+													<li>Approved within 24 hours</li>
+												</ul>
+											</div>
+										</div>
+										<div class="account-open-basic flex-center-column ">
+										   <div class="account-open-inr">
+											   	<div class="account-open-label">Loan amount:</div>
+												<div class="account-open-detail loan-amount"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Term:</div>
+												<div class="account-open-detail loan-term"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Monthly repayment:</div>
+												<div class="account-open-detail loan-repayment"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Emplyment status:</div>
+												<div class="account-open-detail loan-empstatus"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Annual gross salary:</div>
+												<div class="account-open-detail loan-salary"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Martial status:</div>
+												<div class="account-open-detail loan-marstatus"></div>
+											</div>
+										</div>	
+								</div>		
+
+								<div class="content-to-show content-to-show-pages-50 ">
+										<div class="top">
+											<div class="chosen-payment-type">
+												<img src="images/sav_account.png" />
+												<br><span class="font-yellow" >Short term loan</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>Term between 3-12 months.</li>
+													<li>Minimum amount: USD 2,000.</li>
+													<li>ARP: 8.5%</li>
+													<li>Approved within 24 hours</li>
+												</ul>
+											</div>
+										</div>
+										<div class="account-open-basic flex-center-column ">
+										   <div class="account-open-inr">
+											   	<div class="account-open-label">Loan amount:</div>
+												<div class="account-open-detail loan-amount"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Term:</div>
+												<div class="account-open-detail loan-term"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Monthly repayment:</div>
+												<div class="account-open-detail loan-repayment"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Emplyment status:</div>
+												<div class="account-open-detail loan-empstatus"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Annual gross salary:</div>
+												<div class="account-open-detail loan-salary"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Martial status:</div>
+												<div class="account-open-detail loan-marstatus"></div>
+											</div>
+										</div>	
+								</div>		
+
+
+								<div class="content-to-show content-to-show-pages-75 ">
+										<div class="top">
+											<div class="chosen-payment-type">
+												<img src="images/sav_account.png" />
+												<br><span class="font-yellow">Overdraft</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>Minimum amount: USD 2,500.</li>
+													<li>ARP: 8.5%</li>
+													<li>Approved within 24 hours</li>
+												</ul>
+											</div>
+										</div>
+										<div class="account-open-basic flex-center-column ">
+										   <div class="account-open-inr">
+											   	<div class="account-open-label">Loan amount:</div>
+												<div class="account-open-detail loan-amount"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Term:</div>
+												<div class="account-open-detail loan-term"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Monthly repayment:</div>
+												<div class="account-open-detail loan-repayment"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Emplyment status:</div>
+												<div class="account-open-detail loan-empstatus"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Annual gross salary:</div>
+												<div class="account-open-detail loan-salary"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Martial status:</div>
+												<div class="account-open-detail loan-marstatus"></div>
+											</div>
+										</div>	
+								</div>		
+
+
+								<div class="content-to-show content-to-show-pages-100 ">
+										<div class="top">
+											<div class="chosen-payment-type">
+												<img src="images/sav_account.png" />
+												<br><span class="font-yellow">Car loan</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>Term between 3-12 months.</li>
+													<li>Minimum amount: USD 7,500.</li>
+													<li>ARP: 8.5%</li>
+													<li>Approved within 24 hours</li>
+												</ul>
+											</div>
+										</div>
+										<div class="account-open-basic flex-center-column ">
+										   <div class="account-open-inr">
+											   	<div class="account-open-label">Loan amount:</div>
+												<div class="account-open-detail loan-amount"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Term:</div>
+												<div class="account-open-detail loan-term"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Monthly repayment:</div>
+												<div class="account-open-detail loan-repayment"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Emplyment status:</div>
+												<div class="account-open-detail loan-empstatus"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Annual gross salary:</div>
+												<div class="account-open-detail loan-salary"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Martial status:</div>
+												<div class="account-open-detail loan-marstatus"></div>
+											</div>
+										</div>	
+								</div>	
+							</div>
+						<div class="right-part">
+							<div class="part-title">Use your Mobile Token to approve the transaction:</div>
+							<div class="cube-code">
+								<img src="images/u4.jpg">
+							</div>
+							<div class="payment-benefeciary-details">
+								<div class="payment-benefeciary-detail row">
+									<div class="col-xs-6">One time password</div>
+									<div class="col-xs-6"><input type="password"></div>
+								</div>
+							</div>
+							<div class="payment-right-navigation with-margin">
+								<div class="widget-details-button">
+									<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="Submit"  onclick="validationPayment('#loneRequest', this, '#loneRequest_container_3 .payment-benefeciary-details', '#loneRequest_container_4', '#payment-benefeciary-fields', true);fillTransactionDetails('#loneRequest_container_4 .payment-transaction-details', '#loneRequest_container_3 .payment-benefeciary-details');"  />
+									<input class="btn btn-transparent btn-default" id="paymentTransactionSave" type="button" value="Envelope"
+										   onclick="saveBeneficiary(this)"/>
+									<input data-nav-dir="prev" class="nav btn btn-transparent btn-default" type="button" value="Back"
+										   onclick="commonPaymentShowOriginal(this)"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bb-item" id="loneRequest_container_4">
+					<div class="flex-wrapper">
+						<div class="left-part flex-center">
+							<div class="spiner-block" style="display: none;">							
+							<div class="spiner"><img src="./images/loading_spinner.gif"></div>					
+							</div>
+							<div class="final-info">
+							<div class="password-block">
+								<img class="svg" src="images/svg/complete_payment.svg">
+								<div class="title dark">Your request is under processing</div>
+								<div class="info grey">We will notify you if it is processed</div>
+								<div class="title grey separator">Transaction ID:</div>
+								<div class="info grey">TR000345629867</div>
+								<div class="widget-details-button">
+									<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="REPEAT" onclick="
+									clearTransactionDetails('#loneRequest_container_2 .payment-benefeciary-details')"/>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="right-part flex-center">
+							<img src="images/accountOpen.jpg" style="width: 100%;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

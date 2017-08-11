@@ -1,0 +1,78 @@
+.widget.widget-account-balances {
+    .widget-label {
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: none;
+    }
+
+    .details {
+        display: block;
+
+        .detail-container {
+            border-top: 1px solid @new-widget-separator-line;
+            padding: 10px;
+
+            &:after {
+                clear:both;
+                float: none;
+                content: ' ';
+                display: block;
+            }
+
+            &:first-of-type {
+                border-top: none;
+            }
+
+            .detail-icon {
+                float: left;
+                width: 30px;
+                height: 30px;
+                margin-right: 5px;
+
+                img {
+                    width: 24px;
+                    padding: 2px;
+                }
+                svg {
+                    width: 24px;
+                    padding: 2px;
+                }
+                svg path {
+                    fill: @brown;
+                }
+                svg rect.cls-1, svg rect {
+                    stroke: none;
+                }
+            }
+            .detail-right-part {
+                float: left;
+
+                .detail-label {
+                    font-size: 16px;
+                    color: @brown;
+                    text-align: left;
+					font-weight: 700;
+                }
+                .detail-info {
+                    font-size: 18px;
+                    color: @dark-brown;
+                    padding-left: 10px;
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
+}
+
+.into-expanded-item {
+    .widget.widget-account-balances {
+        .widget-label {
+            padding: 20px 0 0 15px;
+            font-size: 18px;
+        }
+
+        .details {
+            padding: 30px 15px 30px 15px;
+        }
+    }
+}

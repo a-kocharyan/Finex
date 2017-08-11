@@ -1,0 +1,304 @@
+<div id="charitypay" class="article grid-stack-item" data-gs-x="0" data-gs-y="14" data-showmore-bottom="0"
+	 data-showmore-right="0" data-gs-height="2"
+	 data-gs-width="2" data-gs-min-height="2" data-gs-min-width="2" data-name="charitypayment" data-gs-no-resize="true"
+	 data-gs-position="29" template="Payment">
+
+	<div id="charitypayment" class="grid-stack-item-content relative charity_payment_outer">
+		<div class="widget-tools payment-tools">
+			<div class="widget-close"><span><a href="JavaScript:" onclick="removeWidget(this)" class="fa fa-remove"></a></span></div>
+		</div>
+		<div class="widget widget-payment sub-quick-payment">
+			<div class="widget-body bb-bookblock">
+      <div class="bb-item" id="charitypayment_container_1">
+					<div class="flex-wrapper">
+						<div class="left-part charity_calculator_left_part">
+									 <div class="charity_calculator_left row">										
+									        <div class="col-xs-5 charity_calculator_label">Value of gold and silver you possess</div>										
+									        <div class="col-xs-7"><input type="text" notrequired="1" placeholder="Value ($)" class="reference charAdd" onchange="checkcurrency(this.value)" /></div>									
+									 </div>  
+									  <div class="charity_calculator_left row">										
+									        <div class="col-xs-5 charity_calculator_label">Cash at home and banks</div>										
+									        <div class="col-xs-7"><input type="text" notrequired="1" placeholder="Value ($)" class="reference charAdd" onchange="checkcurrency(this.value)" /></div>									
+									 </div> 
+									  <div class="charity_calculator_left row">										
+									        <div class="col-xs-5 charity_calculator_label">Savings and Investments</div>										
+									        <div class="col-xs-7"><input type="text" notrequired="1" placeholder="Value ($)" class="reference charAdd" onchange="checkcurrency(this.value)" /></div>									
+									 </div> 
+									  <div class="charity_calculator_left row">										
+									        <div class="col-xs-5 charity_calculator_label">Money owned to you</div>										
+									        <div class="col-xs-7"><input type="text" notrequired="1" placeholder="Value ($)" class="reference charAdd" onchange="checkcurrency(this.value)" /></div>									
+									 </div> 
+										  <div class="charity_calculator_left row">										
+									        <div class="col-xs-5 charity_calculator_label">Money you owe</div>										
+									        <div class="col-xs-7"><input type="text" notrequired="1" placeholder="Value ($)" class="reference charMin" onchange="checkcurrency(this.value)" /></div>									
+									 </div>        	
+						</div>
+						<div class="right-part charity_calculator_right_part">
+							
+								    <div class="charity_calculator_right row">
+                          <div class="col-xs-7 charity_calculator_label">Net assets</div>										
+									        <div class="col-xs-5 charity_calculator_value netAssets">$ 0.0</div>	
+								    </div>
+								    <div class="charity_calculator_right row">
+                          <div class="col-xs-7 charity_calculator_label">Nisab threshold</div>										
+									        <div class="col-xs-5 charity_calculator_value">$ 267</div>	
+								    </div>
+								    <div class="charity_calculator_right row">
+                          <div class="col-xs-7 charity_calculator_label">Amount for Zakat</div>										
+									        <div class="col-xs-5 charity_calculator_value zakat">$ 0.0</div>	
+								    </div>
+							
+							<div class="payment-right-navigation">
+								<div class="widget-details-button">
+									<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="Donate"
+										   onclick="doConfirmCommonPayment(this)"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bb-item" id="charitypayment_container_2">
+					<div class="flex-wrapper">
+						<div class="left-part">
+							<div class="part-title">Select:</div>
+							<div class="benefeciaries-list"> 
+								<div class="benefeciaries-tabs">
+									<div class="benefeciaries-tab active" id="tab-to-show-saved-benefeciaries">
+										<ul>
+											<li class="benefeciary-list-item active" data-benificiary_name="Deutsche Telekom AG"
+												data-beneficiary_account_name="default"
+												data-beneficiary_account_number="unicef_logo.png"
+												data-beneficiary_address="UNICEF provides humanitarian and developmental assistance to children and mothers in developing countries."
+												data-beneficiary_bank_code="DE5311RVB"
+												data-beneficiary_bank_name="Deutsche Bank"
+												data-beneficiary_bank_address="89. Konig Strasse"
+												data-beneficiary_bank_country="Germany"
+												data-beneficiary_category="util" id="cp_payment_beneficiary_id_2"
+												onclick="selectPaymentUser(this, 'charity')" >
+												<div class="benefeciary-icon"><img src="images/unisef.png" alt=""></div>
+												<div class="benefeciary-name">UNICEF Children's Foundation</div>
+											</li>
+											<li class="benefeciary-list-item" data-benificiary_name="WWF Deutschland"
+												data-beneficiary_account_name="default"
+												data-beneficiary_account_number="DE89370400440532013000"
+												data-beneficiary_address="World Wildlife Fund - The leading organization in wildlife conservation and endangered species. Learn how you can help WWF make a difference."
+												data-beneficiary_bank_code="DE4444RVB"
+												data-beneficiary_bank_name="Deutsche Bank"
+												data-beneficiary_bank_address="89. Konig Strasse"
+												data-beneficiary_bank_country="Germany"
+												data-beneficiary_category="chrty"
+												id="cp_payment_beneficiary_id_3"
+												onclick="selectPaymentUser(this, 'charity')" >
+												<div class="benefeciary-icon"><img src="images/wwf.png" alt=""></div>
+												<div class="benefeciary-name">World Wildlife Fund</div>
+											</li>
+											<li class="benefeciary-list-item" data-benificiary_name="Deutsches Rotes Kreuz"
+												data-beneficiary_account_name="default"
+												data-beneficiary_account_number="DE89370400440532013000"
+												data-beneficiary_address="Médecins Sans Frontières/Doctors Without Borders (MSF) treats people where the need is greatest. We are an international medical humanitarian organisation."
+												data-beneficiary_bank_code="DE5311RVB"
+												data-beneficiary_bank_name="Deutsche Bank"
+												data-beneficiary_bank_address="89. Konig Strasse"
+												data-beneficiary_bank_country="Germany"
+												data-beneficiary_category="chrty"
+												id="cp_payment_beneficiary_id_4"
+												onclick="selectPaymentUser(this, 'charity')" >
+												<div class="benefeciary-icon"><img src="images/doctorbrdr.png" alt=""></div>
+												<div class="benefeciary-name">Doctors Without Borders</div>
+											</li>
+											<li class="benefeciary-list-item" data-benificiary_name="Bruno Mars"
+												data-beneficiary_account_name="bruno's default"
+												data-beneficiary_account_number="HU42120120081052114200100000"
+												data-beneficiary_address="AMAR Foundation is an award-winning charity working in the Middle East, helping vulnerable communities to rebuild their lives when faced by conflict."
+												data-beneficiary_bank_code="CITIHUHX" data-beneficiary_bank_name="Citibank"
+												data-beneficiary_bank_address="AMAR Foundation is an award-winning charity working in the Middle East, helping vulnerable communities to rebuild their lives when faced by conflict."
+												data-beneficiary_bank_country="Hungary"
+												data-beneficiary_category="dom" id="cp_payment_beneficiary_id_6"
+												onclick="selectPaymentUser(this, 'charity')">
+												<div class="benefeciary-icon"><img src="images/amarfoundation.png" alt=""></div>
+												<div class="benefeciary-name">AMAR Foundation</div>
+											</li>
+											<li class="benefeciary-list-item" data-benificiary_name="Dora Deak"
+												data-beneficiary_account_name="Dora's private"
+												data-beneficiary_account_number="HU42117730161111101800000000"
+												data-beneficiary_address="NCA offers four different levels of membership, each designed to meet the individual needs of different local communities and children’s advocacy centers, while still offering the same level of outstanding leadership and guidance to all."
+												data-beneficiary_bank_code="EUDIHUHB" data-beneficiary_bank_name="AXA Bank"
+												data-beneficiary_bank_address="NCA offers four different levels of membership, each designed to meet the individual needs of different local communities and children’s advocacy centers, while still offering the same level of outstanding leadership and guidance to all."
+												data-beneficiary_bank_country="Hungary"
+												data-beneficiary_category="dom" id="cp_payment_beneficiary_id_7"
+												onclick="selectPaymentUser(this, 'charity')">
+												<div class="benefeciary-icon"><img src="images/childrensAlliance.png" alt=""></div>
+												<div class="benefeciary-name">Children's Alliance</div>
+											</li>
+											<li class="benefeciary-list-item" data-benificiary_name="Rawan Yoon"
+												data-beneficiary_account_name="Rowan default"
+												data-beneficiary_account_number="KW81CBKU0000000000001234560101"
+												data-beneficiary_address="Worldwide humanitarian organization providing assistance without discrimination as to nationality, race, religious beliefs, class or political opinions."
+												data-beneficiary_bank_code="ABKKAEAA"
+												data-beneficiary_bank_name="Al Ahli Bank"
+												data-beneficiary_bank_address="Abu Dhabi"
+												data-beneficiary_bank_country="United Arab Emirates"
+												data-beneficiary_category="swift" onclick="selectPaymentUser(this, 'charity')"
+												id="cp_payment_beneficiary_id_8">
+												<div class="benefeciary-icon"><img src="images/ifrc.png" alt=""></div>
+												<div class="benefeciary-name">IFRC</div>
+											</li>											
+										</ul>
+									</div>
+									<div class="benefeciaries-tab" id="tab-to-show-saved-transactions"></div>
+								</div>
+							</div>
+						</div>
+						<div class="right-part">
+							<div class="info-block">
+								<div class="payment-logo"></div>
+								<div class="payment-info">
+									<div class="name"></div>
+									<!-- <div class="info account-number"></div> -->
+									<div class="info address"></div>
+								</div>
+							</div>
+							<div class="payment-right-navigation">
+								<div class="widget-details-button">								
+									<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="Next" onclick="fillTransactionDetails('#charitypayment_container_3 .payment-transaction-details', '#charitypayment_container_1 .payment-benefeciary-details');"/>
+									<input class="btn btn-transparent btn-default" type="button" value="Save"
+										   onclick="saveBeneficiary(this)"/>
+									<input data-nav-dir="prev" class="nav btn btn-transparent btn-default" type="button" value="Back"
+										   onclick="commonPaymentShowOriginal(this)"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bb-item" id="charitypayment_container_3">
+					<div class="flex-wrapper">
+						<div class="left-part padding-top-100">
+							<div class="payment-logo">
+
+							</div>
+							<div class="payment-info">
+								<div class="name"></div> 
+								<div class="info address"></div>
+							</div>
+						</div>
+						<div class="right-part">
+							<div class="part-title">Enter payment details:</div>
+							<div class="payment-benefeciary-details">
+								<div class="payment-benefeciary-detail row">
+									<div class="col-xs-3">Amount</div>
+									<div class="col-xs-6"><input type="text" placeholder="Amount" class="amount" onchange="checkcurrency(this.value)" /></div>
+									<div class="col-xs-3">
+										<select name="currency" class="currency">
+											<option value="USD">USD</option>
+											<option value="EUR">EUR</option>
+										</select>
+									</div>
+								</div>
+								<div class="payment-benefeciary-detail row">
+									<div class="col-xs-3">Date</div>
+									<div class="col-xs-9">
+										<div class="datepicker">
+											<input type="text" id='date-datepicker-charity' class="datepicker-input" value="" onchange="checkdate(this.value)" />
+										</div>
+									</div>
+								</div>
+								<div class="payment-benefeciary-detail row">
+									<div class="col-xs-3">Reference</div>
+									<div class="col-xs-9"><input type="text" placeholder="" class="reference"></div>
+								</div>
+							</div>
+							<div class="payment-right-navigation with-margin">
+								<div class="widget-details-button">
+									<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="Next" onclick="fillTransactionDetails('#charitypayment_container_4 .payment-transaction-details', '#charitypayment_container_3 .payment-benefeciary-details');"/>
+									<input class="btn btn-transparent btn-default" type="button" value="Save"
+										   onclick="saveBeneficiary(this)"/>
+									<input data-nav-dir="prev" class="nav btn btn-transparent btn-default" type="button" value="Back"
+										   onclick="commonPaymentShowOriginal(this)"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bb-item" id="charitypayment_container_4">
+					<div class="flex-wrapper">
+						<div class="left-part flex-center-column">
+							<div class="flex-center full-width">
+								<div class="payment-logo">
+									<div>PS</div>
+								</div>
+								<div class="payment-info">
+									<div class="name">Peter Smith</div> 
+									<div class="info address">Main street 32<br />3405 Brussels<br />Belgium</div>
+								</div>
+							</div>
+							<div class="full-width payment-transaction-details">
+								<div class="data-list row">
+									<div class="right-grey col-xs-5">Amount</div>
+									<div class="col-xs-7 transaction-amount">$1000</div>
+								</div>
+								<div class="data-list row">
+									<div class="right-grey col-xs-5">Date</div>
+									<div class="col-xs-7 transaction-date">10-03-2017</div>
+								</div>
+								<div class="data-list row">
+									<div class="right-grey col-xs-5">Reference</div>
+									<div class="col-xs-7 transaction-reference">Sample reference</div>
+								</div>
+							</div>
+						</div>
+						<div class="right-part">
+							<div id="charitypayment-benefeciary-fields-second">
+								<div class="part-title">Use Izola Pass to generate one time password:</div>
+								<div class="cube-code">
+									<img src="images/u4.jpg">
+								</div>
+								<div class="payment-benefeciary-details">
+									<div class="payment-benefeciary-detail row">
+										<div class="col-xs-6">One time password</div>
+										<div class="col-xs-6"><input type="password"></div>
+									</div>
+								</div>
+								<div class="payment-right-navigation with-margin">
+									<div class="widget-details-button">
+										<input data-nav-dir="next" onclick="validationPayment('#charitypay', this, '', '', '#charitypayment-benefeciary-fields-second', true);" class="nav1 btn btn-transparent btn-default" type="button" value="Submit" />
+										<input class="btn btn-transparent btn-default" id="paymentTransactionSave" type="button" value="Envelope"
+											   onclick="saveBeneficiary(this)"/>
+										<input data-nav-dir="prev" class="nav btn btn-transparent btn-default" type="button" value="Back"
+											   onclick="commonPaymentShowOriginal(this)"/>
+									</div>
+								</div>
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class="bb-item" id="charitypayment_container_5">
+					<div class="flex-wrapper">
+					
+						<div class="left-part flex-center">
+							<div class="final-info">
+								<div class="password-block">
+								<img class="svg" src="images/svg/complete_payment.svg">
+								<div class="title dark">Your payment is under processing</div>
+								<div class="info grey">We will notify you if it is processed</div>
+								<div class="title grey separator">Transaction ID:</div>
+								<div class="info grey">TR000345629867</div>
+								<div class="widget-details-button">
+									<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="Make another payment" onclick="clearTransactionDetails('#charitypayment_container_2 .payment-benefeciary-details')"/>
+								</div>
+								</div>
+							<div class="spiner-block" style="display: none;">							
+							<div class="spiner"><img src="./images/loading_spinner.gif"></div>					
+							</div>
+							</div>
+
+						</div>
+						<div class="right-part flex-center">
+							<img src="images/u24.jpg" style="width: 100%;">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,38 @@
+@media only screen and (max-width:1366px){
+	.login-container {margin: 2% auto; width: 80%;}
+	.login-container .title{    margin: 30px 0 50px;}
+}
+
+@media only screen and (max-width:1280px){
+	.login-container{ width: 95%; margin: 2% auto;}
+	.login-block .block .login .qr-code-login {max-width: 100%;}
+	.login-container .title{     margin: 10px 0 60px;}
+	.login-block .block .login .auto-login-button {width: 70%;}
+	.login-container .title{margin: 40px 0 60px;}
+}
+
+@media only screen and (max-width:1023px){
+	.login-container{ width: 90%; margin: 4% auto;}
+	.login-block {width: 100%; flex-direction: column-reverse; justify-content: flex-start; align-items: flex-start;}
+	.login-block .block.delimeter { border-right: none;border-bottom: 1px solid #bcbcbc; margin-bottom: 30px; padding-bottom: 30px;}
+	.login-container .title { margin: 40px 0 60px;}
+	.login-block .block .login .auto-login-button { width: 40%;}
+}
+
+@media only screen and (max-width:568px){
+	.login-container{ width: 90%;}
+}
+
+@media only screen and (max-width:479px){
+	.header-container{padding: 20px 45px;}
+	.login-logo{ width:100%; text-align: center;}
+	.language-block { padding: 0 35px; width: 100%; margin: 20px 0 0 0;}
+	.login-container{ width:90%; padding: 10px 20px;}
+	.login-block .block .login .auto-login-button {width: 100%;}
+	.login-registr{ margin-bottom: 40px;}	
+	.login-block .block .login .login-block	{width:100%;display: inline-block; flex-direction: initial; justify-content: initial; align-items: initial; text-align: center;	}
+	.login-block .block .login .login-block a, .login-block .block .login .login-block a:visited{float: left; width:100%; text-align: center;}
+	.login-block .block .login .login-block .login-button{ width:100%; margin: 10px 0 0 0;}
+}
+
+

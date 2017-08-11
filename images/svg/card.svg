@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="31.969" viewBox="0 0 32 31.969">
+  <defs>
+    <style>
+      .cls-1-card {
+        fill: #f3f3f3;
+      }
+
+      .cls-2-card {
+        fill: #c7c7c7;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_3_copy_3" data-name="Ellipse 3 copy 3" class="cls-1-card" cx="16" cy="15.985" r="16"/>
+  <path class="cls-2-card" d="M612.667,675.419H599.333A1.342,1.342,0,0,0,598,676.767v0.979h16v-0.979A1.342,1.342,0,0,0,612.667,675.419Zm-5.067,9.166h4.267v-2.156H607.6v2.156Zm-9.6-5.392v6.2a1.342,1.342,0,0,0,1.333,1.348h13.333A1.342,1.342,0,0,0,614,685.394v-6.2H598Zm14.4,5.662a0.268,0.268,0,0,1-.267.27h-4.8a0.268,0.268,0,0,1-.266-0.27v-2.7a0.268,0.268,0,0,1,.266-0.27h4.8a0.268,0.268,0,0,1,.267.27v2.7Z" transform="translate(-590 -664.75)"/>
+</svg>

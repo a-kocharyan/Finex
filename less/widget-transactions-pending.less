@@ -1,0 +1,111 @@
+.widget.widget-transactions-pending {
+    padding: 15px 25px 25px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 100%;
+
+    .widget-label {
+        flex: 0 0 auto;
+    }
+    .widget-body {
+        flex: 1 1 auto;
+        overflow: hidden;
+    }
+
+    .widget-details-button {
+        width: 120px;
+        position: absolute;
+        left: 50%;
+        margin-left: -60px;
+        bottom: 25px;
+        text-align: center;
+
+        button, .btn {
+            text-align: center;
+            font-size: 14px;
+            padding: 5px 20px;
+            color: @grey;
+            background: @light-grey;
+            border: 1px solid @grey;
+            border-radius: 5px;
+            min-width: 120px;
+
+            &:hover {
+                color: @light-grey;
+                background: @brown;
+                border: 1px solid @brown;
+            }
+        }
+    }
+
+    .last-transactions {
+        margin-top: 20px;
+
+        .transaction {
+            border-top: 1px solid @brown;
+            padding: 5px;
+
+            &:after {
+                clear:both;
+                float: none;
+                content: ' ';
+                display: block;
+            }
+
+            .transaction-left-part {
+                float: left;
+                width: 50%;
+
+                .transaction-label {
+                    font-size: 14px;
+                    color: @dark-brown;
+                    font-weight: bold;
+                    padding-top:5px;
+                }
+                .transaction-date {
+                    font-size: 14px;
+                    color: @brown;
+                    padding: 2px 0;
+                }
+            }
+            .transaction-right-part {
+                float: right;
+                width: 50%;
+
+                &:after {
+                    clear:both;
+                    float: none;
+                    content: ' ';
+                    display: block;
+                }
+
+                .transaction-summ {
+                    font-size: 14px;
+                    color: @dark-brown;
+                    font-weight: bold;
+                    float: right;
+                    padding-top: 12px;
+                }
+                .transaction-type {
+                    float: right;
+                    padding: 2px 5px;
+                    border-radius: 3px;
+                    margin: 12px 5px 5px;
+                    font-size: 12px;
+
+
+                    &.income {
+                        color: @widget-green-bar-color;
+                        background: @widget-green-bar-color-with-opacity;
+                    }
+                    &.outcome {
+                        color: @widget-dark-orange-bar-color;
+                        background: @widget-dark-orange-bar-color-with-opacity;
+                    }
+                }
+            }
+        }
+    }
+}

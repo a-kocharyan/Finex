@@ -1,0 +1,123 @@
+.widget.widget-transactions {
+    padding: 30px;
+    height: 100%;
+
+    .widget-label {
+        flex: 0 0 auto;
+    }
+    .widget-body {
+        flex: 1 1 auto;
+        overflow: hidden;
+    }
+
+    .widget-details-button {
+        width: 120px;
+        position: absolute;
+        left: 50%;
+        margin-left: -60px;
+        bottom: 25px;
+        text-align: center;
+
+        button, .btn {
+            text-align: center;
+            font-size: 14px;
+            padding: 5px 20px;
+            color: @new-grey;
+            background: @light-grey;
+            border: 1px solid @new-grey;
+            border-radius: 5px;
+            min-width: 120px;
+        }
+    }
+
+    .last-transactions {
+        margin-top: 25px;
+
+        .transaction {
+            border-bottom: 1px solid @new-widget-separator-line;
+            padding: 15px 0;
+
+            &:after {
+                clear:both;
+                float: none;
+                content: ' ';
+                display: block;
+            }
+
+            .transaction-left-part {
+                float: left;
+                width: 50%;
+
+                .transaction-label {
+                    font-size: 18px;
+                    color: @new-brown-dark;
+                    font-weight: 600;
+                }
+                .transaction-date {
+                    font-size: 16px;
+                    color: @new-brown;
+                    padding: 4px 0 0 0;
+                }
+            }
+            .transaction-right-part {
+                float: right;
+                width: 50%;
+
+                &:after {
+                    clear:both;
+                    float: none;
+                    content: ' ';
+                    display: block;
+                }
+
+                .transaction-summ {
+                    font-size: 20px;
+                    color: @new-brown-dark;
+                    font-weight: 600;
+                    float: right;
+                    padding-top: 12px;
+                }
+                .transaction-type {
+                    float: right;
+                    padding: 1px 5px 2px;
+                    border-radius: 3px;
+                    margin: 15px 0 5px 12px;
+                    font-size: 20px;
+                    line-height: 15px;
+
+
+                    &.income {
+                        color: @widget-green-bar-color;
+                        background: @widget-green-bar-color-with-opacity;
+                    }
+                    &.outcome {
+                        color: @widget-dark-orange-bar-color;
+                        background: @widget-dark-orange-bar-color-with-opacity;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.into-expanded-item {
+    .widget.widget-transactions {
+        padding: 0;
+
+        .widget-label {
+            text-transform: none;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 20px 15px 0 15px;
+        }
+
+        .last-transactions {
+            margin-top: 0;
+            padding: 30px 15px 0 15px;
+        }
+
+        .widget-details-button {
+            padding: 20px 0 10px 0;
+        }
+    }
+}

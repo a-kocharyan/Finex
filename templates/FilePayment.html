@@ -1,0 +1,211 @@
+<div id="commonpay_file" class="article grid-stack-item" data-gs-x="0" data-gs-y="30" data-showmore-bottom="0"
+	 data-showmore-right="0" data-gs-height="2"
+	 data-gs-width="2" data-gs-min-height="2" data-gs-min-width="2" data-name="commonpayment" data-gs-no-resize="true"
+	 data-gs-position="13" template="FilePayment">
+
+	<div id="commpayment" class="grid-stack-item-content relative quickpayment">
+		<div class="widget-tools payment-tools">
+			<div class="widget-close"><span><a href="JavaScript:" onclick="removeWidget(this)" class="fa fa-remove"></a></span></div>
+		</div>
+		<div class="widget widget-payment widget-file-payment">
+			<div class="widget-body bb-bookblock">
+				<div class="bb-item" id="commonpayment_container_1">
+					<div class="flex-wrapper">
+						<div class="full-size">
+							<div class="payment-file-info">
+								<div class="part-title file-title">Choose payment file:</div>
+								<div action="/file-upload" class="file-block center-block dropzone">
+									<div class="text-block">Drop files to upload</div>
+									<div class="control-group">											
+										<div class="widget-details-button button-file">
+											<a href="/registration1.html" class="btn btn-default">or click here</a>
+										</div>
+									</div>		
+								</div>
+								<!-- <div class="payment-file-input-wrapper">
+									<input type="text" class="payment-file-input" /><button class="btn">Browse</button>
+									<a href="#" class="payment-file-download-link">Download</a>
+								</div> -->
+							</div>
+
+							<div class="payment-right-navigation">
+								<div class="widget-details-button">
+									<input data-nav-dir="next" class="nav btn btn-default" type="button" value="Next"
+										   onclick="swipePaymentPartnerScreen(this)"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bb-item" id="commonpayment_container_2">
+					<div class="flex-wrapper">
+						<div class="left-part-small flex-center-column">
+							<div class="file-details">
+								<div class="file-detail">
+									<div class="small-label">File name</div>
+									<div class="content filename">Salary_payment.xls</div>
+								</div>
+								<div class="file-detail">
+									<div class="small-label">Number of transactions</div>
+									<div class="content">20</div>
+								</div>
+								<div class="file-detail">
+									<div class="small-label">Total amount</div>
+									<div class="content">EUR 4 340.00</div>
+								</div>
+								<div class="file-detail">
+									<div class="small-label">Number of errors</div>
+									<div class="content">2</div>
+								</div>
+							</div>
+						</div>
+						<div class="right-part-big">
+							<div class="payment-right-info">
+								<div class="part-title">Transaction details:</div>
+								<div class="list-from-file">
+									<table class="heads">
+										<tr>
+											<th width="10%">Sr. No.</th>
+											<th width="20%">Account</th>
+											<th width="20%">Amount</th>
+											<th width="30%">Description</th>
+											<th width="20%"></th>
+										</tr>
+									</table>
+									<div class="rows-wrapper">
+										<table class="rows">
+											<tr>
+												<td width="10%">1</td>
+												<td width="20%">123456789</td>
+												<td width="20%">EUR 124.00</td>
+												<td width="30%">Invoice number 123</td>
+												<td width="20%"><a href="#">Remove</a></td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>123456789</td>
+												<td>EUR 124.00</td>
+												<td>Invoice number 123</td>
+												<td><a href="#">Remove</a></td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>123456789</td>
+												<td>EUR 124.00</td>
+												<td>Invoice number 123</td>
+												<td><a href="#">Remove</a></td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>123456789</td>
+												<td>EUR 124.00</td>
+												<td>Invoice number 123</td>
+												<td><a href="#">Remove</a></td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>123456789</td>
+												<td>EUR 124.00</td>
+												<td>Invoice number 123</td>
+												<td><a href="#">Remove</a></td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>123456789</td>
+												<td>EUR 124.00</td>
+												<td>Invoice number 123</td>
+												<td><a href="#">Remove</a></td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>123456789</td>
+												<td>EUR 124.00</td>
+												<td>Invoice number 123</td>
+												<td><a href="#">Remove</a></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="payment-right-navigation">
+								<div class="widget-details-button">
+									<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="Next"
+										   onclick="doConfirmCommonPayment(this)"/>
+									<input data-nav-dir="prev" class="nav btn btn-transparent btn-default" type="button" value="Back"
+										   onclick="commonPaymentShowOriginal(this)"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bb-item" id="commonpayment_container_4">
+					<div class="flex-wrapper">
+						<div class="left-part-small flex-center-column">
+							<div class="file-details">
+								<div class="file-detail">
+									<div class="small-label">File name</div>
+									<div class="content filename">Salary_payment.xls</div>
+								</div>
+								<div class="file-detail">
+									<div class="small-label">Number of transactions</div>
+									<div class="content">20</div>
+								</div>
+								<div class="file-detail">
+									<div class="small-label">Total amount</div>
+									<div class="content">EUR 4 340.00</div>
+								</div>
+								<div class="file-detail">
+									<div class="small-label">Number of errors</div>
+									<div class="content">2</div>
+								</div>
+							</div>
+						</div>
+						<div class="right-part-big">
+							<div class="part-title">Use Izola Pass to generate one time password:</div>
+							<div class="cube-code">
+								<img src="images/u4.jpg">
+							</div>
+							<div class="payment-benefeciary-details">
+								<div class="payment-benefeciary-detail row">
+									<div class="col-xs-5">One time password</div>
+									<div class="col-xs-7"><input type="text"></div>
+								</div>
+							</div>
+							<div class="payment-right-navigation with-margin">
+								<div class="widget-details-button">
+									<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="Submit" onclick="validationPayment('#commonpayment', this, '#commonpayment_container_4 .payment-benefeciary-details', '#commonpayment_container_5', '#payment-benefeciary-fields', true);fillTransactionDetails('#commonpayment_container_5 .payment-transaction-details', '#commonpayment_container_4 .payment-benefeciary-details');" />
+									<input data-nav-dir="prev" class="nav btn btn-transparent btn-default" type="button" value="Back"
+										   onclick="commonPaymentShowOriginal(this)"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bb-item" id="commonpayment_container_5">
+					<div class="flex-wrapper">
+						<div class="left-part flex-center">
+							<div class="spiner-block" style="display: none;">							
+							<div class="spiner"><img src="./images/loading_spinner.gif"></div>					
+							</div>
+							<div class="final-info">
+							<div class="password-block">
+								<img class="svg" src="images/svg/complete_payment.svg">
+								<div class="title dark">Your payment is under processing</div>
+								<div class="info grey">We will notify you if it is processed</div>
+								<div class="title grey separator">Transaction ID:</div>
+								<div class="info grey">TR000345629867</div>
+								<div class="widget-details-button">
+									<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="Make another payment" />
+								</div>
+							</div>
+						</div>
+						</div>
+						<div class="right-part flex-center">
+							<img src="images/u24.jpg" style="width: 100%;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,304 @@
+<div id="quickpay" class="article grid-stack-item" data-gs-x="0" data-gs-y="16" data-showmore-bottom="0"
+	 data-showmore-right="0" data-gs-height="2"
+	 data-gs-width="2" data-gs-min-height="2" data-gs-min-width="2" data-name="quickpayment" data-gs-no-resize="true"
+	 data-gs-position="29" template="Payment">
+
+	<div id="quickpayment" class="grid-stack-item-content relative quickpayment">
+		<div class="widget-tools payment-tools">
+			<div class="widget-close"><span><a href="JavaScript:" onclick="removeWidget(this)" class="fa fa-remove"></a></span></div>
+		</div>
+		<div class="widget widget-payment sub-quick-payment">
+			<div class="widget-body bb-bookblock">
+
+				<div class="bb-item" id="quickpayment_container_1">
+					<div class="flex-wrapper">
+						<div class="left-part">
+							<div class="part-title">Select:</div>
+							<div class="benefeciaries-list">
+								<div class="benefeciaries-tab-headers">
+									<div class="benefeciaries-tab-header active" id="saved-benefeciaries">Saved beneficiaries<span class="vertical-line"></span></div>
+									<div class="benefeciaries-tab-header" id="saved-transactions">Saved transactions<span class="vertical-line"></span></div>
+								</div>
+								<div class="benefeciaries-tabs">
+									<div class="benefeciaries-tab active" id="tab-to-show-saved-benefeciaries">
+										<ul>
+											<li class="benefeciary-list-item" data-benificiary_name="Deutsche Telekom AG"
+												data-beneficiary_account_name="default"
+												data-beneficiary_account_number="DE89370400440532013000"
+												data-beneficiary_address="Friedrich-Ebert-Allee 140, Bonn"
+												data-beneficiary_bank_code="DE5311RVB"
+												data-beneficiary_bank_name="Deutsche Bank"
+												data-beneficiary_bank_address="89. Konig Strasse"
+												data-beneficiary_bank_country="Germany"
+												data-beneficiary_category="util" id="cp_payment_beneficiary_id_2"
+												onclick="selectPaymentUser(this, 'quick')" >
+												<div class="benefeciary-icon"><img src="images/js.png" alt=""></div>
+												<div class="benefeciary-name">Jack Smith</div>
+											</li>
+											<li class="benefeciary-list-item" data-benificiary_name="WWF Deutschland"
+												data-beneficiary_account_name="default"
+												data-beneficiary_account_number="DE89370400440532013000"
+												data-beneficiary_address="Reinhardtstr. 18, Berlin"
+												data-beneficiary_bank_code="DE4444RVB"
+												data-beneficiary_bank_name="Deutsche Bank"
+												data-beneficiary_bank_address="89. Konig Strasse"
+												data-beneficiary_bank_country="Germany"
+												data-beneficiary_category="chrty"
+												id="cp_payment_beneficiary_id_3"
+												onclick="selectPaymentUser(this, 'quick')" >
+												<div class="benefeciary-icon"><img src="images/js.png" alt=""></div>
+												<div class="benefeciary-name">Jack Smith</div>
+											</li>
+											<li class="benefeciary-list-item" data-benificiary_name="Deutsches Rotes Kreuz"
+												data-beneficiary_account_name="default"
+												data-beneficiary_account_number="DE89370400440532013000"
+												data-beneficiary_address="Carstennstrasse 58, Berlin"
+												data-beneficiary_bank_code="DE5311RVB"
+												data-beneficiary_bank_name="Deutsche Bank"
+												data-beneficiary_bank_address="89. Konig Strasse"
+												data-beneficiary_bank_country="Germany"
+												data-beneficiary_category="chrty"
+												id="cp_payment_beneficiary_id_4"
+												onclick="selectPaymentUser(this, 'quick')" >
+												<div class="benefeciary-icon"><img src="images/md.png" alt=""></div>
+												<div class="benefeciary-name">Mike Dorian</div>
+											</li>
+											<li class="benefeciary-list-item" data-benificiary_name="Bruno Mars"
+												data-beneficiary_account_name="bruno's default"
+												data-beneficiary_account_number="HU42120120081052114200100000"
+												data-beneficiary_address="17A D floor, JAS"
+												data-beneficiary_bank_code="CITIHUHX" data-beneficiary_bank_name="Citibank"
+												data-beneficiary_bank_address="Budapest, Szabadság tér 7, 1054 "
+												data-beneficiary_bank_country="Hungary"
+												data-beneficiary_category="dom" id="cp_payment_beneficiary_id_6"
+												onclick="selectPaymentUser(this, 'quick')">
+												<div class="benefeciary-icon"><img src="images/ns.png" alt=""></div>
+												<div class="benefeciary-name">Nick Smith</div>
+											</li>
+											<li class="benefeciary-list-item" data-benificiary_name="Dora Deak"
+												data-beneficiary_account_name="Dora's private"
+												data-beneficiary_account_number="HU42117730161111101800000000"
+												data-beneficiary_address="17A D floor, Loa"
+												data-beneficiary_bank_code="EUDIHUHB" data-beneficiary_bank_name="AXA Bank"
+												data-beneficiary_bank_address="Budapest, Váci út 135-139, 1138"
+												data-beneficiary_bank_country="Hungary"
+												data-beneficiary_category="dom" id="cp_payment_beneficiary_id_7"
+												onclick="selectPaymentUser(this, 'quick')">
+												<div class="benefeciary-icon"><img src="images/md.png" alt=""></div>
+												<div class="benefeciary-name">Jack Smith</div>
+											</li>
+											<li class="benefeciary-list-item" data-benificiary_name="Rawan Yoon"
+												data-beneficiary_account_name="Rowan default"
+												data-beneficiary_account_number="KW81CBKU0000000000001234560101"
+												data-beneficiary_address="17A D floor, RSA"
+												data-beneficiary_bank_code="ABKKAEAA"
+												data-beneficiary_bank_name="Al Ahli Bank"
+												data-beneficiary_bank_address="Abu Dhabi"
+												data-beneficiary_bank_country="United Arab Emirates"
+												data-beneficiary_category="swift" onclick="selectPaymentUser(this, 'quick')"
+												id="cp_payment_beneficiary_id_8">
+												<div class="benefeciary-icon"><img src="images/md.png" alt=""></div>
+												<div class="benefeciary-name">Jack Smith</div>
+											</li>
+											<li class="benefeciary-list-item" data-benificiary_name="Sandra Saw"
+												data-beneficiary_account_name="Sandra's default acc"
+												data-beneficiary_account_number="AE890570000011000494010"
+												data-beneficiary_address="17A D floor, LNC"
+												data-beneficiary_bank_code="ADCBAEAA060"
+												data-beneficiary_bank_name="Abu Dhabi Commercial Bank"
+												data-beneficiary_bank_address="Dubai"
+												data-beneficiary_bank_country="United Arab Emirates"
+												data-beneficiary_category="swift" id="cp_payment_beneficiary_id_9"
+												onclick="selectPaymentUser(this, 'quick')">
+												<div class="benefeciary-icon"><img src="images/js.png" alt=""></div>
+												<div class="benefeciary-name">Jack Smith</div>
+											</li>
+										</ul>
+									</div>
+									<div class="benefeciaries-tab" id="tab-to-show-saved-transactions"></div>
+								</div>
+							</div>
+						</div>
+						<div class="right-part">
+							<div class="info-block">
+								<div class="payment-logo"></div>
+								<div class="payment-info">
+									<div class="name"></div>
+									<div class="info account-number"></div>
+									<div class="info address"></div>
+								</div>
+							</div>
+							<div class="part-title">Select:</div>
+							<div class="transactions-list">
+								<div class="transaction">
+									<div class="transaction-left-part">
+										<div class="transaction-label">John Smith</div>
+									</div>
+									<div class="transaction-right-part">
+										<div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
+										<div class="transaction-summ">$34.30</div>
+									</div>
+									<input class="nav btn btn-transparent btn-default" type="button" value="Repeat >" />
+								</div>
+								<div class="transaction">
+									<div class="transaction-left-part">
+										<div class="transaction-label">Jim Henrey</div>
+									</div>
+									<div class="transaction-right-part">
+										<div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+										<div class="transaction-summ">$12.50</div>
+									</div>
+									<input class="nav btn btn-transparent btn-default" type="button" value="Return >" />
+								</div>
+								<div class="transaction">
+									<div class="transaction-left-part">
+										<div class="transaction-label">Joanne Wilson</div>
+									</div>
+									<div class="transaction-right-part">
+										<div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+										<div class="transaction-summ">$47.50</div>
+									</div>
+									<input class="nav btn btn-transparent btn-default" type="button" value="Repeat >" />
+								</div>
+							</div>
+
+							<div class="payment-right-navigation">
+								<div class="widget-details-button">
+									<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="Next"
+										   onclick="doConfirmCommonPayment(this)"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bb-item" id="quickpayment_container_2">
+					<div class="flex-wrapper">
+						<div class="left-part padding-top-100">
+							<div class="payment-logo">
+
+							</div>
+							<div class="payment-info">
+								<div class="name"></div>
+								<div class="info account-number"></div>
+								<div class="info address"></div>
+							</div>
+						</div>
+						<div class="right-part">
+							<div class="part-title">Enter payment details:</div>
+							<div class="payment-benefeciary-details">
+								<div class="payment-benefeciary-detail row">
+									<div class="col-xs-3">Amount</div>
+									<div class="col-xs-6"><input type="text" placeholder="Amount" class="amount" onchange="checkcurrency(this.value)" ></div>
+									<div class="col-xs-3">
+										<select name="currency" class="currency">
+											<option value="USD">USD</option>
+											<option value="EUR">EUR</option>
+										</select>
+									</div>
+								</div>
+								<div class="payment-benefeciary-detail row">
+									<div class="col-xs-3">Date</div>
+									<div class="col-xs-9">
+										<div class="datepicker">
+											<input type="text" id='date-datepicker-quick' class="datepicker-input" value="" onchange="checkdate(this.value)"/>
+										</div>
+									</div>
+								</div>
+								<div class="payment-benefeciary-detail row">
+									<div class="col-xs-3">Reference</div>
+									<div class="col-xs-9"><input type="text" placeholder="" class="reference"></div>
+								</div>
+							</div>
+							<div class="payment-right-navigation with-margin">
+								<div class="widget-details-button">
+									<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="Next" onclick="fillTransactionDetails('#quickpayment_container_3 .payment-transaction-details', '#quickpayment_container_2 .payment-benefeciary-details');"/>
+									<input class="btn btn-transparent btn-default" type="button" value="Save transaction"
+										   onclick="saveBeneficiary(this)"/>
+									<input data-nav-dir="prev" class="nav btn btn-transparent btn-default" type="button" value="Back"
+										   onclick="commonPaymentShowOriginal(this)"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bb-item" id="quickpayment_container_3">
+					<div class="flex-wrapper">
+						<div class="left-part flex-center-column">
+							<div class="flex-center full-width">
+								<div class="payment-logo">
+									<div>PS</div>
+								</div>
+								<div class="payment-info">
+									<div class="name">Peter Smith</div>
+									<div class="info account-number">100000101001110323</div>
+									<div class="info address">Main street 32<br />3405 Brussels<br />Belgium</div>
+								</div>
+							</div>
+							<div class="full-width payment-transaction-details">
+								<div class="data-list row">
+									<div class="right-grey col-xs-5">Amount</div>
+									<div class="col-xs-7 transaction-amount"></div>
+								</div>
+								<div class="data-list row">
+									<div class="right-grey col-xs-5">Date</div>
+									<div class="col-xs-7 transaction-date"></div>
+								</div>
+								<div class="data-list row">
+									<div class="right-grey col-xs-5">Reference</div>
+									<div class="col-xs-7 transaction-reference"></div>
+								</div>
+							</div>
+						</div>
+						<div class="right-part">
+							<div class="part-title">Use Izola Pass to generate one time password:</div>
+							<div class="cube-code">
+								<img src="images/u4.jpg">
+							</div>
+							<div class="payment-benefeciary-details">
+								<div class="payment-benefeciary-detail row">
+									<div class="col-xs-5">One time password</div>
+									<div class="col-xs-7"><input type="text"></div>
+								</div>
+							</div>
+							<div class="payment-right-navigation with-margin">
+								<div class="widget-details-button">
+									<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="Submit" onclick="validationPayment('#quickpayment', this, '#quickpayment_container_3 .payment-benefeciary-details', '#quickpayment_container_4', '#payment-benefeciary-fields', true);fillTransactionDetails('#quickpayment_container_4 .payment-transaction-details', '#quickpayment_container_3 .payment-benefeciary-details');"  />
+									<input class="btn btn-transparent btn-default" id="paymentTransactionSave" type="button" value="Envelope"
+										   onclick="saveBeneficiary(this)"/>
+									<input data-nav-dir="prev" class="nav btn btn-transparent btn-default" type="button" value="Back"
+										   onclick="commonPaymentShowOriginal(this)"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bb-item" id="quickpayment_container_4">
+					<div class="flex-wrapper">
+						
+						<div class="left-part flex-center">
+						<div class="spiner-block" style="display: none;">							
+							<div class="spiner"><img src="./images/loading_spinner.gif"></div>					
+							</div>
+							<div class="final-info">
+							<div class="password-block">
+								<img class="svg" src="images/svg/complete_payment.svg">
+								<div class="title dark">Your payment is under processing</div>
+								<div class="info grey">We will notify you if it is processed</div>
+								<div class="title grey separator">Transaction ID:</div>
+								<div class="info grey">TR000345629867</div>
+								<div class="widget-details-button">
+									<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="Make another payment" onclick="clearTransactionDetails('#quickpayment_container_2 .payment-benefeciary-details')"/>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="right-part flex-center">
+							<img src="images/u24.jpg" style="width: 100%;">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>

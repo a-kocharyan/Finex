@@ -1,0 +1,235 @@
+<div id="chequebook" data-gs-x="0" data-gs-y="28" data-gs-position="103" data-current_content="103" class="article grid-stack-item" data-showmore-bottom="0" data-showmore-right="0" data-gs-height="2" data-gs-width="2" data-gs-min-height="2" data-gs-min-width="2" data-name="chequebook" data-gs-no-resize="true" template="Chequebook">
+	<div id="commpayment" class="grid-stack-item-content relative quickpayment">
+		<div class="widget-tools payment-tools">
+			<div class="widget-close"><span><a href="JavaScript:" onclick="removeWidget(this)" class="fa fa-remove"></a></span></div>
+		</div>
+		<div class="widget widget-payment widget-own-account-payment widget-chequebook-payment">
+			<div class="widget-body bb-bookblock">
+				<div class="bb-item" id="ownaccountpayment_container_1">
+					<div class="flex-wrapper">
+						<div class="left-part">
+							<div class="part-title">Choose payment type:</div>
+							<div class="payment-choose-type">
+								<div class="payment-type chequebook-type active" id="pages-25">
+									<span>25</span>
+									<div>pages</div>
+								</div>
+								<div class="payment-type chequebook-type" id="pages-50">
+									<span>50</span>
+									<div>pages</div>
+								</div>
+							</div>
+						</div>
+							<div class="right-part">
+								<div class="content-to-show content-to-show-pages-25 active">
+									<div class="top">
+										<div class="payment-type chequebook-type-small active">
+											<span>25</span>
+											<div>pages</div>
+										</div>
+										
+										<div class="text">
+											The chequebook consists of 25 pages.<br><br>
+											Chequebook requests usually take 1-3 working days to be processed.
+										</div>
+									</div>
+									<div class="text">
+										Delivery deatils:
+									</div>
+										
+										<div class="chequebook-body">
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3 chequebook-select-label">Deliver to</div>
+												<div class="col-xs-9">
+													<select>
+														<option value="Branch">Branch</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3 chequebook-select-label">Select branch</div>
+												<div class="col-xs-9">
+													<select class="select-branch">
+														<option value="Mall Branch" selected>City Center Mall Branch</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Address:</div>
+												<div class="col-xs-9"><input type="text" value="Taunusanlage 12,60325 Frankfurt" class="name" placeholder="Chequebook address"/></div>
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Opening hours:</div>
+												<div class="col-xs-9"><input type="text" value="Monday - Friday, 8am - 8pm" class="name" placeholder="Openin hours"/></div>
+											</div>
+										</div>
+										</div>
+								</div>
+								<div class="content-to-show content-to-show-pages-50" >
+									<div class="top">
+										<div class="payment-type chequebook-type-small active">
+											<span>50</span>
+											<div>pages</div>
+										</div>
+										
+										<div class="text">
+											The chequebook consists of 50 pages.<br><br>
+											Chequebook requests usually take 1-3 working days to be processed.
+										</div>
+									</div>
+									<div class="text">
+										Delivery deatils:
+									</div>
+										
+										<div class="chequebook-body">
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3 chequebook-select-label">Deliver to</div>
+												<div class="col-xs-9">
+													<select>
+														<option value="Branch">Branch</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3 chequebook-select-label">Select branch</div>
+												<div class="col-xs-9">
+													<select class="select-branch">
+														<option value="Mall Branch">City Center Mall Branch</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Address:</div>
+												<div class="col-xs-9"><input type="text" value="Taunusanlage 12,60325 Frankfurt" class="name" placeholder="Chequebook address"/></div>
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Opening hours:</div>
+												<div class="col-xs-9"><input type="text" value="Monday - Friday, 8am - 8pm" class="name" placeholder="Openin hours"/></div>
+											</div>
+										</div>
+										</div>
+								</div>
+								
+										<div class="payment-right-navigation">
+											<div class="widget-details-button">
+												<input data-nav-dir="next" class="nav btn btn-default" type="button" value="Next"
+										  		 onclick="swipePaymentPartnerScreen(this); 
+										  		 fillChequebook(this , '#ownaccountpayment_container_1 .content-to-show.active', '#ownaccountpayment_container_2 .content-to-show.active')"/>
+											</div>
+										</div>
+							</div>
+					</div>
+				</div>
+				<div class="bb-item" id="ownaccountpayment_container_2">
+					<div class="flex-wrapper">
+						<div class="left-part">
+							<div class="content-to-show content-to-show-pages-25 active">
+									<div class="top">
+										<div class="payment-type chequebook-type-small active">
+											<span>25</span>
+											<div>pages</div>
+										</div>
+										
+										<div class="text">
+											The chequebook consists of 25 pages.<br><br>
+											Chequebook requests usually take 1-3 working days to be processed.
+										</div>
+									</div> 
+									<div class="account-open-basic flex-center-column">
+										<div class="account-open-inr">
+											<div class="account-open-label">Delivery to:</div>
+									   		<div class="account-open-detail deposit-amount chequebook-branch"></div>
+										</div>	
+									</div>
+							</div>							
+							<div class="content-to-show content-to-show-pages-50" >
+									<div class="top">
+										<div class="payment-type chequebook-type-small active">
+											<span>50</span>
+											<div>pages</div>
+										</div>
+										
+										<div class="text">
+											The chequebook consists of 50 pages.<br><br>
+											Chequebook requests usually take 1-3 working days to be processed.
+										</div>
+									</div>
+								<div class="account-open-basic flex-center-column">
+										<div class="account-open-inr">
+											<div class="account-open-label">Delivery to:</div>
+									   		<div class="account-open-detail deposit-amount chequebook-branch"></div>
+										</div>	
+								</div>
+							</div>
+						</div>
+						<div class="right-part">
+							<div class="part-title">Use your Mobile Token to approve the transaction:</div>
+							<div class="cube-code">
+								<img src="images/u4.jpg">
+							</div>
+							<div class="payment-benefeciary-details">
+								<div class="payment-benefeciary-detail row">
+									<div class="col-xs-6">One time password</div>
+									<div class="col-xs-6"><input type="password"></div>
+								</div>
+							</div>
+							<div class="payment-right-navigation with-margin">
+								<div class="widget-details-button">
+									<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="Submit" onclick="validationPayment('#chequebook', this, '#ownaccountpayment_container_2 .payment-benefeciary-details', '#ownaccountpayment_container_3', '#payment-benefeciary-fields', true);fillTransactionDetails('#ownaccountpayment_container_3 .payment-transaction-details', '#ownaccountpayment_container_2 .payment-benefeciary-details');" />
+									<input class="btn btn-transparent btn-default" id="paymentTransactionSave" type="button" value="Envelope"
+										   onclick="saveBeneficiary(this)"/>
+									<input data-nav-dir="prev" class="nav btn btn-transparent btn-default" type="button" value="Back"
+										   onclick="commonPaymentShowOriginal(this)"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bb-item" id="ownaccountpayment_container_3">
+					<div class="flex-wrapper">
+						<div class="left-part flex-center">
+							<div class="spiner-block" style="display: none;">							
+							<div class="spiner"><img src="./images/loading_spinner.gif"></div>					
+							</div>
+							<div class="final-info">
+							<div class="password-block">
+								<img class="svg" src="images/svg/complete_payment.svg">
+								<div class="title dark">Your request is under processing</div>
+								<div class="info grey">We will notify you if it is processed</div>
+								<div class="title grey separator">Transaction ID:</div>
+								<div class="info grey">TR000345629867</div>
+								<div class="widget-details-button">
+									<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="Repeat" onclick="clearTransactionDetails('#ownaccountpayment_container_2 .payment-benefeciary-details')"/>
+								</div>
+							</div>
+						</div>
+						</div>
+						<div class="right-part flex-center">
+							<img src="images/u24.jpg" style="width: 100%;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,147 @@
+.widget.widget-account-basic-details {
+    .widget-label {
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: none;
+    }
+    
+    .details {
+        display: block;
+
+        .detail-container {
+            border-top: 1px solid @new-widget-separator-line;
+            padding: 10px;
+
+            &:after {
+                clear:both;
+                float: none;
+                content: ' ';
+                display: block;
+            }
+
+            &:first-of-type {
+                border-top: none;
+            }
+
+            .detail-icon {
+                float: left;
+                width: 30px;
+                height: 30px;
+                margin-right: 5px;
+
+                img {
+                    width: 24px;
+                    padding: 2px;
+                }
+                svg {
+                    width: 24px;
+                    padding: 2px;
+                }
+                svg path {
+                    fill: @brown;
+                }
+                svg rect.cls-1 {
+                    stroke: none;
+                }
+                svg circle {
+                    fill: @brown;
+                }
+            }
+            .detail-right-part {
+                float: left;
+
+                .detail-label {
+                    font-size: 16px;
+                    color: @brown;
+                    text-align: left;
+					font-weight: 700;
+                }
+                .detail-info {
+                    font-size: 18px;
+                    color: @dark-brown;
+                    font-weight: 600;
+                    padding-left: 10px;
+                    margin: 5px 0;
+                }
+            }
+            .copy-detail {
+                display: block;
+                padding: 15px 0 0 0;
+                color: @brown;
+                float: right;
+                font-size: 10px;
+
+                &:hover {
+                    color: @brown;
+                }
+            }
+
+            .detail-left-align {
+                float: left;
+                text-align: left;
+
+                .detail-label {
+                    font-size: 14px;
+                    color: @brown;
+                    text-align: left;
+                }
+                .detail-info {
+                    font-size: 16px;
+                    color: @dark-brown;
+                    font-weight: 600;
+                    margin: 5px 0;
+                }
+            }
+            .detail-right-align {
+                float: right;
+                text-align: right;
+
+                .detail-label {
+                    font-size: 14px;
+                    color: @brown;
+                    text-align: left;
+                }
+                .detail-info {
+                    font-size: 16px;
+                    color: @dark-brown;
+                    font-weight: 600;
+                    margin: 5px 0;
+                }
+            }
+        }
+        .detail-edit-button {
+            display: block;
+            float: right;
+            width: 30px;
+
+            img {
+                width: 24px;
+                padding: 2px;
+            }
+            svg {
+                width: 24px;
+                padding: 2px;
+            }
+            svg path {
+                fill: @brown;
+                stroke: none;
+            }
+            svg rect.cls-1 {
+                stroke: none;
+            }
+        }
+    }
+}
+
+.into-expanded-item {
+    .widget.widget-account-basic-details {
+        .widget-label {
+            padding: 20px 0 0 15px;
+            font-size: 18px;
+        }
+
+        .details {
+            padding: 30px 15px 30px 15px;
+        }
+    }
+}

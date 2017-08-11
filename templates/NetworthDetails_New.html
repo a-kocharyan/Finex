@@ -1,0 +1,585 @@
+<div class="modal fade in" id="setting_modal_acc" tabindex="-1" role="dialog" aria-hidden="true"
+	 component="AccountDetail">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content setting_model_content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title">MY EXPENSES</h4>
+			</div>
+			<div class="modal-body">
+				<div class="main_body row">
+					<div class="row uique_col_hei_container networth_widget" >
+						<div class="uniqu_col_item into-expanded-item col-xs-12 col-sm-12 col-md-4 col-lg-4" >
+							<div class="into-expanded-item-wrapper">
+								<div class="widget widget-account-basic-details">
+									<div class="widget-label">Overview</div>
+									<div class="widget-body">
+										<div class="chart_header text-center">
+											+$42000
+										</div>
+										<div class="widget-main-info">
+										<div id="networthPieChart_detail1"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="uniqu_col_item into-expanded-item col-xs-12 col-sm-12 col-md-4 col-lg-4" >
+							<div class="into-expanded-item-wrapper">
+								<div class="widget widget-account-basic-details">
+									<div class="widget-label">Assets</div>
+									<div class="widget-body">
+										<div class="chart_header text-center font-green">
+											EUR 54,638.57
+										</div>
+										<div class="widget-main-info">
+										<div id="networthPieChart_detail2"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="uniqu_col_item into-expanded-item col-xs-12 col-sm-12 col-md-4 col-lg-4" >
+							<div class="into-expanded-item-wrapper">
+								<div class="widget widget-account-basic-details">
+									<div class="widget-label">Liabilities</div>
+									<div class="widget-body">
+										<div class="chart_header text-center font-red">
+											EUR 17,192.05
+										</div>
+										<div class="widget-main-info">
+										<div id="networthPieChart_detail3"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="row uique_col_hei_container networth_widget">
+						<div class="uniqu_col_item into-expanded-item col-xs-12 col-sm-12 col-md-4 col-lg-4" >
+							<div class="into-expanded-item-wrapper">
+								<div class="widget widget-account-basic-details">
+									<div class="widget-label">Add Asset/Liability</div>
+									<div class="widget-body">
+											<div class="networth-list">
+												<div class="tabs-networth-headers">
+													<div class="tab-networth-header " id="tab1_networth">Assets<span class="vertical-line"></span></div>
+													<div class="tab-networth-header active" id="tab2_networth">Liability<span class="vertical-line"></span></div>
+												</div>
+												<div class="clearfix"></div>
+												<div class="networth-tabs">
+													<div class="networth-tab active" id="tab-to-show-saved-benefeciaries">
+														<div class="form-group form-md-line-input">
+		                                                    <label class="col-md-4 control-label" for="form_control_1">Regular input</label>
+		                                                    <div class="col-md-8">
+		                                                        <div class="input-group">
+		                                                        	<select class="form-control" id="form_control_1">
+				                                                        <option value=""></option>
+				                                                        <option value="1">Option 1</option>
+				                                                        <option value="2">Option 2</option>
+				                                                        <option value="3">Option 3</option>	
+				                                                        <option value="4">Option 4</option>
+				                                                    </select>
+			                                                        <div class="form-control-focus"> </div>
+		                                                        </div>
+		                                                    </div>
+		                                                </div>
+		                                                <div class="form-group form-md-line-input">
+		                                                    <label class="col-md-4 control-label" for="form_control_1">Both Addons</label>
+		                                                    <div class="col-md-8">
+		                                                        <div class="input-group">
+		                                                            <span class="input-group-addon">$</span>
+		                                                            <input type="text" class="form-control" placeholder="Enter amount">
+		                                                            <div class="form-control-focus"> </div>
+		                                                        </div>
+		                                                    </div>
+		                                                </div>
+		                                                <div class="form-group form-md-line-input">
+		                                                    <label class="col-md-4 control-label" for="form_control_1">Regular input</label>
+		                                                    <div class="col-md-8">
+		                                                        <div class="input-group">
+		                                                        	<input type="text" class="form-control" id="form_control_1" placeholder="Enter your name">
+		                                                       		<div class="form-control-focus"> </div>
+		                                                        </div>
+		                                                    </div>
+		                                                </div>
+		                                                <div class="form-group form-md-line-input">
+		                                                    <label class="col-md-4 control-label" for="form_control_1">Regular input</label>
+		                                                    <div class="col-md-8">
+		                                                        <div class="input-group">
+		                                                        	<input type="text" class="form-control" id="form_control_1" placeholder="Enter your name">
+		                                                       		<div class="form-control-focus"> </div>
+		                                                        </div>
+		                                                    </div>
+		                                                </div>
+		                                                <div class="clearfix"></div>
+		                                                <div class="widget-details-button">                    
+		                                                	<a href="#" class="btn btn-custom">Add</a>                
+		                                                </div>
+
+													</div>
+													<div class="networth-tab" id="tab-to-show-saved-transactions"></div>
+												</div>
+											</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="uniqu_col_item into-expanded-item col-xs-12 col-sm-12 col-md-4 col-lg-4" >
+							<div class="into-expanded-item-wrapper">
+								<div class="widget widget-account-basic-details">
+									<div class="widget-label">ASSET LIST</div>
+									<div class="widget-body">
+										
+								        <div class="networth_accordions">
+								            <div class="panel-group" id="accordion">
+								                <div class="panel panel-default">
+								                    <div class="panel-heading">
+								                        <h4 class="panel-title">
+								                        	<img class="pull-left arrow_down" src="images/arrow-down1.png" >
+								                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+								                            	Current Account
+								                            	<p class="pull-right">EUR 3,083.00</p>
+								                            </a>
+								                        </h4>
+								                    </div>
+								                    <div id="collapseOne" class="panel-collapse collapse in">
+								                        <div class="panel-body">
+								                            <table class="table">
+								                                <tr>
+								                                    <td>
+								                                        <div class="row">
+								                                        	<div class="col-md-7">
+									                                    		<img class="net_dismiss_icon" src="images/dismiss.png"/>
+									                                    		<label class="">Monthly revolving deposit until call</label>
+									                                    		
+									                                    	</div>
+									                                        <div class="col-md-5 align_right font-green">
+									                                        	<img class="net_edit_icon" src="images/edit_icon.png"/>
+									                                        	EUR 10,030.33
+									                                        </div>
+								                                        </div>
+								                                    </td>
+								                                </tr>
+								                                <tr>
+								                                    <td>
+								                                        <div class="row">
+								                                        	<div class="col-md-7">
+									                                    		<img class="net_dismiss_icon" src="images/dismiss.png"/>
+									                                    		<label class="">Revolving deposit</label>
+									                                    		
+									                                    	</div>
+									                                        <div class="col-md-5 align_right font-green">
+									                                        	<img class="net_edit_icon" src="images/edit_icon.png"/>
+									                                        	EUR 3,062.50
+									                                        </div>
+								                                        </div>
+								                                    </td>
+								                                </tr>
+								                                
+								                                <tr>
+								                                    <td>
+								                                    	<div class="row">
+								                                    		<div class="col-md-7">
+									                                    		<img class="net_dismiss_icon" src="images/dismiss.png"/>
+									                                    		<label class="">One time term deposit</label>
+									                                    		
+									                                    	</div>
+									                                        <div class="col-md-5 align_right font-green">
+									                                        	<img class="net_edit_icon" src="images/edit_icon.png"/>
+									                                        	EUR 4,051.40
+									                                        </div>
+								                                    	</div>
+								                                    </td>
+								                                </tr>
+								                                
+								                            </table>
+								                        </div>
+								                    </div>
+								                </div>
+								                <div class="panel panel-default">
+								                    <div class="panel-heading">
+								                    	
+								                        <h4 class="panel-title">
+								                        	<img class="pull-left" src="images/arrow-right1.png" >
+								                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+								                            	Savings Accounts
+								                            	<p class="pull-right">EUR 3,083.00</p>
+								                            </a>
+								                        </h4>
+								                    </div>
+								                    <div id="collapseTwo" class="panel-collapse collapse">
+								                        <div class="panel-body">
+								                            <table class="table">
+								                                <tr>
+								                                    <td>
+								                                        <div class="row">
+								                                        	<div class="col-md-7">
+									                                    		<img class="net_dismiss_icon" src="images/dismiss.png"/>
+									                                    		<label class="">Monthly revolving deposit until call</label>
+									                                    		
+									                                    	</div>
+									                                        <div class="col-md-5 align_right font-green">
+									                                        	<img class="net_edit_icon" src="images/edit_icon.png"/>
+									                                        	EUR 10,030.33
+									                                        </div>
+								                                        </div>
+								                                    </td>
+								                                </tr>
+								                                <tr>
+								                                    <td>
+								                                        <div class="row">
+								                                        	<div class="col-md-7">
+									                                    		<img class="net_dismiss_icon" src="images/dismiss.png"/>
+									                                    		<label class="">Revolving deposit</label>
+									                                    		
+									                                    	</div>
+									                                        <div class="col-md-5 align_right font-green">
+									                                        	<img class="net_edit_icon" src="images/edit_icon.png"/>
+									                                        	EUR 3,062.50
+									                                        </div>
+								                                        </div>
+								                                    </td>
+								                                </tr>
+								                                
+								                                <tr>
+								                                    <td>
+								                                    	<div class="row">
+								                                    		<div class="col-md-7">
+									                                    		<img class="net_dismiss_icon" src="images/dismiss.png"/>
+									                                    		<label class="">One time term deposit</label>
+									                                    		
+									                                    	</div>
+									                                        <div class="col-md-5 align_right font-green">
+									                                        	<img class="net_edit_icon" src="images/edit_icon.png"/>
+									                                        	EUR 4,051.40
+									                                        </div>
+								                                    	</div>
+								                                    </td>
+								                                </tr>
+								                            </table>
+								                        </div>
+								                    </div>
+								                </div>
+								                <div class="panel panel-default">
+								                    <div class="panel-heading">
+								                        <h4 class="panel-title">
+								                        	<img class="pull-left" src="images/arrow-right1.png" >
+								                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+								                            	Savings Accounts
+								                            	<p class="pull-right">EUR 3,083.00</p>
+								                            </a>
+								                        </h4>
+								                    </div>
+								                    <div id="collapseThree" class="panel-collapse collapse">
+								                        <div class="panel-body">
+								                            <table class="table">
+								                                <tr>
+								                                    <td>
+								                                        <div class="row">
+								                                        	<div class="col-md-7">
+									                                    		<img class="net_dismiss_icon" src="images/dismiss.png"/>
+									                                    		<label class="">Monthly revolving deposit until call</label>
+									                                    		
+									                                    	</div>
+									                                        <div class="col-md-5 align_right font-green">
+									                                        	<img class="net_edit_icon" src="images/edit_icon.png"/>
+									                                        	EUR 10,030.33
+									                                        </div>
+								                                        </div>
+								                                    </td>
+								                                </tr>
+								                                <tr>
+								                                    <td>
+								                                        <div class="row">
+								                                        	<div class="col-md-7">
+									                                    		<img class="net_dismiss_icon" src="images/dismiss.png"/>
+									                                    		<label class="">Revolving deposit</label>
+									                                    		
+									                                    	</div>
+									                                        <div class="col-md-5 align_right font-green">
+									                                        	<img class="net_edit_icon" src="images/edit_icon.png"/>
+									                                        	EUR 3,062.50
+									                                        </div>
+								                                        </div>
+								                                    </td>
+								                                </tr>
+								                                <tr>
+								                                    <td>
+								                                        <div class="row">
+								                                        	<div class="col-md-7">
+									                                    		<img class="net_dismiss_icon" src="images/dismiss.png"/>
+									                                    		<label class="">Revolving deposit until fixed date</label>
+									                                    		
+									                                    	</div>
+									                                        <div class="col-md-5 align_right font-green">
+									                                        	<img class="net_edit_icon" src="images/edit_icon.png"/>
+									                                        	EUR 3,062.50
+									                                        </div>
+								                                        </div>
+								                                    </td>
+								                                </tr>
+								                                
+								                                <tr>
+								                                    <td>
+								                                    	<div class="row">
+								                                    		<div class="col-md-7">
+									                                    		<img class="net_dismiss_icon" src="images/dismiss.png"/>
+									                                    		<label class="">One time term deposit</label>
+									                                    		
+									                                    	</div>
+									                                        <div class="col-md-5 align_right font-green">
+									                                        	<img class="net_edit_icon" src="images/edit_icon.png"/>
+									                                        	EUR 4,051.40
+									                                        </div>
+								                                    	</div>
+								                                    </td>
+								                                </tr>
+								                            </table>
+								                        </div>
+								                    </div>
+								                </div>
+								            </div>
+								        </div>
+									        
+									   	
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="uniqu_col_item into-expanded-item col-xs-12 col-sm-12 col-md-4 col-lg-4" >
+							<div class="into-expanded-item-wrapper">
+								<div class="widget widget-account-basic-details">
+									<div class="widget-label">LIABILITY LIST</div>
+									<div class="widget-body">
+										
+								        <div class="networth_accordions">
+								            <div class="panel-group" id="accordion1">
+								                <div class="panel panel-default">
+								                    <div class="panel-heading">
+								                        <h4 class="panel-title">
+								                        	<img class="pull-left arrow_down" src="images/arrow-down1.png" >
+								                            <a data-toggle="collapse" data-parent="#accordion1" href="#collapse1">
+								                            	Current Account
+								                            	<p class="pull-right">EUR 3,083.00</p>
+								                            </a>
+								                        </h4>
+								                    </div>
+								                    <div id="collapse1" class="panel-collapse collapse in">
+								                        <div class="panel-body">
+								                            <table class="table">
+								                                <tr>
+								                                    <td>
+								                                        <div class="row">
+								                                        	<div class="col-md-7">
+									                                    		<img class="net_dismiss_icon" src="images/dismiss.png"/>
+									                                    		<label class="">My Home Loan</label>
+									                                    		
+									                                    	</div>
+									                                        <div class="col-md-5 align_right font-red">
+									                                        	<img class="net_edit_icon" src="images/edit_icon.png"/>
+									                                        	EUR 10,030.33
+									                                        </div>
+								                                        </div>
+								                                    </td>
+								                                </tr>
+								                                <tr>
+								                                    <td>
+								                                        <div class="row">
+								                                        	<div class="col-md-7">
+									                                    		<img class="net_dismiss_icon" src="images/dismiss.png"/>
+									                                    		<label class="">My Car Loan</label>
+									                                    		
+									                                    	</div>
+									                                        <div class="col-md-5 align_right font-red">
+									                                        	<img class="net_edit_icon" src="images/edit_icon.png"/>
+									                                        	EUR 3,062.50
+									                                        </div>
+								                                        </div>
+								                                    </td>
+								                                </tr>
+								                                
+								                                <tr>
+								                                    <td>
+								                                    	<div class="row">
+								                                    		<div class="col-md-7">
+									                                    		<img class="net_dismiss_icon" src="images/dismiss.png"/>
+									                                    		<label class="">My Personal Loan</label>
+									                                    		
+									                                    	</div>
+									                                        <div class="col-md-5 align_right font-red">
+									                                        	<img class="net_edit_icon" src="images/edit_icon.png"/>
+									                                        	EUR 4,051.40
+									                                        </div>
+								                                    	</div>
+								                                    </td>
+								                                </tr>
+								                                <tr>
+								                                    <td>
+								                                    	<div class="row">
+								                                    		<div class="col-md-7">
+									                                    		<img class="net_dismiss_icon" src="images/dismiss.png"/>
+									                                    		<label class="">My Vias Card</label>
+									                                    		
+									                                    	</div>
+									                                        <div class="col-md-5 align_right font-red">
+									                                        	<img class="net_edit_icon" src="images/edit_icon.png"/>
+									                                        	EUR 4,051.40
+									                                        </div>
+								                                    	</div>
+								                                    </td>
+								                                </tr>
+								                                
+								                            </table>
+								                        </div>
+								                    </div>
+								                </div>
+								                <div class="panel panel-default">
+								                    <div class="panel-heading">
+								                    	
+								                        <h4 class="panel-title">
+								                        	<img class="pull-left" src="images/arrow-right1.png" >
+								                            <a data-toggle="collapse" data-parent="#accordion1" href="#collapse2">
+								                            	Loans
+								                            	<p class="pull-right">EUR 3,083.00</p>
+								                            </a>
+								                        </h4>
+								                    </div>
+								                    <div id="collapse2" class="panel-collapse collapse">
+								                        <div class="panel-body">
+								                            <table class="table">
+								                                <tr>
+								                                    <td>
+								                                        <div class="row">
+								                                        	<div class="col-md-7">
+									                                    		<img class="net_dismiss_icon" src="images/dismiss.png"/>
+									                                    		<label class="">Monthly revolving deposit until call</label>
+									                                    		
+									                                    	</div>
+									                                        <div class="col-md-5 align_right font-red">
+									                                        	<img class="net_edit_icon" src="images/edit_icon.png"/>
+									                                        	EUR 10,030.33
+									                                        </div>
+								                                        </div>
+								                                    </td>
+								                                </tr>
+								                                <tr>
+								                                    <td>
+								                                        <div class="row">
+								                                        	<div class="col-md-7">
+									                                    		<img class="net_dismiss_icon" src="images/dismiss.png"/>
+									                                    		<label class="">Revolving deposit</label>
+									                                    		
+									                                    	</div>
+									                                        <div class="col-md-5 align_right font-red">
+									                                        	<img class="net_edit_icon" src="images/edit_icon.png"/>
+									                                        	EUR 3,062.50
+									                                        </div>
+								                                        </div>
+								                                    </td>
+								                                </tr>
+								                                
+								                                <tr>
+								                                    <td>
+								                                    	<div class="row">
+								                                    		<div class="col-md-7">
+									                                    		<img class="net_dismiss_icon" src="images/dismiss.png"/>
+									                                    		<label class="">One time term deposit</label>
+									                                    		
+									                                    	</div>
+									                                        <div class="col-md-5 align_right font-red">
+									                                        	<img class="net_edit_icon" src="images/edit_icon.png"/>
+									                                        	EUR 4,051.40
+									                                        </div>
+								                                    	</div>
+								                                    </td>
+								                                </tr>
+								                            </table>
+								                        </div>
+								                    </div>
+								                </div>
+								                <div class="panel panel-default">
+								                    <div class="panel-heading">
+								                        <h4 class="panel-title">
+								                        	<img class="pull-left" src="images/arrow-right1.png" >
+								                            <a data-toggle="collapse" data-parent="#accordion1" href="#collapse3">
+								                            	Current Accounts
+								                            	<p class="pull-right">EUR 3,083.00</p>
+								                            </a>
+								                        </h4>
+								                    </div>
+								                    <div id="collapse3" class="panel-collapse collapse">
+								                        <div class="panel-body">
+								                            <table class="table">
+								                                <tr>
+								                                    <td>
+								                                        <div class="row">
+								                                        	<div class="col-md-7">
+									                                    		<img class="net_dismiss_icon" src="images/dismiss.png"/>
+									                                    		<label class="">Monthly revolving deposit until call</label>
+									                                    		
+									                                    	</div>
+									                                        <div class="col-md-5 align_right font-red">
+									                                        	<img class="net_edit_icon" src="images/edit_icon.png"/>
+									                                        	EUR 10,030.33
+									                                        </div>
+								                                        </div>
+								                                    </td>
+								                                </tr>
+								                                <tr>
+								                                    <td>
+								                                        <div class="row">
+								                                        	<div class="col-md-7">
+									                                    		<img class="net_dismiss_icon" src="images/dismiss.png"/>
+									                                    		<label class="">Revolving deposit</label>
+									                                    		
+									                                    	</div>
+									                                        <div class="col-md-5 align_right font-red">
+									                                        	<img class="net_edit_icon" src="images/edit_icon.png"/>
+									                                        	EUR 3,062.50
+									                                        </div>
+								                                        </div>
+								                                    </td>
+								                                </tr>
+								                                
+								                                <tr>
+								                                    <td>
+								                                    	<div class="row">
+								                                    		<div class="col-md-7">
+									                                    		<img class="net_dismiss_icon" src="images/dismiss.png"/>
+									                                    		<label class="">One time term deposit</label>
+									                                    		
+									                                    	</div>
+									                                        <div class="col-md-5 align_right font-red">
+									                                        	<img class="net_edit_icon" src="images/edit_icon.png"/>
+									                                        	EUR 4,051.40
+									                                        </div>
+								                                    	</div>
+								                                    </td>
+								                                </tr>
+								                            </table>
+								                        </div>
+								                    </div>
+								                </div>
+								            </div>
+								        </div>
+									        
+									   	
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

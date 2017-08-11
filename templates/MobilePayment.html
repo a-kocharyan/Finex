@@ -1,0 +1,554 @@
+<div class="article grid-stack-item" data-gs-x="1" data-gs-y="1" data-showmore-bottom="0" data-showmore-right="0"
+								data-gs-height="4" data-gs-width="1" data-gs-min-height="4" data-gs-min-width="1"data-gs-no-resize="true" data-gs-auto-position="false" template="MobilePayment">
+								<div class="grid-stack-item-content card_flip">
+										<div class="front">
+												<header class="drag-handle">
+														<strong>Mobile</strong>Payment
+														<a href="JavaScript:" onclick="removeWidget(this)" class="fa fa-remove"></a>
+														<div class="dropdown widget_setting">
+																<button onClick="showWidgetSettings(this)" class="btn btn-link" type="button" data-toggle="dropdown">
+																		<i class="fa fa-gear"></i>
+																</button>
+														</div>
+												</header>
+												<div class="widget-content mobilePayment">
+													<div id="paymentBase">
+														<!-- Details -->
+														<div class="user-details">
+															<ul>
+																<li>
+																	<!--img src="img/mobilePayment/user-icon.png" width="52" height="52" alt=""-->
+																	<span id="usr-imgsrc" class="usr-imgsrc"><img src="img/mobilePayment/user-icon1.png" width="65" height="65" alt="" /></span>
+																	<span class="textbox"><span>payment to</span> <div>
+																	<input type="text" id="user-name" name="user-name" contenteditable="true" value="Aaron Page" /></div></span>
+																	<!--span class="rightdiv">
+																		<div id="usr-imgsrc"><img src="img/mobilePayment/user-icon1.png" width="65" height="65" alt=""> </div>
+																	</span-->
+																</li>
+																<li>
+																	<img src="img/mobilePayment/edit-icon.png" width="52" height="52" alt="Edit"> 
+																	<span class="textbox account-no"><span>account number </span> 
+																	<div>
+																		<select name="usr-accountno" id="usr-accountno">
+																			<option value="DE12321323">DE12321323</option>
+																			<option value="DE12321324">DE12321324</option>
+																			<option value="DE12321325">DE12321325</option>
+																			<option value="DE12321326">DE12321326</option>
+																			<option value="DE12321327">DE12321327</option>
+																			<option value="DE12321328">DE12321328</option>
+																			<option value="DE12321329">DE12321329</option>
+																			<option value="DE12321330">DE12321330</option>
+																		</select>
+																	</div>
+																	</span>
+																   
+																</li>
+																<li>
+																	<img src="img/mobilePayment/currency-icon.png" width="52" height="52" alt="Currency"> 
+																	<span class="textbox account-no"><span>amount</span> 
+																	<div>
+																		<select name="user-currency" id="user-currency" class="currency">
+																			<option value="EUR">EUR</option>
+																			<option value="USD">USD</option>
+																			<option value="GBP">GBP</option>
+																		</select>
+																	 <input type="text" name="user-price" id="user-price" contenteditable="true" value="20" class="input-small" / ></div></span>
+																   
+																</li>
+																 <li>
+																	<img src="img/mobilePayment/add-notes.png" width="52" height="52" alt="Add Notes" onclick="openMobNote(this)" /> 
+																	<span class="textbox" onclick="openMobNote(this)"> <div>ADD NOTE</div><div class="pay-note-show" id="pay-note-show"></div></span>
+																	<textarea class="pay-note" style="display: none" onblur="closeMobNote(this)"></textarea> <!--closeMobNote(this)-->
+																</li>
+															</ul>
+															<div class="submit-bttn" style="width:90%" onclick="changeMobPaymentPage('paymentAuth')">Send</div>
+														</div>
+		
+													  <!-- Tabs -->
+														<div class="tabs">
+															<ul>
+																<li><a name="tab" id="tab_1" href="javascript:void(0)" onclick="tabs(1)" class="active">Popular</a></li>
+																<li><a name="tab" id="tab_2" href="javascript:void(0)" onclick="tabs(2)">Recent</a></li>
+																<li><a name="tab" href="javascript:void(0)" onclick="changeMobPaymentPage('paymentContact')">All Contacts</a></li>
+															</ul>
+														</div>
+														 <!-- Tab 1 -->
+														<div name="tab_content" id="tab_content_1" class="tab_content active">
+															<div class="list left-wrap">
+																<ul>
+																  <!-- Record 1 -->
+																	<li>
+																		<div class="user-inside">
+																		<img src="img/mobilePayment/user-img-inside.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>aaron page</h3>
+																			<span><div class="date"> 16 mar 2016</div><span class="price">eur 20</span></span>
+																		</span>
+																		
+																		<span class="arrows" onClick="showDetails(this)" data-currency="EUR" data-price="20" data-name="aaron page" data-accountno="DE12321323" data-imgsrc="img/mobilePayment/user-img-inside.png"></span>
+																  </li>
+																   <!-- Record 1 -->
+																  
+																	<li>
+																		<div class="user-inside">
+																			<img src="img/mobilePayment/erin.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>Erin macey</h3>
+																			<span><div class="date"> 29 jan 2016</div><span class="price">GBP 300 000</span></span>
+																		</span>
+																		
+																		<span class="arrows" onClick="showDetails(this)" data-currency="GBP" data-price="30" data-name="Erin macey" data-accountno="DE12321324" data-imgsrc="img/mobilePayment/erin.png"></span>
+																  </li>
+																	<li>
+																	<div class="user-inside">
+																			<img src="img/mobilePayment/samantha.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>samantha james</h3>
+																			<span><div class="date"> 23 feb 2016</div><span class="price">USD 10</span></span>
+																		</span>
+																		
+																		<span class="arrows" onClick="showDetails(this)" data-currency="USD" data-price="10" data-name="samantha james" data-accountno="DE12321325" data-imgsrc="img/mobilePayment/samantha.png"></span>
+																	</li>
+																	<li>
+																	<div class="user-inside">
+																			<img src="img/mobilePayment/priya.jpg" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>priyanka tomar</h3>
+																			<span><div class="date"> 22 apr 2016</div><span class="price">USD 50</span></span>
+																		</span>
+																		
+																		<span class="arrows" onClick="showDetails(this)" data-currency="USD" data-price="50" data-name="priyanka tomar" data-accountno="DE12321326" data-imgsrc="img/mobilePayment/priya.jpg" ></span>
+																	</li>
+																	<li>
+																	<div class="user-inside">
+																			<img src="img/mobilePayment/raghunath.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>raghunath</h3>
+																			<span><div class="date"> 21 may 2016</div><span class="price">EUR 10</span></span>
+																		</span>
+																		
+																		<span class="arrows" onClick="showDetails(this)" data-currency="EUR" data-price="10" data-name="raghunath" data-accountno="DE12321327" data-imgsrc="img/mobilePayment/raghunath.png"></span>
+																	</li>
+																	 <li>
+																	<div class="user-inside">
+																			<img src="img/mobilePayment/user-img-inside.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>ritesh ranjan</h3>
+																			<span><div class="date"> 20 jun 2016</div><span class="price">eur 100</span></span>
+																		</span>
+																		
+																		<span class="arrows" onClick="showDetails(this)" data-currency="EUR" data-price="100" data-name="ritesh ranjan" data-accountno="DE12321328" data-imgsrc="img/mobilePayment/user-img-inside.png"></span>
+																	</li>
+																	
+																	<li>
+																		<div class="user-inside">
+																			<img src="img/mobilePayment/erin.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>Erin macey</h3>
+																			<span><div class="date"> 29 jul 2016</div><span class="price">GBP 30</span></span>
+																		</span>
+																		
+																		<span class="arrows" onClick="showDetails(this)" data-currency="GBP" data-price="30" data-name="Erin macey" data-accountno="DE12321329" data-imgsrc="img/mobilePayment/erin.png"></span>
+																  </li>
+																	<li>
+																	<div class="user-inside">
+																			<img src="img/mobilePayment/samantha.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>samantha james</h3>
+																			<span><div class="date"> 23 aug 2016</div><span class="price">USD 10</span></span>
+																		</span>
+																		
+																		<span class="arrows" onClick="showDetails(this)" data-currency="USD" data-price="10" data-name="samantha james" data-accountno="DE12321330" data-imgsrc="img/mobilePayment/samantha.png"></span>
+																	</li >
+																	
+																	
+																</ul>
+															</div>
+														</div>
+														<!-- Tab 2 -->
+														<div name="tab_content" id="tab_content_2" class="tab_content" style="display:none">
+															<div class="list left-wrap">
+																<ul>
+																<!-- Record 1 -->
+																	<li>
+																		<div class="user-inside">
+																			<img src="img/mobilePayment/erin.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>Erin macey1</h3>
+																			<span><div class="date"> 29 feb 2016</div><span class="price">GBP 30</span></span>
+																		</span>
+																		
+																		<span class="arrows" onClick="showDetails(this)" data-currency="GBP" data-price="30" data-name="Erin macey1" data-accountno="DE12321324" data-imgsrc="img/mobilePayment/erin.png"></span>
+																  </li>
+																	<li>
+																	<div class="user-inside">
+																			<img src="img/mobilePayment/samantha.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>samantha james1</h3>
+																			<span><div class="date"> 23 feb 2016</div><span class="price">USD 10</span></span>
+																		</span>
+																		
+																		<span class="arrows" onClick="showDetails(this)" data-currency="USD" data-price="10" data-name="samantha james1" data-accountno="DE12321325" data-imgsrc="img/mobilePayment/samantha.png"></span>
+																	</li>
+																	<li>
+																	<div class="user-inside">
+																			<img src="img/mobilePayment/priya.jpg" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>priyanka tomar1</h3>
+																			<span><div class="date"> 22 feb 2016</div><span class="price">USD 50</span></span>
+																		</span>
+																		
+																		<span class="arrows" onClick="showDetails(this)" data-currency="USD" data-price="50" data-name="priyanka tomar1" data-accountno="DE12321326" data-imgsrc="img/mobilePayment/priya.jpg" ></span>
+																	</li>
+																	<li>
+																	<div class="user-inside">
+																			<img src="img/mobilePayment/samantha.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>raghunath1</h3>
+																			<span><div class="date"> 21 feb 2016</div><span class="price">EUR 10</span></span>
+																		</span>
+																		
+																		<span class="arrows" onClick="showDetails(this)" data-currency="EUR" data-price="10" data-name="raghunath1" data-accountno="DE12321327" data-imgsrc="img/mobilePayment/samantha.png"></span>
+																	</li>
+																	 <li>
+																	<div class="user-inside">
+																			<img src="img/mobilePayment/samantha.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>ritesh ranjan1</h3>
+																			<span><div class="date"> 20 feb 2016</div><span class="price">eur 100</span></span>
+																		</span>
+																		
+																		<span class="arrows" onClick="showDetails(this)" data-currency="EUR" data-price="100" data-name="ritesh ranjan1" data-accountno="DE12321328" data-imgsrc="img/mobilePayment/samantha.png"></span>
+																	</li>
+																	
+																	<li>
+																		<div class="user-inside">
+																			<img src="img/mobilePayment/erin.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>Erin macey2</h3>
+																			<span><div class="date"> 29 feb 2016</div><span class="price">GBP 30</span></span>
+																		</span>
+																		
+																		<span class="arrows" onClick="showDetails(this)" data-currency="GBP" data-price="30" data-name="Erin macey2" data-accountno="DE12321329" data-imgsrc="img/mobilePayment/erin.png"></span>
+																  </li>
+																	<li>
+																	<div class="user-inside">
+																			<img src="img/mobilePayment/samantha.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>samantha james2</h3>
+																			<span><div class="date"> 23 feb 2016</div><span class="price">USD 10</span></span>
+																		</span>
+																		
+																		<span class="arrows" onClick="showDetails(this)" data-currency="USD" data-price="10" data-name="samantha james2" data-accountno="DE12321330" data-imgsrc="img/mobilePayment/samantha.png"></span>
+																	</li >
+																</ul>
+															</div>
+														</div>
+														<!-- End Tabs -->
+													</div>
+													<div id="paymentAuth" class="user-details" style="display: none">
+														<ul>
+															<li>
+																<span id="mob-auth-img" class="usr-imgsrc"><img src="img/mobilePayment/user-icon1.png" width="65" height="65" alt="" /></span>
+																<span class="textbox">
+																	<div>
+																		<input type="text" name="user-name" id="mob-auth-username" contenteditable="true" value="Aaron Page" />
+																	</div>
+																	<span>XXX-XXXX-XXXXXX-4231</span>
+																</span>
+															</li>
+															<li>
+																<img src="img/mobilePayment/currency-icon.png" width="52" height="52" alt="Currency"/> 
+																<span class="textbox account-no">
+																	<span>amount</span> 
+																	<div>
+																		<input type="text" name="user-price" contenteditable="true" value="EUR" class="input-small" />
+																		<input type="text" name="user-price" id="mob-auth-amount" contenteditable="true" value="20" class="input-small" />
+																	</div>
+																</span>
+															</li>
+															<li>
+																<img src="img/mobilePayment/fee-icon.png" width="52" height="52" alt="Fee" /> 
+																<span class="textbox account-no">
+																	<span>fee</span> 
+																	<div>
+																		<input type="text" name="user-price" contenteditable="true" value="EUR" class="input-small" />
+																		<input type="text" name="user-price" contenteditable="true" value="0.99" class="input-small" />
+																	</div>
+																</span>
+															</li>
+															<li>
+																<img src="img/mobilePayment/perc-icon.png" width="52" height="52" alt="Rate" /> 
+																<span class="textbox account-no"><span>rate</span> 
+																	<div>
+																		<input type="text" name="user-price" contenteditable="true" value="EUR" class="input-small" />
+																		<input type="text" name="user-price" contenteditable="true" value="1.3423" class="input-small" />
+																	</div>
+																</span>
+															</li>
+															<li>
+																<img src="img/mobilePayment/account-type.png" width="52" height="52" alt="Rate"> 
+																<span class="textbox account-no">
+																	<span>from</span> 
+																	<div>
+																		<input type="text" name="user-price" contenteditable="true" value="My Current Account" />
+																	</div>
+																</span>
+															</li>
+															<li>
+																<img src="img/mobilePayment/ok-icon.png" width="52" height="52" alt="auth" /> 
+																<span class="textbox account-no">
+																	<span>authorize</span> 
+																	<div>
+																		<input type="text" name="user-price" contenteditable="true" value="34214534512341234" />
+																	</div>
+																</span>
+															</li>
+															<li class="pay-qr-row" id="pay-qr-row">
+															</li>
+														</ul>
+														<div class="back-bttn" onclick="changeMobPaymentPage('paymentBase')">Back</div>
+														<div class="submit-bttn" onclick="changeMobPaymentPageLoad('paymentResult')" style="width:170px; padding-left: 45px">Pay Now</div>
+													</div>
+													<div id="paymentResult" class="user-details" style="display: none">
+														<ul>
+															<li>
+																<span id="mob-res-img" class="usr-imgsrc"><img src="img/mobilePayment/user-icon1.png" width="65" height="65" alt="" /></span>
+																<span class="textbox">
+																	<div>
+																		<input type="text" name="user-name" id="mob-res-username" contenteditable="true" value="Aaron Page" />
+																	</div>
+																	<span>XXX-XXXX-XXXXXX-4231</span>
+																</span>
+															</li>
+															<li class="resultBody">
+																<div class="large">Your payment is under processing.</div>
+																<div class="small">We will notify you once it is processed.</div>
+																<div class="trans">Transaction ID: <span id="">TR0034534544AC22</span></div>
+															</li>
+														</ul>
+														<div class="mail-bttn" style="width:90%">Send Mail to Beneficiary</div>
+														<div class="submit-bttn moreletter-bttn" style="width:90%" onclick="changeMobPaymentPage('paymentBase')">Make Another Payment</div>
+													</div>
+													
+													<div id="paymentContact" style="display: none">
+														<!-- Details -->
+														<div class="user-details">
+															<ul>
+																<li>
+																	<input type="text" id="pay-contact-search" contenteditable="true" class="search" onkeyup="mobPaySearchContact(this)" />
+																</li>
+															</ul>
+															<div class="back-bttn" onclick="changeMobPaymentPage('paymentBase')">Back</div>
+															<span class="pay-contact-count"><span id="pay-contact-found"></span> <span>members</span></span> 
+														</div>
+														<div class="tabs"></div>
+														<div class="tab_content active">
+															<div class="list left-wrap contacts">
+																<ul id="pay-contact-list">
+																	<li>
+																		<div class="user-inside">
+																		<img src="img/mobilePayment/user-img-inside.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>aaron page</h3>
+																			<span><div class="num">XXX-XXXX-XXXXXX-3221</div><span class="price">eur 20</span></span>
+																		</span>
+																		
+																		<span class="arrows-right" onclick="showDetails(this); changeMobPaymentPage('paymentBase');" data-currency="EUR" data-price="20" data-name="aaron page" data-accountno="DE12321323" data-imgsrc="img/mobilePayment/user-img-inside.png"></span>
+																	</li>
+																	<li>
+																		<div class="user-inside">
+																			<img src="img/mobilePayment/erin.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>Erin macey</h3>
+																			<span><div class="num">XXX-XXXX-XXXXXX-2345</div><span class="price">GBP 300 000</span></span>
+																		</span>
+																		
+																		<span class="arrows-right" onclick="showDetails(this); changeMobPaymentPage('paymentBase');" data-currency="GBP" data-price="30" data-name="Erin macey" data-accountno="DE12321324" data-imgsrc="img/mobilePayment/erin.png"></span>
+																	</li>
+																	<li>
+																	<div class="user-inside">
+																			<img src="img/mobilePayment/samantha.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>samantha james</h3>
+																			<span><div class="num">XXX-XXXX-XXXXXX-5543</div><span class="price">USD 10</span></span>
+																		</span>
+																		
+																		<span class="arrows-right" onclick="showDetails(this); changeMobPaymentPage('paymentBase');" data-currency="USD" data-price="10" data-name="samantha james" data-accountno="DE12321325" data-imgsrc="img/mobilePayment/samantha.png"></span>
+																	</li>
+																	<li>
+																	<div class="user-inside">
+																			<img src="img/mobilePayment/priya.jpg" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>priyanka tomar</h3>
+																			<span><div class="num">XXX-XXXX-XXXXXX-9876</div><span class="price">USD 50</span></span>
+																		</span>
+																		
+																		<span class="arrows-right" onclick="showDetails(this); changeMobPaymentPage('paymentBase');" data-currency="USD" data-price="50" data-name="priyanka tomar" data-accountno="DE12321326" data-imgsrc="img/mobilePayment/priya.jpg" ></span>
+																	</li>
+																	<li>
+																	<div class="user-inside">
+																			<img src="img/mobilePayment/raghunath.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>raghunath</h3>
+																			<span><div class="num">XXX-XXXX-XXXXXX-4356</div><span class="price">EUR 10</span></span>
+																		</span>
+																		
+																		<span class="arrows-right" onclick="showDetails(this); changeMobPaymentPage('paymentBase');" data-currency="EUR" data-price="10" data-name="raghunath" data-accountno="DE12321327" data-imgsrc="img/mobilePayment/raghunath.png"></span>
+																	</li>
+																	 <li>
+																	<div class="user-inside">
+																			<img src="img/mobilePayment/user-img-inside.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>ritesh ranjan</h3>
+																			<span><div class="num">XXX-XXXX-XXXXXX-4536</div><span class="price">eur 100</span></span>
+																		</span>
+																		
+																		<span class="arrows-right" onclick="showDetails(this); changeMobPaymentPage('paymentBase');" data-currency="EUR" data-price="100" data-name="ritesh ranjan" data-accountno="DE12321328" data-imgsrc="img/mobilePayment/user-img-inside.png"></span>
+																	</li>
+																	<li>
+																		<div class="user-inside">
+																			<img src="img/mobilePayment/erin.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>Erin macey</h3>
+																			<span><div class="num">XXX-XXXX-XXXXXX-8765</div><span class="price">GBP 30</span></span>
+																		</span>
+																		
+																		<span class="arrows-right" onclick="showDetails(this); changeMobPaymentPage('paymentBase');" data-currency="GBP" data-price="30" data-name="Erin macey" data-accountno="DE12321329" data-imgsrc="img/mobilePayment/erin.png"></span>
+																	</li>
+																	<li>
+																	<div class="user-inside">
+																			<img src="img/mobilePayment/samantha.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>samantha james</h3>
+																			<span><div class="num">XXX-XXXX-XXXXXX-6547</div><span class="price">USD 10</span></span>
+																		</span>
+																		
+																		<span class="arrows-right" onclick="showDetails(this); changeMobPaymentPage('paymentBase');" data-currency="USD" data-price="10" data-name="samantha james" data-accountno="DE12321330" data-imgsrc="img/mobilePayment/samantha.png"></span>
+																	</li>
+																	<!--duplicate-->
+																	<li>
+																		<div class="user-inside">
+																		<img src="img/mobilePayment/user-img-inside.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>aaron page</h3>
+																			<span><div class="num">XXX-XXXX-XXXXXX-3221</div><span class="price">eur 20</span></span>
+																		</span>
+																		
+																		<span class="arrows-right" onclick="showDetails(this); changeMobPaymentPage('paymentBase');" data-currency="EUR" data-price="20" data-name="aaron page" data-accountno="DE12321323" data-imgsrc="img/mobilePayment/user-img-inside.png"></span>
+																	</li>
+																	<li>
+																		<div class="user-inside">
+																			<img src="img/mobilePayment/erin.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>Erin macey</h3>
+																			<span><div class="num">XXX-XXXX-XXXXXX-2345</div><span class="price">GBP 300 000</span></span>
+																		</span>
+																		
+																		<span class="arrows-right" onclick="showDetails(this); changeMobPaymentPage('paymentBase');" data-currency="GBP" data-price="30" data-name="Erin macey" data-accountno="DE12321324" data-imgsrc="img/mobilePayment/erin.png"></span>
+																	</li>
+																	<li>
+																	<div class="user-inside">
+																			<img src="img/mobilePayment/samantha.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>samantha james</h3>
+																			<span><div class="num">XXX-XXXX-XXXXXX-5543</div><span class="price">USD 10</span></span>
+																		</span>
+																		
+																		<span class="arrows-right" onclick="showDetails(this); changeMobPaymentPage('paymentBase');" data-currency="USD" data-price="10" data-name="samantha james" data-accountno="DE12321325" data-imgsrc="img/mobilePayment/samantha.png"></span>
+																	</li>
+																	<li>
+																	<div class="user-inside">
+																			<img src="img/mobilePayment/priya.jpg" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>priyanka tomar</h3>
+																			<span><div class="num">XXX-XXXX-XXXXXX-9876</div><span class="price">USD 50</span></span>
+																		</span>
+																		
+																		<span class="arrows-right" onclick="showDetails(this); changeMobPaymentPage('paymentBase');" data-currency="USD" data-price="50" data-name="priyanka tomar" data-accountno="DE12321326" data-imgsrc="img/mobilePayment/priya.jpg" ></span>
+																	</li>
+																	<li>
+																	<div class="user-inside">
+																			<img src="img/mobilePayment/raghunath.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>raghunath</h3>
+																			<span><div class="num">XXX-XXXX-XXXXXX-4356</div><span class="price">EUR 10</span></span>
+																		</span>
+																		
+																		<span class="arrows-right" onclick="showDetails(this); changeMobPaymentPage('paymentBase');" data-currency="EUR" data-price="10" data-name="raghunath" data-accountno="DE12321327" data-imgsrc="img/mobilePayment/raghunath.png"></span>
+																	</li>
+																	 <li>
+																	<div class="user-inside">
+																			<img src="img/mobilePayment/user-img-inside.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>ritesh ranjan</h3>
+																			<span><div class="num">XXX-XXXX-XXXXXX-4536</div><span class="price">eur 100</span></span>
+																		</span>
+																		
+																		<span class="arrows-right" onclick="showDetails(this); changeMobPaymentPage('paymentBase');" data-currency="EUR" data-price="100" data-name="ritesh ranjan" data-accountno="DE12321328" data-imgsrc="img/mobilePayment/user-img-inside.png"></span>
+																	</li>
+																	<li>
+																		<div class="user-inside">
+																			<img src="img/mobilePayment/erin.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>Erin macey</h3>
+																			<span><div class="num">XXX-XXXX-XXXXXX-8765</div><span class="price">GBP 30</span></span>
+																		</span>
+																		
+																		<span class="arrows-right" onclick="showDetails(this); changeMobPaymentPage('paymentBase');" data-currency="GBP" data-price="30" data-name="Erin macey" data-accountno="DE12321329" data-imgsrc="img/mobilePayment/erin.png"></span>
+																	</li>
+																	<li>
+																	<div class="user-inside">
+																			<img src="img/mobilePayment/samantha.png" width="100" height="100" alt="User Name">
+																		</div> 
+																		<span class="content">
+																			<h3>samantha james</h3>
+																			<span><div class="num">XXX-XXXX-XXXXXX-6547</div><span class="price">USD 10</span></span>
+																		</span>
+																		
+																		<span class="arrows-right" onclick="showDetails(this); changeMobPaymentPage('paymentBase');" data-currency="USD" data-price="10" data-name="samantha james" data-accountno="DE12321330" data-imgsrc="img/mobilePayment/samantha.png"></span>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													
+
+													<div class="spin-loader-content" id="pay-loader" style="display: none">
+														<div class="ball"></div>
+														<div class="ball1"></div>
+													</div>
+												</div>
+										</div>
+								</div>
+						</div>

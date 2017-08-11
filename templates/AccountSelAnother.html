@@ -1,0 +1,107 @@
+<div id="commonpayprobaerror" class="article grid-stack-item" data-gs-x="2" data-gs-y="12" data-showmore-bottom="0" data-showmore-right="0" data-gs-auto-position="false"
+								data-gs-height="2" data-gs-width="2" data-gs-min-height="2" data-gs-min-width="2" data-name="commonpay_error" data-gs-no-resize="true" data-gs-position="28" template="AccountSelAnother">
+
+								<div id="commonpayment_err" class="grid-stack-item-content card_flip relative commonpayment ">
+										<div class="front">
+												<div id="payment_acc_select__" class="quckpt_top_cntnt header">
+														<div>
+																<strong>Select another</strong>source account:
+															<a href="JavaScript:" onclick="removeWidget(this)" class="fa fa-remove"></a>
+														</div>
+														<ul class="pay_list">
+																<li onclick="selectCommonPaymentDefaultAccount(this)" data-account_name="My Current Account" data-account_number="***55221"
+																		data-account_balance="1,234.99 EUR" class="active">My Current Account (***55221) 1,234.99 EUR</li>
+																<li onclick="selectCommonPaymentDefaultAccount(this)" data-account_name="My Current Loan" data-account_number="***55341"
+																		data-account_balance="234.99 EUR">My Current Loan (***55341) 234.99 EUR</li>
+																<li onclick="selectCommonPaymentDefaultAccount(this)" data-account_name="My Saving Account" data-account_number="***44221"
+																		data-account_balance="5,634.99 EUR">My Savings Account (***44221) 5,634.99 EUR</li>
+														</ul>
+														<div class="text-center">
+																<button type="button" class="btn btn-transparent" onclick="paymentHideAccountSelector(this)">OK</button>
+														</div>
+												</div>
+
+
+												<!-- SCREEN 1 -->
+												<div id="commonpayment_container_01_probaerror">
+														<div class="this_main_content">
+																<header class="drag-handle">
+																		<strong>Payment</strong>from
+																		<a class="curracc" href="JavaScript:" onclick="paymentShowAccountSelector(this)">
+																				<span id="curacc_name"> My Current Account (1,234.99 EUR)</span><i class="fa fa-caret-down fa-pull-bottom"></i>
+																		</a>
+																		<a href="JavaScript:" onclick="removeWidget(this)" class="fa fa-remove"></a>
+																		<div class="dropdown widget_setting">
+																				<button onClick="showWidgetSettings(this)" class="btn btn-link" type="button" data-toggle="dropdown">
+																						<i class="fa fa-gear"></i>
+																				</button>
+																		</div>
+																</header>
+																<div class="widget-content">
+																		<div id="payment_error" class="article-error">
+																				<!--div class="hdr">Error while processing payment<div class="error-code">ETR11433</div></div-->
+																				<span class="error-code">[EQPB00012]</span><span class="error-text"> Transaction authorization error: wrong auth code</span>
+																				<div class="error-buttons">
+																						<i class="fa fa-2x fa-chevron-circle-left" onclick="hideError(this, 'commonpayment_container_01_probaerror')"></i>
+																				</div>
+																				<!--div id="payment_error_sub" class="article-error-sub">
+																							<span>error code: AA002334333 click here to copy</span>
+																						</div-->
+																		</div>
+																		<!--div id="payment_error_desc" class="article-error-desc">
+																						<span class="error-code">[EQPB00012]</span>
+																						<div class="error-buttons">
+																								<i class="fa fa-2x fa-copy" onclick=""></i>&nbsp; <i class="fa fa-2x fa-info-circle" onclick=""></i>
+																						</div>
+																				</div-->
+
+																		<div class="row quick_payment_panel">
+																				<div class="col-sm-5">
+																						<div class="quick_payment">
+																								<div class="payment_type_list">
+																										<div class="paymenttype domestic" data-payment-type="Domestic payment" title="Domestic payment">
+																											<span class="paymenttype-minitxt">Domestic</span>
+																										</div>
+																										<div class="paymenttype swift" data-payment-type="Standard SWIFT payment" title="Standard SWIFT Payment">
+																											<span class="paymenttype-minitxt">SWIFT</span>
+																										</div>
+																										<div class="paymenttype charity" data-payment-type="Charity payment" title="Charity Payment">
+																											<span class="paymenttype-minitxt">Charity</span>
+																										</div>
+																										<div class="paymenttype utility" data-payment-type="Utility payment" title="Utility Payment">
+																											<span class="paymenttype-minitxt">Utility</span>
+																										</div>
+																								</div>
+																								<!--div class="viewmore" onclick="quickShowBottomContent(this)">view<br/><strong>more</strong></div-->
+																								<div class="clearfix"></div>
+																								<h3>Payment type:<span class="payment_type_name__">&lt;please select&gt;</span></h3>
+																						</div>
+																				</div>
+																				<div class="col-sm-7">
+																						<form class="payment_form">
+																								<div class="form-group">
+																										<label>Amount</label>
+																										<div class="input_payment">
+																												<input type="text" />
+																										</div>
+																								</div>
+																								<div class="form-group">
+																										<label>Description</label>
+																										<textarea rows="3"></textarea>
+																								</div>
+																								<div class="pull-left">
+																										<label>Due Date</label>
+																										<input type="date" id="paymentDueDate__" class="pay_pasword" max="2099-12-31" />
+																								</div>
+																								<a href="JavaScript:" class="btn btn-default pull-right" id="payment_type_next"
+																										onClick="showError('commonpayment_container_01_probaerror')">error</a>
+																								<div class="clearfix"></div>
+																						</form>
+																				</div>
+																		</div>
+																</div>
+														</div>
+												</div>
+										</div>
+								</div>
+						</div>

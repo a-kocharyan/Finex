@@ -1,0 +1,134 @@
+<div class="modal fade in" id="setting_modal_loypart" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+						<div class="modal-content setting_model_content">
+								<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">×</span>
+										</button>
+										<h4 class="modal-title">Transaction Details</h4>
+								</div>
+								<div class="modal-body tran-details">
+										<div class="main_body">
+
+												<div class="tran-hist-new-create grid-stack-item-content card_flip tran-hist-detail">
+														<header class="tran-hist-new">Search Loyality partner</header>
+														<div class="widget-content tran-hist-content-new">
+																<div class="row quick_payment_panel">
+																		<!--div class="col-sm-5"-->
+																				<div class="quick_payment">
+																						<div class="quick_benificery_list">
+																								<a href="JavaScript:" onclick="selectQuickPaymentUser(this)"><span>All</span></a>
+																								<a href="JavaScript:" onclick="selectQuickPaymentUser(this)"><span>Hotels</span></a>
+																								<a href="JavaScript:" onclick="selectQuickPaymentUser(this)"><span>Restaurants</span></a>
+																								<a href="JavaScript:" onclick="selectQuickPaymentUser(this)"><span>Charity</span></a>
+																						</div>
+																						<div class="clearfix"></div>
+																						<div class="review_beneficiary_account_number">
+																								<i class="toggle-edit fa fa-pencil pull-right"></i>
+																						</div>
+																				</div>
+																				<div class="col-sm-7 payment_beneficiary">
+																						<div>
+																								<label>Name</label>
+																								<input type="text" class="form_element beneficiary_bankcode" maxlength="11" tabindex="-1" />
+																								<i class="fa fa-check"></i> <i class="fa fa-remove"></i>
+																								<i class="fa fa-search"></i>
+																						</div>
+																						<div class="commonpay-ben-buttons">
+																								<input class="btn btn-transparent" type="button" value="Search" />
+																						</div>
+																				</div>
+																		<!--/div-->
+																</div>
+														</div>
+												</div>
+										
+												<div class="tran-hist-new grid-stack-item-content card_flip tran-hist-detail">
+														<header class="tran-hist-new">Shell</header>
+														<div class="widget-content tran-hist-content-new">
+																<img src="img/companylogo/u91.png" alt="Carrefour" class="beni_img" />
+																<div class="beni_content">
+																		<div class="beni_out">Starting from 5,000 points</div>
+																</div>
+																<div class="loyal-partner-desc">
+																	Get a voucher and use it at any Shell station. 1 EUR= 100 points
+																</div>
+																<input class="btn btn-transparent loyalPartner" type="button" value="Redeem points" />
+														</div>
+												</div>
+												
+												<div class="tran-hist-new grid-stack-item-content card_flip tran-hist-detail">
+														<header class="tran-hist-new">Cinema City</header>
+														<div class="widget-content tran-hist-content-new">
+																<img src="img/companylogo/cinema_city.jpg" alt="Carrefour" class="beni_img" />
+																<div class="beni_content">
+																		<div class="beni_out">Starting from 2,500 points</div>
+																</div>
+																<div class="loyal-partner-desc">
+																	Redeem your points and get cinema tickets for the latest movies.
+																</div>
+																<input class="btn btn-transparent loyalPartner" type="button" value="Redeem points" />
+														</div>
+												</div>
+												
+												<div class="tran-hist-new grid-stack-item-content card_flip tran-hist-detail">
+														<header class="tran-hist-new">Donate your points - Red Cross</header>
+														<div class="widget-content tran-hist-content-new">
+																<img src="img/benefi_img/redcross.png" alt="Carrefour" class="beni_img" />
+																<div class="beni_content">
+																		<div class="beni_out">Starting from 1,000 points</div>
+																</div>
+																<div class="loyal-partner-desc">
+																	Donate your points to charity and support the Red Cross. 1 EUR= 100 points
+																</div>
+																<input class="btn btn-transparent loyalPartner" type="button" value="Redeem points" />
+														</div>
+												</div>
+
+												<div class="tran-hist-new grid-stack-item-content card_flip tran-hist-detail">
+														<header class="tran-hist-new">Tesco</header>
+														<div class="widget-content tran-hist-content-new">
+																<img src="img/companylogo/tesco.jpg" alt="Carrefour" class="beni_img" />
+																<div class="beni_content">
+																		<div class="beni_out">Starting from 5,000 points</div>
+																</div>
+																<div class="loyal-partner-desc">
+																	Get a voucher and use it at any Tesco or Tesco Express. 1 EUR= 100 points
+																</div>
+																<input class="btn btn-transparent loyalPartner" type="button" value="Redeem points" />
+														</div>
+												</div>
+																								
+												<div class="tran-hist-new grid-stack-item-content card_flip tran-hist-detail">
+														<header class="tran-hist-new">Eventim Tickets</header>
+														<div class="widget-content tran-hist-content-new">
+																<img src="img/companylogo/u101.png" alt="Carrefour" class="beni_img" />
+																<div class="beni_content">
+																		<div class="beni_out">Starting from 2,500 points</div>
+																</div>
+																<div class="loyal-partner-desc">
+																	Redeem your points and get concert and other tickets for the latest events.
+																</div>
+																<input class="btn btn-transparent loyalPartner" type="button" value="Redeem points" />
+														</div>
+												</div>
+												
+												<div class="tran-hist-new grid-stack-item-content card_flip tran-hist-detail">
+														<header class="tran-hist-new">Delta Airlines</header>
+														<div class="widget-content tran-hist-content-new">
+																<img src="img/companylogo/delta_airlines_logo.gif" alt="Carrefour" class="beni_img" />
+																<div class="beni_content">
+																		<div class="beni_out">Starting from 500 points</div>
+																</div>
+																<div class="loyal-partner-desc">
+																	Convert your points to Delta Airmiles, and enjoy a variety of benefits!
+																</div>
+																<input class="btn btn-transparent loyalPartner" type="button" value="Redeem points" />
+														</div>
+												</div>
+												
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>

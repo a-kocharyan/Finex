@@ -1,0 +1,260 @@
+<div class="modal fade in" id="setting_modal_pfm_spending" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+						<div class="modal-content setting_model_content">
+								<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">×</span>
+										</button>
+										<h4 class="modal-title">Saving Goals</h4>
+								</div>
+								
+								<div class="modal-body">
+										<div class="main_body">
+										
+												<!-- Analysis box -->
+												<div class="article inner-class" id="analysis">
+														<div class="acc-details-new card_flip relative default-size-temp">
+																<header class="drag-handle">
+																		<strong>Analysis</strong>
+																		<ul class="pfm_tabs modal_tab">
+																				<li><a class="pfm_chart1" onClick="createChartPersonalFin1_m('_m')" href="javascript:;">&nbsp;</a></li>
+																				<li><a class="pfm_chart2" onClick="createChartPersonalFin2_m('_m')" href="javascript:;">&nbsp;</a></li>
+																				<li><a class="pfm_chart3" onClick="createChartPersonalFin3_m('_m')" href="javascript:;">&nbsp;</a></li>
+																				<li><a class="pfm_chart4" onClick="createChartPersonalFin4_m('_m')" href="javascript:;">&nbsp;</a></li>
+																				<li><a class="pfm_chart5" href="javascript:;">&nbsp;</a></li>
+																				<li><a class="pfm_chart6" href="javascript:;">&nbsp;</a></li>
+																		</ul>
+																</header>
+																<div class="widget-content row">														
+																	<div>
+																			<div class="graph_holder">
+																					<div class="main_content col-md-12 positioned">
+																							<div id="tab1_m" class="pfm_graph">
+																									<span class="pfm_number pfm_number_modal"><i class="fa fa-euro"></i>5,168</span>
+																									<div id="circle_m_finance"></div>
+																							</div>
+																							<div id="tab2_m" class="pfm_graph">
+																									<div id="graph_m_person_fin_2" class="box300"></div>
+																							</div>
+																							<div id="tab3_m" class="pfm_graph">
+																									<div id="graph_m_person_fin_3" class="box300"></div>
+																							</div>
+																							<div id="tab4_m" class="pfm_graph">
+																									<div id="graph_m_person_fin_4" class="box300"></div>
+																							</div>
+																							<div id="tab5_m" class="pfm_graph">tab5</div>
+																							<div id="tab6_m" class="pfm_graph">tab6</div>
+																					</div>
+
+																			</div>
+																	</div>
+																	
+																</div>															
+														</div>
+												</div>
+
+												<!-- categories box -->
+												<div class="article inner-class">
+														<div class="acc-details-new card_flip relative default-size-temp">
+																<header class="drag-handle">
+																		<strong>Categories</strong>
+																</header>
+																<div class="widget-content row">
+																	<table class="pfm_stat_categories">
+																		<tr>
+																			<td><li><span class="home"></span></li></td>
+																			<td>Housing</td>
+																			<td>EUR</td>
+																			<td>1,698.46</td>
+																		</tr>
+																		<tr>
+																			<td><li><span class="food_dining"></span></li></td>
+																			<td>Food &amp; Dining</td>
+																			<td>EUR</td>
+																			<td>1,136.27</td>
+																		</tr>
+																		<tr>
+																			<td><li><span class="withdrawal"></span></li></td>
+																			<td>Withdrawal</td>
+																			<td>EUR</td>
+																			<td>725.00</td>
+																		</tr>
+																		<tr>
+																			<td><li><span class="transport"></span></li></td>
+																			<td>Auto &amp; Transport</td>
+																			<td>EUR</td>
+																			<td>495.76</td>
+																		</tr>
+																		<tr>
+																			<td><li><span class="unrecognized"></span></li></td>
+																			<td>Unrecognized exp</td>
+																			<td>EUR</td>
+																			<td>436.70</td>
+																		</tr>
+																		<tr>
+																			<td><li><span class="shopping"></span></li></td>
+																			<td>Self-care</td>
+																			<td>EUR</td>
+																			<td>316.07</td>
+																		</tr>
+																		<tr>
+																			<td><li><span class="entertainment"></span></li></td>
+																			<td>Entertainment</td>
+																			<td>EUR</td>
+																			<td>270.31</td>
+																		</tr>
+																		<tr>
+																			<td><li><span class="education"></span></li></td>
+																			<td>Education</td>
+																			<td>EUR</td>
+																			<td>89.99</td>
+																		</tr>
+																	</table>
+																	<!-- 
+																	<ul class="pfm_stat">
+																		<li><span class="home"></span>Housing - EUR 1,698.46</li>
+																		<li><span class="food_dining"></span>Food &amp; Dining - EUR 1,136.27</li>
+																		<li><span class="withdrawal"></span>Withdrawal - EUR 725.00</li>
+																		<li><span class="unrecognized"></span>Unrecognized exp - EUR 436.70</li>
+																		<li><span class="transport"></span>Auto &amp; Transport - EUR 495.76</li>
+																		<li><span class="shopping"></span>Self-care - EUR 316.07</li>
+																		<li><span class="entertainment"></span>Entertainment - 270.31</li>
+																		<li><span class="shopping"></span>Education - EUR 89.99</li>
+																	</ul>
+																	 -->
+																</div>
+														</div>
+												</div>
+												
+												<!-- latest transaction box -->
+												<div class="article inner-class">
+													<div class="acc-details-new card_flip relative default-size-temp">
+														<header class="drag-handle">
+																<strong>Latest</strong>Transactions
+														</header>
+														<div class="widget-content row">
+																<div class="col-md-12 main_content latest-tran">
+																		<ul class="transectoin_list">
+																				<li><i class="fa fa-minus-circle"></i><strong>60.95</strong>EUR Carrefour<span class="tran-date">June 10</span></li>
+																				<li><i class="fa fa-minus-circle"></i><strong>119.00</strong>EUR Virgin Megastore<span class="tran-date">June 8</span></li>
+																				<li><i class="fa fa-minus-circle"></i><strong>25.00</strong>EUR Costa coffee<span class="tran-date">June 8</span></li>
+																				<li><i class="fa fa-plus-circle"></i><strong>1,245.00</strong>EUR Axa<span class="tran-date">June 7</span></li>
+																				<li><i class="fa fa-minus-circle"></i><strong>300.00</strong>EUR Cash withdrawal<span class="tran-date">June 7</span></li>
+																		</ul>
+																</div>
+														</div>
+														<div class="bottom-center-abs">
+															<input class="btn btn-transparent" type="button" value="See more" />
+														</div>
+													</div>
+												</div>											
+												
+												<!-- filter box -->
+												<div class="article inner-class">
+														<div class="acc-details-new card_flip relative default-size-temp">
+																<header class="drag-handle">
+																		<strong>Filter results</strong>
+																</header>
+																<div class="widget-content row">
+																	<div class="goals_lower">
+																		<table class="pfm_filter_table">
+																			<tr>
+																				<td width="50%"><strong>Period:</strong></td>
+																				<td>
+																			    	<select class="goals_category_select">
+																			    		<option selected="true" value="60">last 60 days</option>
+																			    	</select>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td><strong>Accounts:</strong></td>
+																				<td>
+																			    	<select class="goals_category_select">
+																			    		<option selected="true" value="all">All</option>
+																			    	</select>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td><strong>Category:</strong></td>
+																				<td>
+																			    	<select class="goals_category_select">
+																			    		<option selected="true" value="all">All</option>
+																			    	</select>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td><strong>Partner:</strong></td>
+																				<td>
+																			    	<select class="goals_category_select">
+																			    		<option selected="true" value="all">All</option>
+																			    	</select>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td><strong>Amount:</strong></td>
+																				<td>
+																			    	<select class="goals_category_select">
+																			    		<option selected="true" value="all">All</option>
+																			    	</select>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td><strong>Tags:</strong></td>
+																				<td>
+																			    	<select class="goals_category_select">
+																			    		<option selected="true" value="all">All</option>
+																			    	</select>
+																				</td>
+																			</tr>																			
+																			<tr>
+																				<td colspan="2">
+																					<input type="checkbox" /> Show hidden transactions
+																				</td> 
+																			</tr>
+																		</table>
+																	</div>
+																	
+																</div>
+														</div>
+												</div>												
+												
+												<!-- POPULAR IN COMMUNITY -->
+												<div class="article inner-class">
+													<div class="acc-details-new card_flip relative default-size-temp">
+														<header class="drag-handle ui-draggable-handle">
+																<strong>Popular</strong>in the community
+														</header>
+														<div class="widget-content popcommunity" tabindex="1">
+																<ul class="transectoin_list">
+																		<li><i class="toggle fa fa-ellipsis-h pull-right"></i>Credit card or Overdraft?</li>
+																		<li><i class="toggle fa fa-ellipsis-h pull-right"></i>Should I use cash or card abroad?</li>
+																		<li><i class="toggle fa fa-ellipsis-h pull-right"></i>Credit Card at 7.99%</li>
+																		<li><i class="toggle fa fa-ellipsis-h pull-right"></i>How can I categorize transactions in PFM</li>
+																</ul>
+																<div class="bottom-center-abs">
+																		<input class="btn btn-transparent" type="button" value="Start a new discussion" />
+																</div>
+														</div>
+													</div>
+												</div>
+												
+												<!-- Advertisement -->
+												<div class="article inner-class">
+														<div class="acc-details-new card_flip relative default-size-temp">
+																<header class="drag-handle">
+																		<strong>Personal loan</strong>at 6.38%
+																</header>
+																<div class="widget-content text-center advertisement">
+																		<!--img src="img/add.png" alt="advertisement" class="img-responsive" /-->
+																		<img src="img/ads/term_deposit.png" alt="advertisement" class="img-responsive" />
+																</div>
+																<div class="bottom-center-abs">
+																		<input class="btn btn-transparent" type="button" value="Details" />
+																</div>
+														</div>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>

@@ -1,0 +1,54 @@
+.widget.widget-quarterly-report {
+
+    .widget-body {
+        margin-top: 30px;
+
+        .highcharts-container {
+            height: 120px;
+            overflow: hidden;
+        }
+
+        .widget-details-button {
+            width: 120px;
+            position: absolute;
+            left: 50%;
+            margin-left: -60px;
+            bottom: 25px;
+            text-align: center;
+
+            button, .btn {
+                text-align: center;
+                font-size: 14px;
+                padding: 5px 20px;
+                color: @new-grey;
+                background: @light-grey;
+                border: 1px solid @new-grey;
+                border-radius: 5px;
+                min-width: 120px;
+            }
+        }
+
+        #full-quarterly-report {
+            margin-top: 30px;
+            height: 320px;
+            overflow: hidden;
+        }
+        
+        .widget {
+
+            &.widget-account-report {
+                .widget-body {
+                    padding: 30px;
+                }
+            }
+
+            &.widget-account-basic-details {
+                .details .detail-container {
+                    border-top: none;
+                    border-bottom: 1px solid @new-widget-separator-line;
+                }
+            }
+            min-height: 370px;
+        }
+    }
+}

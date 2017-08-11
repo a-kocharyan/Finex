@@ -1,0 +1,88 @@
+.widget.widget-loan {
+    .widget-summ {
+        font-size: 34px;
+        color: @dark-brown;
+        padding: 0 10px;
+        margin: 10px 0
+    }
+
+    .widget-progress-bar {
+        position: relative;
+        height: 8px;
+        width: 100%;
+        margin-top: 20px;
+
+        .bar-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 8px;
+            width: 100%;
+            background: @widget-grey-bar-background;
+            z-index:10;
+            border-radius: 4px;
+        }
+        .bar-progress {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 8px;
+            width: 70%;
+            background: @brown;
+            z-index:10;
+            border-radius: 4px;
+        }
+    }
+
+    .widget-details-button {
+        width: 120px;
+        position: absolute;
+        left: 50%;
+        margin-left: -60px;
+        bottom: 25px;
+        text-align: center;
+
+        button {
+            text-align: center;
+            font-size: 14px;
+            padding: 5px 20px;
+            color: @grey;
+            background: @light-grey;
+            border: 1px solid @grey;
+            border-radius: 5px;
+            min-width: 120px;
+
+            &:hover {
+                color: @light-grey;
+                background: @brown;
+                border: 1px solid @brown;
+            }
+        }
+    }
+
+    &.extended-bottom {
+        .last-transactions {
+            display: block;
+        }
+    }
+
+    &.extended-right {
+        .widget-body {
+            .widget-main-info {
+                float: left;
+                width: 50%;
+            }
+
+            .widget-details-button {
+                left: 25%;
+            }
+        }
+
+        .details {
+            display: block;
+            float:left;
+            width: 40%;
+            margin-left: 6%;
+        }
+    }
+}

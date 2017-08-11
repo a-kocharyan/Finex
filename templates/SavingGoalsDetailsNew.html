@@ -1,0 +1,190 @@
+<div class="modal fade in" id="setting_modal_goals" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+						<div class="modal-content setting_model_content">
+								<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">×</span>
+										</button>
+										<h4 class="modal-title">Saving Goals</h4>
+								</div>
+								
+								<div class="modal-body">
+										<div class="main_body">
+										
+            <div class="pfm-btm-cont">
+              <div class="sa-goal-create-detail-cont">
+                <div class="anlys-detail-hd-cont col-md-11">Create Savings Goals </div>
+                <div class="create-goal-collpse"> <i class="fa fa-angle-left" aria-hidden="true"></i> </div>
+                <div class="anyls-detail-chart-cont">
+                  <div class="sa-goal-create-icon-cont">
+                    <ul>
+                      <li><a href="javascript:void(0);" title="Housing"><i class="fa fa-bed" aria-hidden="true"></i></a></li>
+                      <li><a href="javascript:void(0);" title="Apartment"><i class="fa fa-building-o" aria-hidden="true"></i></a></li>
+                      <li><a href="javascript:void(0);" title="Car"><i class="fa fa-car" aria-hidden="true"></i></a></li>
+                      <li><a href="javascript:void(0);" title="Picture"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+                      <li><a href="javascript:void(0);" title="Ticket"><i class="fa fa-ticket" aria-hidden="true" style="transform:rotate(45deg);"></i></a></li>
+                      <li><a href="javascript:void(0);" title="Television"><i class="fa fa-television" aria-hidden="true"></i></a></li>
+                      <li><a href="javascript:void(0);" title="Education"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
+                      <li onClick="add_new_goal_func(this)"><a href="javascript:void(0);"><i class="fa fa-plus" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="sa-goal-create-input-cont">
+                    <div class="col-xs-12 col-sm-12 col-lg-12 sa-goal-create-input-fld">
+                      <label>Goal Name</label>
+                      <input type="text" id="goalName"   placeholder="Enter Goal Name" />
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-lg-6 sa-goal-create-input-fld trget-amount">
+                      <label>Target Amount </label>
+                      <span class="euro-sign">&euro;</span>
+                      <input type="text" id="targetamount"   placeholder="Enter Amount" />
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-lg-6 pull-right sa-goal-create-input-fld trget-amount">
+                      <label>Monthly Save</label>
+                      <span class="euro-sign">&euro;</span>
+                      <input type="text" id="monthlysave"   placeholder="Enter Amount" />
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-lg-6 sa-goal-create-input-fld">
+                      <label>Target Date</label>
+                      <input type="text" class="trget-date" placeholder="dd/mm/yyyy"  id='targetDate'/>
+                      &nbsp; <a href="javscript:void(0);" title="Refresh"><i class="fa fa-refresh" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-lg-6 sa-goal-browse-img">
+                      <label>Upload Image</label>
+                      <div class="input-group">
+                        <label class="input-group-btn">
+                            <span class="btn btn-primary">
+                                Browse <input type="file" style="display: none;" multiple>
+                            </span>
+                        </label>
+                        <input type="text" class="form-control" readonly>
+                     </div>
+                    </div>
+                    <!--<div class="col-xs-12 col-sm-12 col-lg-12 sa-goal-create-btn"> <a href="javascript:void(0);" onClick="create_new_goal(document.getElementById('goalName').value, document.getElementById('targetamount').value, document.getElementById('monthlysave').value, document.getElementById('targetDate').value );">CREATE GOAL</a> </div>-->
+                    <div class="col-xs-12 col-sm-12 col-lg-12 sa-goal-create-btn"> <a href="javascript:void(0);">CREATE GOAL</a> </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="created-goal-result-cont new-car-result created-goal-result">
+                <div class="anlys-fltr-hd-cont  anlys-fltr-title">New Car </div>
+                <div class="created-goal-car-collpse"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+                <div class="created-goals-desc-cont">
+                  <div class="created-goals-imgprogress-cont">
+                    <div class="created-goals-img-cont"> <img src="img/pfmNew//goals/goal1.jpg" alt="Goals" /> </div>
+                    <div class="created-goals-progress-cont">
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="120340" aria-valuemin="0" aria-valuemax="250000" style="width:48%"> <span class="sr-only">120,340</span> </div>
+                        <span class="input-group-addon">250,000</span> </div>
+                      <div class="current-balance-percent">48%</div>
+                      <div class="current-balance-cont">Current balance: &euro; 120,340</div>
+                    </div>
+                  </div>
+                  <div class="goals-balance-cont">
+                    <div class="goals-balance-fld goals-balance">
+                      <div class="pull-left"><strong>Target balance:</strong></div>
+                      <div class="pull-right">&euro; 250,000</div>
+                    </div>
+                    <div class="goals-balance-fld goals-date">
+                      <div class="pull-left"><strong>Target date:</strong></div>
+                      <div class="pull-right">20.06.2020</div>
+                    </div>
+                    <div class="goals-balance-fld goals-payment">
+                      <div class="pull-left"><strong>Monthly payment:</strong></div>
+                      <div class="pull-right">&euro; 2,500</div>
+                    </div>
+                    <div class="goals-balance-fld category-fld">
+                      <div class="pull-left"><strong>Category:&nbsp;</strong><span><i class="fa fa-car" aria-hidden="true"></i> Car</span></div>
+                      <div class="pull-right"><a href="javascript:void(0);"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;edit</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="created-goals-car-chart" style="display:none;">
+                  <div class="chartContainer" id="#created-goalschartContainer" style="width:100% !important"></div>
+                  <div class="get-ur-goal-cont"> <a href="javascript:void(0);">Get your goal now!</a> </div>
+                </div>
+              </div>
+              <div class="sa-goal-new-villa-cont created-goal-result">
+                <div class="anlys-detail-hd-cont anlys-fltr-title col-md-11">New Villa </div>
+                <div class="new-villa-collpse"> <i class="fa fa-angle-left" aria-hidden="true"></i> </div>
+                <div class="anyls-detail-chart-cont">
+                  <div class="created-new-villa-desc-cont">
+                    <div class="created-goals-imgprogress-cont">
+                      <div class="created-goals-img-cont"> <img src="img/pfmNew//goals/goal2.jpg" alt="Goals" /> </div>
+                      <div class="created-goals-progress-cont">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="17340" aria-valuemin="0" aria-valuemax="250000" style="width:48%"> <span class="sr-only">17,340</span> </div>
+                          <span class="input-group-addon">250,000</span> </div>
+                        <div class="current-balance-percent">17%</div>
+                        <div class="current-balance-cont">Current balance: &euro; 17,340</div>
+                      </div>
+                    </div>
+                    <div class="goals-balance-cont">
+                      <div class="goals-balance-fld goals-balance">
+                        <div class="pull-left"><strong>Target balance:</strong></div>
+                        <div class="pull-right">&euro; 250,000</div>
+                      </div>
+                      <div class="goals-balance-fld goals-date">
+                        <div class="pull-left"><strong>Target date:</strong></div>
+                        <div class="pull-right">01.01.2019</div>
+                      </div>
+                      <div class="goals-balance-fld goals-payment">
+                        <div class="pull-left"><strong>Monthly payment:</strong></div>
+                        <div class="pull-right">&euro; 2,500</div>
+                      </div>
+                      <div class="goals-balance-fld category-fld">
+                        <div class="pull-left"><strong>Category:&nbsp;</strong><span><i class="fa fa-building-o" aria-hidden="true"></i> Housing</span></div>
+                        <div class="pull-right"><a href="javascript:void(0);"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;edit</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sa-goal-new-villa-chart">
+                    <div class="chartContainer"></div>
+                    <div class="get-ur-goal-cont"> <a href="javascript:void(0);">Get your goal now!</a> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="renovate-goal-result-cont created-goal-result">
+                <div class="anlys-fltr-hd-cont anlys-fltr-title">Apartment renovation </div>
+                <div class="renovate-goal-collpse"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+                <div class="renovate-goal-desc-cont">
+                  <div class="created-goals-imgprogress-cont">
+                    <div class="created-goals-img-cont"> <img src="img/pfmNew//goals/goal3.jpg" alt="Goals" /> </div>
+                    <div class="created-goals-progress-cont">
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="6350" aria-valuemin="0" aria-valuemax="9500" style="width:48%"> <span class="sr-only">6,350</span> </div>
+                        <span class="input-group-addon">9,500</span> </div>
+                      <div class="current-balance-percent">67%</div>
+                      <div class="current-balance-cont">Current balance: &euro; 6,350</div>
+                    </div>
+                  </div>
+                  <div class="goals-balance-cont">
+                    <div class="goals-balance-fld goals-balance">
+                      <div class="pull-left"><strong>Target balance:</strong></div>
+                      <div class="pull-right">&euro; 9,500</div>
+                    </div>
+                    <div class="goals-balance-fld goals-date">
+                      <div class="pull-left"><strong>Target date:</strong></div>
+                      <div class="pull-right">20.06.2016</div>
+                    </div>
+                    <div class="goals-balance-fld goals-payment">
+                      <div class="pull-left"><strong>Monthly payment:</strong></div>
+                      <div class="pull-right">&euro; 250</div>
+                    </div>
+                    <div class="goals-balance-fld category-fld">
+                      <div class="pull-left"><strong>Category:&nbsp;</strong><span><i class="fa fa-building-o" aria-hidden="true"></i> Housing</span></div>
+                      <div class="pull-right"><a href="javascript:void(0);"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;edit</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="renovate-goal-chart" style="display:none;">
+                  <div class="chartContainer"></div>
+                  <div class="get-ur-goal-cont"> <a href="javascript:void(0);">Get your goal now!</a> </div>
+                </div>
+              </div>
+            </div>
+
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>

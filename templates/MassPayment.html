@@ -1,0 +1,171 @@
+<div id="masspaymentart" class="article grid-stack-item" data-gs-x="0" data-gs-y="2" data-showmore-bottom="0" data-showmore-right="0" data-gs-height="2"
+								data-gs-width="2" data-gs-min-height="2" data-gs-min-width="2" data-name="masspayment" data-gs-no-resize="true" data-gs-auto-position="false" data-gs-position="33" template="MassPayment">
+
+								<div id="masspayment" class="grid-stack-item-content card_flip relative quickpayment turn-container bb-bookblock bb-vertical">
+									<!-- main screen -->
+									<div class="turn-item bb-item">
+										<div class="widget-content">
+											<div class="row quick_payment_panel">
+												<div class="col-sm-5" id="ezmasspay">
+													<div class="quick_payment">
+														<div class="quick_benificery_list">
+				
+															<form action="https://vps.finex.solutions/ul/u.php"
+																class="dropzone" id="masspay_dropzone">
+																<div class="fallback">
+																	<input name="file" type="file" />
+																</div>
+															</form>
+				
+															<div class="table table-striped"
+																id="masspay_dropzone_previews"> <!--class="files"-->
+																<div id="template" class="file-row" style="">
+																	<!-- This is used as the file preview template -->
+																	<div>
+																		<span class="preview"><img data-dz-thumbnail="true" /></span>
+																	</div>
+																	<div>
+																		<p class="name" data-dz-name="true"></p>
+																		<strong class="error text-danger" data-dz-errormessage="true"></strong>
+																	</div>
+																	<div>
+																		<p class="size" data-dz-size="true"></p>
+																		<div class="progress progress-striped active"
+																			role="progressbar" aria-valuemin="0" aria-valuemax="100"
+																			aria-valuenow="0">
+																			<div class="progress-bar progress-bar-success"
+																				style="width: 0%" data-dz-uploadprogress="true"></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<div id="masspay_file_details" style="display: none">
+																<i class="fa fa-3x fa-check-circle-o hide"></i> 
+																<i class="fa fa-3x fa-ban hide"></i>
+																<div id="masspay_error_label">
+																	<span id="masspay_error_span"></span>
+																</div>
+																<div id="masspay_filename_label">
+																	Filename:<span id="masspay_filename_span"></span>
+																</div>
+																<div id="masspay_filesize_label">
+																	Size:<span id="masspay_filesize_span"></span>
+																</div>
+																<div>
+																	<button data-dz-remove="0" class="btn btn-transparent cancel">
+																		<i class="fa fa-times-circle-o"></i> 
+																		<span>Change file</span>
+																	</button>
+																</div>
+															</div>
+
+														</div>
+														<div class="clearfix"></div>
+														<div class="review_beneficiary_account_number">
+														<i class="toggle-edit fa fa-pencil pull-right"></i>
+													</div>
+												</div>
+												</div>
+												<div class="col-sm-7 payment_form">
+													<div class="form-group">
+														<label>Amount</label>
+														<div class="input_payment">
+															<input type="text" />
+														</div>
+													</div>
+													<div class="form-group">
+														<label>Note</label>
+														<textarea rows="3"></textarea>
+													</div>
+													<div class="pull-left">
+														<label>Due Date</label> <input type="date" id="paymentDueDate" class="pay_pasword" max="2099-12-31" />
+													</div>
+												</div>
+												<input id="masspayFirstNextButton" data-nav-dir="next" class="nav btn btn-transparent btn-next" type="button"
+													value="Next" onclick="console.log('next.onclick');//masspaySendBtnClicked(this)" />
+												<div class="clearfix"></div>
+											</div>
+										</div>
+									</div>
+
+									<!-- review -->
+									<div class="turn-item bb-item">
+										<div class="widget-content tran-hist-content-new">
+											<div id="masspay_review_row_1" class="quickpayment-row1">
+													<ul class="quickpayment-list">
+														<li class="destacc"><span class="li-title">Transactions</span>14</li>
+														<li class="destacc"><span class="li-title">Errors</span>0</li>
+														<li class="destacc"><span class="li-title">Amount</span>105.25 EUR</li>
+														<li id="masspay_src_acc_name" class="srcacc"><span class="li-title">From</span>My Current Account</li>
+														<li><span class="li-title">On</span>5th Oct, 2015 (Monday)</li>
+													</ul>
+											</div>
+											<!--div id="masspay_review_row_1" class="quickpayment-row1">
+													<div id="masspay_review_img" class="img-beni" style="background-image: url(img/no_image.png);">
+														<div class="img-beni-chng">
+															change<br />picture
+														</div>
+													</div>
+													<div class="beni_content">
+														<div class="beni_out">
+																<i class="fa fa-chevron-down"></i>105.25 EUR
+														</div>
+													</div>
+													<ul class="quickpayment-list">
+														<li class="destacc"><span class="li-title">To</span>DE89 3704 0044 0532 0130 00</li>
+														<li id="masspay_src_acc_name" class="srcacc"><span class="li-title">From</span>My Current Account</li>
+														<li><span class="li-title">On</span>5th Oct, 2015 (Monday)</li>
+													</ul>
+											</div-->
+											<div class="quickpayment-row2">
+													<div class="tu-qrcode">
+															<img src="img/qrcode250.png" align="absmiddle" width="50%" />
+													</div>
+													<br/>
+													<ul class="quickpayment-list">
+														<li class="qp-auth code"><span class="li-title">Authorize payment</span> <input type="password" class="paymentSignButton"
+															onkeypress="enableSignButton(this)" onclick="enableSignButton(this)" /></li>
+													</ul>
+
+													<div class="qp-auth li-buttons">
+													</div>
+
+											</div>
+											<input data-nav-dir="prev" class="nav btn btn-transparent btn-back" type="button" value="Back" onclick="//masspaymentShowOriginal(this)" />
+											<input data-nav-dir="next" class="nav btn btn-transparent btn-next" type="button" value="Submit" onclick="//doConfirmMasspayment(this)" />
+										</div>
+									</div>
+
+									<div class="turn-item processing bb-item" data-nav-auto-time="4000">
+									</div>
+
+									<div class="turn-item bb-item">
+										<div class="widget-content">
+											<div class="quickpayment-row1 result-row">
+												<div>
+													<strong class="payment_processing_label">Your payment is under processing.</strong>
+													<p>We will notify you once it is processed.</p>
+													<ul class="quickpayment-list">
+														<li><span class="li-title tranid">Transaction ID is</span>TRMP34569544A206</li>
+													</ul>
+													<div class="payment-result-action">
+														<div>
+															<a href="JavaScript:" onclick="">
+																<img src="img/send_mail.png" />
+															</a>
+															Send mail to beneficiary
+														</div>
+													</div>
+													<div class="btncontainer">
+															<input type="button" data-nav-dir="first" class="nav btn btn-transparent" value="Make another mass payment" onclick="/*masspaymentShowOriginal(this)*/" />
+													</div>
+												</div>
+											</div>
+											<div class="quickpayment-row2 result-row2">
+												<div class="payment-result-ad"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+						</div>

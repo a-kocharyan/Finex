@@ -1,0 +1,448 @@
+<div id="commonpay_own_account" class="article grid-stack-item" data-gs-x="1" data-gs-y="10" data-showmore-bottom="0"
+	 data-showmore-right="0" data-gs-height="2"
+	 data-gs-width="2" data-gs-min-height="2" data-gs-min-width="2" data-name="commonpayment" data-gs-no-resize="true"
+	 data-gs-position="10" template="OwnAccountPayment">
+
+	<div id="commpayment" class="grid-stack-item-content relative quickpayment">
+		<div class="widget-tools payment-tools">
+			<div class="widget-close"><span><a href="JavaScript:" onclick="removeWidget(this)" class="fa fa-remove"></a></span></div>
+		</div>
+		<div class="widget widget-payment widget-own-account-payment">
+			<div class="widget-body bb-bookblock">
+				<div class="bb-item" id="ownaccountpayment_container_1">
+					<div class="flex-wrapper">
+						<div class="left-part">
+							<div class="part-title">Select:</div>
+							<div class="accounts-list">
+								<div class="accounts-tab-headers">
+									<div class="accounts-tab-header active" id="saved-accounts">Accounts<span class="vertical-line"></span></div>
+									<div class="accounts-tab-header" id="saved-credit-cards">Credit cards<span class="vertical-line"></span></div>
+									<div class="accounts-tab-header" id="saved-loans">Loans<span class="vertical-line"></span></div>
+								</div>
+								<div class="accounts-tabs">
+									<div class="accounts-tab active" id="tab-to-show-saved-accounts">
+										<ul>
+											<li class="accounts-list-item"
+												onclick="selectAccount(this, '#ownaccountpayment_container_1 .info-block', '#transactions-list-euro-account');"
+												data-name="MY EURO ACCOUNT"
+												data-balance="EUR 586.31"	>
+												<div class="accounts-icon"><img class="svg" src="images/svg/current_account.svg" alt=""></div>
+												<div class="accounts-name">MY EURO ACCOUNT (€586.31) </div>
+											</li>
+											<li class="accounts-list-item" onclick="selectAccount(this, '#ownaccountpayment_container_1 .info-block', '#transactions-list-savings');"
+												data-name="MY SAVINGS ACCOUNT"
+												data-balance="USD 5,987.00"	>
+												<div class="accounts-icon"><img class="svg" src="images/svg/savings_account.svg" alt=""></div>
+												<div class="accounts-name">MY SAVINGS ACCOUNT ($5,987.00)</div>
+											</li>
+											<li class="accounts-list-item" onclick="selectAccount(this, '#ownaccountpayment_container_1 .info-block', '#transactions-list-euro-savings');"
+												data-name="MY EURO SAVINGS"
+												data-balance="USD 2,082.00"	>
+												<div class="accounts-icon"><img class="svg" src="images/svg/savings_account.svg" alt=""></div>
+												<div class="accounts-name">MY EURO SAVINGS (€2,082.00)</div>
+											</li>
+										</ul>
+									</div>
+									<div class="accounts-tab" id="tab-to-show-saved-credit-cards">
+										<ul>
+											<li class="accounts-list-item" onclick="selectAccount(this, '#ownaccountpayment_container_1 .info-block', '#transactions-list-credit-card');"
+												data-name="MY CREDIT CARD"
+												data-balance="USD 2,034.00"	>
+												<div class="accounts-icon"><img class="svg" src="images/svg/credit_card_account.svg" alt=""></div>
+												<div class="accounts-name">MY CREDIT CARD ($2,034.00)</div>
+											</li>
+										</ul>
+									</div>
+									<div class="accounts-tab" id="tab-to-show-saved-loans">
+										<ul>
+											<li class="accounts-list-item" onclick="selectAccount(this, '#ownaccountpayment_container_1 .info-block', '#transactions-list-personal-loan');"
+												data-name="PERSONAL LOAN"
+												data-balance="EUR 3,237.00"	>
+												<div class="accounts-icon"><img src="images/euro-sign.png" alt=""></div>
+												<div class="accounts-name">PERSONAL LOAN ($3,237.00)</div>
+											</li>
+											<li class="accounts-list-item" onclick="selectAccount(this, '#ownaccountpayment_container_1 .info-block' , '#transactions-list-mortgage');"
+												data-name="MORTGAGE"
+												data-balance=""	>
+												<div class="accounts-icon"><img src="images/euro-sign.png" alt=""></div>
+												<div class="accounts-name">MORTGAGE</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="right-part">
+							<div class="info-block">
+								<div class="payment-logo">
+
+								</div>
+								<div class="payment-info">
+									<div class="name"></div>
+									<div class="part-title-balance">Available balance</div>
+									<div class="info balance"></div>
+								</div>
+							</div>
+							<div class="part-title">Last payment:</div>
+							<div id="transactions-list-euro-account" class="transactions-list">
+								<div class="transaction">
+									<div class="transaction-left-part">
+										<div class="transaction-label">2017.05.16</div>
+									</div>
+									<div class="transaction-right-part">
+										<div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
+										<div class="transaction-summ">$34.30</div>
+									</div>
+								</div>
+								<div class="transaction">
+									<div class="transaction-left-part">
+										<div class="transaction-label">2017.05.17</div>
+									</div>
+									<div class="transaction-right-part">
+										<div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+										<div class="transaction-summ">$12.50</div>
+									</div>
+								</div>
+								<div class="transaction">
+									<div class="transaction-left-part">
+										<div class="transaction-label">2017.05.18</div>
+									</div>
+									<div class="transaction-right-part">
+										<div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+										<div class="transaction-summ">$47.50</div>
+									</div>
+								</div>
+							</div>
+							<div id="transactions-list-savings" class="transactions-list">
+								<div class="transaction">
+									<div class="transaction-left-part">
+										<div class="transaction-label">2017.05.11</div>
+									</div>
+									<div class="transaction-right-part">
+										<div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
+										<div class="transaction-summ">$14.30</div>
+									</div>
+								</div>
+								<div class="transaction">
+									<div class="transaction-left-part">
+										<div class="transaction-label">2017.05.12</div>
+									</div>
+									<div class="transaction-right-part">
+										<div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
+										<div class="transaction-summ">$11.50</div>
+									</div>
+								</div>
+								<div class="transaction">
+									<div class="transaction-left-part">
+										<div class="transaction-label">2017.05.15</div>
+									</div>
+									<div class="transaction-right-part">
+										<div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+										<div class="transaction-summ">$37.50</div>
+									</div>
+								</div>
+							</div>
+							<div id="transactions-list-euro-savings" class="transactions-list">
+								<div class="transaction">
+									<div class="transaction-left-part">
+										<div class="transaction-label">2017.04.20</div>
+									</div>
+									<div class="transaction-right-part">
+										<div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
+										<div class="transaction-summ">$54.30</div>
+									</div>
+								</div>
+								<div class="transaction">
+									<div class="transaction-left-part">
+										<div class="transaction-label">2017.05.25</div>
+									</div>
+									<div class="transaction-right-part">
+										<div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
+										<div class="transaction-summ">$42.50</div>
+									</div>
+								</div>
+								<div class="transaction">
+									<div class="transaction-left-part">
+										<div class="transaction-label">2017.05.27</div>
+									</div>
+									<div class="transaction-right-part">
+										<div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
+										<div class="transaction-summ">$57.50</div>
+									</div>
+								</div>
+							</div>
+							<div id="transactions-list-credit-card" class="transactions-list">
+								<div class="transaction">
+									<div class="transaction-left-part">
+										<div class="transaction-label">2017.03.15</div>
+									</div>
+									<div class="transaction-right-part">
+										<div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
+										<div class="transaction-summ">$37.30</div>
+									</div>
+								</div>
+								<div class="transaction">
+									<div class="transaction-left-part">
+										<div class="transaction-label">2017.03.17</div>
+									</div>
+									<div class="transaction-right-part">
+										<div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
+										<div class="transaction-summ">$19.50</div>
+									</div>
+								</div>
+								<div class="transaction">
+									<div class="transaction-left-part">
+										<div class="transaction-label">2017.03.18</div>
+									</div>
+									<div class="transaction-right-part">
+										<div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+										<div class="transaction-summ">$27.50</div>
+									</div>
+								</div>
+							</div>
+							<div id="transactions-list-personal-loan" class="transactions-list">
+								<div class="transaction">
+									<div class="transaction-left-part">
+										<div class="transaction-label">2017.04.13</div>
+									</div>
+									<div class="transaction-right-part">
+										<div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+										<div class="transaction-summ">$39.30</div>
+									</div>
+								</div>
+								<div class="transaction">
+									<div class="transaction-left-part">
+										<div class="transaction-label">2017.04.14</div>
+									</div>
+									<div class="transaction-right-part">
+										<div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+										<div class="transaction-summ">$19.50</div>
+									</div>
+								</div>
+								<div class="transaction">
+									<div class="transaction-left-part">
+										<div class="transaction-label">2017.04.15</div>
+									</div>
+									<div class="transaction-right-part">
+										<div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+										<div class="transaction-summ">$47.50</div>
+									</div>
+								</div>
+							</div>
+							<div id="transactions-list-mortgage" class="transactions-list">
+								<div class="transaction">
+									<div class="transaction-left-part">
+										<div class="transaction-label">2017.05.25</div>
+									</div>
+									<div class="transaction-right-part">
+										<div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
+										<div class="transaction-summ">$33.30</div>
+									</div>
+								</div>
+								<div class="transaction">
+									<div class="transaction-left-part">
+										<div class="transaction-label">2017.05.26</div>
+									</div>
+									<div class="transaction-right-part">
+										<div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+										<div class="transaction-summ">$16.50</div>
+									</div>
+								</div>
+								<div class="transaction">
+									<div class="transaction-left-part">
+										<div class="transaction-label">2017.05.28</div>
+									</div>
+									<div class="transaction-right-part">
+										<div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
+										<div class="transaction-summ">$77.50</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="payment-right-navigation">
+								<div class="widget-details-button">
+									<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="Next"
+										   onclick="
+										   	fillAccountInfo('#ownaccountpayment_container_1 .info-block', '#ownaccountpayment_container_2');
+										   	fillAccountInfo('#ownaccountpayment_container_1 .info-block', '#ownaccountpayment_container_3');"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bb-item" id="ownaccountpayment_container_2">
+					<div class="flex-wrapper">
+						<div class="left-part  padding-top-100">
+							<div class="payment-logo">
+
+							</div>
+							<div class="payment-info">
+								<div class="name">MY SAVING ACCOUNT</div>
+								<div class="info balance">EUR 4 340.00</div>
+							</div>
+						</div>
+						<div class="right-part">
+							<div id="ownaccountpayment-benefeciary-fields-first">
+								<div class="part-title">Enter payment details:</div>
+								<div class="payment-benefeciary-details">
+									<div class="payment-benefeciary-detail row">
+										<div class="col-xs-3">Amount</div>
+										<div class="col-xs-6"><input type="text" placeholder="Amount" class="amount" onchange="checkcurrency(this.value)" /></div>
+										<div class="col-xs-3">
+											<select name="currency" class="currency">
+												<option value="USD">USD</option>
+												<option value="USD">EUR</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="payment-benefeciary-detail payment-benefeciary-choose row ">
+										
+											<div class="col-lg-offset-2 col-lg-4 payment-benefeciary-type active">
+												<p>ONE TIME</p>
+											</div>
+										
+											<div class="col-lg-4 payment-benefeciary-type pasive">
+												<p>RECURRING</p>
+											</div>
+										</div>
+									</div>
+									
+									<div class="payment-benefeciary-detail-type payment-detail-onetime payment-benefeciary-detail-active">
+										<div class="payment-benefeciary-detail row ">
+											<div class="col-xs-3">Date</div>
+											<div class="col-xs-9">
+												<div class="datepicker">
+													<input type="text" id='date-datepicker-own' class="datepicker-input" value="" onchange="checkdate(this.value)" />
+												</div>
+											</div>
+										</div>
+										<div class="payment-benefeciary-detail row">
+											<div class="col-xs-3">Reference</div>
+											<div class="col-xs-9"><input type="text" notrequired="1" placeholder="" class="reference"></div>
+										</div>
+									</div>
+									
+									<div class="payment-benefeciary-detail-type">
+										<div class="payment-benefeciary-detail row ">
+											<div class="col-xs-3">Start date</div>
+											<div class="col-xs-9">
+												<div class="datepicker">
+													<input type="text" id='date-datepicker-own' class="datepicker-input" value="" onchange="checkdate(this.value)" />
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-3">Frequency</div>						
+											<div class="col-xs-6">
+												<select name="currency" class="currency">
+													<option value="Weekly">Weekly</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-xs-3">Validity</div>						
+											<div class="col-xs-6">
+												<select name="currency" class="currency">
+													<option value="Recall">Recall</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="payment-benefeciary-detail row">
+											<div class="col-xs-3">Reference</div>
+											<div class="col-xs-9"><input type="text" notrequired="1" placeholder="" class="reference"></div>
+										</div>										
+									</div>
+								</div>
+								<div class="payment-right-navigation with-margin">
+									<div class="widget-details-button">
+										<input data-nav-dir="next" class="nav1 btn btn-transparent btn-default" type="button" value="Next"
+											   onclick="validationPayment('#commonpay_own_account', this, '', '', '#ownaccountpayment-benefeciary-fields-first', false);fillTransactionDetails('#ownaccountpayment_container_3 .payment-transaction-details', '#ownaccountpayment_container_2 .payment-benefeciary-details');"/>
+										<input data-nav-dir="prev" class="nav btn btn-transparent btn-default" type="button" value="Back"
+											   onclick="commonPaymentShowOriginal(this)"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bb-item" id="ownaccountpayment_container_3">
+					<div class="flex-wrapper">
+						<div class="left-part flex-center-column">
+							<div class="flex-center full-width">
+								<div class="payment-logo">
+
+								</div>
+								<div class="payment-info">
+									<div class="name">MY SAVINGS ACCOUNT</div>
+									<div class="info balance">EUR 4 340.00</div>
+								</div>
+							</div>
+							<div class="full-width payment-transaction-details">
+								<div class="data-list row">
+									<div class="right-grey col-xs-5">Amount</div>
+									<div class="col-xs-7 transaction-amount"></div>
+								</div>
+								<div class="data-list row">
+									<div class="right-grey col-xs-5">Date</div>
+									<div class="col-xs-7 transaction-date"></div>
+								</div>
+								<div class="data-list row">
+									<div class="right-grey col-xs-5">Reference</div>
+									<div class="col-xs-7 transaction-reference"></div>
+								</div>
+							</div>
+						</div>
+						<div class="right-part">
+							<div id="ownaccountpayment-benefeciary-fields-second">
+								<div class="part-title">Use Izola Pass to generate one time password:</div>
+								<div class="cube-code">
+									<img src="images/u4.jpg">
+								</div>
+								<div class="payment-benefeciary-details">
+									<div class="payment-benefeciary-detail row">
+										<div class="col-xs-5">One time password</div>
+										<div class="col-xs-7"><input type="password"></div>
+									</div>
+								</div>
+								<div class="payment-right-navigation with-margin">
+									<div class="widget-details-button">
+										<input data-nav-dir="next" onclick="validationPayment('#commonpay_own_account', this, '', '', '#ownaccountpayment-benefeciary-fields-second', true);" class="nav1 btn btn-transparent btn-default" type="button" value="Submit" />
+										<input class="btn btn-transparent btn-default" id="paymentTransactionSave" type="button" value="Envelope"
+											   onclick="saveBeneficiary(this)"/>
+										<input data-nav-dir="prev" class="nav btn btn-transparent btn-default" type="button" value="Back"
+											   onclick="commonPaymentShowOriginal(this)"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bb-item" id="ownaccountpayment_container_4">
+					<div class="flex-wrapper">
+						<div class="right-part spiner-block">
+							<div class="spiner"><img src="./images/loading_spinner.gif"></div>
+						</div>
+						<div class="left-part flex-center  password-block">
+							<div class="final-info">
+								<img class="svg" src="images/svg/complete_payment.svg">
+								<div class="title dark">Your payment is under processing</div>
+								<div class="info grey">We will notify you if it is processed</div>
+								<div class="title grey separator">Transaction ID:</div>
+								<div class="info grey">TR000345629867</div>
+								<div class="widget-details-button">
+									<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="Make another payment" onclick="clearTransactionDetails('#ownaccountpayment_container_2 .payment-benefeciary-details')"/>
+								</div>
+							</div>
+						</div>
+						<div class="right-part flex-center">
+							<img src="images/u24.jpg" style="width: 100%;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

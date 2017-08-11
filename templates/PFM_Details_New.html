@@ -1,0 +1,718 @@
+<div class="modal fade in" id="setting_modal_acc" tabindex="-1" role="dialog" aria-hidden="true"
+	 component="AccountDetail">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content setting_model_content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title">MY EXPENSES</h4>
+			</div>
+			<div class="modal-body">
+				<div class="main_body row">
+					<div class="pfm-overlay hidden">
+						<div class="into-expanded-item col-xs-12 col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3" id="pfm_overlay" added="1">
+						    <div class="into-expanded-item-wrapper">
+						        <a href="JavaScript:" class="fa fa-remove pull-right dismiss_overlay"></a>
+						        <div class="widget widget-account-basic-details">
+									<div class="widget-label">CATEGORIZATION</div>
+									<div class="widget-body">
+										<div class="pfm-overlay-item">
+											<div class="pfm-info-group">
+												<label class="col-md-3 pfm_bold_label">Date:</label>
+												<p class="col-md-9">05.23.2017</p>
+											</div>
+											<div class="pfm-info-group">
+												<label class="col-md-3 pfm_bold_label">Parter name:</label>
+												<p class="col-md-9">Carrefour</p>
+											</div>
+											<div class="pfm-info-group">
+												<label class="col-md-3 pfm_bold_label">Amount:</label>
+												<p class="col-md-9">EUR-11.23</p>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+										<div class="pfm-overlay-item">
+											<p class="col-md-12">I categorize transaction as...</p>
+											<div class="col-md-4 col-sm-6">
+												<img src="images/pfc-air.png"><a class="pfm-detail-link">Auto & Transport</a>
+											</div>
+											<div class="col-md-4 col-sm-6">
+												<img src="images/pfc-universe.png"><a class="pfm-detail-link">Education</a>
+											</div>
+											<div class="col-md-4 col-sm-6">
+												<img src="images/pfc-game.png"><a class="pfm-detail-link">Entertainment</a>
+											</div>
+											<div class="col-md-4 col-sm-6">
+												<img src="images/pfc-coff.png"><a class="pfm-detail-link">Food & Dining</a>
+											</div>
+											<div class="col-md-4 col-sm-6">
+												<img src="images/pfc-fee.png"><a class="pfm-detail-link">Transactions & Fees</a>
+											</div>
+											<div class="col-md-4 col-sm-6">
+												<img src="images/pfc-home1.png"><a class="pfm-detail-link">Housing</a>
+											</div>
+											<div class="col-md-4 col-sm-6">
+												<img src="images/pfc-care.png"><a class="pfm-detail-link">Self-care</a>
+											</div>
+											<div class="col-md-4 col-sm-6">
+												<img src="images/pfc-other.png"><a class="pfm-detail-link">Other</a>
+											</div>
+											<div class="col-md-4 col-sm-6">
+												<img src="images/pfc-fee.png"><a class="pfm-detail-liknk">Taxes</a>
+											</div>
+											<div class="col-md-4 col-sm-6">
+												<img src="images/pfc-widraw.png"><a class="pfm-detail-link">Withdrawal</a>
+											</div>
+											<div class="col-md-4 col-sm-6">
+												<img src="images/pfc-gift.png"><a class="pfm-detail-link">Gifts & Charity</a>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+										<div class="clearfix"></div>
+										<div class="pfm-overlay-item">
+											<div class="col-md-12">
+												<div class="mt-checkbox-list">
+		                                            <label class="mt-checkbox">
+		                                                <input type="checkbox"> Hide this transaction<img src="images/around.png"/>
+		                                                <span></span>
+		                                            </label>
+		                                        </div>
+												<div class="mt-checkbox-list">
+		                                            <label class="mt-checkbox">
+		                                                <input type="checkbox"> Use this category next item<img src="images/around.png"/>
+		                                                <span></span>
+		                                            </label>
+		                                        </div>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+										<div class="pfm-overlay-item">
+											<div class="col-md-12">
+												<div class="form-group form-md-line-input">
+                                                    <input type="text" class="form-control" id="form_control_1" placeholder="Enter new tag name or start typing to filter existing ones">
+                                                    <label for="form_control_1">Tag transaction</label>
+                                                    <span class="help-block">Some help goes here...</span>
+                                                </div>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+										<div class="actions text-center">
+											<button class="btn btn-custom">SAVE</button>
+											<button class="btn btn-default">CANCEL</button>
+										</div>
+									</div>
+								</div>
+
+						    </div>
+						</div>
+					</div>
+					<div class="row uique_col_hei_container" >
+						<div class="uniqu_col_item into-expanded-item col-xs-12 col-sm-12 col-md-8 col-lg-8" id="pfm-details">
+							<div class="into-expanded-item-wrapper">
+								<div class="widget widget-account-basic-details">
+									<div class="widget-label">EXPENSES</div>
+									<div class="widget-body">
+										<div class="widget-main-info">
+											<div class="details col-md-6">
+												<div class="full-height">
+													<div class="text-center pfm_chart_title_cotainer"><p class="pfm_chart_title">Expenses</p></div>
+													<div id="tab1" class="pfm_graph">
+														<span id="pfm_number" class="pfm_number">3 233</span>
+														<div id="circle_finance_detail"></div>
+													</div>
+												</div>
+											</div>
+											<div class="details col-md-6">
+												<div class="pfm_dtails_expenses">
+													<div class="pfm_dtails_expenses_header">
+														<ul>
+															<li class="active"><img src="images/icons/circle_grey.png"></li>
+															<li><img src="images/icons/stats_grey.png"></li>
+															<li><img src="images/icons/card_grey.png"></li>
+															<li><img src="images/icons/people_grey.png"></li>
+															<li><img src="images/icons/key_grey.png"></li>
+															<li><img src="images/icons/app_grey.png"></li>
+
+														</ul>
+														<div class="clearfix"></div>
+													</div>
+													<div class="pfm_dtails_expenses_body">
+														<div class="widget-content">
+															<table class="pfn_tbl">
+																<tr>
+																	<td><div class="home_color"></div></td>
+																	<td>Housing</td>
+																	<td>EUR 1,698.46</td>
+																</tr>
+																<tr>
+																	<td><div class="food_dining"></div></td>
+																	<td>Food &amp; Dining</td>
+																	<td>EUR 1,136.27</td>
+																</tr>
+																<tr>
+																	<td><div class="withdrawal"></div></td>
+																	<td>Withdrawal</td>
+																	<td>EUR 725.00</td>
+																</tr>
+																<tr>
+																	<td><div class="transport"></div></td>
+																	<td>Auto &amp; Transport</td>
+																	<td>EUR 495.76</td>
+																</tr>
+																<tr>
+																	<td><div class="unrecognized"></div></td>
+																	<td>Unrecognized exp</td>
+																	<td>EUR 436.70</td>
+																</tr>
+																<tr>
+																	<td><div class="shopping"></div></td>
+																	<td>Self-care</td>
+																	<td>EUR 316.07</td>
+																</tr>
+																<tr>
+																	<td><div class="entertainment"></div></td>
+																	<td>Entertainment</td>
+																	<td>EUR 270.31</td>
+																</tr>
+																<tr>
+																	<td><div class="education"></div></td>
+																	<td>Education</td>
+																	<td>EUR 89.99</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+													<div class="pfm_dtails_expenses_footer">
+														<p class="pull-left">ToTal</p><p class="pull-right">EUR 5168.46</p>
+														<div class="clearfix"></div>
+													</div>
+												</div>	
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="uniqu_col_item into-expanded-item col-xs-12 col-sm-12 col-md-4 col-lg-4" id="pfm-details">
+							<div class="into-expanded-item-wrapper">
+								<div class="widget widget-account-basic-details">
+									<div class="widget-label">Filter Results</div>
+									<div class="widget-body">
+										<div class="widget-main-info">
+											<div class="details">
+												<div class="detail-container">
+													<div class="detail-icon">
+														<div class="checkbox-slider--b-flat">
+															<label>
+																<input type="checkbox"><span>Overspendings</span>
+															</label>
+														</div>
+													</div>
+													<!-- <div class="detail-right-part">
+														<div class="detail-label"></div>
+													</div> -->
+													<a class="detail-edit-button">
+														<img class="svg" src="images/red_flag.png" alt="">
+													</a>
+												</div>
+												<div class="detail-container">
+													<div class="detail-icon">
+														<div class="checkbox-slider--b-flat">
+															<label>
+																<input type="checkbox"><span>Above Average Transactions</span>
+															</label>
+														</div>
+													</div>
+													<!-- <div class="detail-right-part">
+														<div class="detail-label"></div>
+													</div> -->
+													<a class="detail-edit-button">
+														<img class="svg" src="images/yellow_flag.png" alt="">
+													</a>
+												</div>
+												<div class="detail-container">
+													<div class="detail-icon">
+														<div class="checkbox-slider--b-flat">
+															<label>
+																<input type="checkbox"><span>All Flagged Transactions</span>
+															</label>
+														</div>
+													</div>
+													<!-- <div class="detail-right-part">
+														<div class="detail-label"></div>
+													</div> -->
+												</div>
+												<div class="detail-container">
+													<div class="detail-icon">
+														<div class="checkbox-slider--b-flat">
+															<label>
+																<input type="checkbox"><span>All Transactions</span>
+															</label>
+														</div>
+													</div>
+													<!-- <div class="detail-right-part">
+														<div class="detail-label"></div>
+													</div> -->
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row uique_col_hei_container">
+						<div class="carousel slide" id="myCarousel">
+					        <div class="carousel-inner">
+					            <div class="item active">
+					                    <ul class="thumbnails">
+					                        <li class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					    						<div class="into-expanded-item " added="1">
+												    <div class="into-expanded-item-wrapper">
+												        <div class="widget widget-transactions-history-unit">
+												            <div class="widget-body">
+												                <div class="widget-upper">
+												                    <div class="name">Carrefour</div>
+												                    <div class="date">6 June</div>
+												                </div>
+												                <div class="widget-body">
+												                    <div class="image"> <img src="images/u10.jpg"> </div>
+												                    <div class="info-block">
+												                        <div class="price-block">
+												                            <div class="widget-summ">$129.98</div>
+												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+												                        </div>
+												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    </div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
+												                    <div class="balance"><span>Balance: </span>$953.12</div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from">
+													                    <span>Category: </span><img src="images/pfc-home1.png">
+													                    <span>Housing: </span><img onclick="openNav()" src="images/pfc-edit.png">
+												                    </div>
+												                    <div class="balance"><img src="images/red_flag.png"></div>
+												                </div>
+
+												            </div>
+												        </div>
+												    </div>
+												</div>
+					                        </li>
+					                        <li class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					    						<div class="into-expanded-item " added="1">
+												    <div class="into-expanded-item-wrapper">
+												        <div class="widget widget-transactions-history-unit">
+												            <div class="widget-body">
+												                <div class="widget-upper">
+												                    <div class="name">Carrefour</div>
+												                    <div class="date">6 June</div>
+												                </div>
+												                <div class="widget-body">
+												                    <div class="image"> <img src="images/pfm2.png"> </div>
+												                    <div class="info-block">
+												                        <div class="price-block">
+												                            <div class="widget-summ">$129.98</div>
+												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+												                        </div>
+												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    </div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
+												                    <div class="balance"><span>Balance: </span>$953.12</div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from">
+													                    <span>Category: </span><img src="images/pfc-home1.png">
+													                    <span>Housing: </span><img src="images/pfc-edit.png">
+												                    </div>
+												                    <div class="balance"><img src="images/yellow_flag.png"></div>
+												                </div>
+												            </div>
+												        </div>
+												    </div>
+												</div>
+					                        </li>
+					                        <li class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					    						<div class="into-expanded-item " added="1">
+												    <div class="into-expanded-item-wrapper">
+												        <div class="widget widget-transactions-history-unit">
+												            <div class="widget-body">
+												                <div class="widget-upper">
+												                    <div class="name">Carrefour</div>
+												                    <div class="date">6 June</div>
+												                </div>
+												                <div class="widget-body">
+												                    <div class="image"> <img src="images/pfm3.png"> </div>
+												                    <div class="info-block">
+												                        <div class="price-block">
+												                            <div class="widget-summ">$129.98</div>
+												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+												                        </div>
+												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    </div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
+												                    <div class="balance"><span>Balance: </span>$953.12</div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from">
+													                    <span>Category: </span><img src="images/pfc-coff.png">
+													                    <span>Food & Dining: </span><img src="images/pfc-edit.png">
+												                    </div>
+												                    <div class="balance"><img src="images/grey_flag.png"></div>
+												                </div>
+												            </div>
+												        </div>
+												    </div>
+												</div>
+					                        </li>
+					                        <li class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					    						<div class="into-expanded-item " added="1">
+												    <div class="into-expanded-item-wrapper">
+												        <div class="widget widget-transactions-history-unit">
+												            <div class="widget-body">
+												                <div class="widget-upper">
+												                    <div class="name">Carrefour</div>
+												                    <div class="date">6 June</div>
+												                </div>
+												                <div class="widget-body">
+												                    <div class="image"> <img src="images/pfm4.png"> </div>
+												                    <div class="info-block">
+												                        <div class="price-block">
+												                            <div class="widget-summ">$129.98</div>
+												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+												                        </div>
+												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    </div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
+												                    <div class="balance"><span>Balance: </span>$953.12</div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from">
+													                    <span>Category: </span><img src="images/pfc-game.png">
+													                    <span>Entertaiment: </span><img src="images/pfc-edit.png">
+												                    </div>
+												                    <div class="balance"><img src="images/grey_flag.png"></div>
+												                </div>
+												            </div>
+												        </div>
+												    </div>
+												</div>
+					                        </li>
+					                        <li class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					    						<div class="into-expanded-item " added="1">
+												    <div class="into-expanded-item-wrapper">
+												        <div class="widget widget-transactions-history-unit">
+												            <div class="widget-body">
+												                <div class="widget-upper">
+												                    <div class="name">Carrefour</div>
+												                    <div class="date">6 June</div>
+												                </div>
+												                <div class="widget-body">
+												                    <div class="image"> <img src="images/pfm4.png"> </div>
+												                    <div class="info-block">
+												                        <div class="price-block">
+												                            <div class="widget-summ">$129.98</div>
+												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+												                        </div>
+												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    </div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
+												                    <div class="balance"><span>Balance: </span>$953.12</div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from">
+													                    <span>Category: </span><img src="images/pfc-game.png">
+													                    <span>Entertaiment: </span><img src="images/pfc-edit.png">
+												                    </div>
+												                    <div class="balance"><img src="images/grey_flag.png"></div>
+												                </div>
+												            </div>
+												        </div>
+												    </div>
+												</div>
+					                        </li>
+					                        <li class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					    						<div class="into-expanded-item " added="1">
+												    <div class="into-expanded-item-wrapper">
+												        <div class="widget widget-transactions-history-unit">
+												            <div class="widget-body">
+												                <div class="widget-upper">
+												                    <div class="name">Carrefour</div>
+												                    <div class="date">6 June</div>
+												                </div>
+												                <div class="widget-body">
+												                    <div class="image"> <img src="images/pfm4.png"> </div>
+												                    <div class="info-block">
+												                        <div class="price-block">
+												                            <div class="widget-summ">$129.98</div>
+												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+												                        </div>
+												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    </div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
+												                    <div class="balance"><span>Balance: </span>$953.12</div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from">
+													                    <span>Category: </span><img src="images/pfc-game.png">
+													                    <span>Entertaiment: </span><img src="images/pfc-edit.png">
+												                    </div>
+												                    <div class="balance"><img src="images/grey_flag.png"></div>
+												                </div>
+												            </div>
+												        </div>
+												    </div>
+												</div>
+					                        </li>
+					                    </ul>
+					              </div><!-- /Slide1 --> 
+					              <div class="item ">
+					                    <ul class="thumbnails">
+					                        <li class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					    						<div class="into-expanded-item " added="1">
+												    <div class="into-expanded-item-wrapper">
+												        <div class="widget widget-transactions-history-unit">
+												            <div class="widget-body">
+												                <div class="widget-upper">
+												                    <div class="name">Carrefour</div>
+												                    <div class="date">6 June</div>
+												                </div>
+												                <div class="widget-body">
+												                    <div class="image"> <img src="images/u10.jpg"> </div>
+												                    <div class="info-block">
+												                        <div class="price-block">
+												                            <div class="widget-summ">$129.98</div>
+												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+												                        </div>
+												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    </div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
+												                    <div class="balance"><span>Balance: </span>$953.12</div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from">
+													                    <span>Category: </span><img src="images/pfc-home1.png">
+													                    <span>Housing: </span><img onclick="openNav()" src="images/pfc-edit.png">
+												                    </div>
+												                    <div class="balance"><img src="images/red_flag.png"></div>
+												                </div>
+
+												            </div>
+												        </div>
+												    </div>
+												</div>
+					                        </li>
+					                        <li class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					    						<div class="into-expanded-item " added="1">
+												    <div class="into-expanded-item-wrapper">
+												        <div class="widget widget-transactions-history-unit">
+												            <div class="widget-body">
+												                <div class="widget-upper">
+												                    <div class="name">Carrefour</div>
+												                    <div class="date">6 June</div>
+												                </div>
+												                <div class="widget-body">
+												                    <div class="image"> <img src="images/pfm2.png"> </div>
+												                    <div class="info-block">
+												                        <div class="price-block">
+												                            <div class="widget-summ">$129.98</div>
+												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+												                        </div>
+												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    </div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
+												                    <div class="balance"><span>Balance: </span>$953.12</div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from">
+													                    <span>Category: </span><img src="images/pfc-home1.png">
+													                    <span>Housing: </span><img src="images/pfc-edit.png">
+												                    </div>
+												                    <div class="balance"><img src="images/yellow_flag.png"></div>
+												                </div>
+												            </div>
+												        </div>
+												    </div>
+												</div>
+					                        </li>
+					                        <li class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					    						<div class="into-expanded-item " added="1">
+												    <div class="into-expanded-item-wrapper">
+												        <div class="widget widget-transactions-history-unit">
+												            <div class="widget-body">
+												                <div class="widget-upper">
+												                    <div class="name">Carrefour</div>
+												                    <div class="date">6 June</div>
+												                </div>
+												                <div class="widget-body">
+												                    <div class="image"> <img src="images/pfm3.png"> </div>
+												                    <div class="info-block">
+												                        <div class="price-block">
+												                            <div class="widget-summ">$129.98</div>
+												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+												                        </div>
+												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    </div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
+												                    <div class="balance"><span>Balance: </span>$953.12</div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from">
+													                    <span>Category: </span><img src="images/pfc-coff.png">
+													                    <span>Food & Dining: </span><img src="images/pfc-edit.png">
+												                    </div>
+												                    <div class="balance"><img src="images/grey_flag.png"></div>
+												                </div>
+												            </div>
+												        </div>
+												    </div>
+												</div>
+					                        </li>
+					                        <li class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					    						<div class="into-expanded-item " added="1">
+												    <div class="into-expanded-item-wrapper">
+												        <div class="widget widget-transactions-history-unit">
+												            <div class="widget-body">
+												                <div class="widget-upper">
+												                    <div class="name">Carrefour</div>
+												                    <div class="date">6 June</div>
+												                </div>
+												                <div class="widget-body">
+												                    <div class="image"> <img src="images/pfm4.png"> </div>
+												                    <div class="info-block">
+												                        <div class="price-block">
+												                            <div class="widget-summ">$129.98</div>
+												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+												                        </div>
+												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    </div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
+												                    <div class="balance"><span>Balance: </span>$953.12</div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from">
+													                    <span>Category: </span><img src="images/pfc-game.png">
+													                    <span>Entertaiment: </span><img src="images/pfc-edit.png">
+												                    </div>
+												                    <div class="balance"><img src="images/grey_flag.png"></div>
+												                </div>
+												            </div>
+												        </div>
+												    </div>
+												</div>
+					                        </li>
+					                        <li class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					    						<div class="into-expanded-item " added="1">
+												    <div class="into-expanded-item-wrapper">
+												        <div class="widget widget-transactions-history-unit">
+												            <div class="widget-body">
+												                <div class="widget-upper">
+												                    <div class="name">Carrefour</div>
+												                    <div class="date">6 June</div>
+												                </div>
+												                <div class="widget-body">
+												                    <div class="image"> <img src="images/pfm4.png"> </div>
+												                    <div class="info-block">
+												                        <div class="price-block">
+												                            <div class="widget-summ">$129.98</div>
+												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+												                        </div>
+												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    </div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
+												                    <div class="balance"><span>Balance: </span>$953.12</div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from">
+													                    <span>Category: </span><img src="images/pfc-game.png">
+													                    <span>Entertaiment: </span><img src="images/pfc-edit.png">
+												                    </div>
+												                    <div class="balance"><img src="images/grey_flag.png"></div>
+												                </div>
+												            </div>
+												        </div>
+												    </div>
+												</div>
+					                        </li>
+					                        <li class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					    						<div class="into-expanded-item " added="1">
+												    <div class="into-expanded-item-wrapper">
+												        <div class="widget widget-transactions-history-unit">
+												            <div class="widget-body">
+												                <div class="widget-upper">
+												                    <div class="name">Carrefour</div>
+												                    <div class="date">6 June</div>
+												                </div>
+												                <div class="widget-body">
+												                    <div class="image"> <img src="images/pfm4.png"> </div>
+												                    <div class="info-block">
+												                        <div class="price-block">
+												                            <div class="widget-summ">$129.98</div>
+												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+												                        </div>
+												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    </div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
+												                    <div class="balance"><span>Balance: </span>$953.12</div>
+												                </div>
+												                <div class="widget-footer">
+												                    <div class="from">
+													                    <span>Category: </span><img src="images/pfc-game.png">
+													                    <span>Entertaiment: </span><img src="images/pfc-edit.png">
+												                    </div>
+												                    <div class="balance"><img src="images/grey_flag.png"></div>
+												                </div>
+												            </div>
+												        </div>
+												    </div>
+												</div>
+					                        </li>
+					                    </ul>
+					              </div><!-- /Slide1 --> 
+
+					        </div>
+					        
+					       
+						   <nav>
+								<ul class="control-box pager">
+									<li><a data-slide="prev" href="#myCarousel" class=""><img src="images/arrow-left.png"></a></li>
+									<li><a data-slide="next" href="#myCarousel" class=""><img src="images/arrow-right.png"></li>
+								</ul>
+							</nav>
+						   <!-- /.control-box -->   
+					                              
+					    </div><!-- /#myCarousel -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Finex Online</title>
+		<link href="css/main.min.css" rel="stylesheet">
+		<link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/checkbox.css" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/newstyle.css" />
+		<link type="text/css" rel="stylesheet" href="css/izolafont-new.css" />
+		<link type="text/css" rel="stylesheet" href="css/newstyle-responsive.css" />
+		
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/lodash.js"></script>
+		<script src="js/old/gridstack.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/old/format.js"></script>
+		<script src="js/old/pfmNew/jquery-ui.min.js"></script>
+		<script src="js/old/dropzone.js"></script>
+		<script src="js/jquery.bookblock.js"></script>
+		<script src="js/old/charts.js"></script>
+		<script src="js/old/paymenthelper.js"></script>
+		<script src="js/old/masspayment.js"></script>
+		<script src="js/old/payment.js"></script>
+		<script src="js/old/quickpayment.js"></script>
+		<script src="js/old/mobiletopup.js"></script>
+		<script src="js/old/savgoal.js"></script>
+		<script src="js/old/createstandingorder.js"></script>
+		<script src="js/underscore-min.js"></script>
+		<script src="js/old/pfmNew/custom.js"></script>
+
+		<script src="js/bootstrap.js"></script>
+		<script src="js/bootstrap-toggle.js"></script>
+		<script src="js/handlebars-v4.0.5.js"></script>
+		<script src="js/jquery.easing.min.js"></script>
+		<script src="js/jquery.knob.js"></script>
+		<script src="js/jquery.nicescroll.js"></script>
+		<script src="js/jquery.ui.touch-punch.js"></script>
+		<script src="js/highcharts.js"></script>
+		<script src="js/old/template.js"></script>
+		<script src="js/jquery.modal.js"></script>
+		<script src="js/newvalidate.js"></script>
+	</head>
+	<body class="body-now">
+		<!--div class="se-pre-con" title="loader-icon"></div-->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+						<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+					</button>
+					<a class="login-logo" href="#">
+						<img src="images/u2.png">
+					</a>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container -->
+		</nav>
+		<div class="container">	
+
+			<div class="row">
+				<div class="col-xs-12 col-contener">
+					<div class="widget-content-new center-block">
+						<div class="widget-body-new">
+							<div class="widget-title">Registration</div>
+							<div class="col-lg-12 widget-data-block">
+									<form class="form-horizontal">
+										<div class="control-group">
+											<label class="control-label" for="inputFirstName">First name</label>
+											<div class="controls">
+												<input type="text" id="inputFirstName" placeholder="" />
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="inputLastName">Last name</label>
+											<div class="controls">
+												<input type="text" id="inputLastNameName" placeholder="">
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="inputGender">Gender</label>									
+											<div class="controls select-block">
+												<select>
+													<option>Male</option>
+													<option>FeMale</option>
+												  </select>
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="inputBirthDate">Birth date</label>
+											<div class="controls">
+												<input type="text" id='date-datepicker' value="10/10/1980" class="calendar datepicker-input" placeholder="MM/DD/YYYY" onchange="checkdate(this.value)" />
+												<span id="date-err" class="chkErr">Please enter a valid date formate.</span>
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="inputMobileNumbere">Mobile number</label>
+											<div class="controls">
+												<input type="tel" onblur="checkmobile(this.value)" id="inputMobileNumber" placeholder="" maxlength="10" >
+												<span id="mobile-err" class="chkErr">Please enter a valid mobile no.</span>
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="inputEmail">E-mail</label>
+											<div class="controls">
+												<input type="text" id="inputEmail" placeholder="" onblur="checkEmail(this.value)" />
+												<span id="email-err" class="chkErr">Please enter a valid email address</span>
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label">Language</label>
+											<div class="controls select-block">
+												<select>
+													<option>English</option>
+													<option>French</option>
+												  </select>
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="inputRefferalCode">Referral code</label>
+											<div class="controls">
+												<input type="text" class="help" id="inputRefferalCode" value="hvl1Bu" placeholder="">
+											</div>
+										</div>										
+										<div class="control-group control-last ">
+											<div class="terms-block">							
+												<div class="controls pull-left">
+													<input type="checkbox" id="terms" >
+													<label for="terms" ></label>
+												</div>
+												<label class="control-label pul-right" for="terms1"><span>I accept the</span><span>Term and Conditions</span></label>
+											</div>
+										</div>															
+									</form>
+							</div>
+							<div class="col-lg-12 control-group bottom-block">
+								<div class="bottom-block-content">
+									<div class="col-lg-12 widget-details-button button-one">
+										<a href="./registration1.html" class="btn btn-default">NEXT</a>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<script>
+				$(document).ready(function() {
+				 $( "#date-datepicker" ).datepicker({
+						showOn: "button",
+						buttonImage: "images/calendar.png",
+						buttonImageOnly: true,
+						buttonText: "Select date"
+					});
+				});
+			</script>
+			<div id="playground" class="section grid-stack sec1">
+
+			</div>
+		</div> <!--container.fullpage + section 2 -->
+<!--		<footer><span class="center-block">copyright © 2015 finex.solutions</span></footer>-->
+	</body>
+</html>

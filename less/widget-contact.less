@@ -1,0 +1,105 @@
+.widget.widget-contact {
+    padding: 30px;
+    height: 100%;
+
+	.widget-label {
+        flex: 0 0 auto;
+		display: flex;
+
+		.widget-label-left-part {
+			 float: left;
+             width: 70px;
+		}
+
+		.widget-label-right-part {
+			 float: right;
+             width: 70%;
+			 margin-left:20px;
+			 margin-top: 5px;
+   
+			.contact-manager-position {
+				line-height:30px;
+				margin-top:0px;
+				color: @new-brown;
+				font-size: 14px;	 
+            }
+		}
+
+    }
+
+    .widget-body {
+        flex: 1 1 auto;
+        overflow: hidden;
+		background: @payment-light-grey-background;
+		margin-top:20px;
+    }
+
+    .widget-details-button {
+        width: 120px;
+        position: absolute;
+        left: 50%;
+        margin-left: -60px;
+        bottom: 25px;
+        text-align: center;
+
+        button, .btn {
+            text-align: center;
+            font-size: 14px;
+            padding: 5px 20px;
+            color: @new-grey;
+            background: @light-grey;
+            border: 1px solid @new-grey;
+            border-radius: 5px;
+            min-width: 120px;
+        }
+    }
+
+
+	.contact-manager {
+		margin-top: 45px;
+	}
+	
+	.contact-manager-name {
+		color: @black;
+		text-transform: none;
+	}
+
+	.contact-block {
+
+	}
+
+	.contact-line {
+
+		.contact-line-body {
+			float: left;
+			width: 100%;
+			display: inline-flex;
+			line-height: 44px;
+			border-bottom: 1px solid @new-grey;
+
+			
+	
+            .text span {
+				float: right;
+				font-size: 14px;
+				color: @new-brown-dark;
+				padding-left:10px;
+				line-height: 44px;
+            }
+			
+			.two-line {
+				line-height: 27px ~'!important';
+			}
+		}
+
+		.contact-icon {
+			margin-left:20px;
+		}
+
+		.last{
+			border-bottom: 0px;
+		}
+
+	}
+
+}

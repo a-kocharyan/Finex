@@ -1,1 +1,1 @@
-# finex
+Finex Izola Modern Project README

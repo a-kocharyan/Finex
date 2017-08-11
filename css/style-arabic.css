@@ -1,0 +1,34 @@
+body {direction: rtl; padding: 0;  margin: 0; font-family: 'droidkufi-regular'; width:100%; height: 100%; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#beb8b8+0,e6e7e9+50,d9e2e9+100 */
+background: #beb8b8; /* Old browsers */
+background: -moz-linear-gradient(left, #beb8b8 0%, #e6e7e9 50%, #d9e2e9 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #beb8b8 0%,#e6e7e9 50%,#d9e2e9 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #beb8b8 0%,#e6e7e9 50%,#d9e2e9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#beb8b8', endColorstr='#d9e2e9',GradientType=1 ); /* IE6-9 */}
+.wrapper {padding: 0; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#beb8b8+0,e6e7e9+50,d9e2e9+100 */
+background: #beb8b8; /* Old browsers */
+background: -moz-linear-gradient(left, #beb8b8 0%, #e6e7e9 50%, #d9e2e9 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #beb8b8 0%,#e6e7e9 50%,#d9e2e9 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #beb8b8 0%,#e6e7e9 50%,#d9e2e9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#beb8b8', endColorstr='#d9e2e9',GradientType=1 ); /* IE6-9 */  min-height: 100%;}
+.login-block{ max-width: 100%}
+.header-container{ width:100%; background: #fff; padding: 25px 45px; box-sizing: border-box; display: inline-block;}
+.login-logo{ float: right; margin: 0; padding: 0;}
+.language-block{ float: left; margin: 0; padding: 0; width:150px;}
+.language-block .language-button{ font-size: 14px; font-weight: normal;  font-family: 'CircularStd-Bold'; width:100%; color: #ceaf80;  border: 1px solid #af8d60; direction: ltr;}
+.login-container{ margin: 4% auto; width:70%; background: #fff;  -webkit-border-radius:6px; -moz-border-radius:6px; border-radius: 6px; padding: 30px;} 
+.login-container .title {  font-family: 'droidkufi-bold'; margin: 30px 0 50px; text-align: center; color: #3a3e41; font-size: 30px;     line-height: 45px;}
+.login-block .block .header .title { text-transform: none; font-size: 22px; color: #3a3e41; font-family: 'droidkufi-regular';}
+.login-block .block .login .login-block{ width: 100%; display: block;}
+.login-block .block .header .description { font-family: 'droidkufi-regular'; font-size: 16px; color: #999999; margin: 15px 0 25px !important; line-height: 24px;}
+.login-block .block .login .input-field { width: 100%; height: auto;padding: 10px 15px;font-size: 16px; margin-bottom: 15px; background-color: #fff;   border: 1px solid #af8d60;  font-family: 'droidkufi-regular';  -webkit-border-radius: 4px;  -moz-border-radius: 4px;border-radius: 4px;box-sizing: border-box;     text-transform: uppercase; line-height: 18px;}
+.login-block .block .login .login-block a, .login-block .block .login .login-block a:visited {font-size: 16px; color: #999999;text-decoration: none; font-family: 'droidkufi-bold'; text-transform: uppercase;}
+.login-registr { margin-top: 45px; font-size: 16px; text-align: center; text-transform: uppercase; font-weight: 600;color: #999999; font-family: 'droidkufi-bold';}
+.login-registr a {color: #999999; }
+.login-block .block { padding: 0 4%; text-align: center;}
+.login-block .block .login .auto-login-button {width: auto; margin: 20px auto; background: 0 0; padding: 5px 30px 5px; border: 1px solid #af8d60; border-radius: 6px; text-transform: uppercase; font-size: 16px; color: #af8d60; text-decoration: none; display: inline-block; font-family: 'droidkufi-bold';}
+.login-block .block .login .qr-code-login {width: 180px;}
+.login-block .block .login .login-block .login-button{ font-size: 16px; padding: 5px 20px 5px; float: right; margin: 0; 
+    color: #af8d60 !important; font-family: 'droidkufi-bold';}
+.left{ float: left;}
+footer{ background: none; border: none;}
+.frgotpwd{ float: left; padding: 14px 0;}

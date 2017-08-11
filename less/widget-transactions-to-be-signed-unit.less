@@ -1,0 +1,238 @@
+.widget.widget-transactions-to-be-signed-unit {
+    padding: 15px 25px 25px 15px;
+
+    .widget-body {
+
+        .widget-upper {
+            overflow: hidden;
+            font-size: 16px;
+            font-weight: normal;
+
+            .name {
+                float: left;
+                width: 50%;
+                color: @new-brown;
+                font-weight: 600;
+            }
+
+            .checkbox {
+                position: absolute;
+                top: 0;
+                right: 20px;
+            }
+        }
+
+        .widget-middle {
+            overflow: hidden;
+            padding-bottom: 10px;
+            border-bottom: 1px solid @new-widget-separator-line;
+            display: flex;
+            justify-content: flex-start;
+            align-items: stretch;
+            margin: 10px 0;
+
+            .info-block {
+                width: 65%;
+                float: left;
+                padding-left: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                .price-block {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .widget-summ {
+                        float: left;
+                        font-size: 18px;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    .transaction-type {
+                        float: left;
+                        padding: 2px 5px;
+                        border-radius: 3px;
+                        margin: 12px 5px 5px 10px;
+                        font-size: 12px;
+
+                        &.income {
+                            color: @widget-green-bar-color;
+                            background: @widget-green-bar-color-with-opacity;
+                        }
+                        &.outcome {
+                            color: @widget-dark-orange-bar-color;
+                            background: @widget-dark-orange-bar-color-with-opacity;
+                        }
+                    }
+                }
+
+                .buttons-block {
+                    width: 100%;
+
+                    .widget-button {
+                        overflow: hidden;
+                        float: left;
+                        width: 48%;
+                        text-align: center;
+                        margin: 5px 2% 0 0;
+
+                        button {
+                            width: 100%;
+                            text-align: center;
+                            font-size: 13px;
+                            color: @grey;
+                            background: @light-grey;
+                            border: 1px solid @grey;
+                            border-radius: 5px;
+                            padding: 5px;
+
+                            &:hover {
+                                color: @new-brown;
+                                border: 1px solid @new-brown;
+                            }
+
+                            .accept {
+                                display: block;
+                                float: left;
+                                overflow: hidden;
+                                width: 18px;
+                                height: 18px;
+                                background-color: #00bb00;
+                                border-radius: 9px;
+                                color: #fff;
+                                padding-top: 1px;
+                            }
+                        }
+                    }
+                }
+
+                .tags {
+                    font-size: 14px;
+                    color: @new-brown-dark;
+
+                    .tag {
+                        font-weight: 600;
+                    }
+                }
+            }
+
+
+
+            .widget-summ {
+                float: left;
+                font-size: 32px;
+                padding: 0;
+                margin: 0;
+            }
+
+            .transaction-type {
+                float: left;
+                padding: 2px 5px;
+                border-radius: 3px;
+                margin: 12px 5px 5px 10px;
+                font-size: 12px;
+
+
+                &.income {
+                    color: @widget-green-bar-color;
+                    background: @widget-green-bar-color-with-opacity;
+                }
+                &.outcome {
+                    color: @widget-dark-orange-bar-color;
+                    background: @widget-dark-orange-bar-color-with-opacity;
+                }
+            }
+
+            .name {
+                width: 100%;
+                float: left;
+                font-size: 20px;
+                color: @dark-brown;
+            }
+
+            .date {
+                width: 100%;
+                float: left;
+                font-size: 17px;
+                color: @brown;
+            }
+
+
+            .image {
+                width: 105px;
+                height: 105px;
+                float: left;
+                border-radius: 5px;
+                overflow: hidden;
+
+                img {
+                    width: 105px;
+                    height: 105px;
+                }
+            }
+        }
+
+        .widget-footer {
+            overflow: hidden;
+            font-weight: normal;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: @new-brown-dark;
+
+            span {
+                font-weight: 600;
+            }
+
+            .from {
+                float: left;
+                width: 60%;
+            }
+
+            .balance {
+                float: right;
+                text-align: right;
+                width: 40%;
+            }
+        }
+    }
+}
+
+.widget.widget-transactions-unit-detail {
+    padding: 15px 25px 25px 15px;
+
+    .detail-body {
+        .block {
+            overflow: hidden;
+            width: 32%;
+            float: left;
+            margin-right: 2%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: baseline;
+
+
+            .item {
+                font-size: 14px;
+                color: @medium-brown;
+                margin-bottom: 20px;
+
+                .title {
+                    width: 100%;
+                    color: @medium-grey;
+                    font-size: 11px;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,159 @@
+<div id="mobiletopupart" class="article grid-stack-item" data-gs-x="0" data-gs-y="2" data-showmore-bottom="0" data-showmore-right="0" data-gs-height="2"
+								data-gs-width="2" data-gs-min-height="2" data-gs-min-width="2" data-name="mobiletopup" data-gs-no-resize="true" data-gs-auto-position="false" data-gs-position="32" template="MobileTopup">
+
+								<div id="mobiletopup" class="grid-stack-item-content card_flip relative quickpayment bb-bookblock bb-vertical">
+									<div class="bb-item">
+										<div class="widget-content">
+											<div class="row quick_payment_panel">
+												<div class="col-sm-5">
+													<div class="quick_payment">
+														<div class="quick_benificery_list">
+															<a href="JavaScript:" data-benificiary_name="Vincent Vega" data-beneficiary_phone_name="Vincent's default"
+																	data-beneficiary_phone_number="+356 7922 2146" data-beneficiary_provider="go"
+																	onclick="selectmobiletopupUser(this)">
+																	<img class="img-responsive" src="img/112x112/vincent.jpg" />
+															</a>
+															<a href="JavaScript:" data-benificiary_name="Jessica Carpenter" data-beneficiary_phone_name="Jessica's voda"
+																	data-beneficiary_phone_number="+356 9999 9247" data-beneficiary_provider="vodafone"
+																	onclick="selectmobiletopupUser(this)">
+																	<img class="img-responsive" src="img/112x112/jessica.jpg" />
+															</a>
+															<a href="JavaScript:" data-benificiary_name="Bruno Mars" data-beneficiary_phone_name="Bruno's default"
+																	data-beneficiary_phone_number="+356 9999 9268" data-beneficiary_provider=""
+																	onclick="selectmobiletopupUser(this)">
+																	<img class="img-responsive" src="img/112x112/bruno.jpg" />
+															</a>
+															<a href="JavaScript:" data-benificiary_name="Dora Deak" data-beneficiary_phone_name="Dora's private"
+																	data-beneficiary_phone_number="+356 9999 9645" data-beneficiary_provider="vodafone"
+																	onclick="selectmobiletopupUser(this)">
+																	<img class="img-responsive" src="img/112x112/dora.jpg" />
+															</a>
+															<a href="JavaScript:" data-benificiary_name="Rawan Yoon" data-beneficiary_phone_name="Rowan's default"
+																	data-beneficiary_phone_number="+356 7922 2462" data-beneficiary_provider="go"
+																	onclick="selectmobiletopupUser(this)">
+																	<img class="img-responsive" src="img/112x112/rawan.jpg" />
+															</a>
+														</div>
+														<div class="viewmore" onclick="showViewMoreBottomContent(this)">view<br /> <strong>more</strong></div>
+														<div class="clearfix"></div>
+														<h3>Top-Up to <span class="topup_to_name">&nbsp;</span></h3>
+														<div class="review_beneficiary_account_number">
+															<i class="toggle-edit fa fa-pencil pull-right"></i>
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-7 payment_form">
+													<div class="form-group">
+														<div id="topup_provider_logo"></div>
+														<label>Phone number</label>
+														<select class="topup_select" name="topupPhoneNumber" id="topupPhoneNumber" onchange="setProvider(this.id, this.selectedIndex)">
+															<option value="(+356) 9999 9247" provider="vodafone">(+356) 9999 9247</option>
+															<option value="(+356) 8007 2121" provider="go">(+356) 8007 2121</option>
+															<option value="(+356) 8227 3141" provider="no_pro">(+356) 8227 3141</option> 
+														</select>
+
+														<label>Provider</label>
+														<select class="topup_select" name="topupProvider" id="topupProvider" onchange="changeProvider(this)">
+															<option value=""></option>
+															<option value="go">Go Mobile</option>
+															<option value="vodafone">Vodafone</option> 
+														</select>
+
+														<label>Amount</label>
+														<select class="topup_select" name="topupAmount" id="topupAmount">
+															<option value="10">EUR 10</option>
+															<option value="20">EUR 20</option>
+															<option value="30">EUR 30</option>
+															<option value="50">EUR 50</option>
+														</select>
+													</div>																								
+												</div>
+												<input data-nav-dir="next" class="nav btn btn-transparent btn-next" type="button" value="Next" onclick="topupSendBtnClicked(this)"/>
+												<div class="clearfix"></div>
+											</div>
+										</div><!-- widget content-->
+									</div> <!-- bb-item -->
+									
+									<div class="bb-item" id="review_topup_payment">
+										<div class="widget-content tran-hist-content-new">
+											<div id="topup_review_row_1" class="quickpayment-row1">
+													<div id="topup_review_img" class="img-beni" style="background-image: url(img/no_image.png);">
+														<div class="img-beni-chng">
+															change<br />picture
+														</div>
+													</div>
+													<div class="beni_content">
+														<div class="beni_out">
+															<i class="fa fa-chevron-down"></i>105.25 EUR
+														</div>
+													</div>
+													<ul class="quickpayment-list">
+														<li class="destacc"><span class="li-title">To</span>DE89 3704 0044 0532 0130 00</li>
+														<!-- li class="fee"><span class="li-title">Fee</span>0.99 EUR (<strong class="white">by&nbsp;</strong> <span class="feeby">SHA</span>)</li>
+														<li class="fxrate"><span class="li-title">FX Rate</span>1.1395</li-->
+														<li id="topup_src_acc_name" class="srcacc"><span class="li-title">From</span>My Current Account</li>
+														<li><span class="li-title">On</span>19th June, 2015 (Friday)</li>
+													</ul>
+											</div>
+											<div class="quickpayment-row2">
+													<div class="tu-qrcode">
+															<img src="img/qrcode250.png" align="absmiddle" width="50%" />
+													</div>
+													<br/>
+													<ul class="quickpayment-list">
+														<li class="qp-auth code"><span class="li-title">Authorize payment</span> <input type="password" class="paymentSignButton"
+															onkeypress="enableSignButton(this)" onclick="enableSignButton(this)" /></li>
+													</ul>
+
+													<div class="qp-auth li-buttons">
+													</div>
+											</div>
+										</div>
+										<input data-nav-dir="prev" class="nav btn btn-transparent btn-back" type="button" value="Back" onclick="//mobiletopupShowOriginal(this)" />
+										<input data-nav-dir="next" class="nav btn btn-transparent btn-next" type="button" value="Submit" onclick="//doConfirmTopup(this)" />
+									</div>
+									
+									<div class="bb-item processing" data-nav-auto-time="2000"></div>
+									
+									<div class="bb-item">
+										<div class="widget-content">
+											<div class="quickpayment-row1 result-row">
+												<div>
+													<strong class="payment_processing_label">Your Top-Up is under processing.</strong>
+													<p>We will notify you once it is processed.</p>
+													<ul class="quickpayment-list">
+														<li><span class="li-title tranid">Transaction ID is</span>TR0034569544AX12</li>
+													</ul>
+													<div class="payment-result-action">
+														<div>
+															<a href="JavaScript:" onclick=""> <img src="img/send_mail.png" />
+															</a> Send mail to beneficiary
+														</div>
+													</div>
+													<div class="btncontainer">
+														<input data-nav-dir="first" type="button" class="nav btn btn-transparent btn-first" onclick="mobiletopupShowOriginal(this)" value="Make another Top-Up"/>
+													</div>
+												</div>
+											</div>
+											<div class="quickpayment-row2 result-row2">
+												<div class="payment-result-ad"></div>
+											</div>
+										</div>
+									</div>
+
+								</div> <!-- mobile topup -->
+							<!--div class="back">
+								<form>
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Enter value" />
+									</div>
+									<div class="form-group">
+										<select class="form-control">
+											<option>Chose Option</option>
+										</select>
+									</div>
+									<input class="btn btn-transparent" onclick="revertWidgetSetting(this)" type="button" value="Save" />
+									<input class="btn btn-transparent" onclick="revertWidgetSetting(this)" type="button" value="Cancel" />
+								</form>
+							</div-->
+						</div>

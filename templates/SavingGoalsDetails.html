@@ -1,0 +1,534 @@
+<div class="modal fade in" id="setting_modal_goals" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+						<div class="modal-content setting_model_content">
+								<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">×</span>
+										</button>
+										<h4 class="modal-title">Saving Goals</h4>
+								</div>
+								
+								<div class="modal-body">
+										<div class="main_body">
+										
+											<div id="article_createsavings" class="article inner-class default-size-temp-double ">
+												<div id="innercreatesavings" class="grid-stack-item-content  quickpayment cresavingoal bb-bookblock bb-vertical">
+													<div class="bb-item" id="innercreatesavings_container_1">
+														<div class="widget-content">
+															<div class="row quick_payment_panel">
+																	<div class="col-sm-5">
+																			<div class="quick_payment">
+																					<div class="payment_type_list">
+																							<div class="savgoaltype retirement" data-saving-type="retirement" title="Save for retirement" onclick="selectSavingGoalType(this, 'retirement')" onmouseover="$('#savgoaltypedesc').text($(this).attr('title'))" onmouseleave="$('#savgoaltypedesc').text('')">
+																							<i class="fa fa-2x fa-bed"></i>
+																							</div>
+																							<div class="savgoaltype renovation" data-saving-type="houseRenovation" title="Apartment renovation" onclick="selectSavingGoalType(this, 'renovation')" onmouseover="$('#savgoaltypedesc').text($(this).attr('title'))" onmouseleave="$('#savgoaltypedesc').text('')">
+																								<i class="fa fa-2x fa-building"></i>
+																							</div>
+																							<div class="savgoaltype newcar" data-saving-type="newCar" title="Buy a new car" onclick="selectSavingGoalType(this, 'newcar')" onmouseover="$('#savgoaltypedesc').text($(this).attr('title'))" onmouseleave="$('#savgoaltypedesc').text('')">
+																								<i class="fa fa-2x fa-car"></i>
+																							</div>
+																							<div class="savgoaltype vacation" data-saving-type="Vacation" title="Go to vacation" onclick="selectSavingGoalType(this, 'vacation')" onmouseover="$('#savgoaltypedesc').text($(this).attr('title'))" onmouseleave="$('#savgoaltypedesc').text('')">
+																								<i class="fa fa-2x fa-picture-o"></i>
+																							</div>
+																							<div class="savgoaltype loanrepay" data-saving-type="loanrepay" title="Loan repayment" onclick="selectSavingGoalType(this, 'loanrepay')" onmouseover="$('#savgoaltypedesc').text($(this).attr('title'))" onmouseleave="$('#savgoaltypedesc').text('')">
+																								<i class="fa fa-2x fa-money"></i>
+																							</div>
+																							<div class="savgoaltype electronics" data-saving-type="electronics" title="Buy a new gadget" onclick="selectSavingGoalType(this, 'electronics')" onmouseover="$('#savgoaltypedesc').text($(this).attr('title'))" onmouseleave="$('#savgoaltypedesc').text('')">
+																								<i class="fa fa-2x fa-desktop"></i>
+																							</div>
+																							<div class="savgoaltype education" data-saving-type="education" title="Education" onclick="selectSavingGoalType(this, 'education')" onmouseover="$('#savgoaltypedesc').text($(this).attr('title'))" onmouseleave="$('#savgoaltypedesc').text('')">
+																								<i class="fa fa-2x fa-mortar-board"></i>
+																							</div>
+																					</div>
+																					<div class="viewmore savgoaltype" title="Select another savings goal..." onclick="savgoalShowBottomContent(this)" onmouseover="$('#savgoaltypedesc').text($(this).attr('title'))" onmouseleave="$('#savgoaltypedesc').text('')">view<br/><strong>more</strong></div>
+																					<div class="clearfix"></div>
+																					<h5 id="savgoaltypedesc"></h5>
+																			</div>
+																	</div>
+																	<div class="col-sm-7 payment_form">
+																		<div class="form-group">
+																				<label>Goal name</label>
+																				<div class="savings_goal_name">
+																						<input type="text" id="savingsGoalName"/>
+																				</div>
+																		</div>
+																		<div class="form-group" style="width:45%;float:left">
+																				<label>Target amount</label>
+																				<div class="input_payment">
+																						<input id="savingsGoalTargetAmount" type="text" />
+																				</div>
+																		</div>
+																		<div class="form-group pull-right" style="width:45%;">
+																				<label>Monthly save</label>
+																				<div class="input_payment">
+																						<input id="savingsGoalMonthlySave" type="text" />
+																				</div>
+																		</div>
+																		<div class="savgoaldate maxwidth">
+																				<label>Target Date</label><i class="fa fa-refresh" title="calculate based on monthly save" onmouseover="$('#savgoaltypedesc').text($(this).attr('title'))" onmouseleave="$('#savgoaltypedesc').text('')" onclick="calculateSavingsGoalDate()" ></i>
+																				<div class="savings_goal_date">
+																					<input type="date" id="savingsTargetDate" class="pay_pasword" max="2099-12-31"/>
+																				</div>
+																		</div>
+																	</div>
+															</div>
+															<input data-nav-dir="next" class="nav btn btn-transparent btn-next" type="button" value="Next" onclick="createSavingsGoalsNext1(this)" id="createSavingGoalsNext1"/>
+														</div>
+													</div>
+										
+													<div class="bb-item" id="innercreatesavings_container_2">
+														<div class="widget-content">
+															<div class="row cresavgoal_panel">
+																	<div class="col-sm-5">
+																			<div class="quick_payment">
+																					<div class="partner_list">
+																						<div class="">
+																						<h4 id="cresavgoal_scr3_title"></h4>
+																						<h4 id="cresavgoal_scr3_amount"></h4>
+																						<h4 id="cresavgoal_scr3_date"></h4>
+																						<i id="cresavgoal_scr3_img"></i>
+																						
+																						</div>
+																					</div>
+																					<div class="clearfix"></div>
+																			</div>
+																	</div>
+																	<div class="col-sm-7 cresavgoal_scr2_col2">
+																			<!-- jobb oldal -->
+																			<div class="cresavgoal_btns">
+																				<a class="selected" href="javascript:" onclick="cresavgoal(this, 1)">Link to existing account</a>
+																				<a href="javascript:" onclick="cresavgoal(this, 2)">Link to new account</a>
+																				<a href="javascript:" onclick="cresavgoal(this, 3)">Create without account</a>
+																			</div>
+																			<div id="cresavgoal_linkto">
+																					<label>Link to:</label><br/>
+																					<span>
+																					<select class="cresavgoal_accselect">
+																						<option>My EUR savings account (2,345 EUR)</option>
+																						<option>My USD savings account (1,122.99 USD)</option>
+																					</select>
+																					
+																					</span>
+																			</div>
+																			<div id="cresavgoal_newacc" style="display:none">
+																					<label>We will open a savings account for your goal</label><br/>
+																			</div>
+																			<div id="cresavgoal_storder">
+																				<span>
+																				<input type="checkbox" name="creStandingOrderForMonthlyPays" checked="checked" />
+																					<span>Create a standing order for monthly payments</span>
+																				</span>
+																			</div>
+																			<div>
+																					<label>Accelerate your goal:</label><br/>
+																					<span>Personal loan for 6.38%</span><a class="details">Details</a>
+																			</div>
+																			<div>
+																				<span>
+																				<input type="checkbox" name="cresavgoalInterested" checked="checked" />
+																					<span>interested</span>
+																				</span>
+																			</div>
+																	</div>
+															</div>
+															<input data-nav-dir="prev" class="nav btn btn-transparent btn-back" type="button" value="Back" onclick="createSavingsGoalsPrev1(this)" />
+															<input data-nav-dir="next" class="nav btn btn-transparent btn-next" type="button" value="Next" onclick="createSavingsGoalsNext2(this)" />
+														</div>
+													</div>
+										
+													<div class="bb-item" id="innercreatesavings_container_3">
+														<div class="widget-content">
+															<div class="row cresavgoal_panel">
+																	<div class="col-sm-5">
+																			<div class="quick_payment">
+																					<div class="partner_list">
+																						<div class="">
+																						<h4 id="cresavgoal_scr2_title"></h4>
+																						<h4 id="cresavgoal_scr2_amount"></h4>
+																						<h4 id="cresavgoal_scr2_date"></h4>
+																						<i id="cresavgoal_scr2_img"></i>
+																						
+																						</div>
+																					</div>
+																					<div class="clearfix"></div>
+																			</div>
+																	</div>
+																	<div class="col-sm-7 cresavgoal_scr2_col2">
+																			<!-- jobb oldal -->
+																			<div>
+																					<label>Link to:</label><br/>
+																					<span>My EUR savings account (2,345 EUR)</span>
+																			</div>
+																			<div>
+																				<label>Create standing order of <b id="cresavgoal_scr2_amount2">EUR 000</b> from <b>My Current</b> to <b>My EUR Savings Account</b></label>
+																			</div>
+																					<ul class="quickpayment-list">
+																					<li class="qp-auth code"><span class="li-title">Authorize payment</span> <input type="password" class="paymentSignButton"
+																									onkeypress="enableSignButton(this)" onclick="enableSignButton(this)" /></li></ul>
+																	</div>
+															</div>
+															<input data-nav-dir="prev" class="nav btn btn-transparent btn-back" type="button" value="Back" onclick="createSavingsGoalsPrev2(this)" />
+															<input data-nav-dir="next" class="nav btn btn-transparent btn-next" type="button" value="Next" onclick="createSavingsGoalsNext3(this)" />
+														</div>
+													</div>
+
+													<div class="bb-item processing" data-nav-auto-time="2000">
+													</div>
+										
+													<div class="bb-item" id="innercreatesavings_container_4">
+														<div class="widget-content">
+															<div class="quickpayment-row1 result-row">
+																<div>
+																	<strong class="payment_processing_label">Your savings goal was successfully created</strong>
+																	<p>Your standing order is under processing</p>
+																	<ul class="quickpayment-list">
+																			<li><span class="li-title tranid">Transaction ID is</span>TR0034534544AF17</li>
+																	</ul>
+																	<div class="payment-result-action">
+																			<!-- <strong class="white" style="font-size:16px;margin-left:10px; ">Did you make a /charity/ payment?</strong> <br/>-->
+																	</div>
+																	<div class="btncontainer">
+																		<input data-nav-dir="first" class="nav btn btn-transparentt" type="button" value="Create another goal" onclick="createSavingsGoalsFirstScreen()" />
+																	</div>
+																</div>
+															</div>
+															<div class="quickpayment-row2 result-row2">
+																<div class="payment-result-ad"></div>
+															</div>														
+														</div>
+													</div>
+												</div>
+											</div>						
+										
+										
+										
+												<!-- new car box -->
+												<div class="article inner-class">
+														<div class="acc-details-new card_flip relative default-size-temp">
+																<header class="drag-handle">
+																		<strong>New car</strong>
+																</header>
+																<div class="widget-content row">
+																	<div class="goals_upper">
+																		<img src="img/goals/bmw.jpg" alt="new car" class="goal_img" />
+																	    <div class="goal_process">
+																			<ul class="acc-details-list limits">
+																					<li><span></span>
+																							<div class="divchart">
+																									<div class="green" style="width: 48%">12,340</div>
+																									<div class="white" style="width: 52%">25,000</div>
+																							</div>
+																							<div class="process_ratio">48%</div>
+																							</li>
+																			</ul>
+																			<br/>
+																			<strong>Current balance:</strong> 12,340 EUR <br/>
+																	    </div>
+																	</div>
+																	<div class="goals_lower">
+																		<table class="goal_data_table">
+																			<tr>
+																				<td><strong>Target balance:</strong></td>
+																				<td>25,000 EUR</td>
+																			</tr>
+																			<tr>
+																				<td><strong>Target date:</strong></td>
+																				<td>01.06.2016</td>
+																			</tr>
+																			<tr>
+																				<td><strong>Monthly payment:</strong></td> 
+																				<td>500 EUR</td>
+																			</tr>
+																		</table>
+																	</div>
+																</div>
+																<div class="bottom-center-abs">
+																	<div class="goals_category_select_block">
+																    	<font>Category:</font>
+																    	<select class="goals_category_select" disabled="disabled">
+																    		<option selected="true" value="Vehicle">Vehicle</option>
+																    		<option value="Housing">Housing</option>
+																    		<option value="Retirement">Retirement</option>																    	
+																    		<option value="Vacation">Vacation</option>
+																    	</select>
+																	</div>
+																	<input type="button" value="Edit" class="btn btn-transparent goals_edit" />
+																</div>																
+														</div>
+												</div>
+
+												<!-- new villa box -->
+												<div class="article inner-class">
+														<div class="acc-details-new card_flip relative default-size-temp">
+																<header class="drag-handle">
+																		<strong>New villa</strong>
+																</header>
+																<div class="widget-content row">
+																	<div class="goals_upper">
+																		<img src="img/goals/villa.jpg" alt="vehicle" class="goal_img" />
+																	    <div class="goal_process">
+																			<ul class="acc-details-list limits">
+																					<li><span></span>
+																							<div class="divchart">
+																									<div class="green" style="width: 17%">17,340</div>
+																									<div class="white" style="width: 83%">100,000</div>
+																							</div>
+																							<div class="process_ratio">17%</div>
+																							</li>
+																			</ul>
+																			<br/>
+																			<strong>Current balance:</strong> 17,340 EUR <br/>
+																	    </div>
+																	</div>
+																	<div class="goals_lower">
+																		<table class="goal_data_table">
+																			<tr>
+																				<td><strong>Target balance:</strong></td>
+																				<td>100,000 EUR</td>
+																			</tr>
+																			<tr>
+																				<td><strong>Target date:</strong></td>
+																				<td>01.01.2019</td>
+																			</tr>
+																			<tr>
+																				<td><strong>Monthly payment:</strong></td> 
+																				<td>1,250 EUR</td>
+																			</tr>
+																		</table>
+																	</div>
+																</div>
+																<div class="bottom-center-abs">
+																	<div class="goals_category_select_block">
+																    	<font>Category:</font>
+																    	<select class="goals_category_select" disabled="disabled">
+																    		<option selected="true" value="Housing">Housing</option>
+																    		<option value="Vehicle">Vehicle</option>
+																    		<option value="Retirement">Retirement</option>																    	
+																    		<option value="Vacation">Vacation</option>
+																    	</select>
+																	</div>
+																	<input type="button" value="Edit" class="btn btn-transparent goals_edit" />															
+																</div>
+														</div>
+												</div>
+												
+												<!-- create new goal box -->
+												<!--
+												<div class="article inner-class">
+														<div class="acc-details-new card_flip relative default-size-temp">
+																<header class="drag-handle">
+																		<strong>Create a new goal</strong>
+																</header>
+																<div class="widget-content row">
+																	<div class="goals_upper">
+																		<img src="img/goals/add_img.jpg" alt="new_goal" class="goal_img" />
+																	    <div class="goal_process">
+																			<strong>Goal name:</strong>
+																			<input type="text" class="form_element" />
+																	    </div>
+																	</div>
+																	<div class="goals_lower">
+																		<table class="goal_data_table">
+																			<tr>
+																				<td><strong>Target amount:</strong></td>
+																				<td><input type="text" class="form_element" /></td>
+																			</tr>
+																			<tr>
+																				<td><strong>Target date:</strong></td>
+																				<td><input type="text" class="form_element" /></td>
+																			</tr>
+																			<tr>
+																				<td><strong>Monthly payment:</strong></td> 
+																				<td><input type="text" class="form_element" /></td>
+																			</tr>
+																		</table>
+																	</div>
+																</div>
+																<div class="bottom-center-abs">
+																	<div class="goals_category_select_block">
+																    	<font>Category:</font>
+																    	<select class="goals_category_select">
+																    		<option value="Housing">Housing</option>
+																    		<option value="Retirement">Retirement</option>
+																    		<option value="Vacation">Vacation</option>
+																    		<option value="Vehicle">Vehicle</option>
+																    	</select>
+																	</div>
+																	<input type="button" value="Next" class="btn btn-transparent goals_edit" />															
+																</div>
+														</div>
+												</div>
+												-->												
+												
+												<!-- retirement savings box -->
+												<div class="article inner-class">
+														<div class="acc-details-new card_flip relative default-size-temp">
+																<header class="drag-handle">
+																		<strong>Retirement savings</strong>
+																</header>
+																<div class="widget-content row">
+																	<div class="goals_upper">
+																		<img src="img/goals/retirement.jpg" alt="retirement" class="goal_img" />
+																	    <div class="goal_process">
+																			<ul class="acc-details-list limits">
+																					<li><span></span>
+																							<div class="divchart">
+																									<div class="green" style="width: 11%">20,340</div>
+																									<div class="white" style="width: 89%">220,000</div>
+																							</div>
+																							<div class="process_ratio">11%</div>
+																							</li>
+																			</ul>
+																			<br/>
+																			<strong>Current balance:</strong> 20,340 EUR <br/>
+																	    </div>
+																	</div>
+																	<div class="goals_lower">
+																		<table class="goal_data_table">
+																			<tr>
+																				<td><strong>Target balance:</strong></td>
+																				<td>220,000 EUR</td>
+																			</tr>
+																			<tr>
+																				<td><strong>Target date:</strong></td>
+																				<td>01.01.2026</td>
+																			</tr>
+																			<tr>
+																				<td><strong>Monthly payment:</strong></td> 
+																				<td>500 EUR</td>
+																			</tr>
+																		</table>
+																	</div>
+																</div>
+																<div class="bottom-center-abs">
+																	<div class="goals_category_select_block">
+																    	<font>Category:</font>
+																    	<select class="goals_category_select" disabled="disabled">
+																    		<option selected="true" value="Retirement">Retirement</option>
+																    		<option value="Housing">Housing</option>
+																    		<option value="Vehicle">Vehicle</option>																    	
+																    		<option value="Vacation">Vacation</option>
+																    	</select>
+																	</div>
+																	<input type="button" value="Edit" class="btn btn-transparent goals_edit" />															
+																</div>
+														</div>
+												</div>												
+												
+												<!-- apartment renovation box -->
+												<div class="article inner-class">
+														<div class="acc-details-new card_flip relative default-size-temp">
+																<header class="drag-handle">
+																		<strong>Apartment renovation</strong>
+																</header>
+																<div class="widget-content row">
+																	<div class="goals_upper">
+																		<img src="img/goals/housing.jpg" alt="housing" class="goal_img" />
+																	    <div class="goal_process">
+																			<ul class="acc-details-list limits">
+																					<li><span></span>
+																							<div class="divchart">
+																									<div class="yellow" style="width: 67%">6,350</div>
+																									<div class="white" style="width: 33%">9,500</div>
+																							</div>
+																							<div class="process_ratio">67%</div>
+																							</li>
+																			</ul>
+																			<br/>
+																			<strong>Current balance:</strong> 6,350 EUR <br/>
+																	    </div>
+																	</div>
+																	<div class="goals_lower">
+																		<table class="goal_data_table">
+																			<tr>
+																				<td><strong>Target balance:</strong></td>
+																				<td>9,500 EUR</td>
+																			</tr>
+																			<tr>
+																				<td><strong>Target date:</strong></td>
+																				<td>01.03.2016</td>
+																			</tr>
+																			<tr>
+																				<td><strong>Monthly payment:</strong></td> 
+																				<td>250 EUR</td>
+																			</tr>
+																		</table>
+																	</div>
+																</div>
+																<div class="bottom-center-abs">
+																	<div class="goals_category_select_block">
+																    	<font>Category:</font>
+																    	<select class="goals_category_select" disabled="disabled">
+																    		<option selected="true" value="Housing">Housing</option>
+																    		<option value="Retirement">Retirement</option>
+																    		<option value="Vehicle">Vehicle</option>																    	
+																    		<option value="Vacation">Vacation</option>
+																    	</select>
+																	</div>
+																	<input type="button" value="Edit" class="btn btn-transparent goals_edit" />															
+																</div>
+														</div>
+												</div>
+												
+												<!-- maldives holiday box -->
+												<div class="article inner-class">
+														<div class="acc-details-new card_flip relative default-size-temp">
+																<header class="drag-handle">
+																		<strong>Maldives holiday</strong>
+																</header>
+																<div class="widget-content row">
+																	<div class="goals_upper">
+																		<img src="img/goals/maldives.jpg" alt="vacation" class="goal_img" />
+																	    <div class="goal_process">
+																			<ul class="acc-details-list limits">
+																					<li><span></span>
+																							<div class="divchart">
+																									<div class="green" style="width: 87%">5,220</div>
+																									<div class="white" style="width: 13%">6,000</div>
+																							</div>
+																							<div class="process_ratio">87%</div>
+																							</li>
+																			</ul>
+																			<br/>
+																			<strong>Current balance:</strong> 5,220 EUR <br/>
+																	    </div>
+																	</div>
+																	<div class="goals_lower">
+																		<table class="goal_data_table">
+																			<tr>
+																				<td><strong>Target balance:</strong></td>
+																				<td>6,000 EUR</td>
+																			</tr>
+																			<tr>
+																				<td><strong>Target date:</strong></td>
+																				<td>15.09.2015</td>
+																			</tr>
+																			<tr>
+																				<td><strong>Monthly payment:</strong></td> 
+																				<td>200 EUR</td>
+																			</tr>
+																		</table>
+																	</div>
+																</div>
+																<div class="bottom-center-abs">
+																	<div class="goals_category_select_block">
+																    	<font>Category:</font>
+																    	<select class="goals_category_select" disabled="disabled">
+																    		<option selected="true" value="Vacation">Vacation</option>
+																    		<option value="Housing">Housing</option>
+																    		<option value="Retirement">Retirement</option>
+																    		<option value="Vehicle">Vehicle</option>																    	
+																    	</select>
+																	</div>
+																	<input type="button" value="Edit" class="btn btn-transparent goals_edit" />															
+																</div>
+														</div>
+												</div>
+												
+
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>

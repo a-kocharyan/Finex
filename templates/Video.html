@@ -1,0 +1,43 @@
+<div id="vid" data-gs-x="0" data-gs-y="0" data-gs-position="1" data-current_content="1" class="article grid-stack-item" data-showmore-bottom="0" data-showmore-right="0" data-gs-min-width="1"
+	 data-gs-min-height="1" data-gs-width="1" data-gs-height="1" data-name="video" data-gs-no-resize="true" data-gs-auto-position="false" template="Video">
+	<div class="grid-stack-item-content card_flip">
+	<div class="widget-tools">
+			<div class="widget-close"><span><a href="JavaScript:" onclick="removeWidget(this)" class="fa fa-remove"></a></span></div>			
+		</div>
+		<div class="widget widget-future-cash-flow">
+			<div class="widget-body">
+				<div class="widget-main-info">
+					<div class="widget-label drag-handle">What Happened Since My Last Login?</div>
+					<div class="widget-content widget-video">
+						<div class="modal" id="modal" style="display:none;">
+							<script type="text/javascript">		
+								$(document).ready(function(){
+									
+									var userType = $('#user-type').html();
+									var videoSrc = './video/What hanneped since my last login.mp4';
+									if(userType != 'John Smith'){
+										videoSrc =  './video/Adam video.mp4';
+										$('.widget-video-body').addClass('video-adam');
+										$('.video-adam').removeClass('widget-video-body');
+										
+									} else {
+										$('.video-adam').addClass('widget-video-body');
+										$('.widget-video-body').removeClass('video-adam');							
+									}
+									$('#video-full source').attr('src', videoSrc);
+									$('#video-full').videoExtend({});
+								});
+							</script>
+						<div class="widget-video-body-full">
+							<video id="video-full" controls>
+								<source src="./video/What hanneped since my last login.mp4" type="video/mp4">
+							</video>
+						</div>						
+						</div>
+						<div class="widget-video-body"><div></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

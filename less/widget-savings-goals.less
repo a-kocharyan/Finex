@@ -1,0 +1,159 @@
+.widget.widget-savings-goals {
+
+    .savings-goals-block {
+        margin-top:30px;
+    }
+	
+	.savings-goals-body{
+		clear: both;
+		content: " ";
+		display: inline-flex;
+	}
+	
+	.savings-goals-body span{
+		margin-left:20px;
+		line-height: 25px;
+		float:left;
+	}
+
+	.savings-goals-body span:first-child{	
+		text-transform: uppercase;
+		color: @new-brown;
+		font-family: SourceSansPro,Arial,Helvetica,sans-serif;
+		font-size: 14px;
+		margin-top: -5px;
+	}
+
+	.savings-goals-body span:last-child{
+		clear:both; 
+		float:right;
+		color: @new-brown-dark;
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	.savings-goals-top{
+		padding-bottom:40px;
+		padding-top:30px;
+	}
+	
+	.widget-progress-bar {
+        position: relative;
+        height: 8px;
+        width: 100%;
+
+        .bar-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 8px;
+            width: 100%;
+            z-index:10;
+            border-radius: 4px;
+			background: @grey-bar;
+			
+        }
+
+        .bar-progress {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 8px;         
+            z-index:10;
+            border-radius: 4px 0 0 4px;
+        }
+
+		.orange{
+			background: @orange;
+			width: 47%;
+		}
+
+		.green{
+			background: @new-green;
+			width: 87%;
+		}
+
+		.red{
+			background: @new-red;
+			width: 27%;
+		}
+		
+	}
+	  
+	.savings-goals-line {
+
+		.savings-goals-left-part {
+			float: left;
+			width: 75%;
+			display: inline-flex;
+				
+            .goals-title span {
+				float: right;
+				font-size: 18px;
+				color: @black;
+				padding-left:10px;
+				padding-top:5px;
+				font-weight: 600;
+				line-height: 20px;
+            }
+
+		}
+
+		.savings-goals-right-part {
+			float: right;
+			width: 25%;
+			line-height: 30px;
+
+			.savings-goals-percent span {
+				font-size: 18px;
+				font-weight: 600;
+				padding-left:10px;
+				float:right;
+			}
+
+			.transaction-type {
+				float: right;
+				padding: 1px 5px 2px;
+				border-radius: 3px;
+				margin: 15px 0 5px 12px;
+				font-size: 20px;
+				line-height: 15px;
+			}
+		}
+
+		.orange span{
+			color: @orange;
+		}
+
+		.green span{
+			color: @new-green;
+		}
+
+		.red span{
+			color: @new-red;
+		}
+
+	}
+
+	.widget-details-button {
+        width: 120px;
+        position: absolute;
+        left: 50%;
+        margin-left: -60px;
+        bottom: 25px;
+        text-align: center;
+
+        button, .btn {
+            text-align: center;
+            font-size: 14px;
+            padding: 5px 20px;
+            color: @new-grey;
+            background: @light-grey;
+            border: 1px solid @new-grey;
+            border-radius: 5px;
+            min-width: 120px;
+        }
+
+    }
+
+}

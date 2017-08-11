@@ -1,0 +1,542 @@
+<div class="modal fade in" id="setting_modal_tran" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content setting_model_content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title">Transaction Details</h4>
+            </div>
+            <div class="modal-body tran-details">
+                <div class="main_body row">
+                    <div class="into-expanded-item col-xs-12 col-sm-12 col-md-12 col-lg-12" id="transactions-history-details">
+                        <div class="transaction-history-toolbar">
+                            <div class="into-expanded-item-wrapper">
+                                <div class="block left delimeter">
+                                    <div class="title">Period:</div>
+                                    <div class="content black">
+                                        Last 30 days <i class="fa fa-caret-down black"></i>
+										<div class="dropdown-menu-wrapper">
+											<div class="dropdown-menu">
+												<div class="triangle"></div>
+												<ul>
+													<li>Today</li>
+													<li>Last 7 days</li>
+													<li class="active">Last 30 days</li>
+													<li>Custom range
+														<div class="datepicker">
+															<input type="text" class="form-control" id='period-datepicker' value=""/>
+														</div>
+													</li>
+												</ul>
+												<button class="btn btn-apply">Apply</button>
+											</div>
+										</div>
+                                    </div>
+                                </div>
+                                <div class="block left delimeter">
+                                    <div class="title">Accounts & Cards</div>
+                                    <div class="content black">
+                                        All <i class="fa fa-caret-down black"></i>
+										<div class="dropdown-menu-wrapper">
+											<div class="dropdown-menu">
+												<div class="triangle"></div>
+												<ul class="checkbox-list">
+													<li><input type="checkbox" class="form-control" checked="checked"/><label>All</label></li>
+													<li><input type="checkbox" class="form-control" /><label>Current Account</label></li>
+													<li ><input type="checkbox" class="form-control"/><label>Credit card</label></li>
+												</ul>
+											</div>
+										</div>
+                                    </div>
+                                </div>
+								<div class="block left delimeter">
+                                    <div class="title">Partners</div>
+                                    <div class="content black">
+                                        All <i class="fa fa-caret-down black"></i>
+										<div class="dropdown-menu-wrapper">
+											<div class="dropdown-menu">
+												<div class="triangle"></div>
+												<ul class="checkbox-list">
+													<li><input type="checkbox" class="form-control" checked="checked"/><label>All</label></li>
+													<li><input type="checkbox" class="form-control" /><label>Carrefour</label></li>
+													<li ><input type="checkbox" class="form-control"/><label>Virgin Megastore</label></li>
+													<li><input type="checkbox" class="form-control" /><label>Costa coffee</label></li>
+													<li><input type="checkbox" class="form-control" /><label>Cash withdrawal</label></li>
+													<li><input type="checkbox" class="form-control" /><label>Le Meridien</label></li>
+												</ul>
+											</div>
+										</div>
+                                    </div>
+                                </div>
+								<div class="block left delimeter">
+                                    <div class="title">Category</div>
+                                    <div class="content black">
+                                        All <i class="fa fa-caret-down black"></i>
+										<div class="dropdown-menu-wrapper">
+											<div class="dropdown-menu">
+												<div class="triangle"></div>
+												<ul class="checkbox-list">
+													<li><input type="checkbox" class="form-control" checked="checked"/><label>All</label></li>
+													<li><input type="checkbox" class="form-control" /><label>Education</label></li>
+													<li ><input type="checkbox" class="form-control"/><label>Housing</label></li>
+													<li><input type="checkbox" class="form-control" /><label>Entertainment</label></li>
+												</ul>
+											</div>
+										</div>
+                                    </div>
+                                </div>
+								<div class="block left delimeter">
+                                    <div class="title">Amount</div>
+                                    <div class="content black">
+                                        All <i class="fa fa-caret-down black"></i>
+										<div class="dropdown-menu-wrapper">
+											<div class="dropdown-menu">
+												<div class="triangle"></div>
+												<div class="amount">
+													<div class="two-inputs">
+														<input id='from' type="text"/><span class="dash">-</span><input id='to' type="text"/>
+													</div>
+													<div class="ui-range-slider" id="amount-slider"></div>
+												</div>
+												<button class="btn btn-apply">Apply</button>
+											</div>
+										</div>
+                                    </div>
+                                </div>
+                                <div class="block left" style="width: 30%;">
+                                    <div class="content right" style="float: left;"><a href="#">Reset</a></div>
+                                <div class="right width30">
+                                    <div class="title">
+                                        Export transactions
+                                    </div>
+                                    <div class="content">
+                                        <div class="export"><img class="image" src="images/transfer-files.png">XLS</div>
+                                        <div class="export"><img class="image" src="images/transfer-files.png">PDF</div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
+						 data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
+						 data-notes="Transfer to Costa Coffee">
+                        <div class="into-expanded-item-wrapper">
+                            <div class="widget widget-transactions-history-unit">
+                                <div class="widget-body">
+                                    <div class="widget-upper">
+                                        <div class="name">Costa Coffee</div>
+                                        <div class="date">7 June</div>
+                                    </div>
+                                    <div class="widget-body">
+                                        <div class="image">
+                                            <img src="images/transactions/costa-coffee.jpg">
+                                        </div>
+                                        <div class="info-block">
+                                            <div class="price-block">
+                                                <div class="widget-summ">$25.00</div>
+                                                <div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
+                                            </div>
+                                            <div class="tags"><span class="tag">Tags: </span>Shopping; Vacation 2017</div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-footer">
+                                        <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
+                                        <div class="balance"><span>Balance: </span>$824.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
+						 data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
+						 data-notes="Transfer to Carrefour">
+                        <div class="into-expanded-item-wrapper">
+                            <div class="widget widget-transactions-history-unit">
+                                <div class="widget-body">
+                                    <div class="widget-upper">
+                                        <div class="name">Carrefour</div>
+                                        <div class="date">6 June</div>
+                                    </div>
+                                    <div class="widget-body">
+                                        <div class="image">
+                                            <img src="images/u10.jpg">
+                                        </div>
+                                        <div class="info-block">
+                                            <div class="price-block">
+                                                <div class="widget-summ">$129.98</div>
+                                                <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+                                            </div>
+                                            <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-footer">
+                                        <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
+                                        <div class="balance"><span>Balance: </span>$953.12</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+					<div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
+						 data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
+						 data-notes="Transfer to Carrefour">
+                        <div class="into-expanded-item-wrapper">
+                            <div class="widget widget-transactions-history-unit">
+                                <div class="widget-body">
+                                    <div class="widget-upper">
+                                        <div class="name">Virgin Megastore</div>
+                                        <div class="date">6 June</div>
+                                    </div>
+                                    <div class="widget-body">
+                                        <div class="image">
+                                            <img src="images/transactions/emanustrans.svg">
+                                        </div>
+                                        <div class="info-block">
+                                            <div class="price-block">
+                                                <div class="widget-summ">$59.00</div>
+                                                <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+                                            </div>
+                                            <div class="tags"><span class="tag">Tags: </span>Entertainment</div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-footer">
+                                        <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
+                                        <div class="balance"><span>Balance: </span>$1013.39</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!--part-1-->
+                    <div class="container" style="position: relative;">
+                        <div class="drop-1"></div>
+                        <div class="part1">
+                            <div>
+                                <h1>Payer</h1>
+                                <p>You</p>
+                                <h1>Payer account</h1>
+                                <p>My Current Credit</p>
+                                <p>GB29 8434 3087 5567 7193 23</p>
+                                <h1>Beneficiary</h1>
+                                <p>Starbucks Coffee</p>
+                                <p>Oslo</p>
+                                <h1>Beneficiary account</h1>
+                                <p>GB29 1948 6548 7981 5876 57</p>
+                            </div>
+                            <div>
+                                <h1>Amount</h1>
+                                <p>€-3.60</p>
+                                <h1>Transaction date</h1>
+                                <p>Yesterday</p>
+                                <h1>Value date</h1>
+                                <p>not booked yet</p>
+                                <h1>Description</h1>
+                                <p>None</p>
+                            </div>
+                            <div>
+                                <h1>Category</h1>
+                                <img src="images/fork.png" width="25px">
+                                <span style="opacity: 0.6;">Food & Drink</span>
+                                <h1 style="margin-top: 10px;">Tags</h1>
+                                <p>none</p>
+                                <h1>Hide from financial planning (PRM)</h1>
+                                <p>no</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--part-2-->
+                    <div class="container">
+                        <div class="drop-2"></div>
+                        <div class="part2">
+                            <div>
+                                <h1>Payer</h1>
+                                <p>You</p>
+                                <h1>Payer account</h1>
+                                <p>My Current Credit</p>
+                                <p>GB29 8434 3087 5567 7193 23</p>
+                                <h1>Beneficiary</h1>
+                                <p>Starbucks Coffee</p>
+                                <p>Oslo</p>
+                                <h1>Beneficiary account</h1>
+                                <p>GB29 1948 6548 7981 5876 57</p>
+                            </div>
+                            <div>
+                                <h1>Amount</h1>
+                                <p>€-3.60</p>
+                                <h1>Transaction date</h1>
+                                <p>Yesterday</p>
+                                <h1>Value date</h1>
+                                <p>not booked yet</p>
+                                <h1>Description</h1>
+                                <p>None</p>
+                            </div>
+                            <div>
+                                <h1>Category</h1>
+                                <img src="images/fork.png" width="25px">
+                                <span style="opacity: 0.6;">Food & Drink</span>
+                                <h1 style="margin-top: 10px;">Tags</h1>
+                                <p>none</p>
+                                <h1>Hide from financial planning (PRM)</h1>
+                                <p>no</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--part-3-->
+                    <div class="container">
+                        <div class="drop-3"></div>
+                        <div class="part3">
+                            <div>
+                                <h1>Payer</h1>
+                                <p>You</p>
+                                <h1>Payer account</h1>
+                                <p>My Current Credit</p>
+                                <p>GB29 8434 3087 5567 7193 23</p>
+                                <h1>Beneficiary</h1>
+                                <p>Starbucks Coffee</p>
+                                <p>Oslo</p>
+                                <h1>Beneficiary account</h1>
+                                <p>GB29 1948 6548 7981 5876 57</p>
+                            </div>
+                            <div>
+                                <h1>Amount</h1>
+                                <p>€-3.60</p>
+                                <h1>Transaction date</h1>
+                                <p>Yesterday</p>
+                                <h1>Value date</h1>
+                                <p>not booked yet</p>
+                                <h1>Description</h1>
+                                <p>None</p>
+                            </div>
+                            <div>
+                                <h1>Category</h1>
+                                <img src="images/fork.png" width="25px">
+                                <span style="opacity: 0.6;">Food & Drink</span>
+                                <h1 style="margin-top: 10px;">Tags</h1>
+                                <p>none</p>
+                                <h1>Hide from financial planning (PRM)</h1>
+                                <p>no</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+					<div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
+						 data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
+						 data-notes="Transfer to AXA">
+                        <div class="into-expanded-item-wrapper">
+                            <div class="widget widget-transactions-history-unit">
+                                <div class="widget-body">
+                                    <div class="widget-upper">
+                                        <div class="name">AXA</div>
+                                        <div class="date">5 June</div>
+                                    </div>
+                                    <div class="widget-body">
+                                        <div class="image">
+                                            <img src="images/transactions/axa.jpg">
+                                        </div>
+                                        <div class="info-block">
+                                            <div class="price-block">
+                                                <div class="widget-summ">$1 245.00</div>
+                                                <div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
+                                            </div>
+                                            <div class="tags"><span class="tag">Tags: </span>Salary</div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-footer">
+                                        <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
+                                        <div class="balance"><span>Balance: </span>$1343.39</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
+						 data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
+						 data-notes="Transfer to T-Mobile">
+                        <div class="into-expanded-item-wrapper">
+                            <div class="widget widget-transactions-history-unit">
+                                <div class="widget-body">
+                                    <div class="widget-upper">
+                                        <div class="name">T-Mobile</div>
+                                        <div class="date">4 June</div>
+                                    </div>
+                                    <div class="widget-body">
+                                        <div class="image">
+                                            <img src="images/transactions/t-mobile.jpg">
+                                        </div>
+                                        <div class="info-block">
+                                            <div class="price-block">
+                                                <div class="widget-summ">$145.00</div>
+                                                <div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
+                                            </div>
+                                            <div class="tags"><span class="tag">Tags: </span>Home</div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-footer">
+                                        <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
+                                        <div class="balance"><span>Balance: </span>$343.39</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+					<div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
+						 data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
+						 data-notes="Transfer to Lufthansa">
+                        <div class="into-expanded-item-wrapper">
+                            <div class="widget widget-transactions-history-unit">
+                                <div class="widget-body">
+                                    <div class="widget-upper">
+                                        <div class="name">Lufthansa</div>
+                                        <div class="date">23 May</div>
+                                    </div>
+                                    <div class="widget-body">
+                                        <div class="image">
+                                            <img src="images/transactions/lufthansa.jpg">
+                                        </div>
+                                        <div class="info-block">
+                                            <div class="price-block">
+                                                <div class="widget-summ">$849.93</div>
+                                                <div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
+                                            </div>
+                                            <div class="tags"><span class="tag">Tags: </span>Travel</div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-footer">
+                                        <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
+                                        <div class="balance"><span>Balance: </span>$4,243.39</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!--part-4-->
+                    <div class="container">
+                        <div class="drop-4"></div>
+                    </div>
+                    <!--part-5-->
+                    <div class="container">
+                        <div class="drop-5"></div>
+                    </div>
+                    <!--part-6-->
+                    <div class="container">
+                        <div class="drop-6"></div>
+                    </div>
+					<div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
+						 data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
+						 data-notes="Transfer to Tom Silverman">
+                        <div class="into-expanded-item-wrapper">
+                            <div class="widget widget-transactions-history-unit">
+                                <div class="widget-body">
+                                    <div class="widget-upper">
+                                        <div class="name">Tom Silverman</div>
+                                        <div class="date">13 May</div>
+                                    </div>
+                                    <div class="widget-body">
+                                        <div class="image">
+                                            <img src="images/ts.png">
+                                        </div>
+                                        <div class="info-block">
+                                            <div class="price-block">
+                                                <div class="widget-summ">$93.00</div>
+                                                <div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
+                                            </div>
+                                            <div class="tags"><span class="tag">Tags: </span>Other</div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-footer">
+                                        <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
+                                        <div class="balance"><span>Balance: </span>$443.39</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
+						 data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
+						 data-notes="Transfer to Starbucks">
+                        <div class="into-expanded-item-wrapper">
+                            <div class="widget widget-transactions-history-unit">
+                                <div class="widget-body">
+                                    <div class="widget-upper">
+                                        <div class="name">Starbucks</div>
+                                        <div class="date">7 May</div>
+                                    </div>
+                                    <div class="widget-body">
+                                        <div class="image">
+                                            <img src="images/transactions/green-gerl.jpg">
+                                        </div>
+                                        <div class="info-block">
+                                            <div class="price-block">
+                                                <div class="widget-summ">$27.00</div>
+                                                <div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
+                                            </div>
+                                            <div class="tags"><span class="tag">Tags: </span>Breakfast</div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-footer">
+                                        <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
+                                        <div class="balance"><span>Balance: </span>$4824.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
+						 data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
+						 data-notes="Transfer to Carrefour">
+						<div class="into-expanded-item-wrapper">
+							<div class="widget widget-transactions-history-unit">
+								<div class="widget-body">
+									<div class="widget-upper">
+										<div class="name">Carrefour</div>
+										<div class="date">6 June</div>
+									</div>
+									<div class="widget-body">
+										<div class="image">
+											<img src="images/u10.jpg">
+										</div>
+										<div class="info-block">
+											<div class="price-block">
+												<div class="widget-summ">$322.91</div>
+												<div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
+											</div>
+											<div class="tags"><span class="tag">Tags: </span>Shopping</div>
+										</div>
+									</div>
+									<div class="widget-footer">
+										<div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
+										<div class="balance"><span>Balance: </span>$1953.12</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+                    <!--part-7-->
+                    <div class="container">
+                        <div class="drop-7"></div>
+                    </div>
+                    <!--part-8-->
+                    <div class="container">
+                        <div class="drop-8"></div>
+                    </div>
+                    <!--part-9-->
+                    <div class="container">
+                        <div class="drop-9"></div>
+                    </div>
+					<div class="widget-details-button">
+						<a href="#" class="btn btn-default">Load More</a>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,670 @@
+<div id="termDepositOpening" data-gs-x="0" data-gs-y="18" data-gs-position="103" data-current_content="103" class="article grid-stack-item term-deposit-acc" data-showmore-bottom="0" data-showmore-right="0" data-gs-height="2" data-gs-width="2" data-gs-min-height="2" data-gs-min-width="2" data-name="termDepositOpening" data-gs-no-resize="true" template="TermDepositOpening">
+	<div id="commpayment" class="grid-stack-item-content relative quickpayment">
+		<div class="widget-tools payment-tools">
+			<div class="widget-close"><span><a href="JavaScript:" onclick="removeWidget(this)" class="fa fa-remove"></a></span></div>
+		</div>
+		<div class="widget widget-payment widget-own-account-payment widget-chequebook-payment">
+			<div class="widget-body bb-bookblock">
+				<div class="bb-item" id="termDepositOpening_container_1">
+					<div class="flex-wrapper">
+						<div class="left-part">
+							<div class="part-title">Select deposit type:</div>
+							<div class="payment-choose-type">
+								<div class="card-main-container">
+									<div class="payment-type chequebook-type active" id="pages-25">
+									  <div><img src="images/cur_account.png" /></div>
+										<span>Standard Term Deposit</span>
+									</div>
+									<div class="payment-type chequebook-type" id="pages-50">
+									  <div><img src="images/sav_account.png" /></div>
+										<span>Advance Term Deposit</span>
+									</div>
+									<div class="payment-type chequebook-type" id="pages-75">
+									  <div><img src="images/sav_account.png" /></div>
+										<span>EUR Term Deposit</span>
+									</div>
+									<div class="payment-type chequebook-type" id="pages-100">
+									  <div><img src="images/sav_account.png" /></div>
+										<span>CHF Term Deposit</span>
+									</div>
+								</div>
+							</div>
+						</div>
+							<div class="right-part">	
+									<div class="chequebook-body">
+								<div class="content-to-show content-to-show-pages-25 active">
+										<div class="top">
+											<div class="chosen-payment-type currenetItem">
+									 		<div><img src="images/cur_account.png" /></div>
+												<span class="underImg">Standard Term Deposit</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>USD Term Deposit.</li>
+													<li>Term between 1-12months.</li>
+													<li>Minimum amount: USD 1,000.</li>
+													<li>Interest rate: 1.5%</li>
+												</ul>
+											</div>
+										</div>
+
+					 					<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Amount</div>
+												<div class="col-xs-9"><input type="text" value="$1,500" class="name" placeholder="$1,500" onchange="checkcurrency(this.value); checkMinAmount('#termDepositOpening_container_1 .content-to-show.active',3)"/>
+												</div>
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3 chequebook-select-label">Term</div>
+												<div class="col-xs-9">
+													<select class="select-term">
+														<option value="1 month">1 month</option>
+														<option value="3 months">3 months</option>
+														<option value="6 months" selected>6 months</option>	
+														<option value="12 months">12 months</option>		
+													</select>
+												</div>
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Funding account</div>
+													<div class="col-xs-9">
+													<select class="select-deposit-acc">
+														<option value="My Current Account">My Current Account</option>					
+														<option value="My Savings Account">My Savings Account</option>
+														<option value="My EUR Curent Account">My EUR Current Account</option>
+														<option value="My EUR Savings">My EUR Savings</option>	
+													</select>
+												</div>
+											</div>
+										</div>	
+
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Interest rate</div>
+												<div class="col-xs-9">1.5%</div>
+											</div>
+										</div>										
+								</div>		
+
+								<div class="content-to-show content-to-show-pages-50">
+										<div class="top">
+											<div class="chosen-payment-type currenetItem">
+									 		<div><img src="images/sav_account.png" /></div>
+												<span class="underImg">Advance Term Deposit</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>USD Term Deposit.</li>
+													<li>Term between 6-12months.</li>
+													<li>Minimum amount: USD 5,000.</li>
+													<li>Interest rate: 1.8%</li>
+												</ul>
+											</div>
+										</div>
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Amount</div>
+												<div class="col-xs-9"><input type="text" value="$5,000" class="name" placeholder="$5,000" onchange="checkcurrency(this.value); checkMinAmount('#termDepositOpening_container_1 .content-to-show.active',3)" />
+												</div>
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3 chequebook-select-label">Term</div>
+												<div class="col-xs-9">
+													<select class="select-term">
+														<option value="1 month">1 month</option>
+														<option value="3 months">3 months</option>
+														<option value="6 months" selected>6 months</option>	
+														<option value="12 months">12 months</option>		
+													</select>
+												</div>
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Funding account</div>
+													<div class="col-xs-9">
+													<select class="select-deposit-acc">
+														<option value="My Current Account">My Current Account</option>					
+														<option value="My Savings Account">My Savings Account</option>
+														<option value="My EUR Curent Account">My EUR Current Account</option>
+														<option value="My EUR Savings">My EUR Savings</option>	
+													</select>
+												</div>
+											</div>
+										</div>	
+
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Interest rate</div>
+												<div class="col-xs-9">1.8%</div>
+											</div>
+										</div>		
+								</div>		
+
+								<div class="content-to-show content-to-show-pages-75">
+										<div class="top">
+											<div class="chosen-payment-type currenetItem">
+									 		<div><img src="images/sav_account.png" /></div>
+												<span class="underImg">EUR Term Deposit</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>EUR Term Deposit.</li>
+													<li>Term between 1-12months.</li>
+													<li>Minimum amount: EUR 1,000.</li>
+													<li>Interest rate: 1.7%</li>
+												</ul>
+											</div>
+										</div>
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Amount</div>
+												<div class="col-xs-9"><input type="text" value="€1,500" class="name" placeholder="€1,500" onchange="checkcurrency(this.value); checkMinAmount('#termDepositOpening_container_1 .content-to-show.active',3)" />
+												</div>
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3 chequebook-select-label">Term</div>
+												<div class="col-xs-9">
+													<select class="select-term">
+														<option value="1 month">1 month</option>
+														<option value="3 months">3 months</option>
+														<option value="6 months" selected>6 months</option>	
+														<option value="12 months">12 months</option>		
+													</select>
+												</div>
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Funding account</div>
+													<div class="col-xs-9">
+													<select class="select-deposit-acc">
+														<option value="My Current Account">My Current Account</option>					
+														<option value="My Savings Account">My Savings Account</option>
+														<option value="My EUR Curent Account">My EUR Current Account</option>
+														<option value="My EUR Savings">My EUR Savings</option>	
+													</select>
+												</div>
+											</div>
+										</div>	
+
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Interest rate</div>
+												<div class="col-xs-9">1.7%</div>
+											</div>
+										</div>		
+								</div>		
+
+								<div class="content-to-show content-to-show-pages-100">
+										<div class="top">
+											<div class="chosen-payment-type currenetItem">
+									 		<div><img src="images/sav_account.png" /></div>
+												<span class="underImg">CHF Term Deposit</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>CHF Term Deposit.</li>
+													<li>Term between 1-12months.</li>
+													<li>Minimum amount: CHF 2,000.</li>
+													<li>Interest rate: 1.25%</li>
+												</ul>
+											</div>
+										</div>
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Amount</div>
+												<div class="col-xs-9"><input type="text" value="CHF1,500" class="name" placeholder="CHF1,500" onchange="checkcurrency(this.value) ;checkMinAmount('#termDepositOpening_container_1 .content-to-show.active',3)" />
+												</div>
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3 chequebook-select-label">Term</div>
+												<div class="col-xs-9">
+													<select class="select-term"> 
+														<option value="1 month">1 month</option>
+														<option value="3 months">3 months</option>
+														<option value="6 months" selected>6 months</option>	
+														<option value="12 months">12 months</option>		
+													</select>
+												</div>
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Funding account</div>
+													<div class="col-xs-9">
+													<select class="select-deposit-acc">
+														<option value="My Current Account">My Current Account</option>					
+														<option value="My Savings Account">My Savings Account</option>
+														<option value="My EUR Curent Account">My EUR Current Account</option>
+														<option value="My EUR Savings">My EUR Savings</option>	
+													</select>
+												</div>
+											</div>
+										</div>	
+
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Interest rate</div>
+												<div class="col-xs-9">1.25%</div>
+											</div>
+										</div>		
+									</div>								
+									
+										<div class="payment-right-navigation">
+											<div class="widget-details-button">
+												<input data-nav-dir="next" class="nav btn btn-default" type="button" value="Next"
+										   		onclick="swipePaymentPartnerScreen(this);
+										   		fillTermDepositOpening(this , '#termDepositOpening_container_1 .content-to-show.active' , '#termDepositOpening_container_2 .content-to-show.active')"/>
+											</div>
+										</div>
+								</div>
+							</div>
+					</div>
+				</div>
+				<div class="bb-item" id="termDepositOpening_container_2">
+					<div class="flex-wrapper">
+						<div class="left-part">							
+								<div class="content-to-show content-to-show-pages-25 active">
+										<div class="top">
+											<div class="chosen-payment-type currenetItem">
+									 		<div><img src="images/cur_account.png" /></div>
+												<span class="underImg">Standard Term Deposit</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>USD Term Deposit.</li>
+													<li>Term between 1-12months.</li>
+													<li>Minimum amount: USD 1,000.</li>
+													<li>Interest rate: 1.5%</li>
+												</ul>
+											</div>
+										</div>
+
+									<div class="account-open-basic flex-center-column">
+										<div class="account-open-inr">
+											<div class="account-open-label">Amount:</div>
+									   		<div class="account-open-detail deposit-amount"></div>
+										</div>	
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Term:</div>
+								   			<div class="account-open-detail deposit-term"></div>
+										</div>		
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Finding account:</div>
+								   			<div class="account-open-detail deposit-acc"></div>
+										</div>	
+									</div>	
+								</div>	
+									
+								<div class="content-to-show content-to-show-pages-50">
+										<div class="top">
+											<div class="chosen-payment-type currenetItem">
+									 		<div><img src="images/sav_account.png" /></div>
+												<span class="underImg">Advance Term Deposit</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>USD Term Deposit.</li>
+													<li>Term between 6-12months.</li>
+													<li>Minimum amount: USD 5,000.</li>
+													<li>Interest rate: 1.8%</li>
+												</ul>
+											</div>
+										</div>
+										<div class="account-open-basic flex-center-column">
+										<div class="account-open-inr">
+											<div class="account-open-label">Amount:</div>
+									   		<div class="account-open-detail deposit-amount"></div>
+										</div>	
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Term:</div>
+								   			<div class="account-open-detail deposit-term"></div>
+										</div>		
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Finding account:</div>
+								   			<div class="account-open-detail deposit-acc"></div>
+										</div>	
+									</div>	
+								</div>		
+									<div class="content-to-show content-to-show-pages-75">
+										<div class="top">
+											<div class="chosen-payment-type currenetItem">
+									 		<div><img src="images/sav_account.png" /></div>
+												<span class="underImg">EUR Term Deposit</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>EUR Term Deposit.</li>
+													<li>Term between 1-12months.</li>
+													<li>Minimum amount: EUR 1,000.</li>
+													<li>Interest rate: 1.7%</li>
+												</ul>
+											</div>
+										</div>
+										<div class="account-open-basic flex-center-column">
+										<div class="account-open-inr">
+											<div class="account-open-label">Amount:</div>
+									   		<div class="account-open-detail deposit-amount"></div>
+										</div>	
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Term:</div>
+								   			<div class="account-open-detail deposit-term"></div>
+										</div>		
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Finding account:</div>
+								   			<div class="account-open-detail deposit-acc"></div>
+										</div>	
+									</div>	
+								</div>		
+							
+								<div class="content-to-show content-to-show-pages-100">
+										<div class="top">
+											<div class="chosen-payment-type currenetItem">
+									 		<div><img src="images/sav_account.png" /></div>
+												<span class="underImg">CHF Term Deposit</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>CHF Term Deposit.</li>
+													<li>Term between 1-12months.</li>
+													<li>Minimum amount: CHF 2,000.</li>
+													<li>Interest rate: 1.25%</li>
+												</ul>
+											</div>
+										</div>
+										<div class="account-open-basic flex-center-column">
+										<div class="account-open-inr">
+											<div class="account-open-label">Amount:</div>
+									   		<div class="account-open-detail deposit-amount"></div>
+										</div>	
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Term:</div>
+								   			<div class="account-open-detail deposit-term"></div>
+										</div>		
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Finding account:</div>
+								   			<div class="account-open-detail deposit-acc"></div>
+										</div>	
+									</div>	
+								</div>		
+						  
+						  </div>
+
+							<div class="right-part">
+									<div class="chequebook-body">
+					 					<div class="payment-benefeciary-details">
+											<div class="second-part-text">Select maturity instructions:</div>
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3 chequebook-select-label">Rollover</div>
+												<div class="col-xs-9">
+													<select class="select-rollover">
+														<option value="Mall Branch" checked>None</option>
+														<option value="My Savings Account">My Savings Account</option>
+														<option value="My EUR Current Account">My EUR Current Account</option>
+														<option value="My EUR Savings">My EUR Savings</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3 chequebook-select-label">Pay back to</div>
+												<div class="col-xs-9">
+													<select>
+														<option value="Mall Branch">My current account</option>				
+													</select>
+												</div>
+											</div>
+										</div>																		
+										<div class="payment-right-navigation">
+								<div class="widget-details-button">
+									<input data-nav-dir="next" class="nav btn btn-default" type="button" value="Next"
+										   		onclick="swipePaymentPartnerScreen(this);
+										   		fillTermDepositOpening(this , '#termDepositOpening_container_1 .content-to-show.active' , '#termDepositOpening_container_3 .content-to-show.active');
+										   		fillTermDepositOpening(this , '#termDepositOpening_container_2 .right-part' , '#termDepositOpening_container_3 .content-to-show.active')"/>
+														
+									<input data-nav-dir="prev" class="nav btn btn-default" type="button" value="Back"
+										   onclick="commonPaymentShowOriginal(this)"/>
+							
+									<input data-nav-dir="next" class="nav btn btn-default" type="button" value="Save"
+										   onclick="swipePaymentPartnerScreen(this)"/>
+								</div>
+							</div>
+									</div>
+							</div>
+					</div>
+				</div>
+				<div class="bb-item" id="termDepositOpening_container_3">
+					<div class="flex-wrapper">
+						<div class="left-part">
+							<div class="content-to-show content-to-show-pages-25 active">
+									<div class="top">
+										<div class="chosen-payment-type currenetItem">
+											<div><img src="images/cur_account.png" /></div>
+											<span class="underImg">Standard Term Deposit</span>
+										</div>
+										<div class="text">
+											<ul>
+												<li>USD Term Deposit.</li>
+												<li>Term between 1-12months.</li>
+												<li>Minimum amount: USD 1,00.</li>
+												<li>Interest rate: 1.5%</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="account-open-basic flex-center-column">
+										<div class="account-open-inr">
+											<div class="account-open-label">Amount:</div>
+									   		<div class="account-open-detail deposit-amount"></div>
+										</div>	
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Term:</div>
+								   			<div class="account-open-detail deposit-term"></div>
+										</div>		
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Finding account:</div>
+								   			<div class="account-open-detail deposit-acc"></div>
+										</div>
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Rollover:</div>
+								   			<div class="account-open-detail deposit-rollover"></div>
+										</div>	
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Pay back to:</div>
+								   			<div class="account-open-detail">My current account</div>
+										</div>	
+									</div>	
+								</div>	
+								<div class="content-to-show content-to-show-pages-50">
+										<div class="top">
+											<div class="chosen-payment-type currenetItem">
+									 		<div><img src="images/sav_account.png" /></div>
+												<span class="underImg">Advance Term Deposit</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>USD Term Deposit.</li>
+													<li>Term between 1-12months.</li>
+													<li>Minimum amount: USD 1,00.</li>
+													<li>Interest rate: 1.5%</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="account-open-basic flex-center-column">
+										<div class="account-open-inr">
+											<div class="account-open-label">Amount:</div>
+									   		<div class="account-open-detail deposit-amount"></div>
+										</div>	
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Term:</div>
+								   			<div class="account-open-detail deposit-term"></div>
+										</div>		
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Finding account:</div>
+								   			<div class="account-open-detail deposit-acc"></div>
+										</div>
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Rollover:</div>
+								   			<div class="account-open-detail deposit-rollover"></div>
+										</div>	
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Pay back to:</div>
+								   			<div class="account-open-detail">My current account</div>
+										</div>	
+									</div>	
+								</div>		
+							<div class="content-to-show content-to-show-pages-75">
+										<div class="top">
+											<div class="chosen-payment-type currenetItem">
+									 		<div><img src="images/sav_account.png" /></div>
+												<span class="underImg">EUR Term Deposit</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>USD Term Deposit.</li>
+													<li>Term between 1-12months.</li>
+													<li>Minimum amount: USD 1,00.</li>
+													<li>Interest rate: 1.5%</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="account-open-basic flex-center-column">
+										<div class="account-open-inr">
+											<div class="account-open-label">Amount:</div>
+									   		<div class="account-open-detail deposit-amount"></div>
+										</div>	
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Term:</div>
+								   			<div class="account-open-detail deposit-term"></div>
+										</div>		
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Finding account:</div>
+								   			<div class="account-open-detail deposit-acc"></div>
+										</div>
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Rollover:</div>
+								   			<div class="account-open-detail deposit-rollover"></div>
+										</div>	
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Pay back to:</div>
+								   			<div class="account-open-detail">My current account</div>
+										</div>	
+									</div>	
+								</div>	
+							<div class="content-to-show content-to-show-pages-100">
+										<div class="top">
+											<div class="chosen-payment-type currenetItem">
+									 		<div><img src="images/sav_account.png" /></div>
+												<span class="underImg">CHF Term Deposit</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>USD Term Deposit.</li>
+													<li>Term between 1-12months.</li>
+													<li>Minimum amount: USD 1,00.</li>
+													<li>Interest rate: 1.5%</li>
+												</ul>
+											</div>
+										</div>
+										
+										<div class="account-open-basic flex-center-column">
+										<div class="account-open-inr">
+											<div class="account-open-label">Amount:</div>
+									   		<div class="account-open-detail deposit-amount"></div>
+										</div>	
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Term:</div>
+								   			<div class="account-open-detail deposit-term"></div>
+										</div>		
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Finding account:</div>
+								   			<div class="account-open-detail deposit-acc"></div>
+										</div>
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Rollover:</div>
+								   			<div class="account-open-detail deposit-rollover"></div>
+										</div>	
+										<div class="account-open-inr">
+								   			<div class="account-open-label">Pay back to:</div>
+								   			<div class="account-open-detail">My current account</div>
+										</div>	
+									</div>	
+								</div>		
+						</div>
+						<div class="right-part">
+							<div class="second-part-text">Use Izola Pass to generate one time password:</div>
+							<div class="cube-code">
+								<img src="images/u4.jpg">
+							</div>
+							<div class="payment-benefeciary-details">
+								<div class="payment-benefeciary-detail row">
+									<div class="col-xs-6">One time password</div>
+									<div class="col-xs-6"><input type="password"></div>
+								</div>
+							</div>
+							<div class="payment-right-navigation with-margin">
+								<div class="widget-details-button">
+									<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="Submit"  onclick="validationPayment('#termDepositOpening', this, '#termDepositOpening_container_3 .payment-benefeciary-details', '#termDepositOpening_container_4', '#payment-benefeciary-fields', true);fillTransactionDetails('#termDepositOpening_container_4 .payment-transaction-details', '#termDepositOpening_container_3 .payment-benefeciary-details');" />
+								<!-- 	<input class="btn btn-transparent btn-default" id="paymentTransactionSave" type="button" value="Envelope"
+										   onclick="saveBeneficiary(this)"/> -->
+									<input data-nav-dir="prev" class="nav btn btn-transparent btn-default" type="button" value="Back"
+										   onclick="commonPaymentShowOriginal(this)"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		   <div class="bb-item" id="termDepositOpening_container_4">
+		   		
+					<div class="flex-wrapper">
+						<div class="left-part flex-center">
+						<div class="spiner-block" style="display: none;">							
+							<div class="spiner"><img src="./images/loading_spinner.gif"></div>					
+							</div>
+							<div class="final-info">
+								<div class="password-block">
+									<img class="svg" src="images/svg/complete_payment.svg">
+									<div class="title dark">Your request is under processing</div>
+									<div class="info grey">We will notify you if it is processed</div>
+									<div class="title grey separator">Transaction ID:</div>
+									<div class="info grey">TR000345629867</div>
+									<div class="widget-details-button">
+										<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="REPEAT" onclick	="clearTransactionDetails('#termDepositOpening_container_2 .payment-benefeciary-details')
+										defaultValues('#termDepositOpening_container_1')"/>
+									</div>
+								</div>
+							</div>
+							
+
+						</div>
+						<div class="right-part flex-center">
+							<img src="images/accountOpen.jpg" style="width: 100%;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

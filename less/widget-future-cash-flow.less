@@ -1,0 +1,61 @@
+.widget.widget-future-cash-flow {
+
+	.widget-summ {
+        font-size: 48px;
+        color: @new-brown-dark;
+        margin: 0px 0 7px 0;
+        font-weight: 600;
+    }
+
+	.widget-details-button {
+        width: 120px;
+        position: absolute;
+        left: 50%;
+        margin-left: -60px;
+        bottom: 25px;
+        text-align: center;
+
+        button, .btn {
+            text-align: center;
+            font-size: 14px;
+            padding: 5px 20px;
+            color: @new-grey;
+            background: @light-grey;
+            border: 1px solid @new-grey;
+            border-radius: 5px;
+            min-width: 120px;
+        }
+    }
+
+	.widget-progress-bar {
+        position: relative;
+        height: 8px;
+        width: 100%;
+
+        .bar-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 8px;
+            width: 100%;
+            background: @grey-bar ~'!important';
+            z-index:10;
+            border-radius: 4px;
+        }
+        .bar-progress {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 8px;
+            width: 80%;
+            background: @new-green;
+            z-index:10;
+            border-radius: 4px 0 0 4px;
+        }
+    }
+
+	.future-cash-text {
+		padding-top:20px;
+	}
+
+}

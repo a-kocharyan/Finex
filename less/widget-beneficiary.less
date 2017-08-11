@@ -1,0 +1,146 @@
+.widget.widget-beneficiary {
+    padding: 30px;
+    height: 100%;
+
+	.widget-label {
+        flex: 0 0 auto;
+		display: flex;
+
+		.widget-label-left-part {
+			 float: left;
+             width: 70px;
+		}
+
+		.widget-label-right-part {
+			 float: right;
+             width: 70%;
+			 margin-left:20px;
+   
+			.beneficiary-summ {
+				line-height:30px;
+				width: 50%;
+				margin-top:10px;
+
+				span:first-child {
+					padding-top:5px;
+				}
+
+				span:last-child {
+					font-size: 16px;
+					color: @new-brown-dark;
+					padding-left:10px;
+				}
+
+				&.income i {
+					color: @widget-green-bar-color;
+					font-size: 28px ~'!important';
+					vertical-align: top;
+				}
+				&.outcome i {
+					color: @widget-dark-orange-bar-color;
+					font-size: 28px ~'!important';
+					vertical-align: top;
+				}			 
+            }
+		}
+
+    }
+
+    .widget-body {
+        flex: 1 1 auto;
+        overflow: hidden;
+    }
+
+    .widget-details-button {
+        width: 120px;
+        position: absolute;
+        left: 50%;
+        margin-left: -60px;
+        bottom: 25px;
+        text-align: center;
+
+        button, .btn {
+            text-align: center;
+            font-size: 14px;
+            padding: 5px 20px;
+            color: @new-grey;
+            background: @light-grey;
+            border: 1px solid @new-grey;
+            border-radius: 5px;
+            min-width: 120px;
+        }
+    }
+
+    .widget-beneficiary-block {
+        margin-top: 5px;
+
+        .widget-beneficiary-line {
+            border-bottom: 1px solid @new-widget-separator-line;
+
+            &:after {
+                clear:both;
+                float: none;
+                content: ' ';
+                display: block;
+            }
+
+            .widget-beneficiary-left-part {
+                float: left;
+                width: 50%;
+				line-height: 50px;
+
+                .beneficiary-line-label {
+                    font-size: 18px;
+                    color: @new-brown-dark;				
+                }
+                .transaction-date {
+                    font-size: 16px;
+                    color: @new-brown;
+                    padding: 4px 0 0 0;
+                }
+            }
+            .widget-beneficiary-right-part {
+                float: right;
+                width: 50%;
+				line-height: 25px;
+
+                &:after {
+                    clear:both;
+                    float: none;
+                    content: ' ';
+                    display: block;
+                }
+
+                .transaction-summ {
+                    font-size: 20px;
+                    color: @new-brown-dark;
+                    font-weight: 600;
+                    float: right;
+                    padding-top: 12px;
+                }
+                .transaction-type {
+                    float: right;
+                    padding: 1px 5px 2px;
+                    border-radius: 3px;
+                    margin: 15px 0 5px 12px;
+                    font-size: 20px;
+                    line-height: 15px;
+
+
+                    &.income {
+                        color: @widget-green-bar-color;
+                        background: @widget-green-bar-color-with-opacity;
+                    }
+                    &.outcome {
+                        color: @widget-dark-orange-bar-color;
+                        background: @widget-dark-orange-bar-color-with-opacity;
+                    }
+                }
+            }
+        }
+
+		.widget-beneficiary-line:last-child {
+			border-bottom: 0px;
+		}
+    }
+}

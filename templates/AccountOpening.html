@@ -1,0 +1,231 @@
+<div id="accountOpening" data-gs-x="0" data-gs-y="24" data-gs-position="103" data-current_content="103" class="article grid-stack-item" data-showmore-bottom="0" data-showmore-right="0" data-gs-height="2" data-gs-width="2" data-gs-min-height="2" data-gs-min-width="2" data-name="accountOpening" data-gs-no-resize="true" template="AccountOpening">
+	<div id="commpayment" class="grid-stack-item-content relative quickpayment">
+		<div class="widget-tools payment-tools">
+			<div class="widget-close"><span><a href="JavaScript:" onclick="removeWidget(this)" class="fa fa-remove"></a></span></div>
+		</div>
+		<div class="widget widget-payment widget-own-account-payment widget-chequebook-payment">
+			<div class="widget-body bb-bookblock">
+				<div class="bb-item" id="accountOpening_container_1">
+					<div class="flex-wrapper">
+						<div class="left-part">
+							<div class="part-title">Select account type:</div>
+							<div class="payment-choose-type">
+								<div class="payment-type chequebook-type active" id="pages-25">
+								  <div><img src="images/cur_account.png" /></div>
+									<span>Current Account</span>
+									
+								</div>
+								<div class="payment-type chequebook-type" id="pages-50">
+								  <div><img src="images/sav_account.png" /></div>
+									<span>Saving Account</span>
+								</div>
+							</div>
+						</div>
+							<div class="right-part">						 
+								<div class="content-to-show content-to-show-pages-25 active">
+										<div class="top">
+											<div class="chosen-payment-type currenetItem">
+												<img src="images/cur_account.png" />
+												<br><span class="font-yellow underImg">Current Account</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>Available in USD, EUR and CHF</li>
+													<li>Monthly fee: $1.99</li>
+													<li>Minimum amount balance: USD 50.</li>
+													<li>Interest rate: 0.5%</li>
+													<li>Processed within 24 hours</li>
+												</ul>
+											</div>
+										</div>
+											<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3 chequebook-select-label">Currency</div>
+												<div class="col-xs-9">
+													<select class="select-curency">
+														<option value="USD" selected>USD</option>						
+														<option value="EUR">EUR</option>									
+														<option value="CHF">CHF</option>									
+													</select>
+												</div>
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Nickname</div>
+												<div class="col-xs-9"><input type="text" value="" class="name" placeholder="My Salary Account"/></div> 
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row termCondCont">
+												<div class="col-xs-12"><input type="checkbox" name="openAcc" />I have read and agree to the <a href="javaScript:void(0);" class="termCond">terms and conditions</a></div>
+											</div>
+										</div>
+								</div>							
+									
+									<div class="content-to-show content-to-show-pages-50">
+										<div class="top">
+											<div class="chosen-payment-type currenetItem">
+												<img src="images/sav_account.png" />
+												<span class="font-yellow underImg">Saveing Account</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>Available in USD, EUR and CHF</li>
+													<li>Monthly fee: $1.99</li>
+													<li>Minimum amount balance: USD 250.</li>
+													<li>Interest rate: 2.25%</li>
+													<li>Processed within 24 hours</li>
+												</ul>
+											</div>
+											</div>
+												<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3 chequebook-select-label">Currency</div>
+												<div class="col-xs-9">
+													<select class="select-curency">
+														<option value="USD" selected>USD</option>						
+														<option value="EUR">EUR</option>									
+														<option value="CHF">CHF</option>									
+													</select>
+												</div>
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Nickname</div>
+												<div class="col-xs-9"><input type="text" value="" class="name" placeholder="My Salary Account"/></div> 
+											</div>
+										</div>
+										
+										<div class="payment-benefeciary-details">
+											<div class="payment-benefeciary-detail row termCondCont">
+												<div class="col-xs-12"><input type="checkbox" name="openAcc" />I have read and agree to the <a href="javaScript:void(0);" class="termCond">terms and conditions</a></div>
+											</div>
+										</div>
+										</div>							
+									
+									<div class="chequebook-body">	 	
+										<div class="payment-right-navigation">
+											<div class="widget-details-button">
+												<input data-nav-dir="next" class="nav btn btn-default" type="button" value="Next"
+										 		onclick="swipePaymentPartnerScreen(this) ; 
+										   		fillAccountOpening(this , '#accountOpening_container_1 .content-to-show.active', '#accountOpening_container_2 .content-to-show.active')"/>
+											</div>
+										</div>
+									</div>
+							</div>
+					</div>
+				</div>
+				<div class="bb-item" id="accountOpening_container_2">
+					<div class="flex-wrapper">
+						<div class="left-part">
+							<div class="content-to-show content-to-show-pages-25 active">
+									<div class="top">
+										<div class="chosen-payment-type active">
+											<img  src="images/cur_account.png" />
+											<span class="font-yellow underImg">Current Account</span>
+										</div>
+										<div class="text">
+											<ul>
+												<li>Available in USD, EUR and CHF</li>
+												<li>Monthly fee: $1.99</li>
+												<li>Minimum amount balance: USD 50.</li>
+												<li>Interest rate: 0.5%</li>
+												<li>Processed within 24 hours</li>
+											</ul>
+										</div>
+									</div>								
+								
+									<div class="account-open-basic flex-center-column ">
+										   <div class="account-open-inr">
+											   	<div class="account-open-label">Currency</div>
+												<div class="account-open-detail acc-op-curerency"></div>
+											</div>
+											<div class="account-open-inr">
+											   	<div class="account-open-label">Nickname</div>
+												<div class="account-open-detail  acc-op-nickname"></div>
+											</div>
+									</div>
+							</div>						
+							<div class="content-to-show content-to-show-pages-50">
+										<div class="top">
+											<div class="chosen-payment-type active">
+												<img  src="images/sav_account.png" />
+												<span class="font-yellow underImg">Saveing Account</span>
+											</div>
+											<div class="text">
+												<ul>
+													<li>Available in USD, EUR and CHF</li>
+													<li>Monthly fee: $1.99</li>
+													<li>Minimum amount balance: USD 50.</li>
+													<li>Interest rate: 0.5%</li>
+													<li>Processed within 24 hours</li>
+												</ul>
+											</div>
+											</div>
+								
+								<div class="account-open-basic">
+									<div class="account-open-inr">
+									   	<div class="account-open-label ">Currency</div>
+										<div class="account-open-detail acc-op-curerency"></div>
+									</div>
+									<div class="account-open-inr">
+									   	<div class="account-open-label">Nickname</div>
+										<div class="account-open-detail acc-op-nickname"></div>
+									</div>
+								</div>
+							</div>	
+						</div>
+						<div class="right-part">
+							<div class="part-title">Use your Mobile Token to approve the transaction:</div>
+							<div class="cube-code">
+								<img src="images/u4.jpg">
+							</div>
+							<div class="payment-benefeciary-details">
+								<div class="payment-benefeciary-detail row">
+									<div class="col-xs-6">One time password</div>
+									<div class="col-xs-6"><input type="password"></div>
+								</div>
+							</div>
+							<div class="payment-right-navigation with-margin">
+								<div class="widget-details-button">
+									<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="Submit" onclick="validationPayment('#accountOpening', this, '#accountOpening_container_2 .payment-benefeciary-details', '#accountOpening_container_3', '#payment-benefeciary-fields', true);fillTransactionDetails('#accountOpening_container_3 .payment-transaction-details', '#accountOpening_container_2 .payment-benefeciary-details');" />
+									<input data-nav-dir="prev" class="nav btn btn-transparent btn-default" type="button" value="Back"
+										   onclick="commonPaymentShowOriginal(this)"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bb-item" id="accountOpening_container_3">
+					<div class="flex-wrapper">
+						<div class="left-part flex-center">
+						<div class="spiner-block" style="display: none;">							
+							<div class="spiner"><img src="./images/loading_spinner.gif"></div>					
+							</div>
+							<div class="final-info">
+							<div class="password-block">
+								<img class="svg" src="images/svg/complete_payment.svg">
+								<div class="title dark">Your request is under processing</div>
+								<div class="info grey">We will notify you if it is processed</div>
+								<div class="title grey separator">Transaction ID:</div>
+								<div class="info grey">TR000345629867</div>
+								<div class="widget-details-button">
+									<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="REPEAT" onclick="clearTransactionDetails('#accountOpening_container_1 .payment-benefeciary-details')"/>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="right-part flex-center">
+							<img src="images/accountOpen.jpg" style="width: 80%;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

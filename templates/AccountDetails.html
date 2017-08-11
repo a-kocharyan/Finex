@@ -1,0 +1,195 @@
+<div class="modal fade in" id="setting_modal_pfm" tabindex="-1" role="dialog" aria-hidden="true"
+	 component="PFM">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content setting_model_content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title">Account Details</h4>
+			</div>
+			<div class="modal-body">
+				<div class="main_body row">
+					<div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" id="account-basic-details">
+						<div class="into-expanded-item-wrapper">
+							<div class="widget widget-account-basic-details">
+								<div class="widget-label">Basic details</div>
+								<div class="widget-body">
+									<div class="widget-main-info">
+										<div class="details">
+											<div class="detail-container">
+												<div class="detail-icon"><img class="svg" src="images/svg/nickname.svg" alt=""></div>
+												<div class="detail-right-part">
+													<div class="detail-label">Nickname</div>
+													<div class="detail-info">My current account</div>
+												</div>
+												<a class="detail-edit-button">
+													<img class="svg" src="images/svg/edit.svg" alt="">
+												</a>
+											</div>
+											<div class="detail-container">
+												<div class="detail-icon"><img class="svg" src="images/type.png" alt=""></div>
+												<div class="detail-right-part">
+													<div class="detail-label">Type</div>
+													<div class="detail-info">Advance Current Account</div>
+												</div>
+											</div>
+											<div class="detail-container">
+												<div class="detail-icon"><img class="svg" src="images/svg/account_number.svg" alt=""></div>
+												<div class="detail-right-part">
+													<div class="detail-label">Account number</div>
+													<div class="detail-info">6013 1331 9268 98</div>
+												</div>
+											</div>
+											<div class="detail-container">
+												<div class="detail-icon"><img class="svg" src="images/svg/iban.svg" alt=""></div>
+												<div class="detail-right-part">
+													<div class="detail-label">IBAN</div>
+													<div class="detail-info">GB29 NWBK 6013 1331 9268 98</div>
+												</div>
+												<a href="#" class="copy-detail">copy IBAN</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" id="account-balances">
+						<div class="into-expanded-item-wrapper">
+							<div class="widget widget-account-balances">
+								<div class="widget-label">Balances</div>
+								<div class="widget-body">
+									<div class="widget-main-info">
+										<div class="details">
+											<div class="detail-container">
+												<div class="detail-icon"><img class="svg" src="images/svg/available_balance.svg" alt=""></div>
+												<div class="detail-right-part">
+													<div class="detail-label">Available balance</div>
+													<div class="detail-info">$824.00</div>
+												</div>
+											</div>
+											<div class="detail-container">
+												<div class="detail-icon"><img class="svg" src="images/book_balance.png" alt=""></div>
+												<div class="detail-right-part">
+													<div class="detail-label">Book balance</div>
+													<div class="detail-info">$896.46</div>
+												</div>
+											</div>
+											<div class="detail-container">
+												<div class="detail-icon"><img class="svg" src="images/svg/accrued_interest.svg" alt=""></div>
+												<div class="detail-right-part">
+													<div class="detail-label">Accrued interest</div>
+													<div class="detail-info">$4.09</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" id="current-transactions">
+						<div class="into-expanded-item-wrapper">
+							<div class="widget widget-transactions">
+								<div class="widget-label">Transactions</div>
+								<div class="widget-body">
+									<div class="last-transactions">
+										<div class="transaction">
+											<div class="transaction-left-part">
+												<div class="transaction-label">Costa Coffee</div>
+												<div class="transaction-date">7 June</div>
+											</div>
+											<div class="transaction-right-part">
+												<div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
+												<div class="transaction-summ negative_balance">-$25.00</div>
+											</div>
+										</div>
+										<div class="transaction">
+											<div class="transaction-left-part">
+												<div class="transaction-label">Carrefour</div>
+												<div class="transaction-date">6 June</div>
+											</div>
+											<div class="transaction-right-part">
+												<div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
+												<div class="transaction-summ positive_balance">+$129.98</div>
+											</div>
+										</div>
+										<div class="transaction">
+											<div class="transaction-left-part">
+												<div class="transaction-label">Virgin Megastore</div>
+												<div class="transaction-date">6 June</div>
+											</div>
+											<div class="transaction-right-part">
+												<div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
+												<div class="transaction-summ negative_balance">-$59.00</div>
+											</div>
+										</div>
+										<div class="transaction">
+											<div class="transaction-left-part">
+												<div class="transaction-label">Axa</div>
+												<div class="transaction-date">5 June</div>
+											</div>
+											<div class="transaction-right-part">
+												<div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+												<div class="transaction-summ positive_balance">+$1,245.00</div>
+											</div>
+										</div>						
+									</div>
+									<div class="widget-details-button" id="open-transactions-details">
+										<a href="#" class="btn btn-default">Details</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" id="account-statements">
+						<div class="into-expanded-item-wrapper">
+							<div class="widget widget-account-statements">
+								<div class="widget-label-wrapper">
+									<div class="widget-label">Statements</div>
+									<a class="statement-sort-button">
+										<img class="svg" src="images/svg/filter.svg" alt="">
+									</a>
+								</div>
+								<div class="widget-body">
+									<div class="last-statements">
+										<div class="statement">
+											<div class="statement-icon"><img class="svg" src="images/svg/statement.svg" alt=""></div>
+											<div class="statement-right-part">2017-01</div>
+										</div>
+										<div class="statement">
+											<div class="statement-icon"><img class="svg" src="images/svg/statement.svg" alt=""></div>
+											<div class="statement-right-part">2016-12</div>
+										</div>
+										<div class="statement">
+											<div class="statement-icon"><img class="svg" src="images/svg/statement.svg" alt=""></div>
+											<div class="statement-right-part">2016-11</div>
+										</div>
+										<div class="statement">
+											<div class="statement-icon"><img class="svg" src="images/svg/statement.svg" alt=""></div>
+											<div class="statement-right-part">2016-10</div>
+										</div>
+										<div class="statement">
+											<div class="statement-icon"><img class="svg" src="images/svg/statement.svg" alt=""></div>
+											<div class="statement-right-part">2016-09</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="into-expanded-item col-xs-12 col-sm-12 col-md-8 col-lg-8" id="advertisement">
+						<div>
+							<div class="widget widget-advertisement">
+								<div class="widget-body">
+									<img src="images/american-express-card.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

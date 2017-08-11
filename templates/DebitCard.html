@@ -1,0 +1,64 @@
+<div id="debit" class="article grid-stack-item" data-show_only_either="true" data-gs-x="3" data-gs-y="4" data-showmore-bottom="0" data-gs-auto-position="false"
+								data-showmore-right="0" data-gs-height="2" data-gs-width="1" data-gs-min-height="2" data-gs-min-width="1" data-name="debitcard" data-gs-position="13"
+								data-gs-no-resize="true" template="DebitCard">
+								<div class="grid-stack-item-content current_stack_item card_flip">
+										<div class="front">
+												<header class="drag-handle">
+														<strong>My Debit</strong>Card
+														<a href="JavaScript:" onclick="removeWidget(this)" class="fa fa-remove"></a>
+														<div class="dropdown widget_setting">
+																<button onClick="showWidgetSettings(this)" class="btn btn-link" type="button" data-toggle="dropdown">
+																		<i class="fa fa-gear"></i>
+																</button>
+														</div>
+												</header>
+												<div class="widget-content">
+														<div class="row credit_card_panel">
+																<div class="col-md-12 main_content">
+																		<div class="debit_card">
+																				<img id="debit1" src="img/debit_card.png" alt="my-debit-card" class="img-responsive cardimage" />
+																				<p>Available balance</p>
+																				<h5><i class="fa fa-euro"></i>9,587</h5>
+																		</div>
+
+																		<span data-current_display_status="show" class="show_more_bottom"><i class="fa fa-angle-down"></i></span>
+
+																		<div class="more_content_bottom">
+																				<ul class="transectoin_list" data-reference="TransactionItemType">
+																						<li><i class="fa fa-minus-circle"></i><strong>60.95</strong>EUR Carrefour<span class="tran-date">June 10</span></li>
+																						<li><i class="fa fa-minus-circle"></i><strong>119.00 </strong>EUR Virgin Megastore<span class="tran-date">June 8</span></li>
+																						<li><i class="fa fa-minus-circle"></i><strong>25.00 </strong>EUR Costa Coffee<span class="tran-date">June 8</span></li>
+																						<li><i class="fa fa-minus-circle"></i><strong>300.00</strong>EUR Cash withdrawal<span class="tran-date">June 7</span></li>
+																				</ul>
+																		</div>
+																		<span data-current_display_status="hide" class="show_more_right"><i class="fa fa-angle-right"></i></span>
+																</div>
+
+																<div class="col-md-6 hide more_content_right">
+																		<ul class="transectoin_list">
+																				<li><i class="fa fa-minus-circle"></i><strong>60.95</strong>EUR Carrefour<span class="tran-date">June 10</span></li>
+																				<li><i class="fa fa-minus-circle"></i><strong>119.00 </strong>EUR Virgin Megastore<span class="tran-date">June 8</span></li>
+																				<li><i class="fa fa-minus-circle"></i><strong>25.00 </strong>EUR Costa Coffee<span class="tran-date">June 8</span></li>
+																				<li><i class="fa fa-minus-circle"></i><strong>300.00</strong>EUR Cash withdrawal<span class="tran-date">June 7</span></li>
+																				<li><i class="fa fa-minus-circle"></i><strong>232.00</strong>EUR Le Meridien<span class="tran-date">June 7</span></li>
+																		</ul>
+																</div>
+														</div>
+												</div>
+										</div>
+										<div class="back">
+												<form>
+														<div class="form-group">
+																<input type="text" class="form-control" placeholder="Enter Value" />
+														</div>
+														<div class="form-group">
+																<select class="form-control">
+																		<option>Chose Option</option>
+																</select>
+														</div>
+														<input class="btn btn-transparent" onclick="revertWidgetSetting(this)" type="button" value="Save" />
+														<input class="btn btn-transparent" onclick="revertWidgetSetting(this)" type="button" value="Cancel" />
+												</form>
+										</div>
+								</div>
+						</div>

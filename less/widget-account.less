@@ -1,0 +1,255 @@
+.widget.widget-account {
+
+    .widget-summ {
+        font-size: 48px;
+        color: @new-brown-dark;
+        margin: 30px 0 15px 0;
+        font-weight: 600;
+    }
+
+    .widget-progress-bar {
+        position: relative;
+        height: 8px;
+        width: 100%;
+
+        .bar-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 8px;
+            width: 100%;
+            background: @new-red;
+            z-index:10;
+            border-radius: 4px;
+        }
+        .bar-progress {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 8px;
+            width: 80%;
+            background: @new-green;
+            z-index:10;
+            border-radius: 4px 0 0 4px;
+        }
+    }
+
+    .widget-details-button {
+        width: 120px;
+        position: absolute;
+        left: 50%;
+        margin-left: -60px;
+        bottom: 25px;
+        text-align: center;
+
+        button, .btn {
+            text-align: center;
+            font-size: 14px;
+            padding: 5px 20px;
+            color: @new-grey;
+            background: @light-grey;
+            border: 1px solid @new-grey;
+            border-radius: 5px;
+            min-width: 120px;
+        }
+    }
+
+    .last-transactions {
+        margin-top: 25px;
+
+        .transaction {
+            border-bottom: 1px solid @new-widget-separator-line;
+            padding: 15px 0;
+
+            &:after {
+                clear:both;
+                float: none;
+                content: ' ';
+                display: block;
+            }
+
+            .transaction-left-part {
+                float: left;
+                width: 50%;
+
+                .transaction-label {
+                    font-size: 18px;
+                    color: @new-brown-dark;
+                    font-weight: 600;
+                }
+                .transaction-date {
+                    font-size: 16px;
+                    color: @new-brown;
+                    padding: 4px 0 0 0;
+                }
+            }
+            .transaction-right-part {
+                float: right;
+                width: 50%;
+
+                &:after {
+                    clear:both;
+                    float: none;
+                    content: ' ';
+                    display: block;
+                }
+
+                .transaction-summ {
+                    font-size: 20px;
+                    color: @new-brown-dark;
+                    font-weight: 600;
+                    float: right;
+                    padding-top: 12px;
+                }
+                .transaction-type {
+                    float: right;
+                    padding: 1px 5px 2px;
+                    border-radius: 3px;
+                    margin: 15px 0 5px 12px;
+                    font-size: 20px;
+                    line-height: 15px;
+
+
+                    &.income {
+                        color: @widget-green-bar-color;
+                        background: @widget-green-bar-color-with-opacity;
+                    }
+                    &.outcome {
+                        color: @widget-dark-orange-bar-color;
+                        background: @widget-dark-orange-bar-color-with-opacity;
+                    }
+                }
+            }
+        }
+    }
+
+    .details {
+        display: none;
+
+        .detail-container {
+            border-top: 1px solid @new-widget-separator-line;
+            padding: 10px;
+
+            &:after {
+                clear:both;
+                float: none;
+                content: ' ';
+                display: block;
+            }
+
+            &:first-of-type {
+                border-top: none;
+            }
+
+            .detail-icon {
+                float: left;
+                width: 30px;
+                height: 30px;
+                margin-right: 5px;
+
+                img {
+                    width: 30px;
+                }
+                svg {
+                    width: 30px;
+                }
+                svg path {
+                    fill: @brown;
+                }
+            }
+
+            .detail-right-part {
+                float: left;
+
+                .detail-label {
+                    font-size: 14px;
+                    color: @brown;
+                    text-align: left;
+                    font-weight: 600;
+                }
+                .detail-info {
+                    font-size: 18px;
+                    color: @dark-brown;
+                    padding-left: 10px;
+                    margin: 5px 0;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    &.extended-bottom {
+        .last-transactions {
+            display: block;
+        }
+    }
+
+    &.extended-right {
+        .widget-body {
+            .widget-main-info {
+                float: left;
+                width: 50%;
+            }
+
+            .widget-details-button {
+                left: 25%;
+            }
+        }
+
+        .details {
+            display: block;
+            float:left;
+            width: 40%;
+            margin-left: 6%;
+        }
+    }
+
+    &:after {
+        content: ' ';
+        clear: both;
+        float: none;
+        display: block;
+    }
+
+    .expanded {
+        .into-expanded-item {
+            .into-expanded-item-wrapper {
+                @media all {
+                    @media (min-width: 768px) {
+                        min-height: 450px;
+                    }
+                    @media (min-width: 992px) {
+                        min-height: 470px;
+                    }
+                    @media (min-width: 1170px) {
+                        min-height: 480px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.widget-account-euro {
+	.widget-progress-bar {
+        .bar-progress {
+            width: 60% ~'!important';
+        }
+    }
+}
+
+.widget-account-euro-savings {
+	.widget-progress-bar {
+        .bar-progress {
+            width: 45% ~'!important';
+        }
+    }
+}
+
+.widget-account-savings {
+	.widget-progress-bar {
+        .bar-progress {
+            width: 25% ~'!important';
+        }
+    }
+}

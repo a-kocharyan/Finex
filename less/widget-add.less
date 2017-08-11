@@ -1,0 +1,33 @@
+.widget.widget-add {
+    border: 2px dashed @grey;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 98%;
+    height: 98%;
+    margin: 1%;
+
+    &:hover {
+        border: 2px dashed @dark-brown;
+
+        .new_widget {
+            color: @dark-brown;
+        }
+    }
+    
+    .new_widget {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        height: 100%;
+
+        &:hover {
+            color: @dark-brown;
+        }
+    }
+}
+

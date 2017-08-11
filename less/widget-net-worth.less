@@ -1,0 +1,148 @@
+.widget.widget-net-worth {
+
+	.widget-net-worth-text {
+		padding-top:30px;
+	}
+	
+	.widget-summ {
+        font-size: 48px;
+        color: @new-brown-dark;
+        font-weight: 600;
+		padding-top: 30px;
+    }
+	
+	.widget-details-button {
+        width: 120px;
+        position: absolute;
+        left: 50%;
+        margin-left: -60px;
+        bottom: 25px;
+        text-align: center;
+
+        button, .btn {
+            text-align: center;
+            font-size: 14px;
+            padding: 5px 20px;
+            color: @new-grey;
+            background: @light-grey;
+            border: 1px solid @new-grey;
+            border-radius: 5px;
+            min-width: 120px;
+        }
+    }
+
+	.square {
+		float: left;
+		padding: 8px;
+		border-radius: 3px;
+		margin: 10px 10px 10px 0;
+		font-size: 20px;
+		line-height: 15px;
+		content: ' ';
+
+		&.square-green {
+			background: @new-green;
+		}
+		&.square-red {
+			background: @new-red;
+		}
+	}
+
+	.net-worth-line {
+
+		padding-bottom:18px;
+		padding-top:18px;
+
+		.net-worth-left-part {
+			float: left;
+			width: 60%;
+			display: inline-flex;
+				
+            .net-worth-title span {
+				float: right;
+				font-size: 20px;
+				color: @black;
+				padding-left:10px;
+				padding-top:7px;
+				line-height: 20px;
+            }
+
+		}
+
+		.net-worth-right-part {
+			float: left;
+			width: 40%;
+			line-height: 30px;
+
+			.net-worth-summ span {
+				font-size: 20px;
+				padding-left:10px;
+				float:left;
+			}
+
+		}
+
+	}
+
+	.widget-progress-bar {
+        position: relative;
+        height: 8px;
+        width: 100%;
+		margin-top:15px;
+
+		.progress-hover {
+			margin-top:15px;
+			margin-left: 30px;
+			border: 1px solid @new-green;
+			background-color: @new-white;
+			border-radius: 4px;
+			padding-left: 10px;
+			padding-right: 10px;
+			display:none;
+		}
+
+        .bar-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 8px;
+            width: 100%;
+            background: @new-red;
+            z-index:10;
+            border-radius: 4px;
+			cursor: pointer;
+        }
+		
+		
+        .bar-progress {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 8px;
+            width: 80%;
+            background: @new-green;
+            z-index:10;
+            border-radius: 4px 0 0 4px;
+			cursor: pointer;
+        }
+		
+		#liabilities {
+			float:right;
+			border: 1px solid @new-red;
+		}
+
+		#assets {
+			float:left;
+		}
+
+		.bar-progress:hover + #assets {
+			display:block;
+		}
+
+		.bar-background:hover + #liabilities {
+			display:block;
+		}
+
+    }
+
+}

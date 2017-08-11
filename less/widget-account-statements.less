@@ -1,0 +1,102 @@
+.widget.widget-account-statements {
+    padding: 15px 25px 25px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 100%;
+
+    .widget-label-wrapper {
+        flex: 0 0 auto;
+
+        .widget-label {
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: none;
+            float:left;
+        }
+
+        .statement-sort-button {
+            width: 20px;
+            float:right;
+            display: block;
+            fill: @brown;
+
+            img {
+                width: 100%;
+            }
+            svg {
+                width: 100%;
+            }
+            svg path {
+                fill: @brown;
+            }
+        }
+    }
+
+    .widget-body {
+        flex: 1 1 auto;
+        overflow: hidden;
+    }
+
+    .last-statements {
+        .statement {
+            border-top: 1px solid @new-widget-separator-line;
+            padding: 15px 0;
+
+            &:after {
+                clear:both;
+                float: none;
+                content: ' ';
+                display: block;
+            }
+
+            .statement-icon {
+                float: left;
+                width: 30px;
+                height: 30px;
+                margin-right: 5px;
+
+                img {
+                    width: 24px;
+                    padding: 2px;
+                }
+                svg {
+                    width: 24px;
+                    padding: 2px;
+                }
+                svg path {
+                    fill: @brown;
+                }
+                svg rect {
+                    stroke: none;
+                }
+            }
+            .statement-right-part {
+                float: left;
+                font-size: 18px;
+                color: @brown;
+                line-height: 30px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.into-expanded-item {
+    .widget.widget-account-statements {
+        padding: 0;
+
+        .widget-label-wrapper {
+            padding: 20px 15px 0 15px;
+
+            .widget-label {
+                font-size: 18px;
+            }
+        }
+
+        .last-statements {
+            padding: 30px 15px 30px 15px;
+        }
+    }
+}

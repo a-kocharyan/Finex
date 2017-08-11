@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Finex Online</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link type="text/css" rel="stylesheet" href="css/main.min.css?v=1.0.0" />
+		<link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+		<link type="text/css" rel="stylesheet" href="css/newstyle.css" />
+		<link type="text/css" rel="stylesheet" href="css/izolafont-new.css" />
+		<link type="text/css" rel="stylesheet" href="css/newstyle-responsive.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+		    <div class="header-container">
+				<div class="login-logo"><img src="images/u2.png" alt=""></div>
+				<div class="language-block">
+					<select class="language-button">
+						<option selected value="login-screen.html">English</option>
+						<option>German</option>	
+						<option value="login-screen-ar.html">عربى</option>					
+					</select>
+				</div>
+			</div>
+			<span class='chkErr' id="checkUser" style="top:0px;position:relative;">Please Enter Valid User Name</span>
+			<div class="login-container">
+					<div class="title">LOGIN TO ONLINE BANKING</div>
+					<div class="login-block row">
+						<div class="block delimeter col-xs-12 col-sm-12 col-md-4 col-lg-4">
+							<div class="header">
+								<p class="title">AUTO LOGIN</p>
+								<p class="description">Click on the button below and use your Mobile Token to approve your login</p>
+							</div>
+							<div class="login">
+								<a href="index.html" class="auto-login-button">Auto login</a>
+							</div>
+						</div>
+						<div class="block delimeter col-xs-12 col-sm-12 col-md-4 col-lg-4">
+							<div class="header">
+								<p class="title">QR LOGIN</p>
+								<p class="description">Read the QR code with your Mobile Token to login</p>
+							</div>
+							<div class="login">
+								<img class="qr-code-login" src="images\u4.jpg" alt="QR login">
+							</div>
+						</div>
+						<div class="block col-xs-12 col-sm-12 col-md-4 col-lg-4">
+							<div class="header">
+								<p class="title">PASSWORD LOGIN</p>
+								<p class="description">User your login ID and password to login</p>
+							</div>
+							<div class="login">
+								<input type="text" class="input-field" id="user-name" placeholder="Login ID">
+								<input type="password" class="input-field" id="user-pass" placeholder="Password">
+								<div class="login-block">
+									<a href="#" class="left frgotpwd">Forgot password</a>
+									<a href="javascript:void(0)" onclick="userLogin()" class="login-button">login</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="login-block row">
+						<div class="block col-xs-12 col-sm-12 col-md-4 col-lg-4">       
+						</div>
+						<div class="block col-xs-12 col-sm-12 col-md-4 col-lg-4">         
+							<div class="login-registr">
+								<a href="./registration.html">REGISTRATION</a>
+							</div>
+						</div>
+						<div class="block col-xs-12 col-sm-12 col-md-4 col-lg-4">         
+						</div>
+					</div>
+			</div>
+		</div>
+		
+	</body>
+	<!--	<script type="text/javascript" language="javascript" src="js/all.min.js"></script>-->
+	<script type="text/javascript" language="javascript" src="js/jquery-2.1.4.min.js"></script>
+	
+	<script type="text/javascript" language="javascript">
+		function userLogin(){
+		  	var userName = document.getElementById('user-name');
+		  	var userPass = document.getElementById('user-pass'); 
+		  	var checkUser = document.getElementById('checkUser');
+		  	if(userName.value!='' && userPass.value=='1234'){
+			  	if(userName.value.toLowerCase()==='user1')
+			  		window.location.href = 'index.html';
+			  	else if(userName.value.toLowerCase()==='user2')
+			  		window.location.href = 'index-user2.html';			  	
+			  	else if(userName.value.toLowerCase()==='user3')
+			  		window.location.href = 'index-user3.html';			  	
+			  	else if(userName.value.toLowerCase()==='user4')
+			  		window.location.href = 'index-user4.html';			  	
+			  	else{
+			  		checkUser.style.display='block';
+			  		window.onscroll = function(){
+			  			console.log(window.scrollTop)
+			  			if(window.scrollY>=87){
+			  				checkUser.style.top = 0;
+			  			}else{
+			  				checkUser.style.top = 87;
+			  			}
+			  		}
+			  		setTimeout(function(){checkUser.style.display='none'}, 2000);
+			  	}
+		  	}
+		  	else{
+		  		if(userPass.value==='')
+		  		userPass.style.border = '1px solid red';
+
+		  		if(userName.value==='')
+		  		userName.style.border = '1px solid red';
+		  	}
+		  	userPass.onfocus = function(){
+		  		userPass.style.border = '1px solid #af8d60';
+		  	} 
+		  	userName.onfocus = function(){
+		  		userName.style.border = '1px solid #af8d60';
+		  	}
+		
+		}
+		$(function(){
+
+		  // bind change event to select
+		  $('.language-button').on('change', function () {
+			  var url = $(this).val(); // get selected value
+			  if (url) { // require a URL
+				  window.location = url; // redirect
+			  }
+			  return false;
+		  });
+		 
+		});
+	</script>
+</html>

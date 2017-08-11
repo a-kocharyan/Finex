@@ -1,0 +1,42 @@
+<div id="vid1" class="article grid-stack-item" data-gs-x="110" data-gs-y="110" data-gs-position="112" data-current_content="112" data-showmore-bottom="0" data-showmore-right="0" data-gs-min-width="1" data-gs-min-height="1" data-gs-width="1" data-gs-height="1" data-name="video" data-gs-no-resize="true" data-gs-auto-position="false" template="Video1">
+	<div class="grid-stack-item-content card_flip">
+		<div class="widget-tools">
+			<div class="widget-close"><span><a href="JavaScript:" onclick="removeWidget(this)" class="fa fa-remove"></a></span></div>						
+		</div>
+		<div class="widget widget-future-cash-flow">
+			<div class="widget-body">
+				<div class="widget-main-info">
+					<div class="widget-label drag-handle">Where did my money go?</div>
+					<div class="widget-content widget-video">
+						<div class="modal" id="modal1" style="display:none;">
+							<script type="text/javascript">		
+								$(document).ready(function(){
+									
+									var userType = $('#user-type').html();
+									var videoSrc = './video/Where did my money go 2.mp4';
+									if(userType != 'John Smith'){
+										videoSrc =  './video/Adam video.mp4';
+										$('.widget-video-body').addClass('video-adam');
+										$('.video-adam').removeClass('widget-video-body');
+										
+									} else {
+										$('.video-adam').addClass('widget-video-body');
+										$('.widget-video-body').removeClass('video-adam');							
+									}
+									$('#video-full1 source').attr('src', videoSrc);
+									$('#video-full1').videoExtend({});
+								});
+							</script>
+						<div class="widget-video-body-full">
+							<video id="video-full1" controls>
+								<source src="./video/Where did my money go 2.mp4" type="video/mp4">
+							</video>
+						</div>						
+						</div>
+						<div class="widget-video-body"><div></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

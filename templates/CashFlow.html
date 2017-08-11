@@ -1,0 +1,39 @@
+<div id="cashf" class="article grid-stack-item" data-gs-x="0" data-gs-y="4" data-showmore-bottom="0" data-showmore-right="0" data-name="cashflow"
+								data-gs-no-resize="true" data-gs-auto-position="false" data-gs-position="10" template="CashFlow">
+								<div class="grid-stack-item-content card_flip">
+										<div class="front">
+												<header class="drag-handle">
+														<strong>Cash</strong>flow
+														<a href="JavaScript:" onclick="removeWidget(this)" class="fa fa-remove"></a>
+														<div class="dropdown widget_setting">
+																<button onClick="showWidgetSettings(this)" class="btn btn-link" type="button" data-toggle="dropdown">
+																		<i class="fa fa-gear"></i>
+																</button>
+														</div>
+												</header>
+												<div class="widget-content">
+														<div class="graph-left">
+																<div id="cashflow_graph"></div>
+														</div>
+														<ul class="cashflow">
+																<li class="in_flow">Incoming</li>
+																<li class="out_flow">Outcoming</li>
+														</ul>
+												</div>
+										</div>
+										<div class="back">
+												<form>
+														<div class="form-group">
+																<input type="text" class="form-control" placeholder="Enter Value" />
+														</div>
+														<div class="form-group">
+																<select class="form-control">
+																		<option>Chose Option</option>
+																</select>
+														</div>
+														<input class="btn btn-transparent" onclick="revertWidgetSetting(this)" type="button" value="Save" />
+														<input class="btn btn-transparent" onclick="revertWidgetSetting(this)" type="button" value="Cancel" />
+												</form>
+										</div>
+								</div>
+						</div>
