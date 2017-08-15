@@ -199,8 +199,11 @@
 							<div class="into-expanded-item-wrapper">
 								<div class="widget widget-account-basic-details">
 									<div class="widget-label">Filter Results</div>
-									<div class="widget-body">
-										<div class="widget-main-info">
+									<div class="widget-body row">
+										<div class="widget-left-side col-lg-2">
+											<span class="fa fa-angle-left" aria-hidden="true"></span>
+										</div>
+										<div class="widget-main-info col-lg-10">
 											<div class="details">
 												<div class="detail-container">
 													<div class="detail-icon">
@@ -256,7 +259,56 @@
 														<div class="detail-label"></div>
 													</div> -->
 												</div>
-
+											</div>
+										</div>
+										<div class="widget-hidden-content col-lg-12">
+											<div class="row">
+												<div class="widget-hidden-content-filters col-lg-12">
+													<span class="pull-left">Period</span>
+													<div class="range-slider pull-right">
+														<input class="range-slider__range" type="range" value="100" min="0" max="500">
+													   	<span class="range-slider__value">0</span>
+													</div>
+												</div>
+												<div class="widget-hidden-content-filters col-lg-12">
+													<span class="pull-left">Accounts</span>
+													<div class="pull-right widget-hidden-dropdown dropdown">
+														<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">My Current Account
+													  	<span class="fa fa-angle-down"></span></button>
+													  	<ul class="dropdown-menu">
+													    	<li><a href="#">My Current Account</a></li>
+													  	</ul>
+													</div>												
+												</div>
+												<div class="widget-hidden-content-filters col-lg-12">
+													<span class="pull-left">Category</span>
+													<div class="pull-right widget-hidden-dropdown dropdown">
+														<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">My Current Account
+													  	<span class="fa fa-angle-down"></span></button>
+													  	<ul class="dropdown-menu">
+													    	<li><a href="#">Housing</a></li>
+													  	</ul>
+													</div>
+												</div>
+												<div class="widget-hidden-content-filters col-lg-12">
+													<span class="pull-left">Partner</span>
+													<div class="pull-right widget-hidden-dropdown dropdown">
+														<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">My Current Account
+													  	<span class="fa fa-angle-down"></span></button>
+													  	<ul class="dropdown-menu">
+													    	<li><a href="#">Carrefour</a></li>
+													  	</ul>
+													</div>
+												</div>
+												<div class="widget-hidden-content-filters col-lg-12">
+													<span class="pull-left">Amount</span>
+													<input type="text" class="filter_min">
+													<span>to</span>
+													<input type="text" class="filter_max">
+												</div>
+												<div class="widget-hidden-content-filters col-lg-12">
+													<span class="pull-left">Tags</span>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -283,23 +335,23 @@
 												                    <div class="info-block">
 												                        <div class="price-block">
 												                            <div class="widget-summ">$129.98</div>
-												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
+														                    <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
 												                        </div>
-												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                        <div class="">
+														                    <div class="from">
+															                    <span>Category: </span><img src="images/pfc-home1.png">
+															                    <span>Housing: </span><img onclick="openNav()" src="images/pfc-edit.png">
+														                    </div>
+														                </div>
 												                    </div>
 												                </div>
 												                <div class="widget-footer">
 												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
-												                    <div class="balance"><span>Balance: </span>$953.12</div>
+												                    <br />
+												                    <div class="balance float:left"><img src="images/red_flag.png"></div>
+											                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    <!-- <div class="balance"><span>Balance: </span>$953.12</div> -->
 												                </div>
-												                <div class="widget-footer">
-												                    <div class="from">
-													                    <span>Category: </span><img src="images/pfc-home1.png">
-													                    <span>Housing: </span><img onclick="openNav()" src="images/pfc-edit.png">
-												                    </div>
-												                    <div class="balance"><img src="images/red_flag.png"></div>
-												                </div>
-
 												            </div>
 												        </div>
 												    </div>
@@ -321,19 +373,20 @@
 												                            <div class="widget-summ">$129.98</div>
 												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
 												                        </div>
-												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+    												                    <div class="widget-footer">
+        												                    <div class="from">
+        													                    <span>Category: </span><img src="images/pfc-home1.png">
+        													                    <span>Housing: </span><img src="images/pfc-edit.png">
+        												                    </div>
+        												                </div>
 												                    </div>
 												                </div>
 												                <div class="widget-footer">
 												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
-												                    <div class="balance"><span>Balance: </span>$953.12</div>
-												                </div>
-												                <div class="widget-footer">
-												                    <div class="from">
-													                    <span>Category: </span><img src="images/pfc-home1.png">
-													                    <span>Housing: </span><img src="images/pfc-edit.png">
-												                    </div>
+												                    <br />
 												                    <div class="balance"><img src="images/yellow_flag.png"></div>
+											                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    <!-- <div class="balance"><span>Balance: </span>$953.12</div> -->
 												                </div>
 												            </div>
 												        </div>
@@ -356,19 +409,20 @@
 												                            <div class="widget-summ">$129.98</div>
 												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
 												                        </div>
-												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+														                <div class="">
+														                    <div class="from">
+															                    <span>Category: </span><img src="images/pfc-coff.png">
+															                    <span>Food & Dining: </span><img src="images/pfc-edit.png">
+														                    </div>
+														                </div>
 												                    </div>
 												                </div>
 												                <div class="widget-footer">
 												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
-												                    <div class="balance"><span>Balance: </span>$953.12</div>
-												                </div>
-												                <div class="widget-footer">
-												                    <div class="from">
-													                    <span>Category: </span><img src="images/pfc-coff.png">
-													                    <span>Food & Dining: </span><img src="images/pfc-edit.png">
-												                    </div>
+												                    <br />
 												                    <div class="balance"><img src="images/grey_flag.png"></div>
+											                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    <!-- <div class="balance"><span>Balance: </span>$953.12</div> -->
 												                </div>
 												            </div>
 												        </div>
@@ -391,19 +445,20 @@
 												                            <div class="widget-summ">$129.98</div>
 												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
 												                        </div>
-												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+													                    <div class="">
+														                    <div class="from">
+															                    <span>Category: </span><img src="images/pfc-game.png">
+															                    <span>Entertaiment: </span><img src="images/pfc-edit.png">
+														                    </div>
+														                </div>
 												                    </div>
 												                </div>
 												                <div class="widget-footer">
 												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
-												                    <div class="balance"><span>Balance: </span>$953.12</div>
-												                </div>
-												                <div class="widget-footer">
-												                    <div class="from">
-													                    <span>Category: </span><img src="images/pfc-game.png">
-													                    <span>Entertaiment: </span><img src="images/pfc-edit.png">
-												                    </div>
+												                    <br />
 												                    <div class="balance"><img src="images/grey_flag.png"></div>
+											                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    <!-- <div class="balance"><span>Balance: </span>$953.12</div> -->
 												                </div>
 												            </div>
 												        </div>
@@ -426,19 +481,20 @@
 												                            <div class="widget-summ">$129.98</div>
 												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
 												                        </div>
-												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+														                <div class="">
+														                    <div class="from">
+															                    <span>Category: </span><img src="images/pfc-game.png">
+															                    <span>Entertaiment: </span><img src="images/pfc-edit.png">
+														                    </div>
+														                </div>
 												                    </div>
 												                </div>
 												                <div class="widget-footer">
 												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
-												                    <div class="balance"><span>Balance: </span>$953.12</div>
-												                </div>
-												                <div class="widget-footer">
-												                    <div class="from">
-													                    <span>Category: </span><img src="images/pfc-game.png">
-													                    <span>Entertaiment: </span><img src="images/pfc-edit.png">
-												                    </div>
+												                    <br />
 												                    <div class="balance"><img src="images/grey_flag.png"></div>
+											                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    <!-- <div class="balance"><span>Balance: </span>$953.12</div> -->
 												                </div>
 												            </div>
 												        </div>
@@ -461,19 +517,20 @@
 												                            <div class="widget-summ">$129.98</div>
 												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
 												                        </div>
-												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                        <div class="">
+														                    <div class="from">
+															                    <span>Category: </span><img src="images/pfc-game.png">
+															                    <span>Entertaiment: </span><img src="images/pfc-edit.png">
+														                    </div>
+														                </div>
 												                    </div>
 												                </div>
 												                <div class="widget-footer">
 												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
-												                    <div class="balance"><span>Balance: </span>$953.12</div>
-												                </div>
-												                <div class="widget-footer">
-												                    <div class="from">
-													                    <span>Category: </span><img src="images/pfc-game.png">
-													                    <span>Entertaiment: </span><img src="images/pfc-edit.png">
-												                    </div>
+												                    <br />
 												                    <div class="balance"><img src="images/grey_flag.png"></div>
+											                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    <!-- <div class="balance"><span>Balance: </span>$953.12</div> -->
 												                </div>
 												            </div>
 												        </div>
@@ -500,19 +557,20 @@
 												                            <div class="widget-summ">$129.98</div>
 												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
 												                        </div>
-												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+        												                <div class="">
+        												                    <div class="from">
+        													                    <span>Category: </span><img src="images/pfc-home1.png">
+        													                    <span>Housing: </span><img onclick="openNav()" src="images/pfc-edit.png">
+        												                    </div>
+        												                </div>
 												                    </div>
 												                </div>
 												                <div class="widget-footer">
 												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
-												                    <div class="balance"><span>Balance: </span>$953.12</div>
-												                </div>
-												                <div class="widget-footer">
-												                    <div class="from">
-													                    <span>Category: </span><img src="images/pfc-home1.png">
-													                    <span>Housing: </span><img onclick="openNav()" src="images/pfc-edit.png">
-												                    </div>
+												                    <br />
 												                    <div class="balance"><img src="images/red_flag.png"></div>
+											                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    <!-- <div class="balance"><span>Balance: </span>$953.12</div> -->
 												                </div>
 
 												            </div>
@@ -536,19 +594,20 @@
 												                            <div class="widget-summ">$129.98</div>
 												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
 												                        </div>
-												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                        <div class="">
+														                    <div class="from">
+															                    <span>Category: </span><img src="images/pfc-home1.png">
+															                    <span>Housing: </span><img src="images/pfc-edit.png">
+														                    </div>
+														                </div>
 												                    </div>
 												                </div>
 												                <div class="widget-footer">
 												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
-												                    <div class="balance"><span>Balance: </span>$953.12</div>
-												                </div>
-												                <div class="widget-footer">
-												                    <div class="from">
-													                    <span>Category: </span><img src="images/pfc-home1.png">
-													                    <span>Housing: </span><img src="images/pfc-edit.png">
-												                    </div>
+												                    <br />
 												                    <div class="balance"><img src="images/yellow_flag.png"></div>
+											                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    <!-- <div class="balance"><span>Balance: </span>$953.12</div> -->
 												                </div>
 												            </div>
 												        </div>
@@ -571,19 +630,20 @@
 												                            <div class="widget-summ">$129.98</div>
 												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
 												                        </div>
-												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                        <div class="">
+														                    <div class="from">
+															                    <span>Category: </span><img src="images/pfc-coff.png">
+															                    <span>Food & Dining: </span><img src="images/pfc-edit.png">
+														                    </div>
+														                </div>
 												                    </div>
 												                </div>
 												                <div class="widget-footer">
 												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
-												                    <div class="balance"><span>Balance: </span>$953.12</div>
-												                </div>
-												                <div class="widget-footer">
-												                    <div class="from">
-													                    <span>Category: </span><img src="images/pfc-coff.png">
-													                    <span>Food & Dining: </span><img src="images/pfc-edit.png">
-												                    </div>
+												                    <br />
 												                    <div class="balance"><img src="images/grey_flag.png"></div>
+											                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    <!-- <div class="balance"><span>Balance: </span>$953.12</div> -->
 												                </div>
 												            </div>
 												        </div>
@@ -606,19 +666,20 @@
 												                            <div class="widget-summ">$129.98</div>
 												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
 												                        </div>
-												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+        												                <div class="">
+														                    <div class="from">
+															                    <span>Category: </span><img src="images/pfc-game.png">
+															                    <span>Entertaiment: </span><img src="images/pfc-edit.png">
+														                    </div>
+														                </div>
 												                    </div>
 												                </div>
 												                <div class="widget-footer">
 												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
-												                    <div class="balance"><span>Balance: </span>$953.12</div>
-												                </div>
-												                <div class="widget-footer">
-												                    <div class="from">
-													                    <span>Category: </span><img src="images/pfc-game.png">
-													                    <span>Entertaiment: </span><img src="images/pfc-edit.png">
-												                    </div>
+												                    <br />
 												                    <div class="balance"><img src="images/grey_flag.png"></div>
+											                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    <!-- <div class="balance"><span>Balance: </span>$953.12</div> -->
 												                </div>
 												            </div>
 												        </div>
@@ -641,19 +702,20 @@
 												                            <div class="widget-summ">$129.98</div>
 												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
 												                        </div>
-												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+														                <div class="">
+														                    <div class="from">
+															                    <span>Category: </span><img src="images/pfc-game.png">
+															                    <span>Entertaiment: </span><img src="images/pfc-edit.png">
+														                    </div>
+														                </div>
 												                    </div>
 												                </div>
 												                <div class="widget-footer">
 												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
-												                    <div class="balance"><span>Balance: </span>$953.12</div>
-												                </div>
-												                <div class="widget-footer">
-												                    <div class="from">
-													                    <span>Category: </span><img src="images/pfc-game.png">
-													                    <span>Entertaiment: </span><img src="images/pfc-edit.png">
-												                    </div>
+												                    <br />
 												                    <div class="balance"><img src="images/grey_flag.png"></div>
+											                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    <!-- <div class="balance"><span>Balance: </span>$953.12</div> -->
 												                </div>
 												            </div>
 												        </div>
@@ -676,19 +738,20 @@
 												                            <div class="widget-summ">$129.98</div>
 												                            <div class="transaction-type income"><i class="fa fa-caret-up"></i></div>
 												                        </div>
-												                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+        												                <div class="">
+														                    <div class="from">
+															                    <span>Category: </span><img src="images/pfc-game.png">
+															                    <span>Entertaiment: </span><img src="images/pfc-edit.png">
+														                    </div>
+														                </div>
 												                    </div>
 												                </div>
 												                <div class="widget-footer">
 												                    <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
-												                    <div class="balance"><span>Balance: </span>$953.12</div>
-												                </div>
-												                <div class="widget-footer">
-												                    <div class="from">
-													                    <span>Category: </span><img src="images/pfc-game.png">
-													                    <span>Entertaiment: </span><img src="images/pfc-edit.png">
-												                    </div>
+												                    <br />
 												                    <div class="balance"><img src="images/grey_flag.png"></div>
+											                        <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+												                    <!-- <div class="balance"><span>Balance: </span>$953.12</div> -->
 												                </div>
 												            </div>
 												        </div>
@@ -697,7 +760,7 @@
 					                        </li>
 					                    </ul>
 					              </div><!-- /Slide1 --> 
-
+					        
 					        </div>
 					        
 					       

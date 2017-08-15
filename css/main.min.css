@@ -17756,6 +17756,7 @@ height: auto;padding: 10px 10px;}
  .pfm_dtails_expenses_body .pfn_tbl td{
     height: 30px;
     line-height: 30px;
+    font-size:11.43px;
  }
  .pfm_dtails_expenses_body .pfn_tbl td:nth-child(3){
     text-align: right;
@@ -18973,4 +18974,147 @@ height: auto;padding: 10px 10px;}
     left: 150px;
     top: 6px;
     z-index: 1;
+}
+
+/* Spending analysis */
+ .uique_col_hei_container .widget-footer .tags{
+    margin-top:5px;
+}
+.uniqu_col_item .widget-left-side .fa.fa-angle-left {
+    font-size: 28px;
+    position: relative;
+    top: 120px;
+    color:#ccc;
+    cursor: pointer;
+} 
+.widget-hidden-content-filters{
+    margin-top: 25px;
+    color: #888;
+}
+.widget-hidden-content-filters .widget-hidden-dropdown button{
+    background-color: #fff !important;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    text-align:left;
+    color: #3a3e41;
+}
+.widget-hidden-content-filters .widget-hidden-dropdown span.fa-angle-down{
+    font-size: 20px;
+    float: right;
+    color: #bea072;
+}
+.widget-hidden-content-filters > span{
+    margin-top: 10px;
+}
+.widget-hidden-content-filters .dropdown-menu{
+    background-color: #fff;
+    width: 250px;
+}
+.widget-hidden-content-filters .dropdown-menu a{
+    color: #888;
+}
+.filter_min, .filter_max{
+    width: 65px;
+    background-color: #EEE;
+    border: 1px solid #AAA;
+    padding: 8px;
+    border-radius: 2px;;
+}
+
+/* Range styles don't touch */
+
+..widget-hidden-content-filters .range-slider{
+    display: inline-block;
+}
+
+.widget-hidden-content-filters input[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+    
+    /*fix for FF unable to apply focus style bug */
+    border: 1px solid white;
+    
+    /*required for proper track sizing in FF*/
+    width: 150px;
+}
+.widget-hidden-content-filters input[type=range]::-webkit-slider-runnable-track {
+    width: 150px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+.widget-hidden-content-filters input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+    margin-top: -4px;
+}
+.widget-hidden-content-filters input[type=range]:focus {
+    outline: none;
+}
+.widget-hidden-content-filters input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+.widget-hidden-content-filters input[type=range]::-moz-range-track {
+    width: 150px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+.widget-hidden-content-filters input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+}
+
+/*hide the outline behind the border*/
+.widget-hidden-content-filters input[type=range]:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+.widget-hidden-content-filters input[type=range]::-ms-track {
+    width: 150px;
+    height: 5px;
+    
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+    
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+}
+.widget-hidden-content-filters input[type=range]::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+.widget-hidden-content-filters input[type=range]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+.widget-hidden-content-filters input[type=range]::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+}
+.widget-hidden-content-filters input[type=range]:focus::-ms-fill-lower {
+    background: #888;
+}
+.widget-hidden-content-filters input[type=range]:focus::-ms-fill-upper {
+    background: #ccc;
 }

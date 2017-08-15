@@ -28,6 +28,7 @@ function selectDefaultAccount($this)
 
         
     }
+
     function resetForDoPayment()
     {
         $('#quickpayment .action_btn').show();

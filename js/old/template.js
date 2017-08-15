@@ -48,7 +48,6 @@ function mainInit() {
 		});
 		
 		GRID_OPTIONS["width"] = current_width;
-		//console.log("Init grid ("+current_width+") col!");
 		gridEl.gridstack(GRID_OPTIONS);
 
 		svgFix();
@@ -61,7 +60,6 @@ function windowResize() {
 		
 		if (width != current_width) {
 			$('.grid-stack').data('gridstack').setGridWidth(width);
-			//console.log("Resized from "+current_width+" to "+width+"!");
 			current_width = width;
 			updateWidgetsState();
 		}
@@ -194,7 +192,6 @@ function setShowMoreButtons(el, data) {
 			$(el).find('.more_content_bottom').hide();
 			if ($(el).attr('data-knob_id') !== undefined) {
 				//knob_id = $(el).attr('data-knob_id');
-				//console.log(knob_id + " min");
 				setKnobLayout($(el), 'min');
 			}
 		}
@@ -240,7 +237,6 @@ function createDial(id, value, max, size, bgColor, fgColor, angleOffs, displayIn
     id.val(value).trigger('change');
 }
 function hideThisBottomContent($this, grid) {
-    //console.log("hideThisBottomContent("+$this+")");
 
     var $thisGrid = $this;
     if ($($thisGrid).attr('data-show_only_either') != 'true') {
@@ -258,7 +254,6 @@ function hideThisBottomContent($this, grid) {
     }
 }
 function hideThisRightContent($this, grid) {
-    //console.log("hideThisRightContent("+$this+")");
 
     var $thisGrid = $this;
     if ($($thisGrid).attr('data-show_only_either') != 'true') {
@@ -424,7 +419,6 @@ function WidgetActivator() {
 	}
     
     function open(parentWidgetItem, replacementItemsDiv) {
-    		console.log(replacementItemsDiv)
         checkActive();
         var $parentWidgetItem = $(parentWidgetItem);
         var grid = $('.grid-stack').data('gridstack');
@@ -544,7 +538,6 @@ function changeGrid(containerId, func) {
 				dv.style.removeProperty("transform");		
 			}, time);
 		}, 100);
-		//console.log("Grid '"+containerId+"' was changed!");
 	}, time);
 }
 
@@ -556,7 +549,6 @@ function closeModalGrid() {
 
 //for handlebars
 function precompiledInit(cb){
-	console.log(userPref, '123', localStorage.getItem(LOCAL_STORAGE_PREF));
 	if (onlineData) {
 		$.ajax({
 			url: "landingData",
@@ -572,9 +564,7 @@ function precompiledInit(cb){
 		var retrieved = localStorage.getItem(LOCAL_STORAGE_PREF);
 		if (typeof retrieved !== "undefined" && retrieved!=null ) {
 			userPref = JSON.parse(retrieved);
-			console.log(userPref, "Preference found in local storage.");
 		} else {
-			//console.log("There is no preference in local storage.");
 		}
 		precompiledInitCallBack();
 		if (cb!=null) cb(); 
@@ -644,7 +634,6 @@ function precompiledInitCallBack(data) {
 			else if($("#user-type").text() == "Tom Smith"){
 				if(templateName != "CurrentAccount" && templateName != "Advertisment" && templateName != "SavingGoals" && templateName != "CurrentAccountJane" && templateName != "AdvertismentJane" && templateName != "SavingGoalsJane"){
 					var template = Handlebars.templates[templateName];
-					console.log(templateName,0)
 					cont.innerHTML = template( current );
 					var el = cont.firstChild;
 					el.setAttribute("UUID", uuid);
@@ -732,7 +721,6 @@ function addNewWidgetEvent(el, data) {
 						var tempName = obj["template"];
 						if (typeof landingPref[obj["UUID"]] === "undefined") {
 							addNewWgs[addNewWgs.length] = obj;
-							//console.log("ADDED TO NEW: "+obj["UUID"]+" "+tempName);
 						}
 					}
 				}
@@ -898,7 +886,6 @@ function listWgsProps() {
 function updateWidgetsState() {
 	var cont = document.getElementById("playground");
 	var wgs = cont.childNodes;
-	console.log('wgs',)
 	var landingPref = userPref["LANDING_PAGE"];
 	if (typeof landingPref === "undefined") {
 		landingPref = new Object();
@@ -923,16 +910,13 @@ function updateWidgetsState() {
 		measures["WIDTH"] = Number(wg.getAttribute("data-gs-width"));
 		measures["HEIGHT"] =Number(wg.getAttribute("data-gs-height"));
 		wgPref["CHECKED"] = true;
-		//console.log(i+". "+wgPref["TYPE"]+":\t\t\t"+measures["X"]+" "+measures["Y"]);
 	}
 	for (var key in landingPref) {
 		var wgPref = landingPref[key];
 		if (typeof wgPref["CHECKED"] === "undefined") {
 			delete landingPref[key];
-			//console.log("deleted: "+key+" "+wgPref["TYPE"]);
 		} else {
 			delete wgPref["CHECKED"];
-			//console.log("exixts: "+key+" "+wgPref["TYPE"]);
 		}
 	}
 	saveUserPreferences();
@@ -1002,11 +986,10 @@ function saveUserPreferences() {
 			url: "savePreferences",
 			method: "POST",
 			data: { USER_ID: "finex", CONTENT : JSON.stringify(userPref)}
-		}).done(function (data) {//console.log("Preferences (col "+current_width+") saved to DB.");
+		}).done(function (data) {
 	});
 	} else {
 		localStorage.setItem(LOCAL_STORAGE_PREF, JSON.stringify(userPref));
-		//console.log("Preferences (col "+current_width+") saved to local storage.");
 	}
 }
 
@@ -1017,15 +1000,12 @@ function getMeasuresByUUID(uuid) {
 		if (typeof wgPref !== "undefined") {
 			var measures = wgPref[current_width.toString()];
 			if (typeof measures === "undefined") {
-				//console.log("Measures to width "+current_width+" not found!");
 				return null;
 			} else {
-				//console.log("Measures to width "+current_width+" found!");
 				return measures;
 			}
 		}
 	}
-	//console.log("LANDING_PAGE preference still not found!");
 	return null;
 }
 
@@ -1701,7 +1681,6 @@ function setOwnAccountPayment(el, data) {
     	$('.payment-benefeciary-type').not(event.currentTarget).addClass("pasive");
     	$(event.currentTarget).removeClass("pasive");
     	$(event.currentTarget).addClass("active");
-    	console.log($(event.currentTarget).hasClass)
     	$(event.currentTarget).closest('#ownaccountpayment-benefeciary-fields-first').find('.payment-benefeciary-detail-type').removeClass('payment-benefeciary-detail-active');
 	})
 
@@ -2520,7 +2499,7 @@ function setMyVisaDebitCard(el, data) {
 function doCreateChartPersonalFin2(input)
 {    
     var containerId = '#circle_finance_detail';
-    var chartTitle = '€';
+    var chartTitle = 'Total Expences';
     if(input != null){
         containerId = '#circle' + input + '_finance';
         chartTitle = '';
@@ -2605,7 +2584,9 @@ function doCreateChartPersonalFin2(input)
             }
         }]
     });
-    
+
+    $('#pfm_number').html('$' + $('#pfm_number').html());
+
     $('.highcharts-title tspan:last-child').attr('dy', '40');
     setTimeout(function(){
       //$(window).trigger('resize');

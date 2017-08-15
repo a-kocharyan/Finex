@@ -248,6 +248,7 @@ function initPfmDetailsNew() {
         }
 
         /** * Initial value output */
+        console.log($inputRange);
         for (var i = $inputRange.length - 1; i >= 0; i--) {
             valueOutput($inputRange[i]);
         }
