@@ -18974,3 +18974,93 @@ height: auto;padding: 10px 10px;}
     top: 6px;
     z-index: 1;
 }
+
+/* Card Details Block */
+.widget-bank-card-modal{
+    background-color: white;
+    color:black;
+    width:50%!important;
+}
+.widget-bank-card-modal nav.navbar-default{
+    background-color:transparent;
+    border: none;
+}
+.widget-bank-card-modal .modal-header button[data-dismiss="modal"]{
+    font-size: 34px;
+    color: #ccc;
+    position: relative;
+    top: -15px;
+}
+.widget-bank-card-modal .modal-footer{
+    padding: 0;
+    border-top:0;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.widget-bank-card-modal .navbar-nav {
+    margin-left: 20px;
+}
+.widget-bank-card-modal .modal-header > h4{
+    text-transform: uppercase;
+    color:#dcad83;
+
+}
+.widget-bank-card-modal .navbar-nav > li > a{
+    color: black;
+    font-size: 14px;
+}
+.widget-bank-card-modal .navbar-nav > li > a:hover{
+    background-color: transparent;
+    color:#666666;
+}
+.widget-bank-card-modal .navbar-nav > li > a.active{
+    color:black;
+    background-color: #ccc;
+}
+.widget-bank-card-modal .lose-reason{
+    border-collapse: collapse;
+}
+.widget-bank-card-modal .lose-reason li{
+    border:1px solid #ccc;
+}
+.widget-bank-card-modal .navbar-header .navbar-brand{
+    margin-top: 13px;
+    margin-left: 30px;
+    color: #666666;
+    height: auto;
+}
+.widget-bank-card-modal .modal-body img{
+    margin-top: 35px;
+}
+.widget-bank-card-modal nav.navbar-default .navbar-header{
+    margin-left: 150px;
+}
+.btn-container{
+    position: relative;
+    left: -5.8%;
+}
+.cancel_bank_card{
+    color: #666666;
+}
+.confirm_bank_card{
+    color:#dcad83;
+    padding:8px 20px;;
+    border-radius: 10px;
+    border: 1px solid #dcad83;
+}
+.confirm_bank_card:hover{
+    color:#dcad83;
+}
+p.card_status{
+    text-align: left;
+    margin-left: 100px!important;
+}
+p.card_status span{
+    color: #666666;
+}
+.new_card_status{
+    border:1px solid #ccc;
+}
+.my-credit-card{
+    color: #ccc;
+}

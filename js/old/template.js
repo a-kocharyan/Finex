@@ -424,7 +424,6 @@ function WidgetActivator() {
 	}
     
     function open(parentWidgetItem, replacementItemsDiv) {
-    		console.log(replacementItemsDiv)
         checkActive();
         var $parentWidgetItem = $(parentWidgetItem);
         var grid = $('.grid-stack').data('gridstack');
@@ -556,7 +555,7 @@ function closeModalGrid() {
 
 //for handlebars
 function precompiledInit(cb){
-	console.log(userPref, '123', localStorage.getItem(LOCAL_STORAGE_PREF));
+	// console.log(userPref, '123', localStorage.getItem('LOCAL_STORAGE_PREF'));
 	if (onlineData) {
 		$.ajax({
 			url: "landingData",
@@ -577,7 +576,7 @@ function precompiledInit(cb){
 			//console.log("There is no preference in local storage.");
 		}
 		precompiledInitCallBack();
-		if (cb!=null) cb(); 
+		if (cb!=null) cb();
 	}
 }
 
@@ -589,6 +588,7 @@ function precompiledInitCallBack(data) {
 	grid.removeAll();
 	grid.setStatic(false);
 	grid.batchUpdate();
+
 
 	var landingPref = userPref["LANDING_PAGE"];
 	if (typeof landingPref === "undefined") {
@@ -611,9 +611,12 @@ function precompiledInitCallBack(data) {
 				} else {
 					grid.addWidget(el, measures["X"], measures["Y"], measures["WIDTH"], measures["HEIGHT"], false);
 				}
-				
+
 				var func = templateFunctions[tmpName];
 				if (typeof func !== "undefined") func(el, obj);
+			}
+			if($('#bankCard').length > 0){
+				window.template.resolve();
 			}
 		}
 	} else {
@@ -622,7 +625,7 @@ function precompiledInitCallBack(data) {
 		for (var uuid in landingPref) {	
 			var current = landingPref[uuid];
 			var templateName = current["TYPE"];
-			
+
 			if($("#user-type").text() == "Jane Smith"){
 				if(templateName != "CurrentAccount" && templateName != "Advertisment" && templateName != "SavingGoals" && templateName != "CurrentAccountTom" && templateName != "AdvertismentTom" && templateName != "SavingGoalsTom"){
 					var template = Handlebars.templates[templateName];
@@ -661,7 +664,7 @@ function precompiledInitCallBack(data) {
 				}
 			}
 			else if(templateName != "CurrentAccountJane" && templateName != "AdvertismentJane" && templateName != "SavingGoalsJane" && templateName != "CurrentAccountTom" && templateName != "AdvertismentTom" && templateName != "SavingGoalsTom"){ 
-				var template = Handlebars.templates[templateName]; 
+				var template = Handlebars.templates[templateName];
 				i++;
 				cont.innerHTML = template( current );
 				var el = cont.firstChild;
