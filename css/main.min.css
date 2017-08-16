@@ -18976,6 +18976,9 @@ height: auto;padding: 10px 10px;}
 }
 
 /* Card Details Block */
+#widget-bank-card-modal{
+    display: none;
+}
 .widget-bank-card-modal{
     background-color: white;
     color:black;

@@ -189,6 +189,16 @@
     });
 })();
 
+//CardDetailsModal.js
+(function () {
+    var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+    templates['CardDetailsModal'] = template({
+        'compiler': [7, '>= 4.0.0'], 'main': function (container, depth0, helpers, partials, data) {
+            return "<div id=\"widget-bank-card-modal\" class=\"widget-bank-card-modal modal\">	<div class=\"modal-header\">    	<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>    	<h4 class=\"pull-left\">Change card status</h4>  	</div>  	<div class=\"modal-body\"></div>  	<div class=\"modal-footer\">  		<div class=\"btn-container\">	    	<a href=\"#\" class=\"confirm_bank_card btn\">CONFIRM</a>	    	<a href=\"#\" class=\"cancel_bank_card btn\">CANCEL</a>    	</div>	</div></div>";
+    }, 'useData': true
+    });
+})();
+
 //CashFlow.js
 (function () {
     var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};

@@ -616,7 +616,7 @@ function precompiledInitCallBack(data) {
 				if (typeof func !== "undefined") func(el, obj);
 			}
 			if($('#bankCard').length > 0){
-				window.template.resolve();
+				window.blockDeferred.resolve();
 			}
 		}
 	} else {
@@ -1245,6 +1245,10 @@ var allWgs = [
     {
         template: "CreditAdvertisment",
         UUID: 47
+    },
+    {
+    	template: "CardDetailsModal",
+    	UUID: 48
     }
 
 
@@ -1305,6 +1309,7 @@ var templateFunctions = {
 	,SavingGoalsTom : setSavingGoalsTom
 	,PersonalLoan : setPersonalLoan
 	,CreditAdvertisment : setCreditAdvertisment
+	,CardDetailsModal : setCardDetailsModal
 }
 
 function setMyCurrent(el, data) {
@@ -2520,6 +2525,15 @@ function setMyVisaDebitCard(el, data) {
 		detailUtil.openTemplate(this, "MyVisaDebitCardDetails", null);
 	});
 }
+function setCardDetailsModal(el,data){
+	createDial($(el).find("#widget-bank-card-modal"), 500, 500, 90, "#f7573f", "#87b22e", 320);
+	setShowMoreButtons(el, data);
+	$(el).find(".widget-details-button a").click(function(e) {
+        e.preventDefault();
+		detailUtil.openTemplate(this, "CardDetailsModal", null);
+	});
+}
+
 function doCreateChartPersonalFin2(input)
 {    
     var containerId = '#circle_finance_detail';
