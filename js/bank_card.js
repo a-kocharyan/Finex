@@ -12,51 +12,29 @@ $(function(){
 
 		_createCardDetailsModal: function(){
 			that = this;
-			var cardDetailsModal = $('#widget-bank-card-modal');
-
-			cardDetailsModal.find('.modal-body').append('<img class="pull-left" width="150" src="./images/gold-card.png" alt="credit-card">\
-						  		<div class="clearfix"></div>\
-				                <h5 class="my-credit-card">My Credit Card</h5>\
-				                <p class="card_status"><span>CARD STATUS</span> Active</p>\
-				                <div class="navbar">\
-								  <div class="container-fluid">\
-								    <div class="navbar-header">\
-								      <a class="navbar-brand" href="#"><span>NEW CARD STATUS</span></a>\
-								    </div>\
-				                	<ul class="nav navbar-nav new_card_status">\
-								      <li><a href="#">TEMPORARY BLOCKED</a></li>\
-								      <li><a href="#">BLOCKED</a></li>\
-								    </ul>\
-							    </div>\
-				                <nav class="navbar navbar-default">\
-								  <div class="container-fluid text-center">\
-								    <div class="navbar-header">\
-								      <a class="navbar-brand" href="#">REASON</a>\
-								    </div>\
-								    <ul class="nav navbar-nav lose-reason">\
-								      <li><a href="#">LOST</a></li>\
-								      <li><a href="#">STOLEN</a></li>\
-								      <li><a href="#">DAMAGED</a></li>\
-								    </ul>\
-								  </div>\
-								</nav>');
-
-			that.detailsBlock = cardDetailsModal;
+			that.detailsBlock = $('#widget-bank-card-modal');
+			that.changeLimits = $('#widget-card-change-limits-modal');
 		},
 
 		_bindEvents: function(){
 			var that = this;
-			that.element.on('click', '.widget-details-button a.btn', that.handlers.openBlockPopup.bind(that));
+			that.element.on('click', '.widget-details-button a.btn', that.handlers.openDetailsModal.bind(that));
+			that.element.on('click', '.widget-details-button .btn-modify', that.handlers.openChangeLimitsModal.bind(that));
 			that.detailsBlock.on('click', '.navbar-nav > li > a', that.handlers.blocksSelections.bind(that));
 			that.detailsBlock.on('click', 'button[data-dismiss="modal"], .confirm_bank_card, .cancel_bank_card', that.handlers.closeModal.bind(that));
 		},
 
 		handlers: {
-			openBlockPopup: function(event){
-				var currentElement = $(event.currentTarget);
+			openDetailsModal: function(event){
 				that.detailsBlock.modal('show');
 				that.detailsBlock.css('display', 'inline-block');
 				that.detailsBlock.find('[href="#close-modal"]').hide();
+			},
+
+			openChangeLimitsModal: function(event){
+				that.changeLimits.modal('show');
+				that.changeLimits.css('display', 'inline-block');
+				that.changeLimits.find('[href="#close-modal"]').hide();
 			},
 
 			blocksSelections: function(event){
@@ -72,7 +50,7 @@ $(function(){
 
 		options: {
 			selectors: {
-				main: '.widget-bank-card'
+				main: '#bankCard .widget-bank-card'
 			}
 		}
 	};

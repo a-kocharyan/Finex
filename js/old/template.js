@@ -615,9 +615,6 @@ function precompiledInitCallBack(data) {
 				var func = templateFunctions[tmpName];
 				if (typeof func !== "undefined") func(el, obj);
 			}
-			if($('#bankCard').length > 0){
-				window.blockDeferred.resolve();
-			}
 		}
 	} else {
 		//from pref
@@ -686,6 +683,13 @@ function precompiledInitCallBack(data) {
 	//gridEl.show();
 	if (hasAutoPositionHappened) updateWidgetsState();
 	svgFix();
+	setTimeout(function(){
+		console.log($('#account-balances'));
+		if($('#bankCard').length > 0 && $('#account-balances').length !== 0){
+			window.blockDeferred.resolve();
+			console.log($('#bankCard').find('.widget-details-button .btn-modify'));
+		}
+	},2000);
 }
 
 //add new widget
@@ -1247,7 +1251,7 @@ var allWgs = [
         UUID: 47
     },
     {
-    	template: "CardDetailsModal",
+    	template: "CardDetailsBlockModal",
     	UUID: 48
     }
 
@@ -1309,7 +1313,8 @@ var templateFunctions = {
 	,SavingGoalsTom : setSavingGoalsTom
 	,PersonalLoan : setPersonalLoan
 	,CreditAdvertisment : setCreditAdvertisment
-	,CardDetailsModal : setCardDetailsModal
+	,CardDetailsBlockModal : setCardDetailsBlockModal
+	,CardDetailsLimitsModal: setCardDetailsLimitsModal
 }
 
 function setMyCurrent(el, data) {
@@ -2525,12 +2530,22 @@ function setMyVisaDebitCard(el, data) {
 		detailUtil.openTemplate(this, "MyVisaDebitCardDetails", null);
 	});
 }
-function setCardDetailsModal(el,data){
+
+function setCardDetailsBlockModal(el,data){
 	createDial($(el).find("#widget-bank-card-modal"), 500, 500, 90, "#f7573f", "#87b22e", 320);
 	setShowMoreButtons(el, data);
 	$(el).find(".widget-details-button a").click(function(e) {
         e.preventDefault();
-		detailUtil.openTemplate(this, "CardDetailsModal", null);
+		detailUtil.openTemplate(this, "CardDetailsBlockModal", null);
+	});
+}
+
+function setCardDetailsLimitsModal(el, data){
+	createDial($(el).find("#widget-card-change-limits-modal"), 500, 500, 90, "#f7573f", "#87b22e", 320);
+	setShowMoreButtons(el, data);
+	$(el).find(".widget-details-button a").click(function(e) {
+        e.preventDefault();
+		detailUtil.openTemplate(this, "CardDetailsLimitsModal", null);
 	});
 }
 

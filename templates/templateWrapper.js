@@ -189,12 +189,22 @@
     });
 })();
 
-//CardDetailsModal.js
+//CardDetailsBlockModal.js
 (function () {
     var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
-    templates['CardDetailsModal'] = template({
+    templates['CardDetailsBlockModal'] = template({
         'compiler': [7, '>= 4.0.0'], 'main': function (container, depth0, helpers, partials, data) {
-            return "<div id=\"widget-bank-card-modal\" class=\"widget-bank-card-modal modal\">	<div class=\"modal-header\">    	<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>    	<h4 class=\"pull-left\">Change card status</h4>  	</div>  	<div class=\"modal-body\"></div>  	<div class=\"modal-footer\">  		<div class=\"btn-container\">	    	<a href=\"#\" class=\"confirm_bank_card btn\">CONFIRM</a>	    	<a href=\"#\" class=\"cancel_bank_card btn\">CANCEL</a>    	</div>	</div></div>";
+            return "<div id=\"widget-bank-card-modal\" class=\"widget-bank-card-modal modal\">	<div class=\"modal-header\">    	<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>    	<h4 class=\"pull-left\">Change card status</h4>  	</div>  	<div class=\"modal-body\">      <img class=\"pull-left\" width=\"150\" src=\"./images/gold-card.png\" alt=\"credit-card\">      <div class=\"clearfix\"></div>            <h5 class=\"my-credit-card\">My Credit Card</h5>            <p class=\"card_status\"><span>CARD STATUS</span> Active</p>            <div class=\"navbar\">      <div class=\"container-fluid\">        <div class=\"navbar-header\">          <a class=\"navbar-brand\" href=\"#\"><span>NEW CARD STATUS</span></a>        </div>              <ul class=\"nav navbar-nav new_card_status\">          <li><a href=\"#\">TEMPORARY BLOCKED</a></li>          <li><a href=\"#\">BLOCKED</a></li>        </ul>      </div>            <nav class=\"navbar navbar-default\">      <div class=\"container-fluid text-center\">        <div class=\"navbar-header\">          <a class=\"navbar-brand\" href=\"#\">REASON</a>        </div>        <ul class=\"nav navbar-nav lose-reason\">          <li><a href=\"#\">LOST</a></li>          <li><a href=\"#\">STOLEN</a></li>          <li><a href=\"#\">DAMAGED</a></li>        </ul>      </div>    </nav>     </div>  	<div class=\"modal-footer\">  		<div class=\"btn-container\">	    	<a href=\"#\" class=\"confirm_bank_card btn\">CONFIRM</a>	    	<a href=\"#\" class=\"cancel_bank_card btn\">CANCEL</a>    	</div>	</div></div>";
+    }, 'useData': true
+    });
+})();
+
+//CardDetailsLimitsModal.js
+(function () {
+    var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+    templates['CardDetailsLimitsModal'] = template({
+        'compiler': [7, '>= 4.0.0'], 'main': function (container, depth0, helpers, partials, data) {
+            return "<div id=\"widget-card-change-limits-modal\" class=\"widget-bank-card-modal modal\">	<div class=\"modal-header\">    	<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>    	<h4 class=\"pull-left\">Change card status</h4>  	</div>  	<div class=\"modal-body\">      <img class=\"pull-left\" width=\"150\" src=\"./images/gold-card.png\" alt=\"credit-card\">      <div class=\"clearfix\"></div>            <h5 class=\"my-credit-card\">My Credit Card</h5>            <p class=\"card_status\"><span>CARD STATUS</span> Active</p>            <div class=\"navbar\">      <div class=\"container-fluid\">        <div class=\"navbar-header\">          <a class=\"navbar-brand\" href=\"#\"><span>NEW CARD STATUS</span></a>        </div>              <ul class=\"nav navbar-nav new_card_status\">          <li><a href=\"#\">TEMPORARY BLOCKED</a></li>          <li><a href=\"#\">BLOCKED</a></li>        </ul>      </div>            <nav class=\"navbar navbar-default\">      <div class=\"container-fluid text-center\">        <div class=\"navbar-header\">          <a class=\"navbar-brand\" href=\"#\">REASON</a>        </div>        <ul class=\"nav navbar-nav lose-reason\">          <li><a href=\"#\">LOST</a></li>          <li><a href=\"#\">STOLEN</a></li>          <li><a href=\"#\">DAMAGED</a></li>        </ul>      </div>    </nav>     </div>  	<div class=\"modal-footer\">  		<div class=\"btn-container\">	    	<a href=\"#\" class=\"confirm_bank_card btn\">CONFIRM</a>	    	<a href=\"#\" class=\"cancel_bank_card btn\">CANCEL</a>    	</div>	</div></div>";
     }, 'useData': true
     });
 })();
