@@ -196,7 +196,7 @@ function createOwnAccountPayment(el, headerCLass) {
         shadowSides : 0.8,
         shadowFlip : 0.7,
         circular : true,
-        onEndFlip	: function( old, page, isLimit ) {}
+         onEndFlip	: function( old, page, isLimit ) {}
     });
 
 	bblock.find("#ownaccountpayment-benefeciary-fields-first input").click( function(e) {
@@ -238,7 +238,7 @@ function createChequebookPayment(el, headerCLass) {
     addProcessing( bblock.find(".bb-item.processing") );
     bblock.find(".bb-item").each(function (index, bbItemElement) {
         if (index == 2) {
-            makeHeader(this, "&nbsp;", false, "selectCommonPaySrcAccount");
+            makeHeader(this, "Results", false, "selectCommonPaySrcAccount");
         } else {
             makeHeader(this, "Review Details", false, "selectCommonPaySrcAccount");
         }
@@ -272,7 +272,7 @@ function createChequebookPayment(el, headerCLass) {
         $(el).attr('data-current-step', currentStep);
     });
 
-    setStepsNumbers('#chequebook' , 3);
+    setStepsNumbers('#chequebook' , 2);
 }
 //STPL
 function createAccountOpenPayment(el, headerCLass) {    
@@ -408,7 +408,7 @@ function createCardApplicationPayment(el, headerCLass) {
 }
 
 //STPL
-function createTermDepositOpeningPayment(el, headerCLass) {    
+function createTermDepositOpeningPayment(el, headerCLass) { 
     var bblock = (el==null?$("#commonpay .bb-bookblock"):$(el).find(".bb-bookblock"));
     addProcessing( bblock.find(".bb-item.processing") );
     bblock.find(".bb-item").each(function (index, bbItemElement) {
@@ -421,7 +421,7 @@ function createTermDepositOpeningPayment(el, headerCLass) {
         }
     });
     var stepsClass = "steps";
-    makeSteps(el, 3, headerCLass, stepsClass);
+    makeSteps(el, 4, headerCLass, stepsClass);
     setSteps(el, stepsClass);
 
     bblock.bookblock({
@@ -456,7 +456,7 @@ function createFilePayment(el, headerCLass) {
     addProcessing( bblock.find(".bb-item.processing") );
     bblock.find(".bb-item").each(function (index, bbItemElement) {
         if (index == 3) {
-            makeHeader(this, "&nbsp;", false, "selectCommonPaySrcAccount");
+            makeHeader(this, "Result", false, "selectCommonPaySrcAccount");
         } else {
             makeHeader(this, "File upload payment", false, "selectCommonPaySrcAccount");
         }
@@ -488,7 +488,7 @@ function createFilePayment(el, headerCLass) {
         $(el).attr('data-current-step', currentStep);
     });
 
-    setStepsNumbers('#commonpay_file' , 4);
+    setStepsNumbers('#commonpay_file' , 3);
 }
 
 function nextPageValidations(el, me){
@@ -496,8 +496,6 @@ function nextPageValidations(el, me){
         var direction = $(me).attr("data-nav-dir");
 		bblock.bookblock(direction);
         var currentStep = (typeof $(el).attr('data-current-step') == "undefined") ? 0 : $(el).attr('data-current-step');
-		//console.log(currentStep);
-		//console.log(direction);
         if (direction == "prev") {
             currentStep--;
         } else if (direction == "next") {
@@ -511,8 +509,6 @@ function nextPageValidations(el, me){
 }
 
 function makeSteps (element, numberOfSteps, headerClass, stepsClass) {
-	//console.log(headerClass);
-	//console.log(stepsClass);
     var stepsHtml = "" +
         "<div class=\"" + stepsClass + "\">" +
         "<div class=\"steps-title\">Step <span class='delta-number'>1</span>/<span>" + numberOfSteps + "</span></div>" +
@@ -529,10 +525,7 @@ function makeSteps (element, numberOfSteps, headerClass, stepsClass) {
 }
 
 function setStepActive (element, stepsClass, indexOfActive) {
-	//console.log(element);
-	//console.log(stepsClass);
 	var steps = $(stepsClass, element);
-	//console.log(steps.length);
     if (steps.length > 0) {
         var selectedStep = steps.find("li").get(indexOfActive);
         if (selectedStep != "") {
@@ -562,7 +555,6 @@ function managePaymentType (parentElement, clickedElement) {
 
 //manage payment type between pages(25,50)
 function manageChequebookType (parentElement, clickedElement) {
-    console.log("worked")
     $(".content-to-show", parentElement).removeClass('active');
     $(".payment-type", parentElement).removeClass('active');
     var id = $(clickedElement).attr('id');
@@ -691,11 +683,10 @@ function quickHideBottomContent($this)
 }
 function commonPaymentShowOriginal($this)
 {
-	resetForDoPayment();
-	
-	$("#commonpayment").revertFlip();
-	setTimeout(function(){ document.getElementById('paymentDueDate').valueAsDate = new Date(); }, 1400);
-	
+    resetForDoPayment();
+    
+    $('#commonpayment').revertFlip();
+    setTimeout(function(){ document.getElementById('paymentDueDate').valueAsDate() = new Date(); }, 4000);
 }
 function nextBtnClickedPayment($this)
 {
@@ -815,8 +806,7 @@ function filterBeneficiaryByCategory(){
 
 function swipePaymentPartnerScreen($this) {
     if(cp_paymentCategory != null){
-		filterBeneficiaryByCategory();
-		
+		filterBeneficiaryByCategory();    
 	}
 
 	cp_ben_desc = $("#commonpayment_container_1 .payment_form .form-group textarea").val();
@@ -870,7 +860,6 @@ function selectPaymentUser($this, paymentType) {
         fillQuickPaymentSelectedUser(userData, "#charitypayment_container_3", paymentType);   
         fillQuickPaymentSelectedUser(userData, "#charitypayment_container_4", paymentType);
     } else if (paymentType == 'thirdParty') {
-		//console.log(userData.cp_ben_img);	
         fillThirdPartyPaymentSelectedUser(userData, "#commonpayment_container_2 .payment-benefeciary-details", paymentType);
         var townZipString = userData.cp_ben_city;
         if (userData.cp_ben_zip != "" && typeof userData.cp_ben_zip != 'undefined') {
@@ -890,7 +879,6 @@ function fillQuickPaymentSelectedUser (userData, container, paymentType) {
 	
 	if (paymentType == 'thirdParty') {
 		$('.benefeciary-icon-full', $container).html(userData.cp_ben_img);
-		//console.log(userData.cp_ben_img);
 	} else {
 		var $imageWrapper = $('.payment-logo', $container);
 		if ($('img',$imageWrapper).length == 0) {
@@ -933,7 +921,6 @@ function clearThirdPartyPaymentSelectedUser (container, buttonElement) {
 
 function fillTransactionDetails (container, dataContainer) {
     var $container = $(container);  
-    console.log(container.indexOf())
     if(container.indexOf('charitypayment') != -1){
         $('.amount').val($('.charity_calculator_value.zakat').html());
         $('.transaction-date').val($('#date-datepicker-charity').val());
@@ -1017,8 +1004,8 @@ function fillTransactionDetails (container, dataContainer) {
     }    
     else if(container.indexOf('commonpayment') != -1){
 
-        $('.amount').val($('.charity_calculator_value.zakat').html());
-        $('.transaction-date').val($('#date-datepicker-charity').val());
+        // $('.amount').val($('.charity_calculator_value.zakat').html());
+        $('.transaction-date').html($('.amount').val());
      //   if($('#cardApplication_container_4').css('display')=='block'){ 
            $('.password-block').hide();
            $('.spiner-block').show();
@@ -1068,7 +1055,7 @@ function clearTransactionDetails (container) {
     $('.reference', $container).val("");
 }
 
-function defaulValues(container){
+function defaultValues(container){
     $('.name',container).val($('.name',container).attr("value"))
 }
 
@@ -1109,33 +1096,31 @@ function validationPaymentFirst (el, me, fromContainer, toContainer) {
 	}
 }
 
-function validationPayment (el, me, fromContainer, toContainer, id, enabledLoader) {	
-    // alert(2222)
-    debugger
-	var isValidate = true;	
-	var placeholderOld = '';
-	var isIgnore = false;
-	$(id + " input" ).each(function( index ) {
-		isIgnore = $(this).attr('notrequired');		
-		//console.log(isIgnore);
-		if($(this).val() == '' && isIgnore == undefined){
+function validationPayment (el, me, fromContainer, toContainer, id, enabledLoader) {
+    var isValidate = true;  
+    var placeholderOld = '';
+    var isIgnore = false;
+    $(id + " input" ).each(function( index ) {
+        isIgnore = $(this).attr('notrequired');     
+        if($(this).val() == '' && isIgnore == undefined){
            // alert(43333)
-			$(this).attr('style', 'border-color: currentcolor currentcolor red;');
-			$(this).addClass('placeholder-error');
-			placeholderOld = $(this).attr('placeholder');
-			$(this).attr('placeholderOld', placeholderOld);
-			$(this).attr('placeholder', 'Empty field');
-			isValidate = false;
-		}
-	});     
-	if(isValidate){  
-  		if(enabledLoader){
-			$(el+' .password-block').hide();
-			$(el+' .spiner-block').show();
-			nextPageValidations(el, me);
-			setTimeout(function() {
-				$(el+' .password-block').show();
-				$(el+' .spiner-block').hide();
+            $(this).attr('style', 'border-color: currentcolor currentcolor red;');
+            $(this).addClass('placeholder-error');
+            placeholderOld = $(this).attr('placeholder');
+            $(this).attr('placeholderOld', placeholderOld);
+            $(this).attr('placeholder', 'Empty field');
+            isValidate = false;
+        }
+    });     
+    if(isValidate){  
+        if(enabledLoader){
+            $(el+' .password-block').hide();
+            $(el+' .spiner-block').show();
+            nextPageValidations(el, me);
+            setTimeout(function() {
+                $(el+' .password-block').show();
+                $(el+' .spiner-block').hide();
+        $('#ownaccountpayment_container_3 .recurring-prop', el).css({display:'none'});
 			}, 2000);			
 		} else {
 			nextPageValidations(el, me);
@@ -1266,7 +1251,7 @@ function hideError(_this, articleId) {
     //$("#" + articleId + " .article-error").css("display", "none");
     //$("#" + articleId).parent().parent(".payment_error")
 }
-
+        
 function selectCommonPaySrcAccount($this) {
     cp_src_accname = $($this).attr('data-account_name'); 
     cp_src_accbal = $($this).attr('data-account_balance');
@@ -1274,19 +1259,19 @@ function selectCommonPaySrcAccount($this) {
 	$("#commpayment a.curracc span").text(cp_src_accname + " (" +cp_src_accbal +")");
 }
 
-function fillAccountOpening($this , fromContainer , toContainer) {
+function fillAccountOpening(fromContainer , toContainer) {
     $('.acc-op-nickname', toContainer).html($('.name', fromContainer).val());
     $('.acc-op-curerency', toContainer).html($('.select-curency option:selected', fromContainer).html());
 }
 
-function fillTermDepositOpening($this , fromContainer , toContainer) {
+function fillTermDepositOpening( fromContainer , toContainer) {
     $('.deposit-amount', toContainer).html($('.name', fromContainer).val());
     $('.deposit-term', toContainer).html($('.select-term option:selected', fromContainer).html());
     $('.deposit-acc', toContainer).html($('.select-deposit-acc option:selected', fromContainer).html());
     $('.deposit-rollover', toContainer).html($('.select-rollover option:selected', fromContainer).html());
 }
 
-function fillLoanRequest($this , fromContainer , toContainer) {
+function fillLoanRequest(fromContainer , toContainer) {
     $('.loan-amount', toContainer).html($('.amount1', fromContainer).val());
     $('.loan-term', toContainer).html($('.select-loan-term option:selected', fromContainer).html());
     $('.loan-repayment', toContainer).html($('.result', fromContainer).html());
@@ -1295,24 +1280,51 @@ function fillLoanRequest($this , fromContainer , toContainer) {
     $('.loan-marstatus', toContainer).html($('.select-status option:selected', fromContainer).html());
 }
 
-function fillcardApplication($this , fromContainer , toContainer){
+function fillcardApplication(fromContainer , toContainer){
     $('.transaction-name', toContainer).html($('.name', fromContainer).val());
     $('.transaction-type', toContainer).html($('.select-curency option:selected', fromContainer).html());
     $('.transaction-nickname', toContainer).html($('.nickname', fromContainer).val());
     $('.emplayment-status', toContainer).html($('.select-curency-2 option:selected', fromContainer).html());
     $('.transaction-salary', toContainer).html($('.gross-salary', fromContainer).val());
     $('.martial-status', toContainer).html($('.select-curency-3 option:selected', fromContainer).html());
-
 }
 
-function fillChequebook($this , fromContainer , toContainer){
+function fillChequebook(fromContainer , toContainer){
     $('.chequebook-branch', toContainer).html($('.select-branch option:selected', fromContainer).html());
 }
 
+function fillOwnAccountPayment(fromContainer , toContainer){
+    $('.transaction-reference', toContainer).html($('.reference-input', fromContainer).val());
+    $('.transaction-date', toContainer).html($('.datepicker-input', fromContainer).val());
+    if($('#tab-to-show-saved-transactions', fromContainer).is('.active'))
+    {
+        console.log($('#tab-to-show-saved-transactions', fromContainer))
+        $('.recurring-prop').css({display:'block'})
+        $('.recurring-prop:last-of-type').css({backgroundColor:'red'})
+        $('.transaction-frequency', toContainer).html($('.select-frequency option:selected', fromContainer).html());
+        $('.transaction-validity', toContainer).html($('.select-validity option:selected', fromContainer).html());
+    }
+}
+
+function fillPayment(fromContainer , toContainer){
+    $('.transaction-reference', toContainer).html($('.benefeciaries-tab.active  .reference-input ', fromContainer).val());
+    $('.transaction-date', toContainer).html($('.benefeciaries-tab.active  .datepicker-input', fromContainer).val());
+    if($('#tab-to-show-saved-transactions-1', fromContainer).is('.active'))
+    {
+        console.log($('#tab-to-show-saved-transactions-1', fromContainer))
+        $('.recurring-prop-1').css({display:'block'})
+        $('.recurring-prop-1:last-of-type').css({backgroundColor:'red'})
+        $('.transaction-frequency', toContainer).html($('.select-frequency option:selected', fromContainer).html());
+        $('.transaction-validity', toContainer).html($('.select-validity option:selected', fromContainer).html());
+    }
+}
+function returnToDef($this){
+    $('#commonpayment #ownaccountpayment_container_3 .recurring-prop').css({display:'none'});
+    $('#commonpay #commonpayment_container_4 .recurring-prop-1').css({display:'none'});
+}
 function countAmount(container) {
     var val = $('.amount1', container).val();
     var amount = val.split("");
-    amount.shift();
     var res = [];
     var j = 0;
     for(var i=0; i<amount.length; i++)
@@ -1323,10 +1335,8 @@ function countAmount(container) {
             j++;
         }
     }
-    
     $('.result' , container).html('$'+Math.round((res.join(""))/parseInt($('.select-loan-term option:selected' , container).html())))
 }
-
 function checkMinAmount(container,li_position){
     var val = $('.name', container).val();
     var min_amount = $('.text>ul>li:nth-child('+li_position+')', container).html();
@@ -1366,7 +1376,6 @@ function checkMinAmount(container,li_position){
         j-=3;    
         
     }
-
     if(Number(res.join('')) < Number(res1.join(''))){
     var j = res1.length-1;
     while(j>2)

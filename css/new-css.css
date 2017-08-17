@@ -139,14 +139,9 @@
     color: black; 
     margin-left: 10px;
 }
-.part-1{
-    background-color: white;
-    padding:7px 0;
-    position: relative;
-}
 
 .left-menu{
-    background-color: #444444;
+    background-color: white;
     margin-left: 50px;
 
 }
@@ -155,19 +150,19 @@
 
 }
 .left-menu>div:first-child>h1:first-of-type{
-    color: white;
+    color: black;
     margin-top: 20px;
 }
 .left-menu>div:first-child>h1:nth-of-type(2), .left-menu>div:first-child>h1:nth-of-type(3), .left-menu>div:first-child>h1:nth-of-type(4), .left-menu>div:first-child>h1:nth-of-type(5){
-    color: white;
+    color: black;
 }
 .left-menu>div:first-child>p:first-of-type, .left-menu>div:first-child>p:nth-of-type(2), .left-menu>div:first-child>p:nth-of-type(3), .left-menu>div:first-child>p:nth-of-type(4), .left-menu>div:first-child>p:nth-of-type(5), .left-menu>div:first-child>p:nth-of-type(6), .left-menu>div:first-child>p:nth-of-type(7) {
-    color: white;
+    color: black;
     opacity: 0.3;
     font-size: 16px;
 }
 .left-menu>div:nth-child(2)>p:first-of-type, .left-menu>div:nth-child(2)>p:nth-of-type(2), .left-menu>div:nth-child(2)>p:nth-of-type(3), .left-menu>div:nth-child(2)>p:nth-of-type(4), .left-menu>div:nth-child(2)>p:nth-of-type(5) {
-    color: white;
+    color: black;
     opacity: 0.3;
     font-size: 16px;
 }
@@ -178,10 +173,10 @@
 }
 .left-menu>div:nth-child(2)>h1:first-of-type{
     margin-top: 20px;
-    color: white;
+    color: black;
 }
 .left-menu>div:nth-child(2)>h1:nth-of-type(2), .left-menu>div:nth-child(2)>h1:nth-of-type(3),.left-menu>div:nth-child(2)>h1:nth-of-type(4), .left-menu>div:nth-child(2)>h1:nth-of-type(5){
-    color: white;
+    color: black;
 }
 .right-menu{
     margin-top: 30px;
@@ -193,132 +188,118 @@
     margin-top: 30px;
     padding: 10px;
 }
-.part-2{
+.part-1{
     background-color: white;
-    padding:10px 0;
+    padding:7px 0;
     position: relative;
 }
-.part-3{
+
+.part-2, .part-3, .part-5, .part-6{
+    margin-top: 20px;
     background-color: white;
     padding:10px 0;
     position: relative;
 }
 .part-4{
-    position: relative;
     margin-top: 30px;
     background-color: white;
     padding:7px 0;
     display: inline-table;
     width: 1300px;
-}
-.part-5{
     position: relative;
-    background-color: white;
-    padding:10px 0;
-}
-.part-6{
-    position: relative;
-    background-color: white;
-    padding:10px 0;
 }
 .drop1{
-    width: 50px;
-    height: 50px;
-    border-left:1px solid gray;
-    border-top:1px solid gray;
-    background-color: white;
     position: absolute;
-    transform: rotate(45deg);
-    top: -25px;
-    left: 152px;
+    left: 135px;
+    top: -58px;
+    border: 33px solid transparent;
+    border-bottom: 25px solid;
+    color: #fff;
 }
 .drop2{
-    width: 50px;
-    height: 50px;
-    border-left:1px solid gray;
-    border-top:1px solid gray;
-    background-color: white;
     position: absolute;
-    transform: rotate(45deg);
-    top: -25px;
-    left: 610px;
+    left: 550px;
+    top: -58px;
+    border: 33px solid transparent;
+    border-bottom: 25px solid;
+    color: #fff;
 }
 .drop3{
-    width: 50px;
-    height: 50px;
-    border-left:1px solid gray;
-    border-top:1px solid gray;
-    background-color: white;
     position: absolute;
-    transform: rotate(45deg);
-    top: -25px;
-    right: 190px;
+    right: 135px;
+    top: -58px;
+    border: 33px solid transparent;
+    border-bottom: 25px solid;
+    color: #fff;
 }
 
-.content-to-show .chosen-payment-type img{
-	margin: 0 auto!important;
-    padding: 10px 0 5px
+.content-to-show .payment-type img{
+    margin: 0 auto!important;
 }
 
-.content-to-show .chosen-payment-type .underImg{
-	font-size: 11px;
-	color:#ceaf80;
+.content-to-show  .underImg{
+    font-size: 11px;
+    color:#ceaf80;
 }
 
 .widget.widget-payment .widget-body .left-part .loancontaoner .active{
-	border: 1px solid #ceaf80;
+    border: 1px solid #ceaf80;
+}
+
+.widget.widget-payment .widget-body .top .payment-type{
+    border: 1px solid #ceaf80;
 }
 
 .content-to-show .top .currenetItem{
-	margin:0 0 22px !important;
+    margin:0 0 22px !important;
 }
 
 .content-to-show .top .currenetItem .text{
-	font-size: 13px;
+    font-size: 13px;
 }
 
 .content-to-show .top .currentIt{
-	font-size: 12px!important;
-	padding:5px!important;
+    font-size: 12px!important;
+    padding:5px!important;
 }
 .widget.widget-payment .widget-body .left-part .payment-type{
-	display: inline-block;
+    display: inline-block;
 }
 
 .term-deposit-acc .widget.widget-payment .widget-body .left-part .payment-type{
-	display: inline-block; margin:10px;
+    display: inline-block; margin:10px;
 }
 .second-part-text{
-	font-size: 13px;
-	text-align: left;
-	color: #333333;
-	margin-bottom: 50px;
+    font-size: 13px;
+    text-align: left;
+    color: #333333;
+    margin-bottom: 50px;
 }
 .widget-chequebook-payment .flex-center-column .content-to-show .text{
-	margin-top: 0px;
+    margin-top: 0px;
 }
 
-/*.widget.widget-payment #termDepositOpening_container_4 .steps{
-	display: none;
+.widget.widget-payment #termDepositOpening_container_4 .steps{
+    display: none;
 }
-*/
+
 .widget-own-account-payment .widget-body #ownaccountpayment_container_2 .payment-benefeciary-choose{
-	color: #999999;
-	margin: 15px 0;
+    color: #999999;
+    margin: 15px 0;
 }
 .widget-own-account-payment .widget-body #ownaccountpayment_container_2 .payment-benefeciary-type{
-	cursor: pointer;
+    cursor: pointer;
 }
 .widget-own-account-payment .widget-body #ownaccountpayment_container_2 .payment-benefeciary-choose>.active{
-	border-bottom: 2px solid #ceaf80;
+    border-bottom: 2px solid #ceaf80;
 }
 .widget-own-account-payment .widget-body #ownaccountpayment_container_2 .payment-benefeciary-choose>.pasive{
-	border-bottom: 2px solid #DAD8D9;
+    border-bottom: 2px solid #DAD8D9;
 }
 .widget.widget-payment .right-part .payment-benefeciary-detail-type{
-	display: none;
+    display: none;
 }
 .widget.widget-payment .right-part .payment-benefeciary-detail-active{
-	display: inline-block;
+    display: inline-block;
 }
 

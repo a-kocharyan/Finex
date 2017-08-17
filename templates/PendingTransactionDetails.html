@@ -11,20 +11,45 @@
                 <div class="main_body row">
 					<div class="into-expanded-item col-xs-12 col-sm-12 col-md-12 col-lg-12" id="transactions-history-details">
 						<div class="transaction-history-toolbar">
+                        <div class="block left delimeter" style="width: 15%;">
+                                    <div class="title" style="font-family: 'CircularStd-Book'; font-size: 18px; margin-left: 20px;">STATUS</div>
+                                    <div class="content black" style="margin-left: 20px;">
+                                        All <i class="fa fa-caret-down black"></i>
+                                       <!--  <div class="hov">
+                                        <div class="dropdown-menu-wrapper">
+                                            <div class="dropdown-menu"  style="margin-top: 20px; left: -65px;">
+                                                <div class="triangle"></div>
+                                                <div style="margin-top: 50px; padding-top: 50px;"><div><p style="color: #999999; padding-left: 15px;">PARTNER NAME</p>
+                                                <input type="text" name="partnername" class="empty"></div>
+                                                <div align="center" style="margin-top: 50px; padding-top: 50px;">
+                                                <button class="btn btn-apply" style="color: #999999; border:1px solid #999999;">Apply</button></div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div> -->
+                                    </div>
+                                </div>
 							<div class="into-expanded-item-wrapper">
-								<div class="block width30">
-									<div class="title">
-										Export transactions
-									</div>
-									<div class="content">
-										<div class="export"><img class="image" src="images/transfer-files.png">CSV</div>
-										<div class="export"><img class="image" src="images/transfer-files.png">PDF</div>
-									</div>
-								</div>
+								<div class="block left" style="width: 30%;">
+                                    <div class="content right" style="float: left; margin-top: 5px; margin-left: 20px;"><a href="#">Reset</a></div>
+                                <div>
+                                    <!-- <div class="title">
+                                        Export transactions
+                                    </div>
+                                    <div class="content">
+                                        <div class="export"><img class="image" src="images/transfer-files.png">XLS</div>
+                                        <div class="export"><img class="image" src="images/transfer-files.png">PDF</div>
+                                    </div>
+                                </div> -->
+                                </div>
 							</div>
 						</div>
 					</div>
-                    <div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
+                    </div>
+                    <div class="row uique_col_hei_container">
+                    <div class="carousel slide" id="myCarousel">
+                            <div class="carousel-inner">
+                    <div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4 open-1-drop" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
 						 data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
 						 data-notes="Transfer to E.ON">
                         <div class="into-expanded-item-wrapper">
@@ -84,6 +109,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
                     <div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
 						 data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
 						 data-notes="Transfer to T-Mobile">
@@ -111,6 +137,22 @@
                                         <div class="balance"><span>Balance: </span>$244</div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="container" style="position: relative;">
+                        <div class="drop-1"></div>
+                        <div class="part1">
+                            <div><h1>Payer</h1><p>You</p><h1>Payer account</h1><p>My Current Credit</p><p>GB29 8434 3087 5567 7193 23</p><h1>Beneficiary</h1>
+                                <p>Starbucks Coffee</p><p>Oslo</p><h1>Beneficiary account</h1><p>GB29 1948 6548 7981 5876 57</p>
+                            </div>
+                            <div><h1>Amount</h1><p>€-3.60</p><h1>Transaction date</h1><p>Yesterday</p><h1>Value date</h1><p>not booked yet</p><h1>Description</h1>
+                                <p>None</p>
+                            </div>
+                            <div>
+                                <div><a href="#" class="btn btn-default" style="margin-top: 50px;">COMPLETE</a></div>
+                                <div><a href="#" class="btn btn-default" style="margin-top: 20px;">DISCARD</a></div>
                             </div>
                         </div>
                     </div>
@@ -144,8 +186,20 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
+                           <nav>
+                                <ul class="control-box pager">
+                                    <li><a data-slide="prev" href="#myCarousel" class=""><img src="images/arrow-left.png"></a></li>
+                                    <li><a data-slide="next" href="#myCarousel" class=""><img src="images/arrow-right.png"></a></li>
+                                </ul>
+                            </nav>
+                           <!-- /.control-box -->   
+                                                  
+                        </div><!-- /#myCarousel -->
+                        </div>
             </div>
         </div>
     </div>
+</div>
 </div>

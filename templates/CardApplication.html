@@ -243,7 +243,7 @@
 											<div class="widget-details-button">
 												<input data-nav-dir="next" class="nav btn btn-default" type="button" value="Next"
 										  			 onclick="swipePaymentPartnerScreen(this);
-												   fillcardApplication(this , '#cardApplication_container_1 .content-to-show.active','#cardApplication_container_2 .content-to-show.active')"/>
+												   fillcardApplication('#cardApplication_container_1 .content-to-show.active','#cardApplication_container_2 .content-to-show.active')"/>
 											</div>
 										</div>
 								
@@ -428,7 +428,7 @@
 										<div class="payment-benefeciary-details">
 											<div class="payment-benefeciary-detail row">
 												<div class="col-xs-3">Annual gross salary</div>
-												<div class="col-xs-9"><input type="text" value="$45,000" class="gross-salary" placeholder="$45,000"/></div>
+												<div class="col-xs-9"><input type="text" value="" class="gross-salary name" placeholder=""/></div>
 											</div>
 										</div>	
 										<div class="payment-benefeciary-details">
@@ -455,8 +455,8 @@
 											<div class="widget-details-button">
 												<input data-nav-dir="next" class="nav btn btn-default" type="button" value="Next"
 													   onclick="swipePaymentPartnerScreen(this);
-													   fillcardApplication(this , '#cardApplication_container_1 .content-to-show.active','#cardApplication_container_3 .content-to-show.active');
-													   fillcardApplication(this , '#cardApplication_container_2 .right-part .chequebook-body','#cardApplication_container_3 .content-to-show.active')"/>	
+													   fillcardApplication('#cardApplication_container_1 .content-to-show.active','#cardApplication_container_3 .content-to-show.active');
+													   fillcardApplication('#cardApplication_container_2 .right-part .chequebook-body','#cardApplication_container_3 .content-to-show.active')"/>	
 													   <input data-nav-dir="prev" class="nav btn btn-default" type="button" value="Back"
 													   onclick="commonPaymentShowOriginal(this)"/>	
 													   <input data-nav-dir="next" class="nav btn btn-default" type="button" value="Save"

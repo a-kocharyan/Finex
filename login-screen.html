@@ -6,14 +6,39 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
 		<link type="text/css" rel="stylesheet" href="css/main.min.css?v=1.0.0" />
 		<link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-		<link type="text/css" rel="stylesheet" href="css/newstyle.css" />
-		<link type="text/css" rel="stylesheet" href="css/izolafont-new.css" />
+		<link type="text/css" rel="stylesheet" href="css/newstyle.css" />	
+		<link type="text/css" rel="stylesheet" href="css/izolafont-new.css" />	
 		<link type="text/css" rel="stylesheet" href="css/newstyle-responsive.css" />
+		<link rel="stylesheet" type="text/css" href="css/jsKeyboard.css">
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="js/jsKeyboard.js"></script>
+		<script src="js/old/pfmNew/jquery-ui.min.js"></script>
+		<script src="js/old/paymenthelper.js"></script>
+		<script src="js/old/payment.js"></script>
+		<script src="js/old/pfmNew/custom.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/bootstrap-toggle.js"></script>
+		<script src="js/jquery.ui.touch-punch.js"></script>
+		<script src="js/jquery.modal.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
 		    <div class="header-container">
 				<div class="login-logo"><img src="images/u2.png" alt=""></div>
+				<div class="div_for_text_right_parth">
+					<span class='span_for_title_right_parth_text'>
+						Try the new FINEX Mobile Banking app
+					</span><br>
+					<span class='text_of_right_parth'>
+						The FINEX Banking App has a fresh new look, intuitive interface, and <br> sports some of the most powerful banking features in a mobile app <span class="span_for_more_right_parth_text">More ></span>
+					</span>
+
+				
+				</div>
+			</div>
+			<span class='chkErr' id="checkUser" style="top:0px;position:relative;">Please Enter Valid User Name</span>
+			<div class="login-container">
 				<div class="language-block">
 					<select class="language-button">
 						<option selected value="login-screen.html">English</option>
@@ -21,15 +46,12 @@
 						<option value="login-screen-ar.html">عربى</option>					
 					</select>
 				</div>
-			</div>
-			<span class='chkErr' id="checkUser" style="top:0px;position:relative;">Please Enter Valid User Name</span>
-			<div class="login-container">
-					<div class="title">LOGIN TO ONLINE BANKING</div>
+					<div class="title title_for_right_parth" >LOGIN TO ONLINE BANKING</div>
 					<div class="login-block row">
 						<div class="block delimeter col-xs-12 col-sm-12 col-md-4 col-lg-4">
 							<div class="header">
 								<p class="title">AUTO LOGIN</p>
-								<p class="description">Click on the button below and use your Mobile Token to approve your login</p>
+								<p class="description" style='font-size:14px'>Click on the button below and use your Izola Pass to Login</p>
 							</div>
 							<div class="login">
 								<a href="index.html" class="auto-login-button">Auto login</a>
@@ -47,11 +69,25 @@
 						<div class="block col-xs-12 col-sm-12 col-md-4 col-lg-4">
 							<div class="header">
 								<p class="title">PASSWORD LOGIN</p>
-								<p class="description">User your login ID and password to login</p>
+								<p class="description" style='font-size:14px'>User your login ID and password to login</p>
 							</div>
 							<div class="login">
-								<input type="text" class="input-field" id="user-name" placeholder="Login ID">
+							<div class="log-img" style="display: flex;">
+								
+								<input  type="text" class="input-field first_client_login_input" id="user-name" placeholder="Login ID">
+
+
+								<div style=" margin-left:-30px; margin-top: 5px;" >
+								<img src="images/Computer-Hardware-Keyboard-icon.png"   width="25" height="25" onclick="keyboard()">
+									<div id="virtualKeyboard" class="hidden">
+										
+									</div>
+									</div>
+							</div>
+							<div class="log-img" style="display: flex;">
 								<input type="password" class="input-field" id="user-pass" placeholder="Password">
+								<div style=" margin-left: -30px; margin-top: 5px;"><img src="images/Computer-Hardware-Keyboard-icon.png" width="25"></div>
+								</div>
 								<div class="login-block">
 									<a href="#" class="left frgotpwd">Forgot password</a>
 									<a href="javascript:void(0)" onclick="userLogin()" class="login-button">login</a>
@@ -64,7 +100,7 @@
 						</div>
 						<div class="block col-xs-12 col-sm-12 col-md-4 col-lg-4">         
 							<div class="login-registr">
-								<a href="./registration.html">REGISTRATION</a>
+								<a href="./registration.html">REGISTER</a>
 							</div>
 						</div>
 						<div class="block col-xs-12 col-sm-12 col-md-4 col-lg-4">         

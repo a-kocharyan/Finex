@@ -417,16 +417,16 @@ function doCreateTermDeposit(input)
         },
         series: [{
             name: 'Days',
-            startAngle: 0,
+            startAngle: 180,
             data: [
                 { 
                    "name": 'Days Left',
-                   "y": 5,
+                   "y": 75,
                    "color": '#326395'
                },
                 { 
                     "name": 'Days Gone',
-                    "y": 25,
+                    "y": 15,
                    "color": '#a7bfd8'
                }
                
@@ -443,6 +443,7 @@ function doCreateTermDeposit(input)
 
     $('.term_days').show(); 
 }
+
 
 //STPL
 function doCreateLoyalty(input)
@@ -667,7 +668,8 @@ function doChartNetWorthDetails1(input)
                 },
                 shadow: false,                
                 borderWidth: 0,
-                showInLegend: true
+                showInLegend: true,
+                startAngle:120
             },           
         },
          credits: {
@@ -675,7 +677,9 @@ function doChartNetWorthDetails1(input)
         },
         legend:{
             labelFormatter:function(){
-                return '<span style="color:#1d1e1e; font-size:22px; font-weight:bold; margin:-10px 0 0 0;">$' + this.y +  '</span><br>' + this.name;
+                if(this.name === 'Assets')
+                return '<span style="color:#1d1e1e; font-size:22px; font-weight:bold; margin:-10px 0 0 0;">+$' + this.y +  '</span><br>' + this.name;
+                return '<span style="color:#1d1e1e; font-size:22px; font-weight:bold; margin:-10px 0 0 0;">-$' + this.y +  '</span><br>' + this.name;
             },
             align:"right",
             verticalAlign:"top",
@@ -700,7 +704,7 @@ function doChartNetWorthDetails1(input)
             slicedOffset:5,
             data: [{
                     name:'Assets',
-                    y: 420,
+                    y: 42000,
                     color:'#306395'
                 },
                 {
@@ -776,7 +780,7 @@ function doChartNetWorthDetails2(input)
             itemMarginTop:10,
             symbolRadius:4,
             symbolWidth:10,
-            symbolHeight:10,
+            symbolHeight:20,
             itemStyle: { "font-family":"'SourceSansPro'", "color": "#b5b5b5", "font-size":"12px"},
         },  
         tooltip: {
@@ -805,26 +809,28 @@ function doChartNetWorthDetails2(input)
             colorByPoint: true,
             data: [{
                 name: 'Microsoft Internet Explorer',
-                y: 56.33,
-                color:'#d04a4a'
+                y: 36.85,
+                color:'#D1190D'
             }, {
                 name: 'Chrome',
-                y: 24.03,
-                color:'#306395',
-                sliced: true,
-                selected: true
+                y: 19.98,
+                color:'#7094AE'
             }, {
                 name: 'Firefox',
-                y: 10.38
+                y: 19.98,
+                color:'#A62923'
             }, {
                 name: 'Safari',
-                y: 4.77
+                y: 9.02,
+                color:'#7B547E'
             }, {
                 name: 'Opera',
-                y: 0.91
+                y: 8.07,
+                color:'#FDDA01'
             }, {
                 name: 'Proprietary or Undetectable',
-                y: 0.2
+                y: 6.10,
+                color:'#FDFE02'
             }]
         }]
     });
@@ -910,27 +916,25 @@ function doChartNetWorthDetails3(input)
             name: 'Brands',
             colorByPoint: true,
             data: [{
-                name: 'Microsoft Internet Explorer',
+                name: 'My Personal Load:EUR -2,307',
                 color:'#d04a4a',
-                y: 56.33
+                y: 36.85
             }, {
                 name: 'Chrome',
-                y: 24.03,
-                color:'#306395',
-                sliced: true,
-                selected: true
+                y: 19.98,
+                color:'#306395'
             }, {
                 name: 'Firefox',
-                y: 10.38
+                y: 19.98
             }, {
                 name: 'Safari',
-                y: 4.77
+                y: 9.02
             }, {
                 name: 'Opera',
-                y: 0.91
+                y: 8.07
             }, {
                 name: 'Proprietary or Undetectable',
-                y: 0.2
+                y: 6.10
             }]
         }]
     });
@@ -941,6 +945,7 @@ function doChartNetWorthDetails3(input)
     },2);
     
 }
+
 
 function doCreateChartNetWorth(input)
 {    
@@ -1918,7 +1923,8 @@ function showSavingGoalsTomGraph(el, data) {
                     color: '#a1a1a1'
                 },
                 formatter: function () {
-                    return "EUR"+this.value;
+                    // change_15.08.17
+                    return this.value + " EUR";
                 },
             },
             plotLines: [{
@@ -1968,7 +1974,7 @@ function showSavingGoalsTomGraph(el, data) {
         series: [{
             type: 'area',
             name: 'EUR', 
-            data: [50, 100, 150, 200, 250]
+            data: [10, 45, 90, 135, 180]
         }],
         colors: ['#ccab76'],
         responsive: {

@@ -14,24 +14,24 @@
 						<div class="full-size">
 							<div class="payment-file-info">
 								<div class="part-title file-title">Choose payment file:</div>
-								<div action="/file-upload" class="file-block center-block dropzone">
+								<div action="/js/dropzone.js" class="file-upload-block file-block center-block dropzone dz-clickable">
 									<div class="text-block">Drop files to upload</div>
-									<div class="control-group">											
+									<div class="control-upload-group">											
 										<div class="widget-details-button button-file">
-											<a href="/registration1.html" class="btn btn-default">or click here</a>
+											<a href="/index1.html" class="btn btn-default">or click here</a>
 										</div>
-									</div>		
+									</div>	
+									<div class="dz-default dz-message"><span>Drop files here to upload</span></div>	
 								</div>
 								<!-- <div class="payment-file-input-wrapper">
 									<input type="text" class="payment-file-input" /><button class="btn">Browse</button>
 									<a href="#" class="payment-file-download-link">Download</a>
 								</div> -->
 							</div>
-
 							<div class="payment-right-navigation">
 								<div class="widget-details-button">
 									<input data-nav-dir="next" class="nav btn btn-default" type="button" value="Next"
-										   onclick="swipePaymentPartnerScreen(this)"/>
+										onclick="swipePaymentPartnerScreen(this)"/>
 								</div>
 							</div>
 						</div>
@@ -161,7 +161,7 @@
 							</div>
 						</div>
 						<div class="right-part-big">
-							<div class="part-title">Use Izola Pass to generate one time password:</div>
+							<div class="part-title">Use your Mobile Token to approve the transaction:</div>
 							<div class="cube-code">
 								<img src="images/u4.jpg">
 							</div>

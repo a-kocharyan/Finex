@@ -272,7 +272,7 @@
 				</div>
 				<div class="bb-item" id="ownaccountpayment_container_2">
 					<div class="flex-wrapper">
-						<div class="left-part  padding-top-100">
+						<div class="left-part  padding-top-100" >
 							<div class="payment-logo">
 
 							</div>
@@ -282,87 +282,84 @@
 							</div>
 						</div>
 						<div class="right-part">
-							<div id="ownaccountpayment-benefeciary-fields-first">
-								<div class="part-title">Enter payment details:</div>
-								<div class="payment-benefeciary-details">
-									<div class="payment-benefeciary-detail row">
-										<div class="col-xs-3">Amount</div>
-										<div class="col-xs-6"><input type="text" placeholder="Amount" class="amount" onchange="checkcurrency(this.value)" /></div>
-										<div class="col-xs-3">
-											<select name="currency" class="currency">
-												<option value="USD">USD</option>
-												<option value="USD">EUR</option>
-											</select>
-										</div>
-									</div>
-
-									<div class="payment-benefeciary-detail payment-benefeciary-choose row ">
-										
-											<div class="col-lg-offset-2 col-lg-4 payment-benefeciary-type active">
-												<p>ONE TIME</p>
-											</div>
-										
-											<div class="col-lg-4 payment-benefeciary-type pasive">
-												<p>RECURRING</p>
-											</div>
-										</div>
-									</div>
-									
-									<div class="payment-benefeciary-detail-type payment-detail-onetime payment-benefeciary-detail-active">
-										<div class="payment-benefeciary-detail row ">
-											<div class="col-xs-3">Date</div>
-											<div class="col-xs-9">
-												<div class="datepicker">
-													<input type="text" id='date-datepicker-own' class="datepicker-input" value="" onchange="checkdate(this.value)" />
-												</div>
-											</div>
-										</div>
-										<div class="payment-benefeciary-detail row">
-											<div class="col-xs-3">Reference</div>
-											<div class="col-xs-9"><input type="text" notrequired="1" placeholder="" class="reference"></div>
-										</div>
-									</div>
-									
-									<div class="payment-benefeciary-detail-type">
-										<div class="payment-benefeciary-detail row ">
-											<div class="col-xs-3">Start date</div>
-											<div class="col-xs-9">
-												<div class="datepicker">
-													<input type="text" id='date-datepicker-own' class="datepicker-input" value="" onchange="checkdate(this.value)" />
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-xs-3">Frequency</div>						
-											<div class="col-xs-6">
-												<select name="currency" class="currency">
-													<option value="Weekly">Weekly</option>
-												</select>
-											</div>
-										</div>
-
-										<div class="row">
-											<div class="col-xs-3">Validity</div>						
-											<div class="col-xs-6">
-												<select name="currency" class="currency">
-													<option value="Recall">Recall</option>
-												</select>
-											</div>
-										</div>
-
-										<div class="payment-benefeciary-detail row">
-											<div class="col-xs-3">Reference</div>
-											<div class="col-xs-9"><input type="text" notrequired="1" placeholder="" class="reference"></div>
-										</div>										
+							<div class="part-title">Enter payment details:</div>
+							<div class="payment-benefeciary-details own-acc-benefeciary-details">
+								<div class="payment-benefeciary-detail row">
+									<div class="col-xs-3">Amount</div>
+									<div class="col-xs-6"><input type="text" placeholder="Amount" class="amount" onchange="checkcurrency(this.value)" /></div>
+									<div class="col-xs-3">
+										<select name="currency" class="currency">
+											<option value="USD">USD</option>
+											<option value="USD">EUR</option>
+										</select>
 									</div>
 								</div>
-								<div class="payment-right-navigation with-margin">
-									<div class="widget-details-button">
-										<input data-nav-dir="next" class="nav1 btn btn-transparent btn-default" type="button" value="Next"
-											   onclick="validationPayment('#commonpay_own_account', this, '', '', '#ownaccountpayment-benefeciary-fields-first', false);fillTransactionDetails('#ownaccountpayment_container_3 .payment-transaction-details', '#ownaccountpayment_container_2 .payment-benefeciary-details');"/>
-										<input data-nav-dir="prev" class="nav btn btn-transparent btn-default" type="button" value="Back"
-											   onclick="commonPaymentShowOriginal(this)"/>
+									<!-- <div class="payment-benefeciary-detail payment-benefeciary-choose row "> -->
+								<div class="benefeciaries-list">	
+									<div class="benefeciaries-tab-headers">
+										<div class="benefeciaries-tab-header active" id="saved-benefeciaries">
+											<p>ONE TIME</p>
+										</div>
+									
+										<div class="benefeciaries-tab-header" id="saved-transactions">
+											<p>RECURRING</p>
+										</div>
 									</div>
+									<div class="benefeciaries-tabs">
+										<div class="benefeciaries-tab active" id="tab-to-show-saved-benefeciaries">
+											<div class="payment-benefeciary-detail own-acc-pay-details row">
+												<div class="col-xs-3">Date</div>
+												<div class="col-xs-9">
+													<div class="datepicker">
+														<input type="text" id='date-datepicker-own' class="datepicker-input" value="" onchange="checkdate(this.value)"/>
+													</div>
+												</div>
+											</div>
+											<div class="payment-benefeciary-detail own-acc-pay-details row">
+												<div class="col-xs-3">Reference</div>
+												<div class="col-xs-9"><input type="text" class="reference-input" notrequired="1" placeholder="" class="reference"></div>
+											</div>
+											
+										</div>
+										<div class="benefeciaries-tab" id="tab-to-show-saved-transactions">
+											<div class="payment-benefeciary-detail Recuring-pad-l row">
+												<div class="col-xs-4">Start date</div>
+												<div class="col-xs-8">
+													<div class="datepicker">
+														<input type="text" id='date-datepicker-own-1' class="datepicker-input" value="" onchange="checkdate(this.value)" />
+														</div>
+												</div>
+											</div>
+											<div class="payment-benefeciary-detail Recuring-pad-l row">
+												<div class="col-xs-4">Frequency</div>
+												<div class="col-xs-8">
+													<select class="select-frequency">
+														<option selected>Weekly</option>
+													</select>
+												</div>
+											</div>
+											<div class="payment-benefeciary-detail Recuring-pad-l row">
+												<div class="col-xs-4">Validity</div>
+												<div class="col-xs-8">
+													<select class="select-validity">
+														<option selected>Recall</option>
+													</select>
+												</div>
+											</div>
+											<div class="payment-benefeciary-detail row">
+												<div class="col-xs-3">Reference</div>
+												<div class="col-xs-9"><input type="text" notrequired="1" placeholder="" class="reference"></div>
+											</div>
+										</div>
+									</div>
+									<div class="payment-right-navigation with-margin">
+												<div class="widget-details-button">
+													<input data-nav-dir="next" class="nav1 btn btn-transparent btn-default" type="button" value="Next"
+											  		 onclick="validationPayment('#commonpay_own_account', this, '', '', '#ownaccountpayment-benefeciary-fields-first', false);fillTransactionDetails('#ownaccountpayment_container_3 .payment-transaction-details', '#ownaccountpayment_container_2 .payment-benefeciary-details');fillOwnAccountPayment('#ownaccountpayment_container_2 .right-part', '#ownaccountpayment_container_3 .left-part')"/>
+													<input data-nav-dir="prev" class="nav btn btn-transparent btn-default" type="button" value="Back"
+											  		 onclick="commonPaymentShowOriginal(this)"/>
+												</div>
+										</div>
 								</div>
 							</div>
 						</div>
@@ -389,6 +386,14 @@
 									<div class="right-grey col-xs-5">Date</div>
 									<div class="col-xs-7 transaction-date"></div>
 								</div>
+								<div class="data-list recurring-prop row">
+									<div class="right-grey col-xs-5">Frequency</div>
+									<div class="col-xs-7 transaction-frequency"></div>
+								</div>
+								<div class="data-list recurring-prop row">
+									<div class="right-grey col-xs-5">Validity</div>
+									<div class="col-xs-7 transaction-validity"></div>
+								</div>
 								<div class="data-list row">
 									<div class="right-grey col-xs-5">Reference</div>
 									<div class="col-xs-7 transaction-reference"></div>
@@ -413,7 +418,7 @@
 										<input class="btn btn-transparent btn-default" id="paymentTransactionSave" type="button" value="Envelope"
 											   onclick="saveBeneficiary(this)"/>
 										<input data-nav-dir="prev" class="nav btn btn-transparent btn-default" type="button" value="Back"
-											   onclick="commonPaymentShowOriginal(this)"/>
+											   onclick="returnToDef(this);commonPaymentShowOriginal(this)"/>
 									</div>
 								</div>
 							</div>

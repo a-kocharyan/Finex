@@ -42,7 +42,7 @@
 											<div class="text">
 												<ul>
 													<li>Term between 12-48 months.</li>
-													<li>Minimum amount: USD 5,000.</li>
+													<li>Maximum amount: USD 5,000.</li>
 													<li>ARP: 7.5%</li>
 													<li>Approved within 24 hours</li>
 												</ul>
@@ -52,7 +52,7 @@
 										<div class="payment-benefeciary-details">
 											<div class="payment-benefeciary-detail row">
 												<div class="col-xs-3">Requested amount</div>
-												<div class="col-xs-9"><input type="text" value="$5,000" class="amount1 name" placeholder="$5,000" onchange="checkcurrency(this.value);checkMinAmount('#loneRequest_container_1 .content-to-show.active',2) " ; oninput = "countAmount('#loneRequest_container_1 .content-to-show.active')"/></div>
+												<div class="col-xs-9"><input type="text" value="$5,000" class="amount1 name" placeholder="$5,000" onchange="checkcurrency(this.value);checkMaxAmount('#loneRequest_container_1 .content-to-show.active',2) " ; oninput = "countAmount('#loneRequest_container_1 .content-to-show.active')"/></div>
 											</div>
 										</div>
 										
@@ -91,7 +91,7 @@
 											<div class="text">
 												<ul>
 													<li>Term between 3-12 months.</li>
-													<li>Minimum amount: USD 2,000.</li>
+													<li>Maximum amount: USD 2,000.</li>
 													<li>ARP: 8.5%</li>
 													<li>Approved within 24 hours</li>
 												</ul>
@@ -102,7 +102,7 @@
 											<div class="payment-benefeciary-detail row">
 												<div class="col-xs-3">Requested amount</div>
 												<div class="col-xs-9">
-												<input type="text" value="$2,000" class="amount1 name" placeholder="$2,000" onchange="checkcurrency(this.value);checkMinAmount('#loneRequest_container_1 .content-to-show.active',2)" oninput="countAmount('#loneRequest_container_1 .content-to-show.active')" />
+												<input type="text" value="$2,000" class="amount1 name" placeholder="$2,000" onchange="checkcurrency(this.value);checkMaxAmount('#loneRequest_container_1 .content-to-show.active',2)" oninput="countAmount('#loneRequest_container_1 .content-to-show.active')" />
 												</div>
 											</div>
 										</div>
@@ -148,7 +148,7 @@
 										<div class="payment-benefeciary-details">
 											<div class="payment-benefeciary-detail row">
 												<div class="col-xs-3">Requested amount</div>
-												<div class="col-xs-9"><input type="text" value="$2,500" class="amount1 name" placeholder="$2,500" onchange="checkcurrency(this.value);checkMinAmount('#loneRequest_container_1 .content-to-show.active',1)"  /></div>
+												<div class="col-xs-9"><input type="text" value="$2,500" class="amount1 name" placeholder="$2,500" onchange="checkcurrency(this.value);checkMaxAmount('#loneRequest_container_1 .content-to-show.active',1)" /></div>
 											</div>
 										</div>
 									
@@ -171,7 +171,7 @@
 											<div class="text">
 												<ul>
 													<li>Term between 3-12 months.</li>
-													<li>Minimum amount: USD 7,500.</li>
+													<li>Maximum amount: USD 7,500.</li>
 													<li>ARP: 8.5%</li>
 													<li>Approved within 24 hours</li>
 												</ul>
@@ -181,7 +181,7 @@
 										<div class="payment-benefeciary-details">
 											<div class="payment-benefeciary-detail row">
 												<div class="col-xs-3">Requested amount</div>
-												<div class="col-xs-9"><input type="text" value="$7,500" class="amount1 name" placeholder="$7,500" onchange="checkcurrency(this.value);checkMinAmount('#loneRequest_container_1 .content-to-show.active',2)" oninput="countAmount('#loneRequest_container_1 .content-to-show.active')"/></div>
+												<div class="col-xs-9"><input type="text" value="$7,500" class="amount1 name" placeholder="$7,500" onchange="checkcurrency(this.value);checkMaxAmount('#loneRequest_container_1 .content-to-show.active',2)" oninput="countAmount('#loneRequest_container_1 .content-to-show.active')"/></div>
 											</div>
 										</div>
 
@@ -213,7 +213,7 @@
 											<div class="widget-details-button">
 												<input data-nav-dir="next" class="nav btn btn-default" type="button" value="Next"
 										  		 onclick="swipePaymentPartnerScreen(this);
-										  		 fillLoanRequest(this , '#loneRequest_container_1 .content-to-show.active', '#loneRequest_container_2 .content-to-show.active')"/>
+										  		 fillLoanRequest('#loneRequest_container_1 .content-to-show.active', '#loneRequest_container_2 .content-to-show.active')"/>
 											</div>
 										</div>
 									</div>
@@ -232,7 +232,7 @@
 											<div class="text">
 												<ul>
 													<li>Term between 12-48 months.</li>
-													<li>Minimum amount: USD 5,000.</li>
+													<li>Maximum amount: USD 5,000.</li>
 													<li>ARP: 7.5%</li>
 													<li>Approved within 24 hours</li>
 												</ul>
@@ -263,7 +263,7 @@
 											<div class="text">
 												<ul>
 													<li>Term between 3-12 months.</li>
-													<li>Minimum amount: USD 2,000.</li>
+													<li>Maximum amount: USD 2,000.</li>
 													<li>ARP: 8.5%</li>
 													<li>Approved within 24 hours</li>
 												</ul>
@@ -322,7 +322,7 @@
 											<div class="text">
 												<ul>
 													<li>Term between 3-12 months.</li>
-													<li>Minimum amount: USD 7,500.</li>
+													<li>Maximum amount: USD 7,500.</li>
 													<li>ARP: 8.5%</li>
 													<li>Approved within 24 hours</li>
 												</ul>
@@ -388,8 +388,8 @@
 								<div class="widget-details-button">
 									<input data-nav-dir="next" class="nav btn btn-default" type="button" value="Next"
 										   onclick="swipePaymentPartnerScreen(this);
-										   fillLoanRequest(this , '#loneRequest_container_1 .content-to-show.active', '#loneRequest_container_3 .content-to-show.active');
-										   fillLoanRequest(this , '#loneRequest_container_2 .right-part .chequebook-body' , '#loneRequest_container_3 .content-to-show.active');"/>
+										   fillLoanRequest('#loneRequest_container_1 .content-to-show.active', '#loneRequest_container_3 .content-to-show.active');
+										   fillLoanRequest('#loneRequest_container_2 .right-part .chequebook-body' , '#loneRequest_container_3 .content-to-show.active');"/>
 								</div>
 							</div>
 									</div>
@@ -409,7 +409,7 @@
 											<div class="text">
 												<ul>
 													<li>Term between 12-48 months.</li>
-													<li>Minimum amount: USD 5,000.</li>
+													<li>Maximum amount: USD 5,000.</li>
 													<li>ARP: 7.5%</li>
 													<li>Approved within 24 hours</li>
 												</ul>
@@ -452,7 +452,7 @@
 											<div class="text">
 												<ul>
 													<li>Term between 3-12 months.</li>
-													<li>Minimum amount: USD 2,000.</li>
+													<li>Maximum amount: USD 2,000.</li>
 													<li>ARP: 8.5%</li>
 													<li>Approved within 24 hours</li>
 												</ul>
@@ -493,9 +493,9 @@
 												<img src="images/sav_account.png" />
 												<br><span class="font-yellow">Overdraft</span>
 											</div>
-											<div class="text">
+												<div class="text">
 												<ul>
-													<li>Minimum amount: USD 2,500.</li>
+													<li>Maximum amount: USD 2,500.</li>
 													<li>ARP: 8.5%</li>
 													<li>Approved within 24 hours</li>
 												</ul>
@@ -539,7 +539,7 @@
 											<div class="text">
 												<ul>
 													<li>Term between 3-12 months.</li>
-													<li>Minimum amount: USD 7,500.</li>
+													<li>Maximum amount: USD 7,500.</li>
 													<li>ARP: 8.5%</li>
 													<li>Approved within 24 hours</li>
 												</ul>

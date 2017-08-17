@@ -82,7 +82,7 @@
     You can register an event handler like this:
     
         dropzone.on("dragEnter", function() { });
-     */
+    */
 
     Dropzone.prototype.events = ["drop", "dragstart", "dragend", "dragenter", "dragover", "dragleave", "addedfile", "addedfiles", "removedfile", "thumbnail", "error", "errormultiple", "processing", "processingmultiple", "uploadprogress", "totaluploadprogress", "sending", "sendingmultiple", "success", "successmultiple", "canceled", "canceledmultiple", "complete", "completemultiple", "reset", "maxfilesexceeded", "maxfilesreached", "queuecomplete"];
 
@@ -209,6 +209,7 @@
         return this.element.classList.remove("dz-drag-hover");
       },
       dragenter: function(e) {
+  
         return this.element.classList.add("dz-drag-hover");
       },
       dragover: function(e) {

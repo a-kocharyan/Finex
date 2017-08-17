@@ -273,7 +273,7 @@
 											<div class="widget-details-button">
 												<input data-nav-dir="next" class="nav btn btn-default" type="button" value="Next"
 										   		onclick="swipePaymentPartnerScreen(this);
-										   		fillTermDepositOpening(this , '#termDepositOpening_container_1 .content-to-show.active' , '#termDepositOpening_container_2 .content-to-show.active')"/>
+										   		fillTermDepositOpening('#termDepositOpening_container_1 .content-to-show.active' , '#termDepositOpening_container_2 .content-to-show.active')"/>
 											</div>
 										</div>
 								</div>
@@ -417,7 +417,7 @@
 												<div class="col-xs-3 chequebook-select-label">Rollover</div>
 												<div class="col-xs-9">
 													<select class="select-rollover">
-														<option value="Mall Branch" checked>None</option>
+														<option value="Mall Branch" selected>None</option>
 														<option value="My Savings Account">My Savings Account</option>
 														<option value="My EUR Current Account">My EUR Current Account</option>
 														<option value="My EUR Savings">My EUR Savings</option>
@@ -439,8 +439,8 @@
 								<div class="widget-details-button">
 									<input data-nav-dir="next" class="nav btn btn-default" type="button" value="Next"
 										   		onclick="swipePaymentPartnerScreen(this);
-										   		fillTermDepositOpening(this , '#termDepositOpening_container_1 .content-to-show.active' , '#termDepositOpening_container_3 .content-to-show.active');
-										   		fillTermDepositOpening(this , '#termDepositOpening_container_2 .right-part' , '#termDepositOpening_container_3 .content-to-show.active')"/>
+										   		fillTermDepositOpening('#termDepositOpening_container_1 .content-to-show.active' , '#termDepositOpening_container_3 .content-to-show.active');
+										   		fillTermDepositOpening('#termDepositOpening_container_2 .right-part' , '#termDepositOpening_container_3 .content-to-show.active')"/>
 														
 									<input data-nav-dir="prev" class="nav btn btn-default" type="button" value="Back"
 										   onclick="commonPaymentShowOriginal(this)"/>
@@ -463,13 +463,13 @@
 											<span class="underImg">Standard Term Deposit</span>
 										</div>
 										<div class="text">
-											<ul>
-												<li>USD Term Deposit.</li>
-												<li>Term between 1-12months.</li>
-												<li>Minimum amount: USD 1,00.</li>
-												<li>Interest rate: 1.5%</li>
-											</ul>
-										</div>
+												<ul>
+													<li>USD Term Deposit.</li>
+													<li>Term between 1-12months.</li>
+													<li>Minimum amount: USD 1,000.</li>
+													<li>Interest rate: 1.5%</li>
+												</ul>
+											</div>
 									</div>
 
 									<div class="account-open-basic flex-center-column">
@@ -504,9 +504,9 @@
 											<div class="text">
 												<ul>
 													<li>USD Term Deposit.</li>
-													<li>Term between 1-12months.</li>
-													<li>Minimum amount: USD 1,00.</li>
-													<li>Interest rate: 1.5%</li>
+													<li>Term between 6-12months.</li>
+													<li>Minimum amount: USD 5,000.</li>
+													<li>Interest rate: 1.8%</li>
 												</ul>
 											</div>
 										</div>
@@ -542,10 +542,10 @@
 											</div>
 											<div class="text">
 												<ul>
-													<li>USD Term Deposit.</li>
+													<li>EUR Term Deposit.</li>
 													<li>Term between 1-12months.</li>
-													<li>Minimum amount: USD 1,00.</li>
-													<li>Interest rate: 1.5%</li>
+													<li>Minimum amount: EUR 1,000.</li>
+													<li>Interest rate: 1.7%</li>
 												</ul>
 											</div>
 										</div>
@@ -581,10 +581,10 @@
 											</div>
 											<div class="text">
 												<ul>
-													<li>USD Term Deposit.</li>
+													<li>CHF Term Deposit.</li>
 													<li>Term between 1-12months.</li>
-													<li>Minimum amount: USD 1,00.</li>
-													<li>Interest rate: 1.5%</li>
+													<li>Minimum amount: CHF 2,000.</li>
+													<li>Interest rate: 1.25%</li>
 												</ul>
 											</div>
 										</div>
@@ -614,7 +614,7 @@
 								</div>		
 						</div>
 						<div class="right-part">
-							<div class="second-part-text">Use Izola Pass to generate one time password:</div>
+							<div class="second-part-text">Use your Mobile Token to approve the transaction:</div>
 							<div class="cube-code">
 								<img src="images/u4.jpg">
 							</div>
@@ -626,7 +626,7 @@
 							</div>
 							<div class="payment-right-navigation with-margin">
 								<div class="widget-details-button">
-									<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="Submit"  onclick="validationPayment('#termDepositOpening', this, '#termDepositOpening_container_3 .payment-benefeciary-details', '#termDepositOpening_container_4', '#payment-benefeciary-fields', true);fillTransactionDetails('#termDepositOpening_container_4 .payment-transaction-details', '#termDepositOpening_container_3 .payment-benefeciary-details');" />
+									<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="Submit"  onclick="validationPayment('#termDepositOpening', this, '#termDepositOpening_container_3 .payment-benefeciary-details', '#termDepositOpening_container_4', '#payment-benefeciary-fields', true);fillTransactionDetails('#termDepositOpening_container_4 .payment-transaction-details', '#termDepositOpening_container_3 .payment-benefeciary-details'); " />
 								<!-- 	<input class="btn btn-transparent btn-default" id="paymentTransactionSave" type="button" value="Envelope"
 										   onclick="saveBeneficiary(this)"/> -->
 									<input data-nav-dir="prev" class="nav btn btn-transparent btn-default" type="button" value="Back"
@@ -651,8 +651,8 @@
 									<div class="title grey separator">Transaction ID:</div>
 									<div class="info grey">TR000345629867</div>
 									<div class="widget-details-button">
-										<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="REPEAT" onclick	="clearTransactionDetails('#termDepositOpening_container_2 .payment-benefeciary-details')
-										defaultValues('#termDepositOpening_container_1')"/>
+										<input data-nav-dir="next" class="nav btn btn-transparent btn-default" type="button" value="REPEAT" onclick	="clearTransactionDetails('#termDepositOpening_container_2 .payment-benefeciary-details');
+											defaultValues('#termDepositOpening_container_1 .content-to-show.active')"/>
 									</div>
 								</div>
 							</div>

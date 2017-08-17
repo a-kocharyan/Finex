@@ -2,9 +2,7 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content setting_model_content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                 <h4 class="modal-title">Transaction Details</h4>
             </div>
             <div class="modal-body tran-details">
@@ -12,101 +10,113 @@
                     <div class="into-expanded-item col-xs-12 col-sm-12 col-md-12 col-lg-12" id="transactions-history-details">
                         <div class="transaction-history-toolbar">
                             <div class="into-expanded-item-wrapper">
-                                <div class="block left delimeter">
+                                <div class="block left delimeter" style="width: 191px;">
                                     <div class="title">Period:</div>
                                     <div class="content black">
                                         Last 30 days <i class="fa fa-caret-down black"></i>
-										<div class="dropdown-menu-wrapper">
-											<div class="dropdown-menu">
-												<div class="triangle"></div>
-												<ul>
-													<li>Today</li>
-													<li>Last 7 days</li>
-													<li class="active">Last 30 days</li>
-													<li>Custom range
-														<div class="datepicker">
-															<input type="text" class="form-control" id='period-datepicker' value=""/>
-														</div>
-													</li>
-												</ul>
-												<button class="btn btn-apply">Apply</button>
-											</div>
-										</div>
+                                        <div class="hov">
+                                        <div class="dropdown-menu-wrapper">
+                                            <div class="dropdown-menu"  style="margin-top: 20px; left: -17px;">
+                                                <div class="triangle"></div>
+                                                <ul>
+                                                    <li>Today</li>
+                                                    <li>Last 7 days</li>
+                                                    <li class="active">Last 30 days</li>
+                                                    <li>
+                                                        <div class="drop_down_text_1"><span>FORM</span><span>4 Jul</span><img src="images/small-calendar.png"></div>
+                                                        <div class="drop_down_text_2"><span>TO</span><span>3 Aug</span><img src="images/small-calendar.png"></div>
+                                                    </li>
+                                                </ul>
+                                                <div align="center"><button class="btn btn-apply" style="color: #999999; border:1px solid #999999;">Apply</button>
+                                                 </div>
+                                            </div>
+                                            </div>
+                                            </div>
                                     </div>
                                 </div>
-                                <div class="block left delimeter">
+                                <div class="block left delimeter" style="width: 191px;">
                                     <div class="title">Accounts & Cards</div>
                                     <div class="content black">
                                         All <i class="fa fa-caret-down black"></i>
-										<div class="dropdown-menu-wrapper">
-											<div class="dropdown-menu">
-												<div class="triangle"></div>
-												<ul class="checkbox-list">
-													<li><input type="checkbox" class="form-control" checked="checked"/><label>All</label></li>
-													<li><input type="checkbox" class="form-control" /><label>Current Account</label></li>
-													<li ><input type="checkbox" class="form-control"/><label>Credit card</label></li>
-												</ul>
-											</div>
-										</div>
+                                        <div class="hov">
+                                        <div class="dropdown-menu-wrapper" style="margin-top: 20px; width: 300px; left: -110px;">
+                                            <div class="dropdown-menu">
+                                                <div class="triangle"></div>
+                                                    <div class="change_menu_1"><p>Accounts</p><div></div></div>
+                                                    <div class="change_menu_2"><p>Cards</p><div></div></div>   
+                                                         <div class="clear"></div>
+                                                    <div align="center" class="change_menu"><img src="images/svg/current_account.svg" width="20">
+                                                        <span style="margin-left: 10px; ">MY EURO ACCOUNT (€586.31)</span></div>   
+                                                    <div align="center" class="change_menu"><img src="images/svg/savings_account.svg" width="20">
+                                                    <span style="margin-left: 10px; font-size: 12px; ">MY SAVINGS ACCOUNT ($5,987.00)</span></div> 
+                                                    <div align="center" class="change_menu"><img src="images/svg/savings_account.svg" width="20">
+                                                    <span style="margin-left: 10px; ">MY EURO SAVINGS (€2,082.00)</span></div>    
+                                                    <div align="center" style="margin-top: 50px; padding-top: 50px;">
+                                                <button class="btn btn-apply" style="color: #999999; border:1px solid #999999;">Apply</button></div>                  
+                                            </div>
+                                        </div>
+                                        </div>
                                     </div>
                                 </div>
-								<div class="block left delimeter">
+                                <div class="block left delimeter" style="width: 142px;">
                                     <div class="title">Partners</div>
                                     <div class="content black">
                                         All <i class="fa fa-caret-down black"></i>
-										<div class="dropdown-menu-wrapper">
-											<div class="dropdown-menu">
-												<div class="triangle"></div>
-												<ul class="checkbox-list">
-													<li><input type="checkbox" class="form-control" checked="checked"/><label>All</label></li>
-													<li><input type="checkbox" class="form-control" /><label>Carrefour</label></li>
-													<li ><input type="checkbox" class="form-control"/><label>Virgin Megastore</label></li>
-													<li><input type="checkbox" class="form-control" /><label>Costa coffee</label></li>
-													<li><input type="checkbox" class="form-control" /><label>Cash withdrawal</label></li>
-													<li><input type="checkbox" class="form-control" /><label>Le Meridien</label></li>
-												</ul>
-											</div>
-										</div>
+                                        <div class="hov">
+                                        <div class="dropdown-menu-wrapper">
+                                            <div class="dropdown-menu"  style="margin-top: 20px; left: -65px;">
+                                                <div class="triangle"></div>
+                                                <div style="margin-top: 50px; padding-top: 50px;"><div><p style="color: #999999; padding-left: 15px;">PARTNER NAME</p>
+                                                <input type="text" name="partnername" class="empty"></div>
+                                                <div align="center" style="margin-top: 50px; padding-top: 50px;">
+                                                <button class="btn btn-apply" style="color: #999999; border:1px solid #999999;">Apply</button></div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
                                     </div>
                                 </div>
-								<div class="block left delimeter">
+                                <div class="block left delimeter" style="width: 140px;">
                                     <div class="title">Category</div>
                                     <div class="content black">
                                         All <i class="fa fa-caret-down black"></i>
-										<div class="dropdown-menu-wrapper">
-											<div class="dropdown-menu">
-												<div class="triangle"></div>
-												<ul class="checkbox-list">
-													<li><input type="checkbox" class="form-control" checked="checked"/><label>All</label></li>
-													<li><input type="checkbox" class="form-control" /><label>Education</label></li>
-													<li ><input type="checkbox" class="form-control"/><label>Housing</label></li>
-													<li><input type="checkbox" class="form-control" /><label>Entertainment</label></li>
-												</ul>
-											</div>
-										</div>
+                                        <div class="hov">
+                                        <div class="dropdown-menu-wrapper">
+                                            <div class="dropdown-menu"  style="margin-top: 20px; left: -70px;">
+                                                <div class="triangle"></div>
+                                                <ul class="checkbox-list">
+                                                    <li><input type="checkbox" class="form-control" checked="checked"/><label>All</label></li>
+                                                    <li><input type="checkbox" class="form-control" /><label>Education</label></li>
+                                                    <li ><input type="checkbox" class="form-control"/><label>Housing</label></li>
+                                                    <li><input type="checkbox" class="form-control" /><label>Entertainment</label></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        </div>
                                     </div>
                                 </div>
-								<div class="block left delimeter">
+                                <div class="block left delimeter" style="width: 141px;">
                                     <div class="title">Amount</div>
                                     <div class="content black">
                                         All <i class="fa fa-caret-down black"></i>
-										<div class="dropdown-menu-wrapper">
-											<div class="dropdown-menu">
-												<div class="triangle"></div>
-												<div class="amount">
-													<div class="two-inputs">
-														<input id='from' type="text"/><span class="dash">-</span><input id='to' type="text"/>
-													</div>
-													<div class="ui-range-slider" id="amount-slider"></div>
-												</div>
-												<button class="btn btn-apply">Apply</button>
-											</div>
-										</div>
+                                        <div class="hov">
+                                        <div class="dropdown-menu-wrapper">
+                                            <div class="dropdown-menu"  style="left: -52px; margin-top: 20px;">
+                                                <div class="triangle"></div>
+                                                <div style="margin-top: 50px; padding-top: 50px" align="center">
+                                                    <span style="margin-right: 20px;">MIN</span><span style="margin-left: 10px; opacity: 0.6;">0</span></div>
+                                                <div align="center" style="margin-top: 20px;">
+                                                    <span>MAX</span><span style="margin-left: 10px; opacity: 0.6;">300</span></div>
+                                                <div align="center" style="margin-top: 50px; padding-top: 50px;">
+                                                <button class="btn btn-apply" style="color: #999999; border:1px solid #999999;">Apply</button></div>
+                                            </div>
+                                        </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="block left" style="width: 30%;">
                                     <div class="content right" style="float: left;"><a href="#">Reset</a></div>
-                                <div class="right width30">
+                                <div>
                                     <div class="title">
                                         Export transactions
                                     </div>
@@ -119,9 +129,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
-						 data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
-						 data-notes="Transfer to Costa Coffee">
+                    <div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4 open-part1" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
+                         data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
+                         data-notes="Transfer to Costa Coffee">
                         <div class="into-expanded-item-wrapper">
                             <div class="widget widget-transactions-history-unit">
                                 <div class="widget-body">
@@ -149,9 +159,9 @@
                             </div>
                         </div>
                     </div>
-					<div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
-						 data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
-						 data-notes="Transfer to Carrefour">
+                    <div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4 open-part2" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
+                         data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
+                         data-notes="Transfer to Carrefour">
                         <div class="into-expanded-item-wrapper">
                             <div class="widget widget-transactions-history-unit">
                                 <div class="widget-body">
@@ -180,9 +190,9 @@
                         </div>
                     </div>
                     <div class="row">
-					<div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
-						 data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
-						 data-notes="Transfer to Carrefour">
+                    <div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4 open-part3" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
+                         data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
+                         data-notes="Transfer to Carrefour">
                         <div class="into-expanded-item-wrapper">
                             <div class="widget widget-transactions-history-unit">
                                 <div class="widget-body">
@@ -211,124 +221,43 @@
                         </div>
                     </div>
                     </div>
-                    <!--part-1-->
+                    <!--Part-1-->
                     <div class="container" style="position: relative;">
                         <div class="drop-1"></div>
                         <div class="part1">
-                            <div>
-                                <h1>Payer</h1>
-                                <p>You</p>
-                                <h1>Payer account</h1>
-                                <p>My Current Credit</p>
-                                <p>GB29 8434 3087 5567 7193 23</p>
-                                <h1>Beneficiary</h1>
-                                <p>Starbucks Coffee</p>
-                                <p>Oslo</p>
-                                <h1>Beneficiary account</h1>
-                                <p>GB29 1948 6548 7981 5876 57</p>
-                            </div>
-                            <div>
-                                <h1>Amount</h1>
-                                <p>€-3.60</p>
-                                <h1>Transaction date</h1>
-                                <p>Yesterday</p>
-                                <h1>Value date</h1>
-                                <p>not booked yet</p>
-                                <h1>Description</h1>
-                                <p>None</p>
-                            </div>
-                            <div>
-                                <h1>Category</h1>
-                                <img src="images/fork.png" width="25px">
-                                <span style="opacity: 0.6;">Food & Drink</span>
-                                <h1 style="margin-top: 10px;">Tags</h1>
-                                <p>none</p>
-                                <h1>Hide from financial planning (PRM)</h1>
-                                <p>no</p>
-                            </div>
-
+                            <div><h1>Payer</h1><p>You</p><h1>Payer account</h1><p>My Current Account</p><h1>Beneficiary</h1>
+                                <p>COSTA COFFEE</p><h1>Beneficiary account</h1><p>DE89 3704 0044 0532 0130 00</p></div>
+                            <div><h1>Amount</h1><p>$25.00</p><h1>Transaction date</h1><p>7 JUNE</p><h1>Value date</h1><p>7 June</p></div>
+                            <div><h1>Category</h1><img src="images/fork.png" width="25px"><span style="opacity: 0.6;">Food & Drink</span>
+                                <h1 style="margin-top: 10px;">Tags</h1><p>none</p><h1>Hide from financial planning (PRM)</h1><p>no</p></div>
                         </div>
                     </div>
                     <!--part-2-->
-                    <div class="container">
+                    <div class="container" style="position: relative;">
                         <div class="drop-2"></div>
                         <div class="part2">
-                            <div>
-                                <h1>Payer</h1>
-                                <p>You</p>
-                                <h1>Payer account</h1>
-                                <p>My Current Credit</p>
-                                <p>GB29 8434 3087 5567 7193 23</p>
-                                <h1>Beneficiary</h1>
-                                <p>Starbucks Coffee</p>
-                                <p>Oslo</p>
-                                <h1>Beneficiary account</h1>
-                                <p>GB29 1948 6548 7981 5876 57</p>
-                            </div>
-                            <div>
-                                <h1>Amount</h1>
-                                <p>€-3.60</p>
-                                <h1>Transaction date</h1>
-                                <p>Yesterday</p>
-                                <h1>Value date</h1>
-                                <p>not booked yet</p>
-                                <h1>Description</h1>
-                                <p>None</p>
-                            </div>
-                            <div>
-                                <h1>Category</h1>
-                                <img src="images/fork.png" width="25px">
-                                <span style="opacity: 0.6;">Food & Drink</span>
-                                <h1 style="margin-top: 10px;">Tags</h1>
-                                <p>none</p>
-                                <h1>Hide from financial planning (PRM)</h1>
-                                <p>no</p>
-                            </div>
-
+                            <div><h1>Payer</h1><p>You</p><h1>Payer account</h1><p>My Current Account</p><h1>Beneficiary</h1>
+                                <p>CARREFOUR</p><h1>Beneficiary account</h1><p>DE89 3704 0044 0532 0130 00</p></div>
+                            <div><h1>Amount</h1><p>$129.98</p><h1>Transaction date</h1><p>6 JUNE</p><h1>Value date</h1><p>6 JUNE</p></div>
+                            <div><h1>Category</h1><img src="images/fork.png" width="25px"><span style="opacity: 0.6;">Food & Drink</span>
+                                <h1 style="margin-top: 10px;">Tags</h1><p>none</p><h1>Hide from financial planning (PRM)</h1><p>no</p></div>
                         </div>
                     </div>
                     <!--part-3-->
-                    <div class="container">
+                    <div class="container" style="position: relative;">
                         <div class="drop-3"></div>
                         <div class="part3">
-                            <div>
-                                <h1>Payer</h1>
-                                <p>You</p>
-                                <h1>Payer account</h1>
-                                <p>My Current Credit</p>
-                                <p>GB29 8434 3087 5567 7193 23</p>
-                                <h1>Beneficiary</h1>
-                                <p>Starbucks Coffee</p>
-                                <p>Oslo</p>
-                                <h1>Beneficiary account</h1>
-                                <p>GB29 1948 6548 7981 5876 57</p>
-                            </div>
-                            <div>
-                                <h1>Amount</h1>
-                                <p>€-3.60</p>
-                                <h1>Transaction date</h1>
-                                <p>Yesterday</p>
-                                <h1>Value date</h1>
-                                <p>not booked yet</p>
-                                <h1>Description</h1>
-                                <p>None</p>
-                            </div>
-                            <div>
-                                <h1>Category</h1>
-                                <img src="images/fork.png" width="25px">
-                                <span style="opacity: 0.6;">Food & Drink</span>
-                                <h1 style="margin-top: 10px;">Tags</h1>
-                                <p>none</p>
-                                <h1>Hide from financial planning (PRM)</h1>
-                                <p>no</p>
-                            </div>
-
+                            <div><h1>Payer</h1><p>You</p><h1>Payer account</h1><p>My Current Account</p><h1>Beneficiary</h1>
+                                <p>VIRGIN MEGASTORE</p><h1>Beneficiary account</h1><p>DE89 3704 0044 0532 0130 00</p></div>
+                            <div><h1>Amount</h1><p>$59.00</p><h1>Transaction date</h1><p>6 JUNE</p><h1>Value date</h1><p>6 JUNE</p></div>
+                            <div><h1>Category</h1><img src="images/fork.png" width="25px"><span style="opacity: 0.6;">Food & Drink</span>
+                                <h1 style="margin-top: 10px;">Tags</h1><p>none</p><h1>Hide from financial planning (PRM)</h1><p>no</p></div>
                         </div>
                     </div>
 
-					<div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
-						 data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
-						 data-notes="Transfer to AXA">
+                    <div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4 open-part4" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
+                         data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
+                         data-notes="Transfer to AXA">
                         <div class="into-expanded-item-wrapper">
                             <div class="widget widget-transactions-history-unit">
                                 <div class="widget-body">
@@ -356,9 +285,9 @@
                             </div>
                         </div>
                     </div>
-					<div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
-						 data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
-						 data-notes="Transfer to T-Mobile">
+                    <div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4 open-part5" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
+                         data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
+                         data-notes="Transfer to T-Mobile">
                         <div class="into-expanded-item-wrapper">
                             <div class="widget widget-transactions-history-unit">
                                 <div class="widget-body">
@@ -386,10 +315,11 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="row">
-					<div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
-						 data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
-						 data-notes="Transfer to Lufthansa">
+                    <div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4 open-part6" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
+                         data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
+                         data-notes="Transfer to Lufthansa">
                         <div class="into-expanded-item-wrapper">
                             <div class="widget widget-transactions-history-unit">
                                 <div class="widget-body">
@@ -419,20 +349,43 @@
                     </div>
                     </div>
                     <!--part-4-->
-                    <div class="container">
+                    <div class="container" style="position: relative;">
                         <div class="drop-4"></div>
+                        <div class="part4">
+                            <div><h1>Payer</h1><p>You</p><h1>Payer account</h1><p>My Current Account</p><h1>Beneficiary</h1>
+                                <p>AXA</p><h1>Beneficiary account</h1><p>DE89 3704 0044 0532 0130 00</p></div>
+                            <div><h1>Amount</h1><p>$1245.00</p><h1>Transaction date</h1><p>5 JUNE</p><h1>Value date</h1><p>5 JUNE</p></div>
+                            <div><h1>Category</h1><img src="images/fork.png" width="25px"><span style="opacity: 0.6;">Food & Drink</span>
+                                <h1 style="margin-top: 10px;">Tags</h1><p>none</p><h1>Hide from financial planning (PRM)</h1><p>no</p></div>
+                        </div>
                     </div>
-                    <!--part-5-->
-                    <div class="container">
+                    <!--Part-5-->
+                    <div class="container" style="position: relative;">
                         <div class="drop-5"></div>
-                    </div>
-                    <!--part-6-->
-                    <div class="container">
+                        <div class="part5">
+                        <div><h1>Payer</h1><p>You</p><h1>Payer account</h1><p>My Current Account</p><h1>Beneficiary</h1>
+                                <p>T-MOBILE</p><h1>Beneficiary account</h1><p>DE89 3704 0044 0532 0130 00</p></div>
+                            <div><h1>Amount</h1><p>$145.00</p><h1>Transaction date</h1><p>4 JUNE</p><h1>Value date</h1><p>4 JUNE</p></div>
+                            <div><h1>Category</h1><img src="images/fork.png" width="25px"><span style="opacity: 0.6;">Food & Drink</span>
+                                <h1 style="margin-top: 10px;">Tags</h1><p>none</p><h1>Hide from financial planning (PRM)</h1><p>no</p></div>
+                        </div>
+                        </div>
+                        <!--part-6-->
+                    <div class="container" style="position: relative;">
                         <div class="drop-6"></div>
+                        <div class="part6">
+                            <div><h1>Payer</h1><p>You</p><h1>Payer account</h1><p>My Current Account</p><h1>Beneficiary</h1>
+                                <p>LUFTHANSA</p><h1>Beneficiary account</h1><p>DE89 3704 0044 0532 0130 00</p> </div>
+                            <div><h1>Amount</h1><p>$849.93</p><h1>Transaction date</h1><p>23 MAY</p><h1>Value date</h1><p>23 MAY</p></div>
+                            <div><h1>Category</h1><img src="images/fork.png" width="25px"><span style="opacity: 0.6;">Food & Drink</span>
+                                <h1 style="margin-top: 10px;">Tags</h1><p>none</p><h1>Hide from financial planning (PRM)</h1><p>no</p>
+                            </div>
+
+                        </div>
                     </div>
-					<div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
-						 data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
-						 data-notes="Transfer to Tom Silverman">
+                    <div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4 open-part7" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
+                         data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
+                         data-notes="Transfer to Tom Silverman">
                         <div class="into-expanded-item-wrapper">
                             <div class="widget widget-transactions-history-unit">
                                 <div class="widget-body">
@@ -460,9 +413,9 @@
                             </div>
                         </div>
                     </div>
-					<div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
-						 data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
-						 data-notes="Transfer to Starbucks">
+                    <div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4 open-part8" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
+                         data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
+                         data-notes="Transfer to Starbucks">
                         <div class="into-expanded-item-wrapper">
                             <div class="widget widget-transactions-history-unit">
                                 <div class="widget-body">
@@ -490,51 +443,74 @@
                             </div>
                         </div>
                     </div>
-					<div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
-						 data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
-						 data-notes="Transfer to Carrefour">
-						<div class="into-expanded-item-wrapper">
-							<div class="widget widget-transactions-history-unit">
-								<div class="widget-body">
-									<div class="widget-upper">
-										<div class="name">Carrefour</div>
-										<div class="date">6 June</div>
-									</div>
-									<div class="widget-body">
-										<div class="image">
-											<img src="images/u10.jpg">
-										</div>
-										<div class="info-block">
-											<div class="price-block">
-												<div class="widget-summ">$322.91</div>
-												<div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
-											</div>
-											<div class="tags"><span class="tag">Tags: </span>Shopping</div>
-										</div>
-									</div>
-									<div class="widget-footer">
-										<div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
-										<div class="balance"><span>Balance: </span>$1953.12</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+                    <div class="row">
+                    <div class="into-expanded-item col-xs-12 col-sm-6 col-md-4 col-lg-4 open-part9" data-date="10-01-2017" data-type="Outgoing EU" data-to="IBAN - DE44 5001 0517 5407 3249 31"
+                         data-reference="Transfer to GPC/122, CARLO POLETTI srl IT81D030694524010 0000001908 - Ref: 100% Pmnt INV V17/00133, V17/00134 GPC/122"
+                         data-notes="Transfer to Carrefour">
+                        <div class="into-expanded-item-wrapper">
+                            <div class="widget widget-transactions-history-unit">
+                                <div class="widget-body">
+                                    <div class="widget-upper">
+                                        <div class="name">Carrefour</div>
+                                        <div class="date">6 June</div>
+                                    </div>
+                                    <div class="widget-body">
+                                        <div class="image">
+                                            <img src="images/u10.jpg">
+                                        </div>
+                                        <div class="info-block">
+                                            <div class="price-block">
+                                                <div class="widget-summ">$322.91</div>
+                                                <div class="transaction-type outcome"><i class="fa fa-caret-down"></i></div>
+                                            </div>
+                                            <div class="tags"><span class="tag">Tags: </span>Shopping</div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-footer">
+                                        <div class="from"><span>From: </span>MY CURRENT ACCOUNT</div>
+                                        <div class="balance"><span>Balance: </span>$1953.12</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                     <!--part-7-->
-                    <div class="container">
+                    <div class="container" style="position: relative;">
                         <div class="drop-7"></div>
+                        <div class="part7">
+                            <div><h1>Payer</h1><p>You</p><h1>Payer account</h1><p>My Current Account</p><h1>Beneficiary</h1>
+                                <p>TOM SILVERMAN</p><h1>Beneficiary account</h1><p>DE89 3704 0044 0532 0130 00</p></div>
+                            <div><h1>Amount</h1><p>$93.00</p><h1>Transaction date</h1><p>13 MAY</p><h1>Value date</h1><p>13 MAY</p></div>
+                            <div><h1>Category</h1><img src="images/fork.png" width="25px"><span style="opacity: 0.6;">Food & Drink</span>
+                                <h1 style="margin-top: 10px;">Tags</h1><p>none</p><h1>Hide from financial planning (PRM)</h1><p>no</p></div>
+                        </div>
                     </div>
                     <!--part-8-->
-                    <div class="container">
+                    <div class="container" style="position: relative;">
                         <div class="drop-8"></div>
+                        <div class="part8">
+                            <div><h1>Payer</h1><p>You</p><h1>Payer account</h1><p>My Current Account</p><h1>Beneficiary</h1>
+                                <p>STARBUCKS</p><h1>Beneficiary account</h1><p>DE89 3704 0044 0532 0130 00</p></div>
+                            <div><h1>Amount</h1><p>$27.00</p><h1>Transaction date</h1><p>7 MAY</p><h1>Value date</h1><p>7 MAY</p></div>
+                            <div><h1>Category</h1><img src="images/fork.png" width="25px"><span style="opacity: 0.6;">Food & Drink</span>
+                                <h1 style="margin-top: 10px;">Tags</h1><p>none</p><h1>Hide from financial planning (PRM)</h1><p>no</p></div>
+                        </div>
                     </div>
                     <!--part-9-->
-                    <div class="container">
+                    <div class="container" style="position: relative;">
                         <div class="drop-9"></div>
+                        <div class="part9">
+                            <div><h1>Payer</h1><p>You</p><h1>Payer account</h1><p>My Current Account</p><h1>Beneficiary</h1>
+                                <p>CARREFOUR</p><h1>Beneficiary account</h1><p>DE89 3704 0044 0532 0130 00</p></div>
+                            <div><h1>Amount</h1><p>$322.91</p><h1>Transaction date</h1><p>6 JUNE</p><h1>Value date</h1><p>6 JUNE</p></div>
+                            <div><h1>Category</h1><img src="images/fork.png" width="25px"><span style="opacity: 0.6;">Food & Drink</span>
+                                <h1 style="margin-top: 10px;">Tags</h1><p>none</p><h1>Hide from financial planning (PRM)</h1><p>no</p></div>
+                        </div>
                     </div>
-					<div class="widget-details-button">
-						<a href="#" class="btn btn-default">Load More</a>
-					</div>
+                    <div class="widget-details-button">
+                        <a href="#" class="btn btn-default">Load More</a>
+                    </div>
                 </div>
             </div>
         </div>

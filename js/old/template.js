@@ -424,7 +424,6 @@ function WidgetActivator() {
 	}
     
     function open(parentWidgetItem, replacementItemsDiv) {
-    		console.log(replacementItemsDiv)
         checkActive();
         var $parentWidgetItem = $(parentWidgetItem);
         var grid = $('.grid-stack').data('gridstack');
@@ -556,7 +555,6 @@ function closeModalGrid() {
 
 //for handlebars
 function precompiledInit(cb){
-	console.log(userPref, '123', localStorage.getItem(LOCAL_STORAGE_PREF));
 	if (onlineData) {
 		$.ajax({
 			url: "landingData",
@@ -615,6 +613,7 @@ function precompiledInitCallBack(data) {
 				var func = templateFunctions[tmpName];
 				if (typeof func !== "undefined") func(el, obj);
 			}
+			
 		}
 	} else {
 		//from pref
@@ -898,7 +897,6 @@ function listWgsProps() {
 function updateWidgetsState() {
 	var cont = document.getElementById("playground");
 	var wgs = cont.childNodes;
-	console.log('wgs',)
 	var landingPref = userPref["LANDING_PAGE"];
 	if (typeof landingPref === "undefined") {
 		landingPref = new Object();
@@ -1242,8 +1240,15 @@ var allWgs = [
     {
         template: "CreditAdvertisment",
         UUID: 47
+    },
+    {
+        template: "CardDetailsBlockModal",
+        UUID: 48
+    },
+    {
+        template: "CardDetailsChangePin",
+        UUID: 49
     }
-
 
 ];
 
@@ -1302,6 +1307,8 @@ var templateFunctions = {
 	,SavingGoalsTom : setSavingGoalsTom
 	,PersonalLoan : setPersonalLoan
 	,CreditAdvertisment : setCreditAdvertisment
+	,CardDetailsBlockModal : setCardDetailsBlockModal
+	,CardDetailsChangePin : setCardDetailsChangePin
 }
 
 function setMyCurrent(el, data) {
@@ -1467,6 +1474,148 @@ function setTransactions(el, data) {
 	$(el).find(".widget-details-button a").click(function(e) {
 		e.preventDefault();
 		detailUtil.openTemplate(this, "TransactionDetails", null);
+		$('.part1').hide();
+		$('.part2').hide();
+		$('.part3').hide();
+		$('.drop-1').hide();
+		$('.drop-2').hide();
+		$('.drop-3').hide();
+		$('.part4').hide();
+		$('.part5').hide();
+		$('.part6').hide();
+		$('.drop-4').hide();
+		$('.drop-5').hide();
+		$('.drop-6').hide();
+		$('.part7').hide();
+		$('.part8').hide();
+		$('.part9').hide();
+		$('.drop-7').hide();
+		$('.drop-8').hide();
+		$('.drop-9').hide();
+		$('.open-part1').click(function(){
+			$('.part2').hide();
+			$('.part3').hide();
+			$('.part4').hide();
+			$('.part5').hide();
+			$('.part6').hide();
+			$('.part7').hide();
+			$('.part8').hide();
+			$('.part9').hide();
+			$('.part1').show();
+			$('.drop-1').show();
+
+		});
+		$('.open-part2').click(function(){
+			$('.part1').hide();
+			$('.part3').hide();
+			$('.part4').hide();
+			$('.part5').hide();
+			$('.part6').hide();
+			$('.part7').hide();
+			$('.part8').hide();
+			$('.part9').hide();
+			$('.drop-1').hide();
+			$('.drop-2').show();
+			$('.part2').show();
+		});
+		$('.open-part3').click(function(){
+			$('.part1').hide();
+			$('.part2').hide();
+			$('.part4').hide();
+			$('.part5').hide();
+			$('.part6').hide();
+			$('.part7').hide();
+			$('.part8').hide();
+			$('.part9').hide();
+			$('.drop-2').hide();
+			$('.drop-3').show();
+			$('.part3').show();
+		});
+		$('.open-part4').click(function(){
+			$('.part1').hide();
+			$('.part2').hide();
+			$('.part3').hide();
+			$('.part5').hide();
+			$('.part6').hide();
+			$('.part7').hide();
+			$('.part8').hide();
+			$('.part9').hide();
+			$('.drop-4').show();
+			$('.part4').show();
+		});
+		$('.open-part5').click(function(){
+			$('.part1').hide();
+			$('.part2').hide();
+			$('.part3').hide();
+			$('.part4').hide();
+			$('.part6').hide();
+			$('.part7').hide();
+			$('.part8').hide();
+			$('.part9').hide();
+			$('.drop-4').hide();
+			$('.drop-5').show();
+			$('.part5').show();
+		});
+		$('.open-part6').click(function(){
+			$('.part1').hide();
+			$('.part2').hide();
+			$('.part3').hide();
+			$('.part4').hide();
+			$('.part5').hide();
+			$('.part7').hide();
+			$('.part8').hide();
+			$('.part9').hide();
+			$('.drop-5').hide();
+			$('.drop-6').show();
+			$('.part6').show();
+		});
+		$('.open-part7').click(function(){
+			$('.part1').hide();
+			$('.part2').hide();
+			$('.part3').hide();
+			$('.part4').hide();
+			$('.part5').hide();
+			$('.part6').hide();
+			$('.part8').hide();
+			$('.part9').hide();
+			$('.drop-4').hide();
+			$('.drop-5').hide();
+			$('.drop-6').hide();
+			$('.drop-7').show();
+			$('.part7').show();
+		});
+		$('.open-part8').click(function(){
+			$('.part1').hide();
+			$('.part2').hide();
+			$('.part3').hide();
+			$('.part4').hide();
+			$('.part5').hide();
+			$('.part6').hide();
+			$('.part7').hide();
+			$('.part9').hide();
+			$('.drop-4').hide();
+			$('.drop-5').hide();
+			$('.drop-6').hide();
+			$('.drop-7').hide();
+			$('.drop-8').show();
+			$('.part8').show();
+		});
+		$('.open-part9').click(function(){
+			$('.part1').hide();
+			$('.part2').hide();
+			$('.part3').hide();
+			$('.part4').hide();
+			$('.part5').hide();
+			$('.part6').hide();
+			$('.part7').hide();
+			$('.part8').hide();
+			$('.drop-4').hide();
+			$('.drop-5').hide();
+			$('.drop-6').hide();
+			$('.drop-8').hide();
+			$('.drop-9').show();
+			$('.part9').show();
+		});
 	});
 }
 function setSignedTransactions(el, data) {
@@ -1484,6 +1633,12 @@ function setPendingTransactions(el, data) {
     $(el).find(".widget-details-button a").click(function(e) {
         e.preventDefault();
         detailUtil.openTemplate(this, "PendingTransactionDetails", null);
+        $('.part1').hide();
+$('.drop-1').hide();
+$('.open-1-drop').click(function(){
+	$('.drop-1').show();
+	$('.part1').show();
+})
         setTimeout(function () {
             $( "#period-datepicker", el ).datepicker({
                 showOn: "button",
@@ -1565,6 +1720,7 @@ function setDebitCard(el, data) {
 }
 function setPayment(el, data) {
 	createPayment(el, ".payment-widget-label");
+    
     $('.payment-type', el).on('click', function() {
         managePaymentType(el, this);
     });
@@ -1584,6 +1740,12 @@ function setPayment(el, data) {
 
     setTimeout(function () {
         $( "#date-datepicker", el ).datepicker({
+            showOn: "button",
+            buttonImage: "images/small-calendar.png",
+            buttonImageOnly: true,
+            buttonText: "Select date"
+        }).datepicker("setDate", new Date());
+        $( "#date-datepicker-1", el ).datepicker({
             showOn: "button",
             buttonImage: "images/small-calendar.png",
             buttonImageOnly: true,
@@ -1696,14 +1858,18 @@ function setOwnAccountPayment(el, data) {
         manageTabs(el, this, '.accounts-tab-header', '.accounts-tab', '#tab-to-show');
     });
 
-    $('.payment-benefeciary-type').on('click' , function(event){
+    $('.benefeciaries-tab-header', el).on('click', function () {
+        manageTabs(el, this, '.benefeciaries-tab-header', '.benefeciaries-tab', '#tab-to-show');
+    });
+    
+    /*$('.payment-benefeciary-type').on('click' , function(event){
     	$('.payment-benefeciary-choose').find('.payment-benefeciary-type').removeClass("active");
     	$('.payment-benefeciary-type').not(event.currentTarget).addClass("pasive");
     	$(event.currentTarget).removeClass("pasive");
     	$(event.currentTarget).addClass("active");
     	console.log($(event.currentTarget).hasClass)
     	$(event.currentTarget).closest('#ownaccountpayment-benefeciary-fields-first').find('.payment-benefeciary-detail-type').removeClass('payment-benefeciary-detail-active');
-	})
+	})*/
 
     selectAccount($('.accounts-list .accounts-list-item', el)[0], '#ownaccountpayment_container_1 .info-block', '#transactions-list-euro-account');
     $('.benefeciaries-tabs', el).niceScroll({
@@ -1719,6 +1885,12 @@ function setOwnAccountPayment(el, data) {
 
     setTimeout(function () {
         $( "#date-datepicker-own", el ).datepicker({
+            showOn: "button",
+            buttonImage: "images/small-calendar.png",
+            buttonImageOnly: true,
+            buttonText: "Select date"
+        }).datepicker("setDate", new Date());
+        $( "#date-datepicker-own-1", el ).datepicker({
             showOn: "button",
             buttonImage: "images/small-calendar.png",
             buttonImageOnly: true,
@@ -1916,6 +2088,9 @@ function setNotifications(el, data) {
 			$('.second-part6').hide();
 			$('.block1').hide();
 			$('.block2').hide();
+			$('.block4').hide();
+			$('.block5').hide();
+			$('.block6').hide();
 			$('.block3').show();
 			$('.second-part3').show();
 		});
@@ -1927,6 +2102,9 @@ function setNotifications(el, data) {
 			$('.second-part6').hide();
 			$('.block5').hide();
 			$('.block6').hide();
+			$('.block3').hide();
+			$('.block2').hide();
+			$('.block1').hide();
 			$('.block4').show();
 			$('.second-part4').show();
 		});
@@ -1938,6 +2116,9 @@ function setNotifications(el, data) {
 			$('.second-part4').hide();
 			$('.second-part6').hide();
 			$('.block4').hide();
+			$('.block3').hide();
+			$('.block2').hide();
+			$('.block1').hide();
 			$('.block6').hide();
 			$('.block5').show();
 			$('.second-part5').show();
@@ -1950,6 +2131,9 @@ function setNotifications(el, data) {
 			$('.second-part5').hide();
 			$('.block4').hide();
 			$('.block5').hide();
+			$('.block3').hide();
+			$('.block2').hide();
+			$('.block1').hide();
 			$('.block6').show();
 			$('.second-part6').show();
 		});
@@ -2372,6 +2556,8 @@ function setBankCard(el, data) {
 	$(el).find(".widget-details-button a").click(function(e) {
         e.preventDefault();
 		detailUtil.openTemplate(this, "BankCardDetails", null);
+		window.blockDeferred.resolve();
+
 	});
 	
 	$(el).find("#bank-card-more-bottom, #bank-card-more-right").click(function(e) {	
@@ -2517,6 +2703,27 @@ function setMyVisaDebitCard(el, data) {
 		detailUtil.openTemplate(this, "MyVisaDebitCardDetails", null);
 	});
 }
+
+function setCardDetailsBlockModal(el,data){
+	console.log('element' , el)
+	createDial($(el).find("#widget-bank-card-modal"), 500, 500, 90, "#f7573f", "#87b22e", 320);
+	setShowMoreButtons(el, data);
+	$(el).find("#bankCard .widget-details-button a").click(function(e) {
+        e.preventDefault();
+		detailUtil.openTemplate(this, "CardDetailsBlockModal", null);
+	});
+}
+
+function setCardDetailsChangePin(el, data){
+	createDial($(el).find("#widget-bank-card-change-pin"), 500, 500, 90, "#f7573f", "#87b22e", 320);
+	setShowMoreButtons(el, data);
+	$(el).find("a.copy-detail").click(function(e) {
+        console.log('clicked')
+        e.preventDefault();
+		detailUtil.openTemplate(this, "CardDetailsChangePin", null);
+	});	
+}
+
 function doCreateChartPersonalFin2(input)
 {    
     var containerId = '#circle_finance_detail';
@@ -2610,5 +2817,91 @@ function doCreateChartPersonalFin2(input)
     setTimeout(function(){
       //$(window).trigger('resize');
     },2);
-    
 }
+    
+
+// cahnge14.08.17
+$(document).ready(function(){
+	var count = 0;
+	$(document).on("click",".beneficiary_slide_down_parth",function(){
+		count++;
+		$(".video2_parth_for_margin_top").css({'margin-top':"275px"});
+		$(".video_parth_for_margin_top").css({'margin-top':"275px"});
+		$(".failed_parth_for_margin_top").css({'margin-top':"275px"});
+		$(".pending_parth_for_margin_top").css({'margin-top':"275px",'margin-bottom':"20px"});
+
+		$("#nic").attr("data-gs-height","2")
+		$("#nic").attr("data-gs-min-height","2");
+		$("#up_parth_of_beneficiary").css({"border":"4px solid red"})
+		$(".div_for_slideDown").empty();
+		$(".div_for_slideDown").append("<i class='fa fa-angle-up beneficiary_slide_up_parth' style='margin-top:200px' aria-hidden='true'></i>")
+		$(".beneficiary_slide_up_parth").show(100);
+		$(".beneficiary_slide_down_parth").hide(100)
+		if(count > 1){
+			$(".div_right_parth_angle").append('<i class="fa fa-angle-right right_parth_angle" aria-hidden="true"></i>');
+		}
+		// $(".beneficiary-cont .grid-stack-item-content").css({'height':"500px"})
+		$(".div_for_slideToggle").slideDown(200);
+		
+		$(document).on("mouseleave",".widget-beneficiary",function(){
+			$(".right_parth_angle").hide(200)
+
+		})
+		$(document).on("mouseenter",".widget-beneficiary",function(){
+			$(".right_parth_angle").show(100)
+		})
+
+
+	})
+	$(document).on("click",".beneficiary_slide_up_parth",function(){
+		$(".div_for_slideDown").empty();
+		$(".div_right_parth_angle").empty();
+		$(".div_for_slideDown").append("<i class='fa fa-angle-down beneficiary_slide_down_parth' aria-hidden='true'></i>")
+		$(".beneficiary_slide_up_parth").hide(200);
+		$(".beneficiary_slide_down_parth").show()
+		$(".div_for_slideToggle").slideUp(200);
+		$("#nic").attr("data-gs-height","1")
+
+		$(".video2_parth_for_margin_top").css({'margin-top':"4px"})
+		$(".video_parth_for_margin_top").css({'margin-top':"0px"})
+		$("#nic").attr("data-gs-min-height","1");
+		$(".failed_parth_for_margin_top").css({'margin-top':"0px"})
+		$(".pending_parth_for_margin_top").css({'margin-top':"0px"})
+		// $(".beneficiary-cont .grid-stack-item-content").css({'height':"300px"})
+
+	})
+	$(document).on("click",".btn_for_details_beneficiary_details",function(){
+		// $(".beneficiary-cont .grid-stack-item-content").css({'min-height':"650px"})
+
+	})
+	$(document).on("mouseleave",".widget-beneficiary",function(){
+		$(".beneficiary_slide_down_parth").slideUp(200)
+		$(".beneficiary_slide_up_parth").slideUp(200);
+
+	})
+
+		
+	$(document).on("click",".exchange_icon",function(){
+		var parent_id = $(this).attr("data-parent-id");
+			var data_gs_y_tom = $(".Tom_parth_for_change_div").attr("data-gs-y");
+			var data_gs_y_jane = $(".Jane_parth_for_change_div").attr("data-gs-y");
+		if(parent_id == 'saveGoalTom'){
+
+			$(".Tom_parth_for_change_div").attr('data-gs-y',data_gs_y_jane);
+			$(".Jane_parth_for_change_div").attr('data-gs-y',data_gs_y_tom);
+				
+
+		}else{
+			if(parent_id == "saveGoalJane"){
+
+			$(".Tom_parth_for_change_div").attr('data-gs-y',data_gs_y_jane);
+			$(".Jane_parth_for_change_div").attr('data-gs-y',data_gs_y_tom);
+			}
+		}
+	})
+	$(document).on("mouseenter",".widget-beneficiary",function(){
+		$(".beneficiary_slide_down_parth").slideDown(200)
+		$(".beneficiary_slide_up_parth").slideDown(200);
+	})
+
+})
