@@ -19067,3 +19067,38 @@ p.card_status span{
 .my-credit-card{
     color: #ccc;
 }
+#widget-card-change-limits-modal{
+    display: none;
+}
+.modal-euro-sign{
+    margin-left: 100px;
+}
+.max-value{
+    font-size: 13px;
+    color: #AAA;
+    margin:0 !important;
+}
+.my-credit-card-container{
+    text-align: left;
+}
+.my-credit-card-container .col-lg-4{
+    text-align: right;
+}
+.my-credit-card-container .dropdown-menu{
+    background-color: transparent;
+    box-shadow: none;
+    position: absolute;
+    left: 120px;
+}
+.my-credit-card-container .dropdown-menu > li > a{
+    color:black;
+}
+.daily_nuber_atm_limit{
+    margin-bottom: 25px !important;
+}
+.my-credit-card-container .col-lg-5 > p, .my-credit-card-container .col-lg-3 > p{
+    margin-top: 25px !important;
+}
+.widget-bank-card-modal .dropdown-toggle{
+    background-color: transparent;
+}

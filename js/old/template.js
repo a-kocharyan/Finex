@@ -683,13 +683,6 @@ function precompiledInitCallBack(data) {
 	//gridEl.show();
 	if (hasAutoPositionHappened) updateWidgetsState();
 	svgFix();
-	setTimeout(function(){
-		console.log($('#account-balances'));
-		if($('#bankCard').length > 0 && $('#account-balances').length !== 0){
-			window.blockDeferred.resolve();
-			console.log($('#bankCard').find('.widget-details-button .btn-modify'));
-		}
-	},2000);
 }
 
 //add new widget
@@ -1253,6 +1246,10 @@ var allWgs = [
     {
     	template: "CardDetailsBlockModal",
     	UUID: 48
+    },
+    {
+    	template: "CardDetailsLimitsModal",
+    	UUID: 49
     }
 
 
@@ -2385,6 +2382,7 @@ function setBankCard(el, data) {
 	$(el).find(".widget-details-button a").click(function(e) {
         e.preventDefault();
 		detailUtil.openTemplate(this, "BankCardDetails", null);
+		window.blockDeferred.resolve();
 	});
 	
 	$(el).find("#bank-card-more-bottom, #bank-card-more-right").click(function(e) {	
