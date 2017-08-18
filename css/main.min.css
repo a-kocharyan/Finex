@@ -19357,10 +19357,7 @@ height: auto;padding: 10px 10px;}
 .widget-bank-card-modal nav.navbar .navbar-header{
     margin-left: 15%;
 }
-.btn-container{
-    position: relative;
-    left: -5.8%;
-}
+
 .cancel_bank_card{
     color: #666666;
 }
@@ -19404,4 +19401,39 @@ height: auto;padding: 10px 10px;}
     text-align: left;
     margin-right:5%;
     width: 20%
+}
+
+/*reissue-card*/
+#widget-bank-card-reissue-card{
+    display: none;
+}
+
+.modal-body .container-fluid .sms-input-field{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-fluid .SMS-inp{
+    width: 50%;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background:url("../images/lock.png") no-repeat right center;
+    background-size: 15px;
+    background-position-x: 96%;
+    margin: 2% 0 4%;
+}
+
+#widget-bank-card-reissue-card .modal-info{
+    margin: 4% 28%
+}  
+#widget-bank-card-reissue-card .modal-info .text{
+    margin-top: 14%;
+}
+
+#widget-bank-card-reissue-card .modal-body hr{
+    margin: 20px 10%;
+    border-top:1px solid rgb(229, 229, 229);
 }

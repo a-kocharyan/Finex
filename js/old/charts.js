@@ -1392,7 +1392,6 @@ function doCreateChartPersonalFin2(input)
             labels: {
                 enabled: false,
             }
-            
         },
         yAxis: {
             min: 0,

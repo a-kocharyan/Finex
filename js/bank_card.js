@@ -16,13 +16,15 @@ $(function(){
   			that.detailsBlock = $('#widget-bank-card-modal');
    			// that.changeLimits = $('#widget-card-change-limits-modal');
    			that.changePin = $('#widget-bank-card-change-pin');
+   			that.reissueCard = $('#widget-bank-card-reissue-card');
   		},
 
   		_bindEvents: function(){
    			var that = this;
    			that.element.on('click', '.widget-details-button a.btn', that.handlers.openDetailsModal.bind(that));
    			console.log($('.widget-details-button a.btn'))
-   			that.element.on('click', 'a.copy-detail', that.handlers.openChangePinModal.bind(that));
+   			that.element.on('click', 'a#change-pin', that.handlers.openChangePinModal.bind(that));
+   			that.element.on('click', 'a#reissue-card', that.handlers.openReissueCardModal.bind(that));
    			// that.element.on('click', '.widget-details-button .btn-modify', that.handlers.openChangeLimitsModal.bind(that));
    			that.detailsBlock.on('click', '.navbar-nav > li > a', that.handlers.blocksSelections.bind(that));
    			that.detailsBlock.on('click', 'button[data-dismiss="modal"], .confirm_bank_card, .cancel_bank_card', that.handlers.closeModal.bind(that));
@@ -46,6 +48,12 @@ $(function(){
     			that.changePin.modal('show');
     			that.changePin.css('display', 'inline-block');
     			that.changePin.find('[href="#close-modal"]').hide();
+   			},
+
+   			openReissueCardModal: function(event){
+    			that.reissueCard.modal('show');
+    			that.reissueCard.css('display', 'inline-block');
+    			that.reissueCard.find('[href="#close-modal"]').hide();
    			},
 
    			blocksSelections: function(event){

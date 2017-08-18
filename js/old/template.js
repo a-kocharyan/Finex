@@ -1248,6 +1248,10 @@ var allWgs = [
     {
         template: "CardDetailsChangePin",
         UUID: 49
+    },
+    {
+    	template: "CardDetailsReissueCard",
+    	UUID: 50
     }
 
 ];
@@ -1309,6 +1313,7 @@ var templateFunctions = {
 	,CreditAdvertisment : setCreditAdvertisment
 	,CardDetailsBlockModal : setCardDetailsBlockModal
 	,CardDetailsChangePin : setCardDetailsChangePin
+	,CardDetailsReissueCard : setCardDetailsReissueCard
 }
 
 function setMyCurrent(el, data) {
@@ -2705,7 +2710,6 @@ function setMyVisaDebitCard(el, data) {
 }
 
 function setCardDetailsBlockModal(el,data){
-	console.log('element' , el)
 	createDial($(el).find("#widget-bank-card-modal"), 500, 500, 90, "#f7573f", "#87b22e", 320);
 	setShowMoreButtons(el, data);
 	$(el).find("#bankCard .widget-details-button a").click(function(e) {
@@ -2717,10 +2721,20 @@ function setCardDetailsBlockModal(el,data){
 function setCardDetailsChangePin(el, data){
 	createDial($(el).find("#widget-bank-card-change-pin"), 500, 500, 90, "#f7573f", "#87b22e", 320);
 	setShowMoreButtons(el, data);
-	$(el).find("a.copy-detail").click(function(e) {
+	$(el).find("a#change-pin").click(function(e) {
         console.log('clicked')
         e.preventDefault();
 		detailUtil.openTemplate(this, "CardDetailsChangePin", null);
+	});	
+}
+
+function setCardDetailsReissueCard(el, data){
+	createDial($(el).find("#widget-bank-card-reissue-card"), 500, 500, 90, "#f7573f", "#87b22e", 320);
+	setShowMoreButtons(el, data);
+	$(el).find("a#reissue-card").click(function(e) {
+        console.log('clicked')
+        e.preventDefault();
+		detailUtil.openTemplate(this, "CardDetailsReissueCard", null);
 	});	
 }
 
