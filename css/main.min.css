@@ -18976,6 +18976,50 @@ height: auto;padding: 10px 10px;}
 }
 
 /* Card Details Block */
+.card-detail-screen{
+    padding: 15px 20px;
+    border-radius: 10px
+}
+.card-detail-header {
+    border:none;
+}
+.card-detail-header .close {
+    margin-top: 15px
+}
+.modal-body .modal-info{
+    margin-bottom: 8%;
+}
+.modal-body .modal-info img{
+    margin-top: 45px;
+    margin-bottom: 8%;
+}
+.modal-body .modal-info .text{
+    text-align: left;
+    margin: 7% 0 8% 5%;
+    font-size: 15px;
+    line-height: 1.372;
+}
+.modal-body .modal-info .text h5{
+  color: rgb(116, 118, 120);
+  font-size: 16px;
+}
+.modal-body .modal-info .text p{
+    color: #666666;
+    font-size: 16px;
+}
+.modal-body .modal-info .text p span{
+    color: rgb(32, 33, 34);
+}
+.modal-body .navbar .nav li , .container-fluid .nav li{
+    border-radius: 5px;
+    margin: 0 3px; 
+    border: 1px solid #ccc;
+}
+.modal-body .navbar .nav li a.active{
+    border-radius: 5px;
+}
+
+/*change card status*/
 #widget-bank-card-modal{
     display: none;
 }
@@ -19009,7 +19053,7 @@ height: auto;padding: 10px 10px;}
 
 }
 .widget-bank-card-modal .navbar-nav > li > a{
-    color: black;
+    color: #666666;
     font-size: 14px;
 }
 .widget-bank-card-modal .navbar-nav > li > a:hover{
@@ -19029,14 +19073,17 @@ height: auto;padding: 10px 10px;}
 .widget-bank-card-modal .navbar-header .navbar-brand{
     margin-top: 13px;
     margin-left: 30px;
-    color: #666666;
+    color: black;    
     height: auto;
 }
 .widget-bank-card-modal .modal-body img{
     margin-top: 35px;
 }
-.widget-bank-card-modal nav.navbar-default .navbar-header{
-    margin-left: 150px;
+.widget-bank-card-modal .navbar .container-fluid .first-row{
+    margin-left: 5%;
+}
+.widget-bank-card-modal nav.navbar .navbar-header{
+    margin-left: 15%;
 }
 .btn-container{
     position: relative;
@@ -19054,19 +19101,11 @@ height: auto;padding: 10px 10px;}
 .confirm_bank_card:hover{
     color:#dcad83;
 }
-p.card_status{
-    text-align: left;
-    margin-left: 100px!important;
-}
-p.card_status span{
-    color: #666666;
-}
-.new_card_status{
-    border:1px solid #ccc;
-}
 .my-credit-card{
     color: #ccc;
 }
+
+/* Change Card's Details Limit */
 #widget-card-change-limits-modal{
     display: none;
 }
