@@ -21,7 +21,7 @@ $(function(){
 			that.element.on('click', '.widget-details-button a.btn', that.handlers.openDetailsModal.bind(that));
 			that.element.on('click', '.widget-details-button .btn-modify', that.handlers.openChangeLimitsModal.bind(that));
 			that.detailsBlock.on('click', '.navbar-nav > li > a', that.handlers.blocksSelections.bind(that));
-			that.detailsBlock.on('click', 'button[data-dismiss="modal"], .confirm_bank_card, .cancel_bank_card', that.handlers.closeModal.bind(that));
+			that.detailsBlock.on('click', 'button.close, .confirm_bank_card, .cancel_bank_card', that.handlers.closeModal.bind(that));
 		},
 
 		handlers: {
@@ -45,7 +45,7 @@ $(function(){
 
 			closeModal: function(event){
 				that.detailsBlock.find('[href="#close-modal"]').trigger('click');
-			}
+			},
 		},
 
 		options: {

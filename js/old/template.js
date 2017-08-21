@@ -1250,6 +1250,10 @@ var allWgs = [
     {
     	template: "CardDetailsLimitsModal",
     	UUID: 49
+    },
+    {
+    	template: "NotificationsComposeScreen",
+    	UUID: 50
     }
 
 
@@ -1312,6 +1316,7 @@ var templateFunctions = {
 	,CreditAdvertisment : setCreditAdvertisment
 	,CardDetailsBlockModal : setCardDetailsBlockModal
 	,CardDetailsLimitsModal: setCardDetailsLimitsModal
+	,NotificationsComposeScreen: setNotificationsComposeScreen
 }
 
 function setMyCurrent(el, data) {
@@ -1963,6 +1968,8 @@ function setNotifications(el, data) {
 			$('.block6').show();
 			$('.second-part6').show();
 		});
+
+		window.notificationsDeferred.resolve();
 	});
 }
 
@@ -2544,6 +2551,15 @@ function setCardDetailsLimitsModal(el, data){
 	$(el).find(".widget-details-button a").click(function(e) {
         e.preventDefault();
 		detailUtil.openTemplate(this, "CardDetailsLimitsModal", null);
+	});
+}
+
+function setNotificationsComposeScreen(el, data){
+	createDial($(el).find("#widget-notifications-compose-screen-modal"), 500, 500, 90, "#f7573f", "#87b22e", 320);
+	setShowMoreButtons(el, data);
+	$(el).find(".widget-details-button a").click(function(e) {
+        e.preventDefault();
+		detailUtil.openTemplate(this, "NotificationsModal", null);
 	});
 }
 
