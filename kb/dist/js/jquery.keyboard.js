@@ -40,6 +40,7 @@ http://www.opensource.org/licenses/mit-license.php
 }(function ($) {
 	'use strict';
 	var $keyboard = $.keyboard = function (el, options) {
+		console.log(5555555)
 	var o, base = this;
 
 	base.version = '1.26.26';
@@ -2975,6 +2976,7 @@ http://www.opensource.org/licenses/mit-license.php
 	};
 
 	$.fn.keyboard = function (options) {
+
 		return this.each(function () {
 			if (!$(this).data('keyboard')) {
 				/*jshint nonew:false */

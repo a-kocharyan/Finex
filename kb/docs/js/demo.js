@@ -3,19 +3,47 @@ jQuery(function($) {
 	// QWERTY Text Input
 	// The bottom of this file is where the autocomplete extension is added
 	// ********************
-	$('#text').keyboard({ layout: 'qwerty' });
 
-	$('.version').html( '(v' + $('#text').getkeyboard().version + ')' );
+	// $('#input_for_password_keyboard').keyboard({ layout: 'qwerty' });
+
+
+
+	// $('.version').html( '(v' + $('#input_for_password_keyboard').getkeyboard().version + ')' );
 
 	// QWERTY Password
 	// ********************
-	$('#new-PIN').keyboard({
+	$('#input_for_login_keyboard').keyboard({
 		openOn   : null,
 		stayOpen : true,
-		layout   : 'qwerty'
+		layout   : 'qwerty',
+		autoAccept: true,
+		usePreview: false,
+		stayOpen: false
 	});
-	$('#new-PIN').click(function(){
-		var kb = $('#new-PIN').getkeyboard();
+	$('#icon_for_login_keyboard').click(function(){
+		var kb = $('#input_for_login_keyboard').getkeyboard();
+		// close the keyboard if the keyboard is visible and the button is clicked a second time
+		if ( kb.isOpen ) {
+			kb.close();
+		} else {
+			kb.reveal();
+
+		}
+
+	});
+
+
+
+	$('#input_for_password_keyboard').keyboard({
+		openOn   : null,
+		stayOpen : true,
+		layout   : 'qwerty',
+		autoAccept: true,
+		usePreview: false,
+		stayOpen: false
+	});
+	$('#icon_for_password_keyboard').click(function(){
+		var kb = $('#input_for_password_keyboard').getkeyboard();
 		// close the keyboard if the keyboard is visible and the button is clicked a second time
 		if ( kb.isOpen ) {
 			kb.close();

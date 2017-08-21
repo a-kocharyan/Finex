@@ -236,6 +236,10 @@
 .content-to-show .payment-type img{
     margin: 0 auto!important;
 }
+.content-to-show .chosen-payment-type img{
+    margin: 0 auto!important;
+    padding: 5% 0;
+}
 
 .content-to-show  .underImg{
     font-size: 11px;
@@ -258,9 +262,10 @@
     font-size: 13px;
 }
 
-.content-to-show .top .currentIt{
+.content-to-show .top .currenetItem.chosen-payment-type{
     font-size: 12px!important;
     padding:5px!important;
+    border: 1px solid #ceaf80!important;
 }
 .widget.widget-payment .widget-body .left-part .payment-type{
     display: inline-block;

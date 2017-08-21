@@ -125,6 +125,7 @@ jQuery(function($){
 			addKey
 		************************************************/
 		QUnit.test( 'addKey', function(assert) {
+
 			var tmp,
 				k = kb.addKey;
 			assert.expect(7);

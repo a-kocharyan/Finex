@@ -2,7 +2,7 @@
  data-article-pos="17" data-gs-no-resize="true" data-gs-auto-position="false" template="SavingGoalsTom">
 	<div id="pfm_saving_goals_module" class="grid-stack-item-content card_flip">
 		<div class="widget-tools">
-			<div class="widget-close"> <span class='exchange_icon exchange_icon_tom' data-parent-id='saveGoalTom'><img src='images/exchange.png' style='margin-right:5px' > </span> <span><a href="JavaScript:" onclick="removeWidget(this)" class="fa fa-remove"></a></span></div>
+			<div class="widget-close"> <span class='exchange_icon exchange_icon_tom' id="exchange_img" data-parent-id='saveGoalTom'><img src='images/exchange.png' style='margin-right:5px' > </span> <span><a href="JavaScript:" onclick="removeWidget(this);$('#exchange_img').show()" class="fa fa-remove"></a></span></div>
 			<!--			<div class="widget-more-right">
 							<span class="show_more_right">
 								<i class="fa fa-angle-right"></i>
@@ -30,7 +30,7 @@
                      My Next Car
                     </div>
                     <div class="saving-goal-status-jane">
-                        <img src="images/complete_paymen.png" width="40" /><span>You are on track with your goal!</span>
+                        <img src="images/complete_paymen.png"  width="40" /><span>You are on track with your goal!</span>
                     </div>
                     <div class="widget-progress-bar">
 											<div class="bar-background"></div>
@@ -38,21 +38,21 @@
 										</div>
 										<div class="saving-goal-progressdata-jane">
 												<div class="pull-left">
-	                       Current amount <span>EUR 11,450</span>
+	                       Current amount <span>USD 11,450</span>
 												</div>
 
 												<div class="pull-right">
-													Target amount <span>EUR 19,500</span>
+													Target amount <span>USD 19,500</span>
 												</div>
 									 </div>
 
 									 <div class="saving-goal-progressdata-jane">
 												<div class="pull-left">
-	                       Target Date <span>2017/09/18</span>
+	                       Target Date <span>2018/09/18</span>
 												</div>
 
 												<div class="pull-right">
-													Monthly Contribution <span>EUR 450</span>
+													Monthly Contribution <span>USD 450</span>
 												</div>
 									 </div>
 

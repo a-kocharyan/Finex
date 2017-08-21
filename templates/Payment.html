@@ -395,16 +395,16 @@
 									</div>
 								<div class="benefeciaries-list">	
 									<div class="benefeciaries-tab-headers">
-										<div class="benefeciaries-tab-header active" id="saved-benefeciaries-1">
+										<div class="benefeciaries-tab-header-1 active" id="saved-benefeciaries-1">
 											<p>ONE TIME</p>
 										</div>
 									
-										<div class="benefeciaries-tab-header" id="saved-transactions-1">
+										<div class="benefeciaries-tab-header-1" id="saved-transactions-1">
 											<p>RECURRING</p>
 										</div>
 									</div>
 									<div class="benefeciaries-tabs">
-										<div class="benefeciaries-tab active" id="tab-to-show-saved-benefeciaries-1">
+										<div class="benefeciaries-tab-1 active" id="tab-to-show-saved-benefeciaries-1">
 											<div class="payment-benefeciary-detail own-acc-pay-details row">
 												<div class="col-xs-3">Date</div>
 												<div class="col-xs-9">
@@ -417,10 +417,14 @@
 												<div class="col-xs-3">Reference</div>
 												<div class="col-xs-9"><input type="text" class="reference-input" notrequired="1" placeholder="" class="reference"></div>
 											</div>
-											
+											<div class="payment-benefeciary-detail own-acc-pay-details row">
+												<div class="col-xs-3">Save benefeciary</div>
+												<div class="col-xs-3"><input type="checkbox" style="min-height: 0"></div>
+												<div class="col-xs-6"><input type="text" class="save-benefeciary-input" notrequired="1" placeholder="PeterSmith" class="reference"></div>
+											</div>
 										</div>
-										<div class="benefeciaries-tab" id="tab-to-show-saved-transactions-1">
-											<div class="payment-benefeciary-detail Recuring-pad-l row">
+										<div class="benefeciaries-tab-1" id="tab-to-show-saved-transactions-1">
+											<div class="payment-benefeciary-detail own-acc-pay-details-l-r  Recuring-pad-l row">
 												<div class="col-xs-4">Start date</div>
 												<div class="col-xs-8">
 													<div class="datepicker">
@@ -428,7 +432,7 @@
 														</div>
 												</div>
 											</div>
-											<div class="payment-benefeciary-detail Recuring-pad-l row">
+											<div class="payment-benefeciary-detail own-acc-pay-details-l-r  Recuring-pad-l row">
 												<div class="col-xs-4">Frequency</div>
 												<div class="col-xs-8">
 													<select class="select-frequency">
@@ -436,7 +440,7 @@
 													</select>
 												</div>
 											</div>
-											<div class="payment-benefeciary-detail Recuring-pad-l row">
+											<div class="payment-benefeciary-detail own-acc-pay-details-l-r Recuring-pad-l row">
 												<div class="col-xs-4">Validity</div>
 												<div class="col-xs-8">
 													<select class="select-validity">
@@ -444,9 +448,14 @@
 													</select>
 												</div>
 											</div>
-											<div class="payment-benefeciary-detail row">
+											<div class="payment-benefeciary-detail own-acc-pay-details  row">
 												<div class="col-xs-3">Reference</div>
 												<div class="col-xs-9"><input type="text" notrequired="1" placeholder="" class="reference-input"></div>
+											</div>
+											<div class="payment-benefeciary-detail own-acc-pay-details row">
+												<div class="col-xs-3">Save benefeciary</div>
+												<div class="col-xs-3"><input type="checkbox" style="min-height: 0"></div>
+												<div class="col-xs-6"><input type="text" class="save-benefeciary-input" notrequired="1" placeholder="PeterSmith" class="reference"></div>
 											</div>
 										</div>
 									</div>
@@ -458,7 +467,7 @@
 											class="nav1 btn btn-transparent btn-default"
 											type="button"
 											value="Next"
-											onclick="validationPayment('#commonpay', this, '#commonpayment_container_3 .payment-benefeciary-details', '#commonpayment_container_4', '#payment-benefeciary-fields-second');fillTransactionDetails('#commonpayment_container_4 .payment-transaction-details', '#commonpayment_container_3 .payment-benefeciary-details');fillPayment('#commonpayment_container_3 .right-part ', '#commonpayment_container_4 .left-part')"
+											onclick="validationPayment('#commonpay', this, '#commonpayment_container_3 .payment-benefeciary-details', '#commonpayment_container_4', '#payment-benefeciary-fields-second');fillTransactionDetails('#commonpayment_container_4 .payment-transaction-details', '#commonpayment_container_3 .payment-benefeciary-details');fillPayment('#commonpayment_container_3 .right-part .benefeciaries-tab-1.active ', '#commonpayment_container_4 .left-part')"
 											/>
 										<input class="btn btn-transparent btn-default" type="button" value="Save"
 											   onclick="saveBeneficiary(this)"/>
@@ -505,6 +514,20 @@
 									<div class="right-grey col-xs-5">Reference</div>
 									<div class="col-xs-7 transaction-reference"></div>
 								</div>
+								<div class="data-list row">
+									<div class="right-grey col-xs-5">Save benefeciary</div>
+									<div class="col-xs-7 transaction-save-benefeciary"></div>
+								</div>
+
+								<div class="data-list static-data row">
+									<div class="right-grey col-xs-5">Fees:</div>
+									<div class="col-xs-7">$0.02</div>
+								</div>
+
+								<div class="data-list row">
+									<div class="right-grey col-xs-5">Transaction limit:</div>
+									<div class="col-xs-7">$25,000</div>
+								</div> 	
 							</div>
 						</div>						
 						<div class="right-part">

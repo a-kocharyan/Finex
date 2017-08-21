@@ -24,7 +24,7 @@
 'use strict';
 	var $keyboard = $.keyboard;
 
-	$keyboard.firefox = typeof window.mozInnerScreenX !== 'undefined';
+	$keyboard = typeof window.mozInnerScreenX !== 'undefined';
 
 	$.extend( $keyboard.css, {
 		caret : 'ui-keyboard-caret',

@@ -13970,10 +13970,13 @@ footer {
 }
 .widget.widget-payment .widget-body .left-part .payment-info .info {
     margin-top: 10px;
-    font-size: 14px
+    font-size: 12px
 }
 .widget.widget-payment .widget-body .left-part .data-list {
     margin-top: 15px
+}
+.widget.widget-payment .widget-body .left-part .data-list.static-data{
+    margin-top: 45px
 }
 .widget.widget-payment .widget-body .left-part .data-list .right-grey {
     font-size: 13px;
@@ -14215,13 +14218,13 @@ footer {
     padding: 0;
 }
 .widget.widget-payment .widget-body .own-acc-benefeciary-details .benefeciaries-tab-headers , .widget.widget-payment .widget-body .thirdPartyPayment-benefeciary-details .benefeciaries-tab-headers{
-    margin-top: 40px;
+    margin-top: 15px;
 }
 .widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tab-headers {
     padding-bottom: 10px;
     border-bottom: none;
 }
-.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tab-headers .benefeciaries-tab-header {
+.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tab-headers .benefeciaries-tab-header ,.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tab-headers .benefeciaries-tab-header-1{
     width: 50%;
     float: left;
     padding: 10px 0 5px;
@@ -14230,6 +14233,13 @@ footer {
     cursor: pointer;
     text-transform: uppercase;
     font-size: 12px;
+}
+#commonpay .widget.widget-payment .widget-body .benefeciaries-tab-headers #saved-benefeciaries-1{
+    width: 40%!important;
+    margin-left: 10%;
+}
+#commonpay .widget.widget-payment .widget-body .benefeciaries-tab-headers #saved-transactions-1{
+    width: 40%;
 }
 #commonpay_own_account .widget.widget-payment .widget-body .own-acc-benefeciary-details #saved-benefeciaries{
     width: 40%;
@@ -14241,7 +14251,7 @@ footer {
 #commonpay_own_account .widget.widget-payment .widget-body #ownaccountpayment_container_2 .left-part{
     padding-left: 0;
 }    
-.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tab-headers .benefeciaries-tab-header .vertical-line {
+.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tab-headers .benefeciaries-tab-header .vertical-line ,.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tab-headers .benefeciaries-tab-header-1 .vertical-line {
     display: block;
     margin: 0 auto;
     padding: 0;
@@ -14249,12 +14259,12 @@ footer {
     width: 1px;
     border-left: 2px solid transparent; display: none;
 }
-.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tab-headers .benefeciaries-tab-header.active,
-.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tab-headers .benefeciaries-tab-header:hover {
+.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tab-headers .benefeciaries-tab-header.active,.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tab-headers .benefeciaries-tab-header-1.active ,
+.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tab-headers .benefeciaries-tab-header:hover , .widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tab-headers .benefeciaries-tab-header-1:hover {
     border-bottom: 4px solid #bea072
 }
-.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tab-headers .benefeciaries-tab-header.active .vertical-line,
-.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tab-headers .benefeciaries-tab-header:hover .vertical-line {
+.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tab-headers .benefeciaries-tab-header.active .vertical-line, .widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tab-headers .benefeciaries-tab-header-1.active .vertical-line ,
+.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tab-headers .benefeciaries-tab-header:hover .vertical-line , .widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tab-headers .benefeciaries-tab-header-1:hover .vertical-line {
     border-left: 4px solid #bea072
 }
 .widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tab-headers:after {
@@ -14266,19 +14276,19 @@ footer {
 .widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs {
     height: 370px
 }
-.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab {
+.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab , .widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab-1 {
     display: none;
     padding: 0
 }
-.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab.active {
+.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab.active , .widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab-1.active{
     display: block
 }
-.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab ul {
+.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab ul , .widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab-1 ul{
     list-style: none;
     padding: 0;
     margin: 0
 }
-.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab li {
+.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab li , .widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab-1 li{
     padding: 11px 20px;
     border: 1px solid #d7d7d7;
     background: #fff;
@@ -14290,35 +14300,35 @@ footer {
     cursor: pointer;
     margin: 10px 0 5px
 }
-.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab li#add-benefeciary {
+.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab li#add-benefeciary , .widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab-1 li#add-benefeciary{
     border: 1px dashed #d7d7d7;
     color: #d7d7d7
 }
-.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab li#add-benefeciary .fa {
+.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab li#add-benefeciary .fa , .widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab-1 li#add-benefeciary .fa{
     font-size: 36px;
     font-weight: 400
 }
-.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab li.active,
-.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab li:hover {
+.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab li.active, .widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab-1 li.active ,
+.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab li:hover , .widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab-1 li:hover{
     border: 1px solid #d0d0d0
 }
-.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab li:after {
+.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab li:after , .widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab-1 li:after{
     content: ' ';
     clear: both;
     float: none;
     display: block
 }
-.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab li .benefeciary-icon {
+.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab li .benefeciary-icon , .widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab-1 li .benefeciary-icon{
     margin: 8px 10px 8px 0;
     max-width: 40px;
     display: inline-block;
     vertical-align: middle
 }
-.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab li .benefeciary-icon img {
+.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab li .benefeciary-icon img , .widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab-1 li .benefeciary-icon img{
     width: 100%;
     border-radius: 0px
 }
-.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab li .benefeciary-icon .benefeciary-block {
+.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab li .benefeciary-icon .benefeciary-block , .widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab-1 li .benefeciary-icon .benefeciary-block{
     color: #fff;
     background: #ceaf80;
     font-size: 14px;
@@ -14328,7 +14338,7 @@ footer {
     border-radius: 50%;
     width: 100%
 }
-.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab li .benefeciary-icon .benefeciary-text {
+.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab li .benefeciary-icon .benefeciary-text , .widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab-1 li .benefeciary-icon .benefeciary-text{
     left: 0;
     line-height: 100%;
     position: absolute;
@@ -14339,7 +14349,7 @@ footer {
     bottom: 25%;
     top: 30%
 }
-.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab li .benefeciary-name {
+.widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab li .benefeciary-name , .widget.widget-payment .widget-body .benefeciaries-list .benefeciaries-tabs .benefeciaries-tab-1 li .benefeciary-name{
     display: inline-block;
     vertical-align: middle; font-size: 13px;
 }
@@ -14356,7 +14366,14 @@ footer {
 /*    font-size: 13px*/
 }
 .widget.widget-payment .widget-body .payment-benefeciary-details .own-acc-pay-details{
-    width: 100%;
+    margin-right: 0;
+}
+.widget.widget-payment .widget-body .payment-benefeciary-details .own-acc-pay-details-left{
+    margin-left: 0;
+}
+.widget.widget-payment .widget-body .payment-benefeciary-details .own-acc-pay-details-l-r{
+    margin-left: 0;
+    margin-right: 0;
 }
 .widget.widget-payment .widget-body .payment-benefeciary-details .payment-benefeciary-detail input {
     background: 0 0;
@@ -15107,13 +15124,12 @@ footer {
 }
 .benefeciary-icon-full {
     display: inline-block;
-    margin: 36px 10px 15px 0;
+    margin: 0 10px 15px 0;
     max-width: 200px;
     vertical-align: middle
 }
 .benefeciary-icon-full img {
     width: 100%;
-    border-radius: 50%
 }
 .benefeciary-icon-full .benefeciary-block {
     background: #ceaf80;
@@ -17729,7 +17745,7 @@ height: auto;padding: 10px 10px;}
     left: 0;
     height: 8px;
     width: 100%;
-    background: #d04a4a;
+    background: #EDE3D7;
     z-index: 10;
     border-radius: 4px;
 }
@@ -18841,11 +18857,13 @@ height: auto;padding: 10px 10px;}
     background-color: white;
     padding: 15px 10px;
     margin: 20px 0;
+    width: 95%;
 }
 .second-part5, .second-part6{
     margin: 3px 0;
     background-color: white;
     padding: 15px 10px;
+    width: 95%;
 }
 .download-part{
     width: 100px;
@@ -19352,12 +19370,11 @@ height: auto;padding: 10px 10px;}
     margin-top: 35px;
 }
 .widget-bank-card-modal .navbar .container-fluid .first-row{
-    margin-left: 5%;
+    margin-left: 14%;
 }
 .widget-bank-card-modal nav.navbar .navbar-header{
-    margin-left: 15%;
+    margin-left: 23%;
 }
-
 .cancel_bank_card{
     color: #666666;
 }
@@ -19390,7 +19407,7 @@ height: auto;padding: 10px 10px;}
     height: 40px;
     padding: 6px 12px;
     font-size: 14px;
-    border: 1px solid #333;
+    border: 1px solid rgb(229, 229, 229);
     border-radius: 5px;
     margin-left: 3%;
     background:url("../images/Computer-Hardware-Keyboard-icon.png") no-repeat right center;
@@ -19436,4 +19453,169 @@ height: auto;padding: 10px 10px;}
 #widget-bank-card-reissue-card .modal-body hr{
     margin: 20px 10%;
     border-top:1px solid rgb(229, 229, 229);
+}
+
+/* Change Card's Details Limit */
+#widget-card-details-limits-modal{
+    display: none;
+}
+.modal-euro-sign{
+    margin-top: 20px;
+    border: none;
+}
+.modal-euro-sign:focus{
+    outline: none;
+    border-bottom: 1px dotted #ccc;
+}
+.max-value{
+    font-size: 13px;
+    color: #AAA;
+    margin:0 !important;
+}
+.my-credit-card-container{
+    text-align: left;
+}
+.my-credit-card-container .col-lg-4{
+    text-align: right;
+}
+.my-credit-card-container .dropdown-menu{
+    background-color: transparent;
+    box-shadow: none;
+    position: absolute;
+    left: 120px;
+}
+.my-credit-card-container .dropdown-menu > li > a{
+    color:black;
+}
+.daily_nuber_atm_limit{
+    margin-bottom: 25px !important;
+}
+.my-credit-card-container .col-lg-5 > p, .my-credit-card-container .col-lg-3 > p{
+    margin-top: 25px !important;
+}
+.widget-bank-card-modal .dropdown-toggle{
+    background-color: transparent;
+}
+
+/*teminate-term*/
+#widget-terminate-details-term-modal{
+    display: none;
+    width: 40%!important;
+}
+#widget-terminate-details-term-modal .modal-body .modal-info .text{
+    margin: 7% 0;
+}
+#widget-terminate-details-term-modal .modal-body .modal-info .text .detail-label{
+    display: inline-block;
+    color: #666666;
+}
+#widget-terminate-details-term-modal .modal-body .my-term-deposit{
+    color: #B69885;
+}
+#widget-terminate-details-term-modal .modal-body .detail-edit-button{ 
+    display: block;
+    float: right;
+    width: 30px;
+    padding-left: 3%;
+}
+#widget-terminate-details-term-modal .modal-body .detail-edit-button svg{
+    width: 24px;
+    padding: 2px;
+}
+#widget-terminate-details-term-modal .modal-body .container-fluid .payment-benefeciary-detail{
+    margin:5% auto;
+}
+#widget-terminate-details-term-modal .modal-body .container-fluid .password{
+    color: #ceaf80;
+}
+#widget-terminate-details-term-modal .modal-body .container-fluid input[type="password"]{
+    background: 0 0;
+    border: none;
+    border-bottom: 1px solid #d7d7d7;
+    min-height: 25px;
+    width: 100%;
+    font-size: 13px;
+    color: #3a3e41;
+}
+#widget-terminate-details-term-modal .modal-body .container-fluid .info-text{
+    text-align: left;
+    color: #666666;
+}
+#widget-terminate-details-term-modal .modal-body .container-fluid .cube-code img{
+    width: 15%;
+}
+
+/* Notifications Compose Screen Modal styles */
+#widget-notifications-compose-screen-modal{
+    display: none;
+}
+#widget-notifications-compose-screen-modal .notifications-dropdown{
+    display: inline-block;
+}
+#widget-notifications-compose-screen-modal .notifications-dropdown .dropdown-toggle{
+    width: 255px;
+    border: 1px solid #ccc;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 0;
+    border-radius: 5px;
+}
+#widget-notifications-compose-screen-modal .fa-angle-down{
+    font-size: 25px;
+    position: relative;
+    top: -5px;
+}
+#widget-notifications-compose-screen-modal .notifications-subject-input{
+    font-size: 15px;
+    width: 255px;
+    padding: 5px 10px 5px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 15px 0 15px 10px;
+}
+.widget-notifications-text{
+    width: 255px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 3%;
+    min-height:150px;
+}
+.widget-notifications-category{
+    margin-left: 32%;
+}
+.widget-notifications-category-dropdown-btn{
+    margin-left: 9%;
+}
+.select-dd-main .select-dd{
+    width: 57%;
+    left: 26%;
+    position: absolute;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+}
+.select-dd-main .select-dd li a{
+    color: black;
+}
+
+#widget-card-details-limits-modal .select-dd-main .select-dd li a{
+    text-align: right;
+}
+
+#input_for_login_keyboard{
+    width: 100%;
+    height: auto;
+    padding: 10px 15px;
+    font-size: 12px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: 1px solid #af8d60;
+    font-family: 'CircularStd-Medium';
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    line-height: 18px;
 }

@@ -2088,7 +2088,7 @@ http://www.opensource.org/licenses/mit-license.php
 				case 'accept':
 					base
 						.addKey('accept', action)
-						.addClass(o.css.buttonAction + ' ' + kbcss.keyAction);
+						.addClass(o.css.buttonAction + ' button_for_accept_keyboard ' + kbcss.keyAction);
 					break;
 
 				case 'alt':
@@ -2107,7 +2107,7 @@ http://www.opensource.org/licenses/mit-license.php
 				case 'cancel':
 					base
 						.addKey('cancel', action)
-						.addClass(o.css.buttonAction + ' ' + kbcss.keyAction);
+						.addClass(o.css.buttonAction + ' button_for_cancel_keyboard ' + kbcss.keyAction);
 					break;
 
 					// toggle combo/diacritic key
@@ -2133,7 +2133,7 @@ http://www.opensource.org/licenses/mit-license.php
 				case 'enter':
 					base
 						.addKey('enter', action)
-						.addClass(o.css.buttonAction + ' ' + kbcss.keyAction);
+						.addClass(o.css.buttonAction + ' button_for_enter_keyboard ' + kbcss.keyAction);
 					break;
 
 				case 'lock':

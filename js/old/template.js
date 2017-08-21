@@ -1041,218 +1041,231 @@ var userPref = {
 
 //static data
 var allWgs = [
-		{
-			template: "CurrentAccount",
-			UUID: 0
-		},
-    {
-        template: "Transactions",
-        UUID: 1
-    },
-    {
-        template: "Deposit",
-        UUID: 2
-    },
-    {
-        template: "AddNewWidget",
-        UUID: 3
-    },
-    {
-        template: "QuarterlyReport",
-        UUID: 4
-    },
-    {
-        template: "SignedTransactions",
-        UUID: 5
-    },
-    {
-        template: "Payment",
-        UUID: 6
-    },
-    {
-        template: "PendingTransactions",
-        UUID: 7
-    },
-    {
-        template: "FailedTransactions",
-        UUID: 8
-    },
-    {
-        template: "Envelope",
-        UUID: 9
-    },
-    {
-        template: "QuickPayment",
-        UUID: 10
-    },
-    {
-        template: "OwnAccountPayment",
-        UUID: 11
-    },
-    {
-        template: "FilePayment",
-        UUID: 12
-    },
-    {
-        template: "Notifications",
-        UUID: 13
-    },
-    {
-        template: "SavingGoals",
-        UUID: 14
-    },
-    {
-        template: "FutureCashFlow",
-        UUID: 15
-    },
-    {
-        template: "NetWorth",
-        UUID: 16
-    },
-    {
-        template: "Popular",
-        UUID: 17
-    },
-    {
-        template: "Loyalty",
-        UUID: 18
-    },
-    {
-        template: "Beneficiary",
-        UUID: 19
-    },
-    {
-        template: "StandingOrder",
-        UUID: 20
-    },
-    {
-        template: "Chequebook",
-        UUID: 21
-    },
-    {
-        template: "Switch",
-        UUID: 22
-    },
-	{
-        template: "Contact",
-        UUID: 24
-    },
-	{
-        template: "Advertisment",
-        UUID: 25
-    },
-	{
-        template: "AdvertismentText",
-        UUID: 26
-    },
-	{
-        template: "AdvertismentTwoSlotText",
-        UUID: 27
-    },
-	{
-        template: "AdvertismentAdditional",
-        UUID: 28
-    },
-	{
-        template: "BankCard",
-        UUID: 29
-    },
-	{
-        template: "PFM",
-        UUID: 30
-    },
-	{
-        template: "Video",
-        UUID: 31
-    },
-	{
-        template: "MyEuroAccount",
-        UUID: 32
-    },
-	{
-        template: "MySavingsAccount",
-        UUID: 33
-    },
-	{
-        template: "MyEuroSavings",
-        UUID: 34
-    },
-	{
-        template: "MyVisaDebitCard",
-        UUID: 35
-    },
-	{
-        template: "Video1",
-        UUID: 36
-    },
-	{
-        template: "Video2",
-        UUID: 37
-    }	,
-	{
-        template: "CharityPayment",
-        UUID: 38
-    }	,
-	{
-        template: "AccountOpening",
-        UUID: 39
-    },
-	{
-        template: "LoneRequest",
-        UUID: 40
-    },
-	{
-        template: "CardApplication",
-        UUID: 41
-    },
-	{
-        template: "TermDepositOpening",
-        UUID: 42
-    },
-    {
-		template: "CurrentAccountJane",
-		UUID: 43
-	},
-	{
-        template: "AdvertismentJane",
-        UUID: 44
-    },
-    {
-        template: "SavingGoalsJane",
-        UUID: 45
-    },
-    {
-		template: "CurrentAccountTom",
-		UUID: 46
-	},
-	{
-        template: "AdvertismentTom",
-        UUID: 44
-    },
-    {
-        template: "SavingGoalsTom",
-        UUID: 45
-    },
-    {
-        template: "PersonalLoan",
-        UUID: 46
-    },
-    {
-        template: "CreditAdvertisment",
-        UUID: 47
-    },
-    {
+ 	{
         template: "CardDetailsBlockModal",
-        UUID: 48
+        UUID: 0
     },
     {
         template: "CardDetailsChangePin",
-        UUID: 49
+        UUID: 1
     },
     {
     	template: "CardDetailsReissueCard",
-    	UUID: 50
-    }
+    	UUID: 2
+    },
+    {
+    	template: "CardDetailsLimitsModal",
+    	UUID: 3
+    },
+    {
+    	template: "TermDepositDetailsTerm",
+    	UUID: 4
+    },
+    {
+    	template: "NotificationsComposeScreen",
+    	UUID: 5
+    },
+	{
+		template: "CurrentAccount",
+		UUID: 6
+	},
+    {
+        template: "Transactions",
+        UUID: 7
+    },
+    {
+        template: "Deposit",
+        UUID: 8
+    },
+    {
+        template: "AddNewWidget",
+        UUID: 9
+    },
+    {
+        template: "QuarterlyReport",
+        UUID: 10
+    },
+    {
+        template: "SignedTransactions",
+        UUID: 11
+    },
+    {
+        template: "Payment",
+        UUID: 12
+    },
+    {
+        template: "PendingTransactions",
+        UUID: 13
+    },
+    {
+        template: "FailedTransactions",
+        UUID: 14
+    },
+    {
+        template: "Envelope",
+        UUID: 15
+    },
+    {
+        template: "QuickPayment",
+        UUID: 16
+    },
+    {
+        template: "OwnAccountPayment",
+        UUID: 17
+    },
+    {
+        template: "FilePayment",
+        UUID: 18
+    },
+    {
+        template: "Notifications",
+        UUID: 19
+    },
+    {
+        template: "SavingGoals",
+        UUID: 20
+    },
+    {
+        template: "FutureCashFlow",
+        UUID: 21
+    },
+    {
+        template: "NetWorth",
+        UUID: 22
+    },
+    {
+        template: "Popular",
+        UUID: 23
+    },
+    {
+        template: "Loyalty",
+        UUID: 24
+    },
+    {
+        template: "Beneficiary",
+        UUID: 25
+    },
+    {
+        template: "StandingOrder",
+        UUID: 26
+    },
+    {
+        template: "Chequebook",
+        UUID: 27
+    },
+    {
+        template: "Switch",
+        UUID: 28
+    },
+	{
+        template: "Contact",
+        UUID: 29
+    },
+	{
+        template: "Advertisment",
+        UUID: 30
+    },
+	{
+        template: "AdvertismentText",
+        UUID: 31
+    },
+	{
+        template: "AdvertismentTwoSlotText",
+        UUID: 32
+    },
+	{
+        template: "AdvertismentAdditional",
+        UUID: 33
+    },
+	{
+        template: "BankCard",
+        UUID: 34
+    },
+	{
+        template: "PFM",
+        UUID: 35
+    },
+	{
+        template: "Video",
+        UUID: 36
+    },
+	{
+        template: "MyEuroAccount",
+        UUID: 37
+    },
+	{
+        template: "MySavingsAccount",
+        UUID: 38
+    },
+	{
+        template: "MyEuroSavings",
+        UUID: 39
+    },
+	{
+        template: "MyVisaDebitCard",
+        UUID: 40
+    },
+	{
+        template: "Video1",
+        UUID: 41
+    },
+	{
+        template: "Video2",
+        UUID: 42
+    }	,
+	{
+        template: "CharityPayment",
+        UUID: 43
+    }	,
+	{
+        template: "AccountOpening",
+        UUID: 44
+    },
+	{
+        template: "LoneRequest",
+        UUID: 45
+    },
+	{
+        template: "CardApplication",
+        UUID: 46
+    },
+	{
+        template: "TermDepositOpening",
+        UUID: 47
+    },
+    {
+		template: "CurrentAccountJane",
+		UUID: 48
+	},
+	{
+        template: "AdvertismentJane",
+        UUID: 49
+    },
+    {
+        template: "SavingGoalsJane",
+        UUID: 50
+    },
+    {
+		template: "CurrentAccountTom",
+		UUID: 51
+	},
+	{
+        template: "AdvertismentTom",
+        UUID: 52
+    },
+    {
+        template: "SavingGoalsTom",
+        UUID: 53
+    },
+    {
+        template: "PersonalLoan",
+        UUID: 54
+    },
+    {
+        template: "CreditAdvertisment",
+        UUID: 55
+    },
+   
 
 ];
 
@@ -1314,6 +1327,9 @@ var templateFunctions = {
 	,CardDetailsBlockModal : setCardDetailsBlockModal
 	,CardDetailsChangePin : setCardDetailsChangePin
 	,CardDetailsReissueCard : setCardDetailsReissueCard
+	,CardDetailsLimitsModal: setCardDetailsLimitsModal
+	,TermDepositDetailsTerm: setTermDepositDetailsTerm
+	,NotificationsComposeScreen: setNotificationsComposeScreen
 }
 
 function setMyCurrent(el, data) {
@@ -1368,7 +1384,9 @@ function setDeposit(el, data) {
     setShowMoreButtons(el, data);
     setShowMoreButtonEvents(el);
 	$(el).find(".widget-details-button a").click(function(e) {
+		e.preventDefault();
 		detailUtil.openTemplate(this, "DepositAccountDetails", null);
+		window.termDeferred.resolve();
 	});
 }
 
@@ -1639,11 +1657,35 @@ function setPendingTransactions(el, data) {
         e.preventDefault();
         detailUtil.openTemplate(this, "PendingTransactionDetails", null);
         $('.part1').hide();
-$('.drop-1').hide();
-$('.open-1-drop').click(function(){
-	$('.drop-1').show();
-	$('.part1').show();
-})
+        $('.part2').hide();
+        $('.part3').hide();
+		$('.drop-1').hide();
+		$('.drop-2').hide();
+		$('.drop-3').hide();
+		$('.open-part1').click(function(){
+			$('.part2').hide();
+       		$('.part3').hide();
+       		$('.drop-2').hide();
+			$('.drop-3').hide();
+			$('.drop-1').show();
+			$('.part1').show();
+		})
+		$('.open-part2').click(function(){
+			$('.part1').hide();
+       		$('.part3').hide();
+       		$('.drop-1').hide();
+			$('.drop-3').hide();
+			$('.drop-2').show();
+			$('.part2').show();
+		})
+		$('.open-part3').click(function(){
+			$('.part1').hide();
+       		$('.part2').hide();
+       		$('.drop-1').hide();
+			$('.drop-2').hide();
+			$('.drop-3').show();
+			$('.part3').show();
+		})
         setTimeout(function () {
             $( "#period-datepicker", el ).datepicker({
                 showOn: "button",
@@ -1731,6 +1773,9 @@ function setPayment(el, data) {
     });
     $('.benefeciaries-tab-header', el).on('click', function () {
         manageTabs(el, this, '.benefeciaries-tab-header', '.benefeciaries-tab', '#tab-to-show');
+    });
+    $('.benefeciaries-tab-header-1', el).on('click', function () {
+        manageTabs(el, this, '.benefeciaries-tab-header-1', '.benefeciaries-tab-1', '#tab-to-show');
     });
     $('.benefeciaries-tabs', el).niceScroll({
         cursorborder : "",
@@ -2142,7 +2187,22 @@ function setNotifications(el, data) {
 			$('.block6').show();
 			$('.second-part6').show();
 		});
+		window.notificationsDeferred.resolve();
 	});
+	$(el).on('click','span.close',function(){
+		$('.second-part1').hide();
+		$('.second-part2').hide();
+		$('.second-part3').hide();
+		$('.second-part4').hide();
+		$('.second-part5').hide();
+		$('.second-part6').hide();
+		$('.block1').hide();
+		$('.block2').hide();
+		$('.block3').hide();
+		$('.block4').hide();
+		$('.block5').hide();
+		$('.block6').hide();
+	})
 }
 
 function setSavingGoals(el, data) {
@@ -2189,6 +2249,7 @@ function setSavingGoalsTom(el, data) {
 	    setTimeout( function () {
 	        chart = showSavingGoalsTomGraph(el, graphData);
 	    }, 500);
+	    // $('#exchange_img').hide();
 	});
 }
 
@@ -2562,7 +2623,6 @@ function setBankCard(el, data) {
         e.preventDefault();
 		detailUtil.openTemplate(this, "BankCardDetails", null);
 		window.blockDeferred.resolve();
-
 	});
 	
 	$(el).find("#bank-card-more-bottom, #bank-card-more-right").click(function(e) {	
@@ -2721,7 +2781,7 @@ function setCardDetailsBlockModal(el,data){
 function setCardDetailsChangePin(el, data){
 	createDial($(el).find("#widget-bank-card-change-pin"), 500, 500, 90, "#f7573f", "#87b22e", 320);
 	setShowMoreButtons(el, data);
-	$(el).find("a#change-pin").click(function(e) {
+	$(el).find("#bankCard #bank_card_details").click(function(e) {
         console.log('clicked')
         e.preventDefault();
 		detailUtil.openTemplate(this, "CardDetailsChangePin", null);
@@ -2731,11 +2791,37 @@ function setCardDetailsChangePin(el, data){
 function setCardDetailsReissueCard(el, data){
 	createDial($(el).find("#widget-bank-card-reissue-card"), 500, 500, 90, "#f7573f", "#87b22e", 320);
 	setShowMoreButtons(el, data);
-	$(el).find("a#reissue-card").click(function(e) {
+	$(el).find("#bankCard .widget-details-button a").click(function(e) {
         console.log('clicked')
         e.preventDefault();
 		detailUtil.openTemplate(this, "CardDetailsReissueCard", null);
 	});	
+}
+
+function setCardDetailsLimitsModal(el, data){
+	createDial($(el).find("#widget-card-change-limits-modal"), 500, 500, 90, "#f7573f", "#87b22e", 320);
+	setShowMoreButtons(el, data);
+	$(el).find("#bankCard .widget-details-button a").click(function(e) {
+        e.preventDefault();
+		detailUtil.openTemplate(this, "CardDetailsLimitsModal", null);
+	});
+}
+
+function setTermDepositDetailsTerm(el, data){
+	createDial($(el).find("#widget-terminate-details-term-modal"), 500, 500, 90, "#f7573f", "#87b22e", 320);
+	setShowMoreButtons(el, data);
+	$(el).find("#deposit .widget-details-button a").click(function(e) {
+        e.preventDefault();
+		detailUtil.openTemplate(this, "TermDepositDetailsTerm", null);
+	});
+}
+function setNotificationsComposeScreen(el, data){
+	createDial($(el).find("#widget-notifications-compose-screen-modal"), 500, 500, 90, "#f7573f", "#87b22e", 320);
+	setShowMoreButtons(el, data);
+	$(el).find("#alertArt .widget-details-button a").click(function(e) {
+        e.preventDefault();
+		detailUtil.openTemplate(this, "NotificationsComposeScreen", null);
+	});
 }
 
 function doCreateChartPersonalFin2(input)
@@ -2833,22 +2919,116 @@ function doCreateChartPersonalFin2(input)
     },2);
 }
     
-
 // cahnge14.08.17
 $(document).ready(function(){
+
 	var count = 0;
+// grid-stack-item
+
+	var red_parth_divs = [	".video2_parth_for_margin_top",".video_parth_for_margin_top",".failed_parth_for_margin_top",".pending_parth_for_margin_top"];
+	var green_parth_divs = [];
+	$(document).on("mouseup",".nicolas",function(){
+		setTimeout(function(){
+			var data_gs_x = $(".nicolas").attr("data-gs-x");
+			var data_gs_y = $(".nicolas").attr("data-gs-y");
+			if(data_gs_y != red_parth_divs[red_parth_divs.length-1]){
+				red_parth_divs = [];
+			}
+			else{
+				red_parth_divs = [];
+			}
+				if(data_gs_y != green_parth_divs[green_parth_divs.length-1]){
+				green_parth_divs = [];
+			}
+			else{
+				green_parth_divs = [];
+			}
+
+			var all_divs = document.querySelectorAll(".grid-stack-item");
+
+			for(var i = 0 ; i < all_divs.length;i++){
+				var array1 = [];
+				var array2 = [];
+				var div_data_gs_x = parseInt($(all_divs[i]).attr("data-gs-x"));
+				var div_data_gs_y = parseInt($(all_divs[i]).attr('data-gs-y'));
+				var div_data_gs_width = parseInt($(all_divs[i]).attr('data-gs-width'))
+				if(div_data_gs_width == 2 && div_data_gs_x == data_gs_x - 1 && div_data_gs_y > data_gs_y){
+
+					array2.push(all_divs[i]);
+					green_parth_divs.push(array2);
+						$(all_divs[i]).css({'margin-top':"15px"})
+					// console.log(all_divs[i]);
+				}
+				else{
+
+				}
+				if(div_data_gs_x == data_gs_x){
+					if(div_data_gs_y > data_gs_y ){
+
+						$(all_divs[i]).css({'margin-top':"15px"})
+						array1.push(all_divs[i]);
+						red_parth_divs.push(array1)
+					}
+				}
+			}
+			red_parth_divs.push(data_gs_y)
+			green_parth_divs.push(data_gs_y)
+		},1000)
+	})
+
+
+
+
+
 	$(document).on("click",".beneficiary_slide_down_parth",function(){
+
+		for(var i = 0; i < red_parth_divs.length-1;i++){
+			var data_gs_y = parseInt($(red_parth_divs[i]).attr("data-gs-y"));
+			console.log('baceluc',data_gs_y)
+			$(red_parth_divs[i]).attr("data-gs-y",data_gs_y+1);
+		}
+		for(var j = 0 ; j < green_parth_divs.length-1 ; j++){
+			var data_gs_y = parseInt($(green_parth_divs[j]).attr("data-gs-y"));
+			console.log('baceluc',data_gs_y)
+			$(green_parth_divs[j]).attr("data-gs-y",data_gs_y+1);
+			
+		}
+
+		setInterval(function(){
+			var beneficiary_height = $(".nicolas").height();
+			if(beneficiary_height <=280){
+				$(".div_for_slideDown").empty();
+				$(".div_for_slideDown").append("<i class='fa fa-angle-down beneficiary_slide_down_parth' aria-hidden='true'></i>")
+				$(".div_right_parth_angle").empty();
+				$(".beneficiary_slide_up_parth").hide(200);
+				// $(".beneficiary_slide_down_parth").show()
+				$(".div_for_slideToggle").slideUp(200);
+				$("#nic").attr("data-gs-height","1")
+
+				$(".btn_for_details_beneficiary_details").css({"margin-top":"0px"})
+
+				$("#nic").attr("data-gs-min-height","1");
+				$(".video2_parth_for_margin_top").css({'margin-top':"4px"})
+				$(".video_parth_for_margin_top").css({'margin-top':"0px"})
+				$(".failed_parth_for_margin_top").css({'margin-top':"0px"})
+				$(".pending_parth_for_margin_top").css({'margin-top':"0px"})
+			}
+			else{
+
+			}
+		},3500)
 		count++;
-		$(".video2_parth_for_margin_top").css({'margin-top':"275px"});
-		$(".video_parth_for_margin_top").css({'margin-top':"275px"});
-		$(".failed_parth_for_margin_top").css({'margin-top':"275px"});
-		$(".pending_parth_for_margin_top").css({'margin-top':"275px",'margin-bottom':"20px"});
+		// $(".video2_parth_for_margin_top").css({'margin-top':"275px"});
+		// $(".video_parth_for_margin_top").css({'margin-top':"275px"});
+		// $(".failed_parth_for_margin_top").css({'margin-top':"275px"});
+		// $(".pending_parth_for_margin_top").css({'margin-top':"275px",'margin-bottom':"20px"});
+
+		$(".btn_for_details_beneficiary_details").css({"margin-top":"215px"})
 
 		$("#nic").attr("data-gs-height","2")
 		$("#nic").attr("data-gs-min-height","2");
-		$("#up_parth_of_beneficiary").css({"border":"4px solid red"})
 		$(".div_for_slideDown").empty();
-		$(".div_for_slideDown").append("<i class='fa fa-angle-up beneficiary_slide_up_parth' style='margin-top:200px' aria-hidden='true'></i>")
+		$(".div_for_slideDown").append("<i style='border:0px solid red' class='fa fa-angle-up beneficiary_slide_up_parth' style='margin-top:200px' aria-hidden='true'></i>")
 		$(".beneficiary_slide_up_parth").show(100);
 		$(".beneficiary_slide_down_parth").hide(100)
 		if(count > 1){
@@ -2865,9 +3045,22 @@ $(document).ready(function(){
 			$(".right_parth_angle").show(100)
 		})
 
-
 	})
 	$(document).on("click",".beneficiary_slide_up_parth",function(){
+		
+
+		for(var i = 0; i < red_parth_divs.length-1;i++){
+			var data_gs_y = parseInt($(red_parth_divs[i]).attr("data-gs-y"));
+			console.log('pakeluc-',data_gs_y)
+			$(red_parth_divs[i]).attr("data-gs-y",data_gs_y-1);
+		}
+		for(var j = 0 ; j < green_parth_divs.length-1 ; j++){
+			var data_gs_y = parseInt($(green_parth_divs[j]).attr("data-gs-y"));
+			console.log('pakeluc-',data_gs_y)
+			$(green_parth_divs[j]).attr("data-gs-y",data_gs_y-1);
+			
+		}
+
 		$(".div_for_slideDown").empty();
 		$(".div_right_parth_angle").empty();
 		$(".div_for_slideDown").append("<i class='fa fa-angle-down beneficiary_slide_down_parth' aria-hidden='true'></i>")
@@ -2876,16 +3069,14 @@ $(document).ready(function(){
 		$(".div_for_slideToggle").slideUp(200);
 		$("#nic").attr("data-gs-height","1")
 
-		$(".video2_parth_for_margin_top").css({'margin-top':"4px"})
-		$(".video_parth_for_margin_top").css({'margin-top':"0px"})
-		$("#nic").attr("data-gs-min-height","1");
-		$(".failed_parth_for_margin_top").css({'margin-top':"0px"})
-		$(".pending_parth_for_margin_top").css({'margin-top':"0px"})
-		// $(".beneficiary-cont .grid-stack-item-content").css({'height':"300px"})
+		$(".btn_for_details_beneficiary_details").css({"margin-top":"0px"})
 
-	})
-	$(document).on("click",".btn_for_details_beneficiary_details",function(){
-		// $(".beneficiary-cont .grid-stack-item-content").css({'min-height':"650px"})
+		// $(".video2_parth_for_margin_top").css({'margin-top':"4px"})
+		// $(".video_parth_for_margin_top").css({'margin-top':"0px"})
+		// $(".failed_parth_for_margin_top").css({'margin-top':"0px"})
+		// $(".pending_parth_for_margin_top").css({'margin-top':"0px"})
+		// $(".beneficiary-cont .grid-stack-item-content").css({'height':"300px"})
+		$("#nic").attr("data-gs-min-height","1");
 
 	})
 	$(document).on("mouseleave",".widget-beneficiary",function(){
@@ -2893,8 +3084,6 @@ $(document).ready(function(){
 		$(".beneficiary_slide_up_parth").slideUp(200);
 
 	})
-
-		
 	$(document).on("click",".exchange_icon",function(){
 		var parent_id = $(this).attr("data-parent-id");
 			var data_gs_y_tom = $(".Tom_parth_for_change_div").attr("data-gs-y");
@@ -2903,8 +3092,6 @@ $(document).ready(function(){
 
 			$(".Tom_parth_for_change_div").attr('data-gs-y',data_gs_y_jane);
 			$(".Jane_parth_for_change_div").attr('data-gs-y',data_gs_y_tom);
-				
-
 		}else{
 			if(parent_id == "saveGoalJane"){
 

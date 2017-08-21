@@ -21,6 +21,39 @@
 		<script src="js/bootstrap-toggle.js"></script>
 		<script src="js/jquery.ui.touch-punch.js"></script>
 		<script src="js/jquery.modal.js"></script>
+
+
+
+
+
+
+	<script src="kb/docs/js/jquery-latest.min.js"></script>
+	<script src="kb/docs/js/jquery-ui.min.js"></script>
+	<link href="kb/css/keyboard.css" rel="stylesheet">
+	<script src="kb/js/jquery.keyboard.js"></script>
+
+	<script src="kb/js/jquery.mousewheel.js"></script>
+	<script src="kb/js/jquery.keyboard.extension-typing.js"></script>
+	<script src="kb/js/jquery.keyboard.extension-autocomplete.js"></script>
+	<script src="kb/js/jquery.keyboard.extension-caret.js"></script>
+
+	<!-- <link rel="stylesheet" href="kb/docs/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="kb/docs/css/font-awesome.min.css">
+
+	<!-- <link href="kb/docs/css/tipsy.css" rel="stylesheet"> -->
+	<!-- <link href="kb/docs/css/prettify.css" rel="stylesheet"> -->
+
+	<script src="kb/docs/js/bootstrap.min.js"></script>
+	<script src="kb/docs/js/demo.js"></script>
+	<script src="kb/docs/js/jquery.tipsy.min.js"></script>
+	<script src="kb/docs/js/prettify.js"></script> <!-- syntax highlighting -->
+
+
+
+
+
+
+
 	</head>
 	<body>
 		<div class="wrapper">
@@ -34,8 +67,11 @@
 						The FINEX Banking App has a fresh new look, intuitive interface, and <br> sports some of the most powerful banking features in a mobile app <span class="span_for_more_right_parth_text">More ></span>
 					</span>
 
+
+	
+
 				
-				</div>
+				</div> 
 			</div>
 			<span class='chkErr' id="checkUser" style="top:0px;position:relative;">Please Enter Valid User Name</span>
 			<div class="login-container">
@@ -74,19 +110,19 @@
 							<div class="login">
 							<div class="log-img" style="display: flex;">
 								
-								<input  type="text" class="input-field first_client_login_input" id="user-name" placeholder="Login ID">
+								<input  type="text" class="first_client_login_input" id="input_for_login_keyboard" placeholder="Login ID">
 
 
 								<div style=" margin-left:-30px; margin-top: 5px;" >
-								<img src="images/Computer-Hardware-Keyboard-icon.png"   width="25" height="25" onclick="keyboard()">
+								<img src="images/Computer-Hardware-Keyboard-icon.png" id='icon_for_login_keyboard'  width="25" height="25">
 									<div id="virtualKeyboard" class="hidden">
 										
 									</div>
 									</div>
 							</div>
 							<div class="log-img" style="display: flex;">
-								<input type="password" class="input-field" id="user-pass" placeholder="Password">
-								<div style=" margin-left: -30px; margin-top: 5px;"><img src="images/Computer-Hardware-Keyboard-icon.png" width="25"></div>
+								<input type="password" class="input-field" id="input_for_password_keyboard" placeholder="Password">
+								<div style=" margin-left: -30px; margin-top: 5px;"><img src="images/Computer-Hardware-Keyboard-icon.png" width="25" id='icon_for_password_keyboard'></div>
 								</div>
 								<div class="login-block">
 									<a href="#" class="left frgotpwd">Forgot password</a>
@@ -114,6 +150,8 @@
 	<script type="text/javascript" language="javascript" src="js/jquery-2.1.4.min.js"></script>
 	
 	<script type="text/javascript" language="javascript">
+
+			
 		function userLogin(){
 		  	var userName = document.getElementById('user-name');
 		  	var userPass = document.getElementById('user-pass'); 
@@ -167,5 +205,6 @@
 		  });
 		 
 		});
+
 	</script>
 </html>
