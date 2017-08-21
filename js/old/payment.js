@@ -27,7 +27,7 @@ function createPayment(el, headerCLass) {
 			$(this).removeClass('placeholder-error');
 	});
 	
-	bblock.find("#payment-benefeciary-fields-second input").click( function(e) {
+	bblock.find("#payment-benefeciary-fields-second input:not('input[type=checkbox]')").click( function(e) {
 			var placeholderOld = $(this).attr('placeholderOld');
 			$(this).attr('placeholder', placeholderOld);
 			$(this).attr('style', '" "');
@@ -421,7 +421,7 @@ function createTermDepositOpeningPayment(el, headerCLass) {
         }
     });
     var stepsClass = "steps";
-    makeSteps(el, 4, headerCLass, stepsClass);
+    makeSteps(el, 3, headerCLass, stepsClass);
     setSteps(el, stepsClass);
 
     bblock.bookblock({
@@ -878,7 +878,7 @@ function fillQuickPaymentSelectedUser (userData, container, paymentType) {
     $('.address', $container).html(userData.cp_ben_address.replace(",", ",<br/>"));
 	
 	if (paymentType == 'thirdParty') {
-		$('.benefeciary-icon-full', $container).html(userData.cp_ben_img);
+		$('.benefeciary-icon-full', $container).html("<img src='images/svg/nickname.svg' class='svg'>");
 	} else {
 		var $imageWrapper = $('.payment-logo', $container);
 		if ($('img',$imageWrapper).length == 0) {
@@ -1307,8 +1307,9 @@ function fillOwnAccountPayment(fromContainer , toContainer){
 }
 
 function fillPayment(fromContainer , toContainer){
-    $('.transaction-reference', toContainer).html($('.benefeciaries-tab.active  .reference-input ', fromContainer).val());
-    $('.transaction-date', toContainer).html($('.benefeciaries-tab.active  .datepicker-input', fromContainer).val());
+    $('.transaction-reference', toContainer).html($('.reference-input ', fromContainer).val());
+    $('.transaction-date', toContainer).html($('.datepicker-input', fromContainer).val());
+    $('.transaction-save-benefeciary', toContainer).html($('.save-benefeciary-input', fromContainer).val());
     if($('#tab-to-show-saved-transactions-1', fromContainer).is('.active'))
     {
         console.log($('#tab-to-show-saved-transactions-1', fromContainer))
@@ -1336,6 +1337,22 @@ function countAmount(container) {
         }
     }
     $('.result' , container).html('$'+Math.round((res.join(""))/parseInt($('.select-loan-term option:selected' , container).html())))
+}
+function addSign($this){
+    console.log($($this))
+    var val = $($this).val();
+    var amount = val.split("");
+    var res = [];
+    var j = 0;
+    for(var i=0; i<amount.length; i++)
+    {
+        if(amount[i].match(/\d/))
+        {
+            res[j] = amount[i];
+            j++;
+        }
+    }
+   $($this).val('$'+(res.join("")))
 }
 function checkMinAmount(container,li_position){
     var val = $('.name', container).val();

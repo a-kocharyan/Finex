@@ -311,7 +311,7 @@ function doCreateChartPersonalFin2(input)
 //STPL
 function doCreateCarGoal(input)
 {
-     var containerId = '#nextCarGoal';
+    var containerId = '#nextCarGoal';
     var chartTitle = '';
     if(input != null){
         containerId = '#circle' + input + '_finance';
@@ -333,7 +333,7 @@ function doCreateCarGoal(input)
     xAxis: {
         type: 'category',
         title: {
-            text: 'Saving Years',
+            text: 'Time',
             style: { "font-family":"'SourceSansPro'", "color": "#4b3f2f", "font-size":"12px"}
         },
         labels: {
@@ -648,7 +648,7 @@ function doChartNetWorthDetails1(input)
             ,spacingBottom: 0
             ,spacingLeft: 0
             ,spacingRight: 0,
-            height:120,
+            height:180,
             width:280
         },
         title: {
@@ -749,7 +749,7 @@ function doChartNetWorthDetails2(input)
             ,spacingBottom: 0
             ,spacingLeft: 0
             ,spacingRight: 0,
-            height:120,
+            height:200,
             width:280
         },
         title: {
@@ -857,7 +857,7 @@ function doChartNetWorthDetails3(input)
             ,spacingBottom: 0
             ,spacingLeft: 0
             ,spacingRight: 0,
-            height:120,
+            height:200,
             width:280
         },
         title: {
@@ -1973,7 +1973,7 @@ function showSavingGoalsTomGraph(el, data) {
         series: [{
             type: 'area',
             name: 'EUR', 
-            data: [10, 45, 90, 135, 180]
+            data: [10, 50, 90, 150, 210]
         }],
         colors: ['#ccab76'],
         responsive: {
