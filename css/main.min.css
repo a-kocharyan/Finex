@@ -19399,6 +19399,9 @@ height: auto;padding: 10px 10px;}
 .container-fluid .input-field{
     width: 80%;
 }
+#widget-bank-card-change-pin .input-field img{
+    margin: 0;
+}
 .container-fluid .second-field{
     margin:2% 0 5%; 
 }
@@ -19410,9 +19413,6 @@ height: auto;padding: 10px 10px;}
     border: 1px solid rgb(229, 229, 229);
     border-radius: 5px;
     margin-left: 3%;
-    background:url("../images/Computer-Hardware-Keyboard-icon.png") no-repeat right center;
-    background-size: 25px;
-    background-position-x: 96%;
 }
 .container-fluid .label-text{
     text-align: left;

@@ -452,7 +452,7 @@ function WidgetActivator() {
 		var remove =  $parentWidgetItem.find("a.fa-remove")[0];
 		removeClickFunction = remove.getAttribute("onclick");
 		remove.removeAttribute("onclick");
-		remove.onclick = function () {close(parentWidgetItem);};
+		remove.onclick = function () {close(parentWidgetItem);$('.exchange_icon').show()};
         while (parentContainerForReplace.firstChild) {
           tempContainer.appendChild(parentContainerForReplace.firstChild);
         }
@@ -2222,7 +2222,8 @@ function setSavingGoalsJane(el, data) {
 	setShowMoreButtons(el, data);
 	setShowMoreButtonEvents(el);
 	$(el).find(".widget-details-button a").click(function(e) {
-
+		
+		$('.exchange_icon_jane').hide()
         e.preventDefault();
 		detailUtil.openTemplate(this, "SavingGoals_Details_New", null);
 		setTimeout(function(){createStepsSavingGoals(el, ".payment-widget-label");},500)
@@ -2236,7 +2237,7 @@ function setSavingGoalsTom(el, data) {
 	$(el).find(".widget-details-button a").click(function(e) {
         e.preventDefault();
 		detailUtil.openTemplate(this, "SavingGoalsTomDetails_New", null);
-
+		$('.exchange_icon_tom').hide()
 		var chart = {}
 	    var graphData = {
 	        graphContainer : "high_goalchart_container",

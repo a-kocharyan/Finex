@@ -32,7 +32,7 @@ jQuery(function($) {
 
 	});
 
-
+	
 
 	$('#input_for_password_keyboard').keyboard({
 		openOn   : null,
@@ -50,6 +50,49 @@ jQuery(function($) {
 		} else {
 			kb.reveal();
 		}
+	});
+
+
+
+	$('#new_PIN_input').keyboard({
+		openOn   : null,
+		stayOpen : true,
+		layout   : 'qwerty',
+		autoAccept: true,
+		usePreview: false,
+		stayOpen: false
+	});
+	$('#new_PIN_icon').click(function(){
+		var kb = $('#new_PIN_input').getkeyboard();
+		// close the keyboard if the keyboard is visible and the button is clicked a second time
+		if ( kb.isOpen ) {
+			kb.close();
+		} else {
+			kb.reveal();
+
+		}
+
+	});
+
+
+	$('#new_PIN_input_again').keyboard({
+		openOn   : null,
+		stayOpen : true,
+		layout   : 'qwerty',
+		autoAccept: true,
+		usePreview: false,
+		stayOpen: false
+	});
+	$('#new_PIN_icon_again').click(function(){
+		var kb = $('#new_PIN_input_again').getkeyboard();
+		// close the keyboard if the keyboard is visible and the button is clicked a second time
+		if ( kb.isOpen ) {
+			kb.close();
+		} else {
+			kb.reveal();
+
+		}
+
 	});
 
 	// QWERTY (mod) Text Area

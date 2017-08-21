@@ -24,7 +24,7 @@ $(function(){
    			that.element.on('click', 'a#change-pin', that.handlers.openChangePinModal.bind(that));
    			that.element.on('click', 'a#reissue-card', that.handlers.openReissueCardModal.bind(that));
    			that.element.on('click', '.widget-details-button .btn-modify', that.handlers.openChangeLimitsModal.bind(that));
-   			that.changeLimits.on('click', '#this-dropdown > ul > li',console.log($('#this-dropdown > ul > li')));
+   			that.changeLimits.on('click', '#this-dropdown > ul > li',that.handlers.selectVal);
    			that.changeLimits.on('keypress', '.modal-euro-sign', that.handlers.changeLimitsFieldsActions.bind(that));
    			that.detailsBlock.on('click', '.navbar-nav > li > a', that.handlers.blocksSelections.bind(that));
    			that.detailsBlock.on('click', 'button[data-dismiss="modal"], .confirm_bank_card, .cancel_bank_card', that.handlers.closeModal.bind(that));
